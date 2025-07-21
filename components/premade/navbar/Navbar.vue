@@ -344,7 +344,7 @@
     z-index: 20
 
   .siteSwitchBlur
-    --siteSwitchBlurHeight: 32rem
+    --siteSwitchBlurHeight: 42rem
 
     position: fixed !important
     right: 0
