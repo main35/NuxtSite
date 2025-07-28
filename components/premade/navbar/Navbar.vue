@@ -32,9 +32,9 @@
       icon: 'https://tfa.asboy2035.com/assets/icon-1024.png'
     },
     {
-      name: "Astro",
-      link: "https://ashtronomy.pages.dev/",
-      icon: "https://ashtronomy.pages.dev/Images/Astronomy-Icon.png",
+      name: "Astro+",
+      link: "https://astro.asboy2035.com/",
+      icon: "https://astro.asboy2035.com/AstroPlus-AppIcon.png",
     },
     {
       name: "Clocs",

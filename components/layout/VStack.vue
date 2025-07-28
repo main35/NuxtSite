@@ -7,10 +7,10 @@
 <style scoped lang="sass">
   .vStack
     display: flex
+    flex-direction: column
     flex-wrap: wrap
     gap: 0.5rem
     justify-content: flex-start
-    flex-direction: column
     align-items: flex-start
 
   .vStack.spaced
