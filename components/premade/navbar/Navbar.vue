@@ -37,9 +37,9 @@
       icon: "https://astro.asboy2035.com/AstroPlus-AppIcon.png",
     },
     {
-      name: "Clocs",
-      link: "https://clocs.pages.dev/",
-      icon: "https://clocs.pages.dev/Icons/Icon.png",
+      name: "Tickity",
+      link: "https://tickity.asboy2035.com/",
+      icon: "https://tickity.asboy2035.com/apple-touch-icon.jpg",
     },
     {
       name: "Vault",
