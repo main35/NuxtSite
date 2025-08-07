@@ -15,7 +15,7 @@
 
 <template>
   <component
-    :is="isExternal ? 'a' : 'router-link'"
+    :is="isExternal ? 'a' : 'RouterLink'"
     :href="isExternal ? to : undefined"
     :to="!isExternal ? to : undefined"
     :target="isExternal ? '_blank' : undefined"

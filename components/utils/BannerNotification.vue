@@ -15,9 +15,9 @@
     :class="{ hidden: hidden }"
     @animationend="handleAnimationEnd"
   >
-    <card class="bannerNotification">
+    <Card class="bannerNotification">
       <slot />
-    </card>
+    </Card>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from "vue"
-import HStack from "~/components/layout/HStack.vue"
+import HStack from "@/components/layout/HStack.vue"
 import {ProgressiveBlur} from 'vue-progressive-blur'
-import InteriorItem from '~/components/layout/InteriorItem.vue'
+import InteriorItem from '@/components/layout/InteriorItem.vue'
 
 defineProps<{
   title: string
@@ -42,22 +42,22 @@ onMounted(() => {
     <div ref="sentinel" class="sentinel" aria-hidden="true" />
 
     <div class="navTitleWrapper" :class="{ stuck: isStuck }">
-      <h-stack class="titleContent">
+      <HStack class="titleContent">
         <h1 v-if="!isStuck">{{ title }}</h1>
 
-        <interior-item
+        <InteriorItem
           v-else-if="isStuck"
           class="stuckTitleContent fadeIn"
         >
           <p>{{ title }}</p>
-        </interior-item>
+        </InteriorItem>
 
-        <h-stack
+        <HStack
           class="stuckToolbar fadeIn"
           v-if="isStuck"
         >
           <slot />
-        </h-stack>
+        </HStack>
 
         <h1
           class="light"
@@ -66,12 +66,12 @@ onMounted(() => {
           {{ subtitle }}
         </h1>
 
-        <h-stack class="toolbar" v-if="!isStuck">
+        <HStack class="toolbar" v-if="!isStuck">
           <slot />
-        </h-stack>
-      </h-stack>
+        </HStack>
+      </HStack>
 
-      <progressive-blur
+      <ProgressiveBlur
         :blur="48" :border-radius="0"
         class="stuckBlur" v-if="isStuck"
       />

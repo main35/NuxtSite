@@ -3,46 +3,80 @@
   import Grid from "@/components/layout/Grid.vue"
   import Spacer from "@/components/utils/Spacer.vue"
   import CardTitle from "@/components/utils/CardTitle.vue"
-  import IconItem from "~/components/layout/IconItem.vue"
+  import IconItem from "@/components/layout/IconItem.vue"
+  import VStack from "~/components/layout/VStack.vue";
 </script>
 
 <template>
-  <card class="spaced">
-    <card-title
+  <Card class="langsCard spaced">
+    <CardTitle
       title="Languages"
       icon="solar:earth-line-duotone"
     />
 
     <p>I speak English, French, and a bit of Spanish :)</p>
-    <spacer />
+    <Spacer />
 
-    <h3>Programming Languages:</h3>
-    <grid class="tight spaced">
-      <icon-item
-        name="Vue/Nuxt"
-        icon="proicons:vuejs"
-      />
+    <h3>Programming Languages</h3>
+    <Grid class="spaced">
+      <VStack>
+        <p>Using:</p>
+        <Grid class="langsGrid spaced">
+          <IconItem
+            name="Vue/Nuxt"
+            icon="proicons:vuejs"
+            link="https://vuejs.org/"
+          />
 
-      <icon-item
-        name="TS"
-        icon="proicons:typescript"
-      />
+          <IconItem
+            name="TS"
+            icon="proicons:typescript"
+            link="https://www.typescriptlang.org/"
+          />
 
-      <icon-item
-        name="Swift"
-        icon="iconoir:apple-swift"
-      />
+          <IconItem
+            name="Swift"
+            icon="iconoir:apple-swift"
+            link="https://www.swift.org/"
+          />
 
-      <icon-item
-        name="C++"
-        icon="bxl:c-plus-plus"
-      />
-    </grid>
-  </card>
+          <IconItem
+            name="C++"
+            icon="bxl:c-plus-plus"
+            link="https://cplusplus.com/"
+          />
+        </Grid>
+      </VStack>
+
+      <VStack class="light disabled">
+        <p>Learning:</p>
+        <Grid class="langsGrid spaced">
+          <IconItem
+            name="Go"
+            icon="nonicons:go-16"
+          />
+
+          <IconItem
+            name="Rust"
+            icon="fluent-mdl2:rust-language-logo"
+          />
+
+          <IconItem
+            name="Python"
+            icon="proicons:python"
+          />
+
+          <IconItem
+            name="Svelte(?)"
+            icon="proicons:svelte"
+          />
+        </Grid>
+      </VStack>
+    </Grid>
+  </Card>
 </template>
 
 <style scoped lang="sass">
-  .langCard > ::v-deep(svg)
-    width: 3rem
-    height: 3rem
+  .langsGrid
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)) !important
 </style>

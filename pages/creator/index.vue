@@ -1,7 +1,9 @@
 <script setup lang="ts">
-  import Navbar from "~/components/premade/navbar/Navbar.vue"
-  import Hero from "~/components/utils/Hero.vue"
-  import CreatorsCard from "~/components/creator/CreatorsCard.vue";
+  import Navbar from "@/components/premade/navbar/Navbar.vue"
+  import Hero from "@/components/utils/Hero.vue"
+  import {launcherCreators} from "@/data/launchers/launcherCreators"
+  import LauncherCard from "@/components/premade/navbar/LauncherCard.vue"
+  import BottomFooter from "~/components/premade/BottomFooter.vue";
 
   useHead({
     title: "ash - Creators",
@@ -16,15 +18,20 @@
 
 <template>
   <div class="contentView">
-    <hero image="/images/Creator.jpg">
+    <Hero image="/images/Creator.jpg">
       <h1>Create...</h1>
       <h2>Choose a tool.</h2>
     </hero>
 
-    <creators-card />
+    <LauncherCard
+      title="Tools"
+      icon="solar:sledgehammer-line-duotone"
+      base-url="/toolbox"
+      :launcher-items="launcherCreators"
+    />
 
-    <footer />
+    <BottomFooter />
 
-    <navbar />
+    <Navbar />
   </div>
 </template>

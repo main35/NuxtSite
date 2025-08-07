@@ -4,26 +4,26 @@
 </script>
 
 <template>
-  <h-stack class="tight">
-    <navigation-button
+  <HStack class="tight">
+    <NavigationButton
       link="/links"
       text="Links"
       icon="solar:link-minimalistic-2-line-duotone"
       aria-label="ash's Links"
     />
 
-    <navigation-button
+    <NavigationButton
       link="/apps/"
       text="Apps"
       icon="solar:widget-2-line-duotone"
       aria-label="ash's Apps"
     />
 
-    <navigation-button
+    <NavigationButton
       link="/goodies/"
       text="Goodies"
       icon="solar:inbox-line-line-duotone"
       aria-label="Goodies"
     />
-  </h-stack>
+  </HStack>
 </template>

@@ -8,9 +8,10 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://api.iconify.design', crossorigin: '' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
-        { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' }
+        { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' },
+        { rel: 'manifest', href: '/manifest.webmanifest' }
       ]
-    }
+    },
   },
   compatibilityDate: '2025-05-15',
   modules: [ '@vite-pwa/nuxt' ],

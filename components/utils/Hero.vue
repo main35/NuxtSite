@@ -1,7 +1,7 @@
 <script>
   import DynamicImage from "@/components/utils/DynamicImage.vue"
-  import InteriorItem from "~/components/layout/InteriorItem.vue";
-  import Card from "~/components/layout/Card.vue";
+  import InteriorItem from "@/components/layout/InteriorItem.vue";
+  import Card from "@/components/layout/Card.vue";
 
   export default {
     components: {Card, InteriorItem, DynamicImage},
@@ -13,13 +13,13 @@
 </script>
 
 <template>
-  <card class="hero" :style="{ backgroundImage: `url('${image}')` }">
-    <dynamic-image class="heroResizableImage" :src="image" :alt="imageAlt" />
+  <Card class="hero" :style="{ backgroundImage: `url('${image}')` }">
+    <DynamicImage class="heroResizableImage" :src="image" :alt="imageAlt" />
 
-    <interior-item class="heroContent">
+    <InteriorItem class="heroContent">
       <slot />
-    </interior-item>
-  </card>
+    </InteriorItem>
+  </Card>
 </template>
 
 <style scoped lang="sass">

@@ -3,7 +3,7 @@
   import CardTitle from "@/components/utils/CardTitle.vue"
   import { onMounted, ref, watch } from 'vue'
   import createGlobe from 'cobe'
-  import InteriorItem from "~/components/layout/InteriorItem.vue";
+  import InteriorItem from "@/components/layout/InteriorItem.vue";
 
   const canvasRef = ref<HTMLCanvasElement | null>(null)
   const isDarkMode = ref(0)
@@ -30,7 +30,7 @@
       diffuse: 1.4,
       mapSamples: 25000,
       mapBrightness: 6,
-      baseColor: isDarkMode.value == 1 ? [0.32, 0.14, 0.93] : [0.42, 0.33, 0.7], // Dark : Light colors
+      baseColor: isDarkMode.value == 1 ? [0.32, 0.14, 0.93] : [0.55, 0.50, 0.93], // Dark : Light colors
       markerColor: [0.63, 0.49, 0.02],
       glowColor: [0.49, 0.43, 0.73],
       markers: [
@@ -98,17 +98,17 @@
 </script>
 
 <template>
-  <card class="autoSpace locationCard">
-    <card-title
+  <Card class="autoSpace locationCard">
+    <CardTitle
       title="Bordeaux, FR"
       icon="solar:point-on-map-line-duotone"
     />
 
     <!--Cobe Globe-->
-    <interior-item class="locationGlobe">
+    <InteriorItem class="locationGlobe">
       <canvas ref="canvasRef" id="globe" />
-    </interior-item>
-  </card>
+    </InteriorItem>
+  </Card>
 </template>
 
 <style scoped lang="sass">
@@ -117,7 +117,7 @@
     position: relative
     justify-content: flex-end
     align-items: flex-end
-    width: calc(100% - 1rem)
+    width: calc(100% - 1.5rem)
     height: 16rem
     overflow: hidden
 
@@ -129,4 +129,8 @@
       scale: 2
       transform: translateX(-50)
       top: 50%
+
+  @media (max-width: 35rem)
+    .locationGlobe
+      width: calc(100% - 1rem)
 </style>

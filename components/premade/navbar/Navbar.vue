@@ -2,7 +2,6 @@
   import { ref } from 'vue'
   import HStack from '@/components/layout/HStack.vue'
   import VStack from '@/components/layout/VStack.vue'
-  import Card from '@/components/layout/Card.vue'
   import InteriorItem from '@/components/layout/InteriorItem.vue'
   import FullscreenCover from "@/components/premade/FullscreenCover.vue"
   import DynamicImage from "@/components/utils/DynamicImage.vue"
@@ -10,56 +9,16 @@
   import NavigationButton from "@/components/premade/navbar/NavigationButton.vue"
   import SitePicker from "@/components/premade/navbar/SitePicker.vue"
   import { Icon } from '@iconify/vue'
-  import {ProgressiveBlur} from "vue-progressive-blur"
-  import CardTitle from "@/components/utils/CardTitle.vue"
+  import { ProgressiveBlur } from "vue-progressive-blur"
+  import { launcherApps } from "@/data/launchers/launcherApps"
+  import { launcherCreators } from "@/data/launchers/launcherCreators"
+  import LauncherCard from "@/components/premade/navbar/LauncherCard.vue"
 
   const showSwitcher = ref(false)
 
   defineProps<{
     hideProfile?: boolean
   }>()
-
-  interface Item {
-    name: string,
-    link: string,
-    icon: string
-  }
-
-  const apps: Item[] = [
-    {
-      name: 'Authie',
-      link: 'https://authie.asboy2035.com',
-      icon: 'https://authie.asboy2035.com/apple-touch-icon.png',
-    },
-    {
-      name: "Astro+",
-      link: "https://astro.asboy2035.com/",
-      icon: "https://astro.asboy2035.com/AstroPlus-AppIcon.png",
-    },
-    {
-      name: "Tickity",
-      link: "https://tickity.asboy2035.com/",
-      icon: "https://tickity.asboy2035.com/apple-touch-icon.jpg",
-    },
-    {
-      name: "Vault",
-      link: "/vault/",
-      icon: "https://byteforge-site-3-3.byteforge.pages.dev/Images/Vault-Icon.jpeg",
-    },
-  ]
-
-  const creators: Item[] = [
-    {
-      name: "Character Card",
-      link: "/creator/char-card",
-      icon: "/images/icons/CharCard-Icon.jpg",
-    },
-    {
-      name: "CSV to JSON",
-      link: "/creator/csv-to-json",
-      icon: "/images/icons/CSV-Icon.jpg",
-    }
-  ]
 
   const showMobileNav = ref(false)
 
@@ -71,92 +30,52 @@
 
   function toggleSiteSwitcher() {
     showSiteSwitcher.value = !showSiteSwitcher.value
-}
+  }
 </script>
 
 <template>
-  <v-stack class="navBarContainer">
+  <VStack class="navBarContainer">
     <slot />
 
-    <fullscreen-cover v-if="showSwitcher">
-      <v-stack>
-        <card class="quickContainer">
-          <router-link to="/apps/">
-            <card-title
-              title="Apps"
-              icon="solar:widget-2-line-duotone"
-            />
-          </router-link>
+    <FullscreenCover v-if="showSwitcher">
+      <VStack>
+        <LauncherCard
+          title="Apps"
+          icon="solar:widget-2-line-duotone"
+          base-url="/apps/"
+          :launcher-items="launcherApps"
+        />
 
-          <h-stack class="tight">
-            <a
-              v-for="app in apps" :key="app.name"
-              :href="app.link" target="_blank"
-            >
-              <interior-item>
-                <h-stack>
-                  <dynamic-image
-                    class="launcherImage"
-                    :src="app.icon"
-                    :alt="app.name + ' icon'"
-                    radius="0.35rem"
-                  />
-                  <p>{{ app.name }}</p>
-                </h-stack>
-              </interior-item>
-            </a>
-          </h-stack>
-        </card>
+        <LauncherCard
+          title="Create..."
+          icon="solar:pen-new-square-line-duotone"
+          base-url="/creator/"
+          :launcher-items="launcherCreators"
+        />
+      </VStack>
+    </FullscreenCover>
 
-        <card class="quickContainer">
-          <router-link to="/creator/">
-            <card-title
-              title="Create..."
-              icon="solar:pen-new-square-line-duotone"
-            />
-          </router-link>
+    <InteriorItem id="mobileNav" :class="{ hidden: !showMobileNav }" class="navBar">
+      <NavigationLinks />
+    </InteriorItem>
 
-          <h-stack class="tight">
-            <a
-              v-for="creator in creators" :key="creator.name"
-              :href="creator.link" target="_blank"
-            >
-              <interior-item>
-                <h-stack>
-                  <dynamic-image
-                    class="launcherImage"
-                    :src="creator.icon"
-                    :alt="creator.name + ' icon'"
-                    radius="0.35rem"
-                  />
-                  <p>{{ creator.name }}</p>
-                </h-stack>
-              </interior-item>
-            </a>
-          </h-stack>
-        </card>
-      </v-stack>
-    </fullscreen-cover>
-
-    <interior-item id="mobileNav" :class="{ hidden: !showMobileNav }" class="navBar">
-      <navigation-links />
-    </interior-item>
-
-    <site-picker
+    <SitePicker
       id="siteSwitcher"
       :class="{ hidden: !showSiteSwitcher }"
     >
       <button @click="toggleSiteSwitcher()" style="--buttonRadius: 2rem">
         <Icon icon="mingcute:close-fill" width="24" height="24" />
       </button>
-    </site-picker>
-    <progressive-blur
+    </SitePicker>
+
+    <ProgressiveBlur
       class="siteSwitchBlur"
       :blur="64"
       :border-radius="0"
       :class="{ hidden: !showSiteSwitcher }"
     />
-    <h-stack>
+
+    <HStack>
       <button @click="showSwitcher = !showSwitcher" class="createBtn" aria-label="Launch app or create...">
         <Icon
           icon="heroicons:sparkles-20-solid"
@@ -170,10 +89,10 @@
         />
       </button>
 
-      <interior-item :class="{ desktopLinks: hideProfile }" class="navBar">
-        <h-stack v-if="hideProfile !== true" class="profile transparent">
-          <navigation-button link="/" id="homeButtonContainer" text="Home">
-            <dynamic-image
+      <InteriorItem :class="{ desktopLinks: hideProfile }" class="navBar">
+        <HStack v-if="hideProfile !== true" class="profile transparent">
+          <NavigationButton link="/" id="homeButtonContainer" text="Home">
+            <DynamicImage
               class="avatar"
               src="/images/avatar.webp"
               alt="ash's Avatar (Go Home)"
@@ -185,12 +104,12 @@
               aria-label="Go Home" id="homeButton"
               style="scale: 1.25" width="24" height="24"
             />
-          </navigation-button>
+          </NavigationButton>
 
-          <h-stack style="margin-right: 0.75rem">
+          <HStack style="margin-right: 0.75rem">
             <h1 class="name">ash</h1>
 
-            <h-stack
+            <HStack
               id="siteSwitcherButton"
               class="light tight"
               :class="{ active: showSiteSwitcher }"
@@ -198,12 +117,12 @@
             >
               <h1>Port</h1>
               <Icon icon="fa6-solid:chevron-down" width="24" height="24" />
-            </h-stack>
-          </h-stack>
-        </h-stack>
+            </HStack>
+          </HStack>
+        </HStack>
 
-        <navigation-links class="desktopLinks" />
-      </interior-item>
+        <NavigationLinks class="desktopLinks" />
+      </InteriorItem>
 
       <button id="mobileButton" @click="toggleNavigation" aria-label="Show navigation">
         <Icon
@@ -217,8 +136,8 @@
           width="20" height="20"
         />
       </button>
-    </h-stack>
-  </v-stack>
+    </HStack>
+  </VStack>
 </template>
 
 <style scoped lang="sass">
@@ -234,7 +153,7 @@
     margin-top: auto
 
   .navBar
-    --interior-radius: 2rem
+    --interior-radius: 2rem !important
     flex-direction: row
     z-index: 20
 
@@ -251,20 +170,20 @@
     height: fit-content
     z-index: 20
 
-  .createBtn::before
-    content: ""
-    position: absolute
-    top: 0
-    bottom: 0
-    right: 0
-    left: 0
-    padding: 0.5rem
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      padding: 0.5rem
 
-    border-radius: 50%
-    background: colors.$accentColor
-    z-index: -1
-    filter: blur(1rem)
-    transition: opacity 0.4s ease
+      border-radius: 50%
+      background: colors.$accentColor
+      z-index: -1
+      filter: blur(1rem)
+      transition: opacity 0.4s ease
 
   #avatarButton
     display: block
@@ -281,22 +200,6 @@
   #homeButton, #avatarButton
     animation: blurIn 0.3s ease forwards
 
-  .launcherImage
-    width: 2rem
-    height: 2rem
-
-    &::after
-      content: ""
-      position: absolute
-      top: 0
-      bottom: 0
-      left: 0
-      right: 0
-      border-radius: 0.75rem
-      border: 0.1rem colors.$shadowColor solid
-      mask: conic-gradient(from 45deg, black, transparent, black, transparent, black)
-      opacity: 0.4
-
   #mobileButton
     display: none
 
@@ -312,7 +215,7 @@
 
   @media (max-width: 35rem)
     .navBar
-      --interior-radius: 1.75rem
+      --interior-radius: 1.75rem !important
 
     #mobileButton
       --buttonRadius: 2rem
@@ -331,14 +234,13 @@
   #siteSwitcherButton
     cursor: pointer
 
-  #siteSwitcherButton
     svg
       transition: transform 0.2s ease
       width: 1.5rem
       height: auto
 
-  #siteSwitcherButton.active > svg
-    transform: rotate(-90deg)
+    &.active > svg
+      transform: rotate(-90deg)
 
   #siteSwitcher
     z-index: 20

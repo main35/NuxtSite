@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { useRoute } from 'vue-router'
-  import { apps } from '~/data/apps'
-  import type { AppPageMeta } from '~/data/apps'
+  import { apps } from '@/data/apps'
+  import type { AppPageMeta } from '@/data/apps'
   import { ref, onMounted, computed } from 'vue'
   import Hero from "@/components/utils/Hero.vue"
   import BottomFooter from "@/components/premade/BottomFooter.vue"
@@ -67,8 +67,8 @@
       <h2>{{ app.shortDescription }}</h2>
     </hero>
 
-    <card v-if="app.appLinks?.length" class="hStack autoSpace centered">
-      <h-stack>
+    <Card v-if="app.appLinks?.length" class="hStack autoSpace centered">
+      <HStack>
         <a
           v-for="(link, index) in app.appLinks"
           :key="index"
@@ -83,13 +83,13 @@
         </a>
 
         <p class="brewCmd" v-if="app.brewCmd">{{ app.brewCmd }}</p>
-      </h-stack>
-    </card>
+      </HStack>
+    </Card>
 
     <!-- Markdown Info -->
-    <card v-html="longDescription" />
+    <Card v-html="longDescription" />
 
-    <bottom-footer />
+    <BottomFooter />
 
     <navbar>
       <NuxtLink to="/apps/">

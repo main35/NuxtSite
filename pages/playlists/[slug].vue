@@ -96,19 +96,19 @@
 
 <template>
   <div v-if="playlist" class="contentView">
-    <hero image="/images/Playlists.jpg">
+    <Hero image="/images/Playlists.jpg">
       <h1>{{ playlist.title }}</h1>
     </hero>
 
-    <card class="spaced">
-      <h-stack class="spaced">
+    <Card class="spaced">
+      <HStack class="spaced">
         <img class="playlistArt" :src="playlist.image" :alt="`${playlist.title} playlist cover`" />
-        <v-stack>
+        <VStack>
           <h3 class="light">by {{ playlist.author }}</h3>
           <p class="light">{{ playlist.description }}</p>
-        </v-stack>
-      </h-stack>
-      <spacer />
+        </VStack>
+      </HStack>
+      <Spacer />
 
       <h2>Stream</h2>
       <p class="light">Where to stream {{ playlist.title }}:</p>
@@ -121,13 +121,13 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <interior-item class="centered">
+          <InteriorItem class="centered">
             <component :is="getIconComponent(link.type)" class="icon" />
             <p>{{ link.title }}</p>
-          </interior-item>
+          </InteriorItem>
         </a>
       </grid>
-    </card>
+    </Card>
 
     <navbar>
       <NuxtLink to="/links/">

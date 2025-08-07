@@ -9,10 +9,10 @@
 </script>
 
 <template>
-  <h-stack class="cardTitle">
+  <HStack class="cardTitle">
     <icon :icon="icon" />
     <h2>{{ title }}</h2>
-  </h-stack>
+  </HStack>
 </template>
 
 <style scoped lang="sass">

@@ -1,16 +1,17 @@
 <script setup lang="ts">
   import {Icon} from "@iconify/vue"
-  import VStack from "~/components/layout/VStack.vue"
-  import Card from "~/components/layout/Card.vue"
-  import CardTitle from "~/components/utils/CardTitle.vue"
+  import VStack from "@/components/layout/VStack.vue"
+  import Card from "@/components/layout/Card.vue"
+  import CardTitle from "@/components/utils/CardTitle.vue"
   import {onMounted, ref} from "vue"
-  import type {AppCategory} from "~/types/appsViews"
-  import Divider from "~/components/utils/Divider.vue"
-  import CreatorsCard from "~/components/creator/CreatorsCard.vue"
-  import NavigationTitle from "~/components/layout/NavigationTitle.vue"
-  import BottomFooter from "~/components/premade/BottomFooter.vue"
-  import HStack from "~/components/layout/HStack.vue"
-  import Modal from '~/components/utils/Modal.vue'
+  import type {AppCategory} from "@/types/appsViews"
+  import Divider from "@/components/utils/Divider.vue"
+  import NavigationTitle from "@/components/layout/NavigationTitle.vue"
+  import BottomFooter from "@/components/premade/BottomFooter.vue"
+  import HStack from "@/components/layout/HStack.vue"
+  import Modal from '@/components/utils/Modal.vue'
+  import LauncherCard from "~/components/premade/navbar/LauncherCard.vue";
+  import {launcherCreators} from "~/data/launchers/launcherCreators";
 
   const appsData = ref<AppCategory[]>([])
   const showingAboutModal = ref(false)
@@ -41,11 +42,8 @@
 
 <template>
   <div class="contentView toolboxView">
-    <v-stack id="headerLinks">
-      <NavigationTitle
-        title="Toolbox"
-        subtitle="asboy2035"
-      >
+    <VStack id="headerLinks">
+      <NavigationTitle title="Toolbox">
         <button @click="showingAboutModal = !showingAboutModal">
           <icon
             v-if="!showingAboutModal"
@@ -61,13 +59,13 @@
         </button>
       </NavigationTitle>
 
-      <card>
-        <card-title
+      <Card>
+        <CardTitle
           title="Quick Links"
           icon="solar:bolt-line-duotone"
         />
 
-        <h-stack>
+        <HStack>
           <a href="https://guides.asboy2035.com/">
             <button>
               <Icon icon="solar:book-line-duotone" />
@@ -81,20 +79,26 @@
               GitHub
             </button>
           </a>
-        </h-stack>
-      </card>
-      <creators-card />
+        </HStack>
+      </Card>
+
+      <LauncherCard
+        title="Tools"
+        icon="solar:sledgehammer-line-duotone"
+        base-url="/toolbox"
+        :launcher-items="launcherCreators"
+      />
 
       <divider />
 
-      <card-title
+      <CardTitle
         title="Apps"
         icon="solar:widget-2-line-duotone"
       />
       <apps-category-list :apps-data="appsData" />
-    </v-stack>
+    </VStack>
 
-    <bottom-footer hide-read-more />
+    <BottomFooter hide-read-more />
 
     <modal v-if="showingAboutModal">
       <img

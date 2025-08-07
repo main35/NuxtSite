@@ -29,17 +29,17 @@
 
 <template>
   <div class="sidebarView sidebarModeOnly spaced">
-    <card>
-      <v-stack>
-        <dynamic-image src="/images/avatar.webp" alt="ash's Avatar" radius="2rem" class="bigAvatar" />
+    <Card>
+      <VStack>
+        <DynamicImage src="/images/avatar.webp" alt="ash's Avatar" radius="2rem" class="bigAvatar" />
         <h1>ash</h1>
         <h2 class="light" style="margin-top: 0">asboy2035</h2>
-      </v-stack>
-    </card>
+      </VStack>
+    </Card>
 
-    <card>
+    <Card>
       <h3>{{ currentTime }}</h3>
-      <h-stack class="spaced">
+      <HStack class="spaced">
         <icon icon="solar:bolt-line-duotone" width="24" height="24" />
         <a href="https://github.com/asboy2035" target="_blank" rel="noopener noreferrer">
           <button>
@@ -51,10 +51,10 @@
           <icon icon="solar:plain-line-duotone" />
           Email
         </a>
-      </h-stack>
-    </card>
+      </HStack>
+    </Card>
 
-    <site-picker class="fullWidth" />
+    <SitePicker class="fullWidth" />
   </div>
 </template>
 

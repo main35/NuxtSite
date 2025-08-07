@@ -6,15 +6,13 @@
 </script>
 
 <template>
-  <card class="spaced">
-    <card-title
+  <Card class="spaced">
+    <CardTitle
       title="More Links"
       icon="solar:menu-dots-line-duotone"
     />
 
-    <p>Other stuff</p>
-
-    <h-stack>
+    <HStack>
       <a href="https://app.warp.dev/referral/KVWRZZ">
         <button>
           <Icon icon="mingcute:terminal-fill" />
@@ -35,16 +33,16 @@
           Last.fm
         </button>
       </a>
-    </h-stack>
+    </HStack>
 
     <h3>Playlists</h3>
-    <h-stack>
-      <router-link to="/playlists/topsongs">
+    <HStack>
+      <RouterLink to="/playlists/topsongs">
         <button>
           <Icon icon="solar:music-note-outline" />
           Top Songs
         </button>
-      </router-link>
-    </h-stack>
-  </card>
+      </RouterLink>
+    </HStack>
+  </Card>
 </template>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import HStack from '~/components/layout/HStack.vue'
-import CardTitle from '~/components/utils/CardTitle.vue'
-import Navbar from "~/components/premade/navbar/Navbar.vue"
+import HStack from '@/components/layout/HStack.vue'
+import CardTitle from '@/components/utils/CardTitle.vue'
+import Navbar from "@/components/premade/navbar/Navbar.vue"
 import {Icon} from "@iconify/vue"
 
 interface CSVRow extends Record<string, unknown> {}
@@ -85,19 +85,19 @@ function downloadJson(): void {
 
 <template>
   <div class="contentView">
-    <card-title
+    <CardTitle
       title="CSV to JSON"
       icon="solar:undo-right-line-duotone"
     />
 
-    <h-stack>
+    <HStack>
       <input
         type="file"
         id="csvFileInput"
         accept=".csv"
         @change="handleFileUpload"
       />
-    </h-stack>
+    </HStack>
 
     <div :class="{ 'hidden': !outputContainerVisible }">
       <div class="hStack">

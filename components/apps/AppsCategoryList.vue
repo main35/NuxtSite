@@ -5,8 +5,8 @@
   import AppLink from "@/components/apps/AppLink.vue"
   import DynamicImage from "@/components/utils/DynamicImage.vue"
   import { Icon } from "@iconify/vue"
-  import VStack from "~/components/layout/VStack.vue"
-  import type {AppCategory} from "~/types/appsViews"
+  import VStack from "@/components/layout/VStack.vue"
+  import type {AppCategory} from "@/types/appsViews"
 
   defineProps<{
     appsData: AppCategory[]
@@ -14,17 +14,17 @@
 </script>
 
 <template>
-  <v-stack id="appsContainer">
-    <card v-for="category in appsData" :key="category.name">
+  <VStack id="appsContainer">
+    <Card v-for="category in appsData" :key="category.name">
       <h2>{{ category.name }}</h2>
       <grid class="appGrid">
-        <interior-item
+        <InteriorItem
             v-for="app in category.apps"
             :key="app.name"
             class="appCard"
         >
           <div class="appIcon">
-            <dynamic-image
+            <DynamicImage
                 class="appIcon"
                 :src="app.image"
                 :alt="app.name + ' Logo'"
@@ -44,10 +44,10 @@
               </button>
             </a>
           </div>
-        </interior-item>
+        </InteriorItem>
       </grid>
-    </card>
-  </v-stack>
+    </Card>
+  </VStack>
 </template>
 
 <style scoped lang="sass">

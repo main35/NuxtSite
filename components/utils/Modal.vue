@@ -4,11 +4,11 @@
 </script>
 
 <template>
-  <fullscreen-cover class="modalCover">
-    <card class="modalCard">
+  <FullscreenCover class="modalCover">
+    <Card class="modalCard">
       <slot />
-    </card>
-  </fullscreen-cover>
+    </Card>
+  </FullscreenCover>
 </template>
 
 <style scoped lang="sass">

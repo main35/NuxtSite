@@ -5,7 +5,7 @@
   import HStack from "@/components/layout/HStack.vue"
   import {Icon} from "@iconify/vue"
   import { ref, onMounted } from "vue"
-  import Spacer from '~/components/utils/Spacer.vue'
+  import Spacer from '@/components/utils/Spacer.vue'
 
   const isMain = ref(true)
   const showingShareModal = ref(false)
@@ -21,21 +21,21 @@
 </script>
 
 <template>
-  <v-stack class="sitePicker">
-    <card>
-      <v-stack class="fullWidth">
-        <h-stack class="autoSpace fullWidth">
+  <VStack class="sitePicker">
+    <Card>
+      <VStack class="fullWidth">
+        <HStack class="autoSpace fullWidth">
           <h2>Sites</h2>
   <!--        Insert close button here -->
           <slot />
-        </h-stack>
+        </HStack>
 
-        <router-link to="/">
+        <RouterLink to="/">
           <site-pick
             title="Portfolio"
             icon="solar:bag-heart-line-duotone"
           />
-        </router-link>
+        </RouterLink>
 
         <a href="https://guides.asboy2035.com/">
           <site-pick
@@ -44,9 +44,9 @@
           />
         </a>
 
-        <v-stack>
+        <VStack>
           <h3>Hosts</h3>
-          <h-stack>
+          <HStack>
             <a href="https://asboy2035.com">
               <button :disabled="isMain">
                 <Icon icon="solar:planet-bold-duotone" />
@@ -60,12 +60,12 @@
                 Alternate
               </button>
             </a>
-          </h-stack>
-        </v-stack>
-      </v-stack>
-    </card>
+          </HStack>
+        </VStack>
+      </VStack>
+    </Card>
 
-    <card>
+    <Card>
       <h2>Share</h2>
       <h3 class="light">asboy2035.com</h3>
 
@@ -77,8 +77,8 @@
         {{ showingShareModal ? "Hide" : "Show" }} QR Code
       </button>
 
-      <v-stack v-if="showingShareModal">
-        <spacer />
+      <VStack v-if="showingShareModal">
+        <Spacer />
         <img
           class="qrCode hiddenDark"
           src="/images/QR-Light.webp"
@@ -89,9 +89,9 @@
           src="/images/QR-Dark.webp"
           alt="QR Code"
         >
-      </v-stack>
-    </card>
-  </v-stack>
+      </VStack>
+    </Card>
+  </VStack>
 </template>
 
 <style lang="sass">

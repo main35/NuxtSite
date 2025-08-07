@@ -1,35 +1,35 @@
 <script setup lang="ts">
   import Card from "@/components/layout/Card.vue";
   import Grid from "@/components/layout/Grid.vue";
-  import IconItem from "~/components/layout/IconItem.vue";
+  import IconItem from "@/components/layout/IconItem.vue";
 </script>
 
 <template>
-  <card class="spaced">
+  <Card class="spaced">
     <grid class="tight spaced">
-      <icon-item
+      <IconItem
         name="Email"
         link="mailto:as_supp@icloud.com"
         icon="solar:plain-bold"
       />
 
-      <icon-item
+      <IconItem
         name="GitHub"
         link="https://github.com/asboy2035"
         icon="mingcute:github-fill"
       />
 
-      <icon-item
+      <IconItem
         name="Instagram"
         link="https://www.instagram.com/asboy2035/"
         icon="ri:instagram-fill"
       />
 
-      <icon-item
+      <IconItem
         name="Ko-Fi"
         link="https://ko-fi.com/asboy2035"
         icon="cib:ko-fi"
       />
     </grid>
-  </card>
+  </Card>
 </template>

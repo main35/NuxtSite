@@ -36,7 +36,7 @@
         </grid>
 
         <langs-card />
-        <bottom-footer />
+        <BottomFooter />
       </div>
 
       <navbar hide-profile />

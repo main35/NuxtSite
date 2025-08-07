@@ -25,27 +25,27 @@
 
 <template>
   <div class="contentView">
-    <hero image="/images/Links.jpg">
+    <Hero image="/images/Links.jpg">
       <h1>Links</h1>
       <h2>My socials, contacts, and more.</h2>
     </hero>
 
     <!-- About -->
     <grid class="spaced">
-      <card class="autoSpace">
-        <v-stack class="edgeToEdge">
+      <Card class="autoSpace">
+        <VStack class="edgeToEdge">
           <description />
-          <spacer />
-        </v-stack>
+          <Spacer />
+        </VStack>
 
         <Icon icon="solar:heart-bold-duotone" width="24" height="24" />
-      </card>
+      </Card>
     </grid>
 
     <social-links />
     <support-links />
     <more-links />
-    <bottom-footer />
+    <BottomFooter />
 
     <navbar />
   </div>

@@ -9,13 +9,13 @@
 </script>
 
 <template>
-  <h-stack class="sitePicker">
+  <HStack class="sitePicker">
     <div class="icon">
       <Icon :icon="icon" />
     </div>
 
     <h3>{{ title }}</h3>
-  </h-stack>
+  </HStack>
 </template>
 
 <style scoped lang="sass">

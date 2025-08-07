@@ -1,5 +1,5 @@
 <template>
-  <card>
+  <Card>
     <h1>Customize</h1>
 
     <input
@@ -40,8 +40,8 @@
       v-model="localData.accent"
     />
 
-    <interior-item>
-      <v-stack>
+    <InteriorItem>
+      <VStack>
         <label>Interests</label>
         <input
           v-model="interest"
@@ -50,7 +50,7 @@
           placeholder="Press Enter to add"
         />
 
-        <h-stack>
+        <HStack>
           <span
             v-for="(tag, i) in localData.interests"
             :key="i"
@@ -63,10 +63,10 @@
           >
             {{ tag }} ✕
           </span>
-        </h-stack>
-      </v-stack>
-    </interior-item>
-  </card>
+        </HStack>
+      </VStack>
+    </InteriorItem>
+  </Card>
 </template>
 
 <script setup>

@@ -6,7 +6,7 @@
     </div>
     <NuxtPage/>
     <div class="progBlurContainer">
-      <progressive-blur class="progBlur" blur="48" border-radius="0"/>
+      <ProgressiveBlur class="progBlur" blur="48" border-radius="0"/>
     </div>
   </transitionable>
 
@@ -22,15 +22,15 @@
   <modal v-if="showDomainTip">
     <h1>You're on the old domain!</h1>
     <p>Access this site at asboy2035.com for a cleaner link!</p>
-    <spacer />
+    <Spacer />
 
-    <h-stack class="autoSpace fullWidth">
+    <HStack class="autoSpace fullWidth">
       <button @click="showDomainTip = false">Later</button>
 
       <a :href="redirectLink">
         <button>Let's go!</button>
       </a>
-    </h-stack>
+    </HStack>
   </modal>
 </template>
 
@@ -42,7 +42,7 @@ import Transitionable from '@/components/premade/Transitionable.vue'
 import Modal from '@/components/utils/Modal.vue'
 import Spacer from '@/components/utils/Spacer.vue'
 import {ProgressiveBlur} from 'vue-progressive-blur'
-import HStack from "~/components/layout/HStack.vue"
+import HStack from "@/components/layout/HStack.vue"
 
 const showDomainTip = ref(false)
 const redirectLink = ref('') // make it reactive

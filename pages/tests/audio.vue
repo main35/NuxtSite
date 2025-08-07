@@ -13,10 +13,10 @@
 
 <template>
   <div class="contentView">
-    <card>
+    <Card>
       <h1>This is a private beta.</h1>
       <p>This is an experimental audiovisual experience which you've been invited to test.</p>
-    </card>
+    </Card>
 
     <button @click="playAudio">{{ messageText }}</button>
   </div>

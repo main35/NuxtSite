@@ -48,63 +48,63 @@
 
 <template>
   <div class="contentView">
-    <hero image="/images/Goodies.jpg">
+    <Hero image="/images/Goodies.jpg">
       <h1>Goodies</h1>
       <h2>Other downloadable content.</h2>
 
-      <h-stack>
+      <HStack>
         <a href="https://asboy.gumroad.com">
           <button>
             <icon icon="mingcute:gumroad-fill" />
             Gumroad
           </button>
         </a>
-      </h-stack>
+      </HStack>
     </hero>
 
     <grid class="spaced">
       <!-- Cursors Card -->
-      <card>
-        <card-title
+      <Card>
+        <CardTitle
           title="Cursors"
           icon="solar:cursor-line-duotone"
         />
 
         <p class="light">macOS cursors</p>
-        <spacer />
+        <Spacer />
 
-        <v-stack class="fullWidth">
-          <v-stack v-for="cursor in cursors" :key="cursor.name" class="spaced">
+        <VStack class="fullWidth">
+          <VStack v-for="cursor in cursors" :key="cursor.name" class="spaced">
             <h3>{{ cursor.name }}</h3>
-            <h-stack class="scrollable">
+            <HStack class="scrollable">
               <div v-for="asset in cursor.assets" :key="asset.type" class="cursorAsset">
                 <img :src="asset.path" :alt="asset.type" />
                 <p>{{ asset.type }}</p>
               </div>
-            </h-stack>
+            </HStack>
             <a download :href="cursor.downloadURL">
               <button>
                 <Icon icon="iconoir:finder" width="24" height="24" />
                 Download
               </button>
             </a>
-          </v-stack>
-        </v-stack>
-      </card>
+          </VStack>
+        </VStack>
+      </Card>
 
       <!-- Wallpapers Card -->
-      <card>
-        <card-title
+      <Card>
+        <CardTitle
           title="Wallpapers"
           icon="solar:wallpaper-line-duotone"
         />
 
         <p class="light">Wallpapers for any device.</p>
         <p class="light">Coming soon.</p>
-      </card>
+      </Card>
     </grid>
 
-    <bottom-footer />
+    <BottomFooter />
     <navbar />
   </div>
 </template>

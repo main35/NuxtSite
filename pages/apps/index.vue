@@ -3,10 +3,10 @@
   import Spacer from "@/components/utils/Spacer.vue"
   import Navbar from "@/components/premade/navbar/Navbar.vue"
   import {Icon} from "@iconify/vue"
-  import AppsCategoryList from "~/components/apps/AppsCategoryList.vue"
+  import AppsCategoryList from "@/components/apps/AppsCategoryList.vue"
   import BottomFooter from "@/components/premade/BottomFooter.vue"
   import { ref, onMounted } from "vue"
-  import type {AppCategory} from "~/types/appsViews"
+  import type {AppCategory} from "@/types/appsViews"
 
   useHead({
     title: "ash's Apps",
@@ -33,10 +33,10 @@
 
 <template>
   <div class="contentView">
-    <hero image="/images/Apps.jpg" image-alt="Apps Header Image">
+    <Hero image="/images/Apps.jpg" image-alt="Apps Header Image">
       <h1>Apps</h1>
       <h2>My web/Apple apps.</h2>
-      <spacer />
+      <Spacer />
       <a href="https://github.com/asboy2035?tab=repositories">
         <button>
           <Icon icon="mingcute:github-fill" width="24" height="24" />
@@ -57,7 +57,7 @@
       </a>
     </p>
 
-    <bottom-footer />
+    <BottomFooter />
     <navbar />
   </div>
 </template>

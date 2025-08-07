@@ -17,30 +17,30 @@
 </script>
 
 <template>
-  <fullscreen-cover :class="{ hidden: !showSiteSwitcher }">
-    <site-picker>
+  <FullscreenCover :class="{ hidden: !showSiteSwitcher }">
+    <SitePicker>
       <button @click="toggleSiteSwitcher()" style="--buttonRadius: 2rem">
         <Icon icon="mingcute:close-fill" width="24" height="24" />
       </button>
-    </site-picker>
-  </fullscreen-cover>
+    </SitePicker>
+  </FullscreenCover>
 
-  <card class="stackModeOnly">
-    <h-stack>
-      <h-stack>
-        <dynamic-image src="/images/avatar.webp" alt="ash's Avatar" radius="2rem" class="bigAvatar" />
-        <v-stack>
-          <h-stack>
+  <Card class="stackModeOnly">
+    <HStack>
+      <HStack>
+        <DynamicImage src="/images/avatar.webp" alt="ash's Avatar" radius="2rem" class="bigAvatar" />
+        <VStack>
+          <HStack>
             <h1>ash</h1>
             <h1 class="light">asboy2035</h1>
-          </h-stack>
-        </v-stack>
-      </h-stack>
+          </HStack>
+        </VStack>
+      </HStack>
 
       <button @click="toggleSiteSwitcher">
         <Icon icon="stash:globe-duotone" width="24" height="24" />
         Sites
       </button>
-    </h-stack>
-  </card>
+    </HStack>
+  </Card>
 </template>

@@ -3,15 +3,15 @@
   import Spacer from "@/components/utils/Spacer.vue"
   import Description from "@/components/premade/Description.vue"
   import VStack from "@/components/layout/VStack.vue"
-  import NavButtons from "~/components/home/NavButtons.vue"
+  import NavButtons from "@/components/home/NavButtons.vue"
 </script>
 
 <template>
-  <card class="autoSpace">
-    <v-stack>
+  <Card class="autoSpace">
+    <VStack>
       <description />
-      <spacer />
-    </v-stack>
-    <nav-buttons />
-  </card>
+      <Spacer />
+    </VStack>
+    <NavButtons />
+  </Card>
 </template>

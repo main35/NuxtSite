@@ -14,12 +14,12 @@
       <h4>{{ text }}</h4>
     </div>
 
-    <router-link :to="link">
+    <RouterLink :to="link">
       <button class="navigationButton" :aria-label="'Go to: ' + link">
         <Icon v-if="icon" :icon="icon" />
         <slot />
       </button>
-    </router-link>
+    </RouterLink>
   </div>
 </template>
 
