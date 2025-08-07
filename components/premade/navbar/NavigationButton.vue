@@ -15,7 +15,7 @@
     </div>
 
     <router-link :to="link">
-      <button class="navigationButton">
+      <button class="navigationButton" :aria-label="'Go to: ' + link">
         <Icon v-if="icon" :icon="icon" />
         <slot />
       </button>

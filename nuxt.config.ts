@@ -1,6 +1,19 @@
 export default defineNuxtConfig({
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
+      link: [
+        { rel: 'preconnect', href: 'https://api.iconify.design', crossorigin: '' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
+        { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' }
+      ]
+    }
+  },
   compatibilityDate: '2025-05-15',
-  modules: ['@vite-pwa/nuxt'],
+  modules: [ '@vite-pwa/nuxt' ],
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
@@ -23,11 +36,24 @@ export default defineNuxtConfig({
     "@/styles/global.sass"
   ],
   nitro: {
+    compressPublicAssets: true,
     publicAssets: [
       {
         dir: 'public',
         baseURL: '/',
       },
     ],
+    routeRules: {
+      '/images/**': {
+        headers: {
+          'cache-control': 'public, max-age=604800, immutable'
+        }
+      },
+      '/PageBackground.svg': {
+        headers: {
+          'cache-control': 'public, max-age=604800, immutable'
+        }
+      }
+    }
   },
 })

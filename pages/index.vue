@@ -18,9 +18,6 @@
       { property: 'og:title', content: "ash's Site" },
       { property: 'og:description', content: 'My (new) site :)' },
       { property: 'og:image', content: '/images/SitePreview.png' }
-    ],
-    link: [
-      { rel: 'manifest', href: '/manifest.webmanifest' }
     ]
   })
 </script>

@@ -12,8 +12,9 @@
 
   <img
     class="siteBackground"
-    src="@/visuals/PageBackground.svg"
+    src="/PageBackground.svg"
     alt="Background" aria-hidden="true"
+    loading="lazy"
   />
 
   <transition-element ref="cover"/>
@@ -79,7 +80,7 @@ const transitionable = ref(null)
 const router = useRouter()
 useHead({
   link: [
-    {rel: 'icon', type: 'image/png', href: '/images/avatar.png'},
+    {rel: 'icon', type: 'image/png', href: '/images/avatar.webp'},
   ]
 })
 </script>
@@ -117,11 +118,4 @@ useHead({
     z-index: 0
     pointer-events: none
     opacity: 0.2
-
-  #tsparticles
-    position: fixed
-    width: 100vw
-    height: 100vh
-    top: 0
-    left: 0
 </style>

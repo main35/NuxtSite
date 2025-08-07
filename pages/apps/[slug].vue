@@ -103,8 +103,10 @@
 </template>
 
 <style scoped lang="sass">
+  @use "@/styles/fonts"
+
   .brewCmd
-    font-family: "JetBrains Mono", monospace
+    font-family: fonts.$mono
     opacity: 0.7
     user-select: all
     -webkit-user-select: all

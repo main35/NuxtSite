@@ -24,11 +24,6 @@
       />
 
       <icon-item
-        name="CSS"
-        icon="proicons:css-2"
-      />
-
-      <icon-item
         name="TS"
         icon="proicons:typescript"
       />
@@ -36,6 +31,11 @@
       <icon-item
         name="Swift"
         icon="iconoir:apple-swift"
+      />
+
+      <icon-item
+        name="C++"
+        icon="bxl:c-plus-plus"
       />
     </grid>
   </card>

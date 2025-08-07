@@ -81,12 +81,12 @@
         <spacer />
         <img
           class="qrCode hiddenDark"
-          src="/images/QR-Light.png"
+          src="/images/QR-Light.webp"
           alt="QR Code"
         >
         <img
           class="qrCode hiddenLight"
-          src="/images/QR-Dark.png"
+          src="/images/QR-Dark.webp"
           alt="QR Code"
         >
       </v-stack>

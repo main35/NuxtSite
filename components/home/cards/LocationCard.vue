@@ -28,7 +28,7 @@
       theta,
       dark: isDarkMode.value,
       diffuse: 1.4,
-      mapSamples: 20000,
+      mapSamples: 25000,
       mapBrightness: 6,
       baseColor: isDarkMode.value == 1 ? [0.32, 0.14, 0.93] : [0.42, 0.33, 0.7], // Dark : Light colors
       markerColor: [0.63, 0.49, 0.02],
@@ -105,15 +105,9 @@
     />
 
     <!--Cobe Globe-->
-    <a
-      href="https://maps.apple/p/2Nchy-VM_P~kg_"
-      target="_blank" rel="noopener noreferrer"
-      class="fullWidth"
-    >
-      <interior-item class="locationGlobe">
-        <canvas ref="canvasRef" id="globe" />
-      </interior-item>
-    </a>
+    <interior-item class="locationGlobe">
+      <canvas ref="canvasRef" id="globe" />
+    </interior-item>
   </card>
 </template>
 
@@ -123,7 +117,7 @@
     position: relative
     justify-content: flex-end
     align-items: flex-end
-    width: calc(100% - 1.5rem)
+    width: calc(100% - 1rem)
     height: 16rem
     overflow: hidden
 

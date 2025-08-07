@@ -157,7 +157,7 @@
       :class="{ hidden: !showSiteSwitcher }"
     />
     <h-stack>
-      <button @click="showSwitcher = !showSwitcher" class="createBtn">
+      <button @click="showSwitcher = !showSwitcher" class="createBtn" aria-label="Launch app or create...">
         <Icon
           icon="heroicons:sparkles-20-solid"
           class="growIn" v-if="!showSwitcher"
@@ -175,7 +175,7 @@
           <navigation-button link="/" id="homeButtonContainer" text="Home">
             <dynamic-image
               class="avatar"
-              src="/images/avatar.png"
+              src="/images/avatar.webp"
               alt="ash's Avatar (Go Home)"
               id="avatarButton"
             />
