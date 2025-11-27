@@ -38,7 +38,7 @@
       <h2>My web/Apple apps.</h2>
       <Spacer />
       <a href="https://github.com/asboy2035?tab=repositories">
-        <button>
+        <button id="allAppsButton">
           <Icon icon="mingcute:github-fill" width="24" height="24" />
           All Apps
         </button>
@@ -49,6 +49,7 @@
 
     <p class="light">
       <a
+        id="installPwaLink"
         href="https://g.a35.dev/misc/web/pwaInstall"
         target="_blank"
         class="prominentLink"

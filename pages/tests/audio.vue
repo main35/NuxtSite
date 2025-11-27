@@ -18,6 +18,6 @@
       <p>This is an experimental audiovisual experience which you've been invited to test.</p>
     </Card>
 
-    <button @click="playAudio">{{ messageText }}</button>
+    <button id="playAudioTestButton" @click="playAudio">{{ messageText }}</button>
   </div>
 </template>

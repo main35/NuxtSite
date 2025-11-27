@@ -28,7 +28,7 @@
       <button @click="showDomainTip = false">Later</button>
 
       <a :href="redirectLink">
-        <button>Let's go!</button>
+        <button id="goToNewUrlButton">Let's go!</button>
       </a>
     </HStack>
   </Modal>

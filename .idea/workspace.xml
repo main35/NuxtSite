@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update body font to PP Frama">
-      <change afterPath="$PROJECT_DIR$/plugins/posthog.client.ts" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add PostHog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tests/audio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tests/audio.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +118,7 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -572,7 +575,8 @@
       <workItem from="1763896439109" duration="406000" />
       <workItem from="1763903624844" duration="36000" />
       <workItem from="1763997788966" duration="30000" />
-      <workItem from="1764264263539" duration="395000" />
+      <workItem from="1764264263539" duration="709000" />
+      <workItem from="1764265278509" duration="398000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />
@@ -934,7 +938,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763304117378</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="add PostHog">
+      <option name="closed" value="true" />
+      <created>1764264955508</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1764264955508</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -952,7 +964,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update more links card" />
     <MESSAGE value="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset" />
     <MESSAGE value="improve divider, navigationtitle, fix mobile padding" />
     <MESSAGE value="new background, updated card, updated rounding" />
@@ -977,7 +988,8 @@
     <MESSAGE value="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues, update Nuxt, update site version" />
     <MESSAGE value="round avatar corners :)" />
     <MESSAGE value="update body font to PP Frama" />
-    <option name="LAST_COMMIT_MESSAGE" value="update body font to PP Frama" />
+    <MESSAGE value="add PostHog" />
+    <option name="LAST_COMMIT_MESSAGE" value="add PostHog" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

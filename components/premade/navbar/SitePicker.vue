@@ -84,7 +84,7 @@
             </a>
 
             <a href="https://alt.asboy2035.com/">
-              <button :disabled="!isMain">
+              <button :disabled="!isMain" id="goToAltButton">
                 <Icon icon="solar:planet-line-duotone" width="24" height="24" />
                 Alt
               </button>
@@ -100,6 +100,7 @@
 
       <button
         class="fullWidth"
+        id="showShareCode"
         @click="showingShareModal = !showingShareModal"
       >
         <Icon icon="solar:qr-code-line-duotone" />

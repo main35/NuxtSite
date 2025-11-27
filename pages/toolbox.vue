@@ -45,7 +45,7 @@
   <div class="contentView toolboxView">
     <VStack id="headerLinks">
       <NavigationTitle title="Toolbox">
-        <button @click="showingAboutModal = !showingAboutModal">
+        <button @click="showingAboutModal = !showingAboutModal" id="showAboutModalButton">
           <icon
             v-if="!showingAboutModal"
             class="growIn"
@@ -116,7 +116,7 @@
         href="https://g.a35.dev/misc/web/pwaInstall"
         target="_blank"
       >
-        <button>
+        <button id="howToInstallToolbox">
           <icon icon="solar:download-minimalistic-line-duotone" />
           How to Install
         </button>

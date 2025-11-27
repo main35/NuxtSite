@@ -54,7 +54,7 @@
 
       <HStack>
         <a href="https://asboy.gumroad.com">
-          <button>
+          <button id="goToGumroadButton">
             <icon icon="mingcute:gumroad-fill" />
             Gumroad
           </button>

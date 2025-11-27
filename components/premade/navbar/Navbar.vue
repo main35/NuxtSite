@@ -77,7 +77,12 @@
     />
 
     <HStack>
-      <button @click="showSwitcher = !showSwitcher" class="createBtn" aria-label="Launch app or create...">
+      <button
+        @click="showSwitcher = !showSwitcher"
+        class="createBtn"
+        id="openLauncher"
+        aria-label="Launch app or create..."
+      >
         <Icon
           icon="heroicons:sparkles-20-solid"
           class="growIn" v-if="!showSwitcher"
@@ -125,7 +130,11 @@
         <NavigationLinks class="desktopLinks" />
       </InteriorItem>
 
-      <button id="mobileButton" @click="toggleNavigation" aria-label="Show navigation">
+      <button
+        id="mobileButton"
+        @click="toggleNavigation"
+        aria-label="Show navigation"
+      >
         <Icon
           icon="solar:compass-bold"
           class="growIn" v-if="!showMobileNav"
