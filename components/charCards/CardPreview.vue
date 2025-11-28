@@ -19,7 +19,7 @@
 
         <VStack class="tight" style="padding-bottom: 0.5rem; justify-content: flex-end; height: 100%">
           <h2 style="margin: 0">{{ data.name }}</h2>
-          <p style="margin: 0;" class="light">{{ data.username }}</p>
+          <p style="margin: 0" class="light">{{ data.username }}</p>
         </VStack>
       </HStack>
 
@@ -39,7 +39,7 @@
               <div
                 v-for="(tag, i) in data.interests"
                 :key="i"
-                :style="`background-color: ${data.accent};`"
+                :style="`background-color: ${data.accent}`"
                 class="interest"
               >
                 <p>{{ tag }}</p>

@@ -19,7 +19,7 @@
     <textarea
       v-model="localData.bio"
       placeholder="Bio"
-      style="height: 5rem;"
+      style="height: 5rem"
     />
 
     <label>Avatar</label>
