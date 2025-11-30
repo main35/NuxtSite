@@ -1,6 +1,6 @@
 # NuxtSite
 
-[My site](https://a35.dev), now in Nuxt!
+[My personal site](https://a35.dev).
 
 ## Thanks
 Many thanks to all the projects, tools, and providers that make this site possible.

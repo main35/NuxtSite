@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add ids to buttons/links for better tracking">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/charCards/CardPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/charCards/CardPreview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/charCards/CustomizerPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/charCards/CustomizerPanel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/posthog.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/posthog.client.ts" afterDir="false" />
-    </list>
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add ids to buttons/links for better tracking" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +34,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/asboy2035/NuxtSite.git&quot;,
-    &quot;accountId&quot;: &quot;3a099e4d-a960-4419-accc-5f28f60b6a13&quot;
+    &quot;url&quot;: &quot;https://github.com/studio2035/NuxtSite.git&quot;,
+    &quot;accountId&quot;: &quot;270a3d52-a252-4e76-b4b4-fb7a0cc93108&quot;
   }
 }</component>
   <component name="MacroExpansionManager">
@@ -197,8 +191,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-PS-253.28294.163" />
-        <option value="bundled-php-predefined-a98d8de5180a-09080813851e-com.jetbrains.php.sharedIndexes-PS-253.28294.163" />
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-PS-253.28294.257" />
+        <option value="bundled-php-predefined-a98d8de5180a-09080813851e-com.jetbrains.php.sharedIndexes-PS-253.28294.257" />
       </set>
     </attachedChunks>
   </component>
@@ -576,6 +570,7 @@
       <workItem from="1764265278509" duration="461000" />
       <workItem from="1764265878859" duration="35000" />
       <workItem from="1764313201879" duration="1148000" />
+      <workItem from="1764504035679" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />

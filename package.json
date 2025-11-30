@@ -1,7 +1,7 @@
 {
-  "name": "asboy2035-nuxt",
-  "description": "My site, now in Nuxt!",
-  "version": "5.7.4",
+  "name": "nuxt-site",
+  "description": "My personal website.",
+  "version": "5.7.5",
   "private": false,
   "type": "module",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@iconify/vue": "^5.0.0",
-    "@vite-pwa/nuxt": "^1.0.4",
+    "@vite-pwa/nuxt": "^1.1.0",
     "cobe": "^0.6.4",
     "html2canvas": "^1.4.1",
     "marked": "^15.0.12",
