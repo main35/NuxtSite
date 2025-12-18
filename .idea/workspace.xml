@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="remove caching rules">
-      <change afterPath="$PROJECT_DIR$/public/backgrounds/blobs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backgrounds/circles.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backgrounds/lines.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backgrounds/mountains.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backgrounds/triangles.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backgrounds/waves.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/avatar-26.webp" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update images, add new wallpaper system">
+      <change afterPath="$PROJECT_DIR$/plugins/tsparticles.client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/snow.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/AboutHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/AboutSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutSidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/PageBackground.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +27,7 @@
         <option value="Vue Composition API Component" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JSON File" />
       </list>
     </option>
   </component>
@@ -600,15 +591,7 @@
       <workItem from="1765898850326" duration="30000" />
       <workItem from="1765898954195" duration="347000" />
       <workItem from="1766073313825" duration="3196000" />
-      <workItem from="1766081765301" duration="4382000" />
-    </task>
-    <task id="LOCAL-00008" summary="add apple touch icon">
-      <option name="closed" value="true" />
-      <created>1751193285001</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1751193285001</updated>
+      <workItem from="1766081765301" duration="5413000" />
     </task>
     <task id="LOCAL-00009" summary="add toolbox">
       <option name="closed" value="true" />
@@ -994,7 +977,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766081808648</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="update images, add new wallpaper system">
+      <option name="closed" value="true" />
+      <created>1766086206881</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1766086206881</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1012,7 +1003,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update js to ts and update iml file" />
     <MESSAGE value="optimize assets, improve accessibility" />
     <MESSAGE value="add aria label to mobile nav button" />
     <MESSAGE value="update code styling, improve langs card, coloring improvements" />
@@ -1037,7 +1027,8 @@
     <MESSAGE value="update navigation, update card design" />
     <MESSAGE value="update apps page" />
     <MESSAGE value="remove caching rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove caching rules" />
+    <MESSAGE value="update images, add new wallpaper system" />
+    <option name="LAST_COMMIT_MESSAGE" value="update images, add new wallpaper system" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

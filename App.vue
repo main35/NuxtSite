@@ -2,6 +2,10 @@
   <h1 class="hidden">Your CSS is disabled!</h1>
 
   <div id="app" />
+  <ClientOnly>
+    <vue-particles id="snowParticles" url="/snow.json" />
+  </ClientOnly>
+
   <NuxtPage/>
 
   <div class="progBlurContainer">
@@ -141,6 +145,9 @@
     height: $blurHeight
     z-index: 10
     margin-top: $blurTop
+
+  #snowParticles
+    z-index: 100
 
   .siteBackground
     position: fixed

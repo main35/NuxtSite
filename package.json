@@ -1,7 +1,7 @@
 {
   "name": "nuxt-site",
   "description": "My personal website.",
-  "version": "5.9.0",
+  "version": "5.9.1",
   "private": false,
   "type": "module",
   "scripts": {
@@ -15,12 +15,14 @@
   },
   "dependencies": {
     "@iconify/vue": "^5.0.0",
+    "@tsparticles/vue3": "^3.0.1",
     "@vite-pwa/nuxt": "^1.1.0",
     "cobe": "^0.6.5",
     "html2canvas": "^1.4.1",
     "marked": "^15.0.12",
     "postcss-load-config": "^6.0.1",
     "posthog-js": "^1.298.1",
+    "tsparticles": "^3.9.1",
     "vue": "^3.5.17",
     "vue-progressive-blur": "^1.0.2",
     "vue-router": "^4.5.1"
