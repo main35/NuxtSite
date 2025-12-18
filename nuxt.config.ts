@@ -57,17 +57,5 @@ export default defineNuxtConfig({
         baseURL: '/',
       },
     ],
-    routeRules: {
-      '/images/**': {
-        headers: {
-          'cache-control': 'public, max-age=604800, immutable'
-        }
-      },
-      '/PageBackground.svg': {
-        headers: {
-          'cache-control': 'public, max-age=604800, immutable'
-        }
-      }
-    }
   },
 })
