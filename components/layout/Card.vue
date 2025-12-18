@@ -18,7 +18,7 @@
 
     border-radius: var(--card-radius)
     background: colors.$foregroundColor
-    backdrop-filter: blur(2.5rem) saturate(125%)
+    backdrop-filter: blur(1rem) saturate(125%)
     z-index: 2
 
     &::after // Specular Highlighting

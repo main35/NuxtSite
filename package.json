@@ -1,12 +1,12 @@
 {
   "name": "nuxt-site",
   "description": "My personal website.",
-  "version": "5.8.1",
+  "version": "5.9.0",
   "private": false,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxi dev --host 0.0.0.0",
+    "dev": "nuxi dev --host 0.0.0.0 --port 5173",
     "generate": "nuxt generate",
     "preview": "npm run build && nuxt preview",
     "postinstall": "nuxt prepare",

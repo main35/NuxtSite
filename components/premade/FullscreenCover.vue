@@ -23,7 +23,7 @@
 
     opacity: 0
     background: colors.$foregroundColor
-    backdrop-filter: blur(2rem)
+    backdrop-filter: blur(0.5rem)
     border-radius: 0
     animation: opacity 0.2s ease forwards
 

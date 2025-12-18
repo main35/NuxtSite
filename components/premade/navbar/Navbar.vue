@@ -100,7 +100,7 @@
           <NavigationButton link="/" id="homeButtonContainer" text="Home">
             <DynamicImage
               class="avatar"
-              src="/images/avatar.webp"
+              src="/images/avatar-26.webp"
               alt="ash's Avatar (Go Home)"
               id="avatarButton"
             />

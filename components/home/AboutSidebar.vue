@@ -31,7 +31,7 @@
   <div class="sidebarView sidebarModeOnly spaced">
     <Card>
       <VStack>
-        <DynamicImage src="/images/avatar.webp" alt="ash's Avatar" radius="2rem" class="bigAvatar" />
+        <DynamicImage src="/images/avatar-26.webp" alt="ash's Avatar" radius="2rem" class="bigAvatar" />
         <h1>ash</h1>
         <h2 class="light" style="margin-top: 0">asboy2035</h2>
       </VStack>

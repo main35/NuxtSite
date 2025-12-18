@@ -8,12 +8,13 @@
     <ProgressiveBlur class="progBlur" :blur="48" :border-radius="0"/>
   </div>
 
-<img
-  class="siteBackground"
-  src="/PageBackground.svg"
-  alt="Background" aria-hidden="true"
-  loading="lazy"
-/>
+  <img
+    class="siteBackground"
+    :src="`/backgrounds/${currentBackground}.svg`"
+    alt="Background" aria-hidden="true"
+    loading="lazy"
+    :class="{ fadeInBackground: fadingIn, fadeOutBackground: fadingOut }"
+  />
 
   <TransitionElement ref="cover"/>
 
@@ -48,6 +49,13 @@
   const redirectLink: Ref<string> = ref('')
   const cover: Ref = ref(null)
   const router: Router = useRouter()
+  const backgrounds: string[] = [
+    // Basic
+    "lines", "circles", "blobs", "triangles",
+    // Nature
+    "mountains", "waves",
+  ]
+  const currentBackground: Ref<string> = ref(backgrounds[0] as string)
 
   onMounted(() => {
     if (location.hostname.includes('pages.dev')) {
@@ -72,13 +80,50 @@
     // Hide the loading screen when mounted
     const loader = document.getElementById('loading-screen')
     loader?.classList.add('hidden')
+
+    cycleBackgrounds()
   })
+
+
+  // Background Cycling
+  const fadingOut: Ref<boolean> = ref(false)
+  const fadingIn: Ref<boolean> = ref(false)
+  const animationTime: number = 500
+  const waitTime: number = 10000
+  const sleep = (time: number) =>
+    new Promise(resolve => setTimeout(resolve, time))
+  async function cycleBackgrounds() {
+    while (true) {
+      fadingIn.value = true
+      fadingOut.value = false
+
+      await sleep(animationTime)
+      fadingIn.value = false
+
+      await sleep(waitTime)
+      fadingOut.value = true
+
+      await sleep(animationTime)
+      currentBackground.value = getNextBackground()
+      fadingOut.value = false
+    }
+  }
+  function getNextBackground(): string {
+    const nextBackground: string = backgrounds[Math.floor(Math.random() * backgrounds.length)] as string
+
+    if (nextBackground == currentBackground.value) {
+      return getNextBackground()
+    }
+
+    return nextBackground
+  }
 </script>
 
 <style scoped lang="sass">
   $blurHeight: 7rem
   $blurTop: calc(100vh - $blurHeight)
   $blurTop: calc(100dvh - $blurHeight)
+  $backgroundOpacity: 0.25
 
   .progBlurContainer
     position: fixed
@@ -107,5 +152,22 @@
     min-height: 100%
     z-index: 0
     pointer-events: none
-    opacity: 0.2
+    opacity: $backgroundOpacity
+
+  // Background animations
+  .fadeOutBackground
+    animation: fadeOutBackground 0.5s forwards ease
+  @keyframes fadeOutBackground
+    0%
+      opacity: $backgroundOpacity
+    100%
+      opacity: 0
+
+  .fadeInBackground
+    animation: fadeInBackground 0.5s forwards ease
+  @keyframes fadeInBackground
+    0%
+      opacity: 0
+    100%
+      opacity: $backgroundOpacity
 </style>
