@@ -38,28 +38,28 @@
           />
         </RouterLink>
 
-        <a href="https://g.a35.dev/">
+        <a href="https://g.a35.dev/" target="_blank">
           <SitePick
             title="Guides"
             icon="solar:book-line-duotone"
           />
         </a>
 
-        <a href="https://big.a35.dev">
+        <a href="https://big.a35.dev" target="_blank">
           <SitePick
             title="BIG"
             icon="solar:posts-carousel-vertical-line-duotone"
           />
         </a>
 
-        <a href="https://fonts.asboy2035.com/">
+        <a href="https://fonts.asboy2035.com/" target="_blank">
           <SitePick
             title="Fonts"
             icon="solar:text-line-duotone"
           />
         </a>
 
-        <a href="https://pages.asboy2035.com/">
+        <a href="https://pages.asboy2035.com/" target="_blank">
           <SitePick
             title="Pages"
             icon="solar:documents-line-duotone"

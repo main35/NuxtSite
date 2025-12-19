@@ -8,6 +8,8 @@
   defineProps<{
     hideReadMore?: boolean
   }>()
+
+  const meta = useRuntimeConfig()
 </script>
 
 <template>
@@ -20,7 +22,7 @@
       />
 
       <VStack class="light">
-        <p>Created by ash in 2025. Made with NuxtJS <3</p>
+        <p>Created by ash, using NuxtJS, in 2025 <3</p>
 
         <p><a
           class="prominentLink"
@@ -28,6 +30,8 @@
         >
           Code on GitHub.
         </a></p>
+
+        <p><b>Version: {{ meta.public.siteVersion }}</b> (Release: {{ meta.public.siteRelease }})</p>
       </VStack>
 
       <div v-if="!hideReadMore" id="readMore">

@@ -76,7 +76,7 @@
       :class="{ hidden: !showSiteSwitcher }"
     />
 
-    <HStack>
+    <HStack class="navBarRow">
       <button
         @click="showSwitcher = !showSwitcher"
         class="createBtn"
@@ -158,9 +158,18 @@
     flex-wrap: wrap
     bottom: 1rem
     max-width: calc(100vw - 2rem)
-    z-index: 19
+    z-index: 18
     align-items: center
     margin-top: auto
+
+    .navBarRow
+      z-index: 19
+      transition: 0.3s ease
+
+      &:hover
+        scale: 1.1
+        transform: translateY(-15%)
+        gap: 1rem
 
   .navBar
     --interior-radius: 2rem !important

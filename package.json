@@ -1,9 +1,21 @@
 {
   "name": "nuxt-site",
   "description": "My personal website.",
-  "version": "5.9.1",
+  "author": {
+    "name": "ash",
+    "email": "ash@a35.dev",
+    "url": "https://a35.dev/"
+  },
+  "version": "5.9.2",
+  "license": "Apache-2.0",
   "private": false,
   "type": "module",
+  "main": "src/main.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/studio2035/NuxtSite"
+  },
+
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxi dev --host 0.0.0.0 --port 5173",
@@ -13,6 +25,7 @@
     "cleanup": "rm -rf node_modules && rm -rf .output && rm -rf .nuxt",
     "reInit": "npm run cleanup && npm i && npm run dev"
   },
+
   "dependencies": {
     "@iconify/vue": "^5.0.0",
     "@tsparticles/vue3": "^3.0.1",

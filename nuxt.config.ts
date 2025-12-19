@@ -1,3 +1,5 @@
+import meta from "./package.json"
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -14,12 +16,14 @@ export default defineNuxtConfig({
       ]
     },
   },
-  compatibilityDate: '2025-11-27',
+  compatibilityDate: '2025-12-19',
   runtimeConfig: {
     public: {
+      siteVersion: meta.version,
+      siteRelease: 'Holidays \'25',
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://us.i.posthog.com',
-      posthogDefaults: '2025-05-24'
+      posthogDefaults: '2025-05-24',
     }
   },
   modules: [ '@vite-pwa/nuxt' ],
