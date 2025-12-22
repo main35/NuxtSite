@@ -17,7 +17,7 @@
   },
 
   "scripts": {
-    "build": "nuxt build",
+    "build": "bun install && nuxt build",
     "dev": "nuxi dev --host 0.0.0.0 --port 5173",
     "generate": "nuxt generate",
     "preview": "npm run build && nuxt preview",
