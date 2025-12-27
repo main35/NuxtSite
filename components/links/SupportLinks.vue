@@ -9,7 +9,7 @@
     <grid class="tight spaced">
       <IconItem
         name="Email"
-        link="mailto:as_supp@icloud.com"
+        link="mailto:ash@a35.dev"
         icon="solar:plain-bold"
       />
 
@@ -21,13 +21,13 @@
 
       <IconItem
         name="Instagram"
-        link="https://www.instagram.com/asboy2035/"
+        link="https://www.instagram.com/a35hie/"
         icon="ri:instagram-fill"
       />
 
       <IconItem
         name="Ko-Fi"
-        link="https://ko-fi.com/asboy2035"
+        link="https://ko-fi.com/a35hie"
         icon="cib:ko-fi"
       />
     </grid>
