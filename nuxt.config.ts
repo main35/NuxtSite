@@ -16,11 +16,11 @@ export default defineNuxtConfig({
       ]
     },
   },
-  compatibilityDate: '2025-12-19',
+  compatibilityDate: '2026-01-01',
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
-      siteRelease: 'Holidays \'25',
+      siteRelease: 'New Year\'s \'26',
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://us.i.posthog.com',
       posthogDefaults: '2025-05-24',

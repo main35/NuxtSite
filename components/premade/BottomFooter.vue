@@ -22,7 +22,7 @@
       />
 
       <VStack class="light">
-        <p>Created by ash, using NuxtJS, in 2025 <3</p>
+        <p>Created by ash, using NuxtJS, in 2026 <3</p>
 
         <p><a
           class="prominentLink"

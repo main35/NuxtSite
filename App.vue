@@ -3,7 +3,7 @@
 
   <div id="app" />
   <ClientOnly>
-    <vue-particles id="snowParticles" url="/snow.json" />
+    <vue-particles id="confettiParticles" url="/confetti.json" />
   </ClientOnly>
 
   <NuxtPage/>
@@ -81,10 +81,6 @@
       }, 200)
     })
 
-    // Hide the loading screen when mounted
-    const loader = document.getElementById('loading-screen')
-    loader?.classList.add('hidden')
-
     cycleBackgrounds()
   })
 
@@ -146,7 +142,7 @@
     z-index: 10
     margin-top: $blurTop
 
-  #snowParticles
+  #confettiParticles
     z-index: 100
 
   .siteBackground
