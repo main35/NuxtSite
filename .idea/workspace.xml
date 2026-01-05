@@ -4,66 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update to 2026, add confetti">
-      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add Prettier formatting, refresh Languages card design, other improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/AppLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppLink.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/AppStoreIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppStoreIcon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/GithubIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/GithubIcon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/LinkIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/LinkIcon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/UpdatedBadge.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/UpdatedBadge.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/AboutHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/AboutSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutSidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/NavButtons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/NavButtons.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/IconItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/MoreLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/MoreLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/SupportLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SupportLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/playlists/AppleMusic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/playlists/AppleMusic.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/playlists/Deezer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/playlists/Deezer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/playlists/Spotify.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/playlists/Spotify.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/playlists/YoutubeMusic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/playlists/YoutubeMusic.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/Description.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/Description.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/TransitionElement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/TransitionElement.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/LauncherCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/LauncherCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/DynamicImage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/DynamicImage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Spacer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Spacer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/apps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/apps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/launchers/LauncherApps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/launchers/LauncherApps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/launchers/LauncherCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/launchers/LauncherCreators.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/creator/csv-to-json/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/csv-to-json/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/links.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tests/audio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tests/audio.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/posthog.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/posthog.client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/tsparticles.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tsparticles.client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/updateCanonical.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/updateCanonical.client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/apps/markdown/stand.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/apps/markdown/stand.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/confetti.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/confetti.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/utilities.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/utilities.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/LauncherItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/LauncherItem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/setHeadMeta.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/setHeadMeta.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -645,15 +593,7 @@
       <workItem from="1767453001217" duration="11000" />
       <workItem from="1767458808975" duration="39000" />
       <workItem from="1767602845850" duration="2010000" />
-      <workItem from="1767625438462" duration="1408000" />
-    </task>
-    <task id="LOCAL-00016" summary="update toolbox">
-      <option name="closed" value="true" />
-      <created>1751704555021</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1751704555021</updated>
+      <workItem from="1767625438462" duration="2153000" />
     </task>
     <task id="LOCAL-00017" summary="code improvements, new location image">
       <option name="closed" value="true" />
@@ -1039,7 +979,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767297659830</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="add Prettier formatting, refresh Languages card design, other improvements">
+      <option name="closed" value="true" />
+      <created>1767627014238</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1767627014242</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1057,7 +1005,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update packages" />
     <MESSAGE value="update" />
     <MESSAGE value="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues" />
     <MESSAGE value="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues, update Nuxt, update site version" />
@@ -1082,7 +1029,8 @@
     <MESSAGE value="switch to Bun" />
     <MESSAGE value="add install to build script (CF has auto install deps disabled)" />
     <MESSAGE value="update to 2026, add confetti" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to 2026, add confetti" />
+    <MESSAGE value="add Prettier formatting, refresh Languages card design, other improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Prettier formatting, refresh Languages card design, other improvements" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

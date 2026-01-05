@@ -2,8 +2,8 @@
   import { ref } from 'vue'
   import { Icon } from '@iconify/vue'
   import { ProgressiveBlur } from 'vue-progressive-blur'
-  import { LauncherApps } from '~/data/launchers/LauncherApps'
-  import { LauncherCreators } from '~/data/launchers/LauncherCreators'
+  import { LauncherApps } from '@/data/launchers/LauncherApps'
+  import { LauncherCreators } from '@/data/launchers/LauncherCreators'
 
   import HStack from '@/components/layout/HStack.vue'
   import VStack from '@/components/layout/VStack.vue'

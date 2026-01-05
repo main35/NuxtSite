@@ -6,7 +6,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "5.9.6",
+  "version": "5.9.7",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -19,10 +19,12 @@
     "build": "nuxt build",
     "ci": "bun install && bun run build",
     "dev": "nuxi dev --host 0.0.0.0 --port 5173",
-    "generate": "nuxt generate",
     "preview": "bun run build && nuxt preview",
+    "generate": "nuxt generate",
     "postinstall": "nuxt prepare",
-    "format": "prettier --write --ignore-path .prettierignore ."
+    "prettier": "prettier --write --ignore-path .prettierignore .",
+    "fixPaths": "replace-in-files --string='~/' --replacement='@/' './**/*.{js,ts,vue}'",
+    "format": "bun run prettier && bun run fixPaths"
   },
   "dependencies": {
     "@iconify/vue": "^5.0.0",
@@ -43,6 +45,7 @@
     "nuxt": "^4.2.1",
     "postcss-import": "^16.1.1",
     "prettier": "^3.7.4",
+    "replace-in-files-cli": "^4.0.0",
     "sass": "^1.89.0"
   }
 }

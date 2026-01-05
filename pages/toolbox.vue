@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
   import { onMounted, ref } from 'vue'
-  import { LauncherCreators } from '~/data/launchers/LauncherCreators'
+  import { LauncherCreators } from '@/data/launchers/LauncherCreators'
   import type { AppCategory } from '@/types/appsViews'
 
   import VStack from '@/components/layout/VStack.vue'

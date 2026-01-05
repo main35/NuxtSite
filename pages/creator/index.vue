@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { LauncherCreators } from '~/data/launchers/LauncherCreators'
+  import { LauncherCreators } from '@/data/launchers/LauncherCreators'
   import setHeadMeta from '@/utils/setHeadMeta'
   import Navbar from '@/components/premade/navbar/Navbar.vue'
   import Hero from '@/components/utils/Hero.vue'

@@ -4,7 +4,7 @@
   import Spacer from '@/components/utils/Spacer.vue'
   import CardTitle from '@/components/utils/CardTitle.vue'
   import IconItem from '@/components/layout/IconItem.vue'
-  import HStack from '~/components/layout/HStack.vue'
+  import HStack from '@/components/layout/HStack.vue'
 </script>
 
 <template>
