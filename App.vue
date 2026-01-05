@@ -1,12 +1,25 @@
 <template>
   <h1 class="hidden">Your CSS is disabled!</h1>
 
-  <div id="app" />
-  <ClientOnly>
-    <vue-particles id="confettiParticles" url="/confetti.json" />
-  </ClientOnly>
+  <HStack class="interfaceOptions">
+    <button @click="showingUi = !showingUi">
+      <Icon
+        :icon="
+          showingUi
+            ? 'solar:window-frame-line-duotone'
+            : 'solar:window-frame-bold-duotone'
+        "
+      />
+      {{ showingUi ? 'Hide' : 'Show' }} Interface
+    </button>
 
-  <NuxtPage />
+    <button disabled v-tooltip="'Coming Soon!'">
+      <Icon icon="solar:bag-5-line-duotone" />
+      Get Wallpapers
+    </button>
+  </HStack>
+
+  <NuxtPage v-if="showingUi" />
 
   <div class="progBlurContainer">
     <ProgressiveBlur class="progBlur" :blur="48" :border-radius="0" />
@@ -43,6 +56,7 @@
   import { useRouter } from '#app'
   import type { Ref } from 'vue'
   import type { Router } from '#vue-router'
+  import { Icon } from '@iconify/vue'
 
   import { ProgressiveBlur } from 'vue-progressive-blur'
   import TransitionElement from '@/components/premade/TransitionElement.vue'
@@ -50,19 +64,17 @@
   import Spacer from '@/components/utils/Spacer.vue'
   import HStack from '@/components/layout/HStack.vue'
 
+  const showingUi: Ref<boolean> = ref(true)
   const showDomainTip: Ref<boolean> = ref(false)
   const redirectLink: Ref<string> = ref('')
   const cover: Ref = ref(null)
   const router: Router = useRouter()
   const backgrounds: string[] = [
-    // Basic
-    'lines',
-    'circles',
-    'blobs',
-    'triangles',
-    // Nature
-    'mountains',
-    'waves',
+    // Closeups
+    'Purple-Close',
+
+    // Scenes
+    'All-Planets',
   ]
   const currentBackground: Ref<string> = ref(backgrounds[0] as string)
 
@@ -148,8 +160,13 @@
     z-index: 10
     margin-top: $blurTop
 
-  #confettiParticles
-    z-index: 100
+  .interfaceOptions
+    margin-top: 1rem
+    width: calc(100vw - 2rem)
+    max-width: 30rem
+
+    button
+      flex-grow: 1
 
   .siteBackground
     position: fixed

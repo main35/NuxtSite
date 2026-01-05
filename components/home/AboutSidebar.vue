@@ -43,7 +43,7 @@
     </Card>
 
     <Card>
-      <h3>{{ currentTime }}</h3>
+      <h3 v-tooltip="'My time'">{{ currentTime }}</h3>
       <HStack class="spaced">
         <icon icon="solar:bolt-line-duotone" width="24" height="24" />
         <a
