@@ -7,17 +7,10 @@
       "value": 0
     },
     "color": {
-      "value": [
-        "#00FFFC",
-        "#FC00FF",
-        "#fffc00"
-      ]
+      "value": ["#00FFFC", "#FC00FF", "#fffc00"]
     },
     "shape": {
-      "type": [
-        "circle",
-        "square"
-      ],
+      "type": ["circle", "square"],
       "options": {}
     },
     "opacity": {

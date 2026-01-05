@@ -2,11 +2,11 @@
   import { ref } from 'vue'
   import Card from '@/components/layout/Card.vue'
 
-  const audio = new Audio("/audioTest.mp3")
-  const messageText = ref("Start the Experience")
+  const audio = new Audio('/audioTest.mp3')
+  const messageText = ref('Start the Experience')
 
   const playAudio = () => {
-    messageText.value = "Get Rickrolled mf"
+    messageText.value = 'Get Rickrolled mf'
     audio.play()
   }
 </script>
@@ -15,9 +15,14 @@
   <div class="contentView">
     <Card>
       <h1>This is a private beta.</h1>
-      <p>This is an experimental audiovisual experience which you've been invited to test.</p>
+      <p>
+        This is an experimental audiovisual experience which you've been invited
+        to test.
+      </p>
     </Card>
 
-    <button id="playAudioTestButton" @click="playAudio">{{ messageText }}</button>
+    <button id="playAudioTestButton" @click="playAudio">
+      {{ messageText }}
+    </button>
   </div>
 </template>

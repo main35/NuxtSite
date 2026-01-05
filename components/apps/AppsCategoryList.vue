@@ -19,15 +19,15 @@
       <h2>{{ category.name }}</h2>
       <grid class="appGrid">
         <InteriorItem
-            v-for="app in category.apps"
-            :key="app.name"
-            class="appCard"
+          v-for="app in category.apps"
+          :key="app.name"
+          class="appCard"
         >
           <div class="appIcon">
             <DynamicImage
-                class="appIcon"
-                :src="app.image"
-                :alt="app.name + ' Logo'"
+              class="appIcon"
+              :src="app.image"
+              :alt="app.name + ' Logo'"
             />
           </div>
 

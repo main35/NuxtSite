@@ -25,18 +25,13 @@
 </script>
 
 <template>
-  <div
-    class="progressBar"
-    :class="{ active: isActive }"
-  />
+  <div class="progressBar" :class="{ active: isActive }" />
 
-  <div
-    class="transitionElement"
-    :class="{ active: isActive }"
-  >
+  <div class="transitionElement" :class="{ active: isActive }">
     <Icon
       icon="svg-spinners:90-ring-with-bg"
-      width="24" height="24"
+      width="24"
+      height="24"
       class="spinner"
     />
 

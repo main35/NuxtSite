@@ -9,7 +9,7 @@
   setHeadMeta({
     page: 'Creators',
     subtitle: 'My tools and creators.',
-    image: '/images/Creator.jpg'
+    image: '/images/Creator.jpg',
   })
 </script>
 
@@ -18,7 +18,7 @@
     <Hero image="/images/Creator.jpg">
       <h1>Create...</h1>
       <h2>Choose a tool.</h2>
-    </hero>
+    </Hero>
 
     <LauncherCard
       title="Tools"

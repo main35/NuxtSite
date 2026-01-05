@@ -56,14 +56,15 @@
       </VStack>
     </FullscreenCover>
 
-    <InteriorItem id="mobileNav" :class="{ hidden: !showMobileNav }" class="navBar">
+    <InteriorItem
+      id="mobileNav"
+      :class="{ hidden: !showMobileNav }"
+      class="navBar"
+    >
       <NavigationLinks />
     </InteriorItem>
 
-    <SitePicker
-      id="siteSwitcher"
-      :class="{ hidden: !showSiteSwitcher }"
-    >
+    <SitePicker id="siteSwitcher" :class="{ hidden: !showSiteSwitcher }">
       <button @click="toggleSiteSwitcher()" style="--buttonRadius: 2rem">
         <Icon icon="mingcute:close-fill" width="24" height="24" />
       </button>
@@ -85,13 +86,17 @@
       >
         <Icon
           icon="heroicons:sparkles-20-solid"
-          class="growIn" v-if="!showSwitcher"
-          width="20" height="20"
+          class="growIn"
+          v-if="!showSwitcher"
+          width="20"
+          height="20"
         />
         <Icon
           icon="mingcute:close-fill"
-          class="spinIn" v-if="showSwitcher"
-          width="20" height="20"
+          class="spinIn"
+          v-if="showSwitcher"
+          width="20"
+          height="20"
         />
       </button>
 
@@ -107,8 +112,11 @@
 
             <Icon
               icon="solar:home-angle-bold-duotone"
-              aria-label="Go Home" id="homeButton"
-              style="scale: 1.25" width="24" height="24"
+              aria-label="Go Home"
+              id="homeButton"
+              style="scale: 1.25"
+              width="24"
+              height="24"
             />
           </NavigationButton>
 
@@ -137,13 +145,17 @@
       >
         <Icon
           icon="solar:compass-bold"
-          class="growIn" v-if="!showMobileNav"
-          width="20" height="20"
+          class="growIn"
+          v-if="!showMobileNav"
+          width="20"
+          height="20"
         />
         <Icon
           icon="mingcute:close-fill"
-          class="spinIn" v-if="showMobileNav"
-          width="20" height="20"
+          class="spinIn"
+          v-if="showMobileNav"
+          width="20"
+          height="20"
         />
       </button>
     </HStack>

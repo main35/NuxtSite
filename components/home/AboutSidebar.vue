@@ -31,7 +31,12 @@
   <div class="sidebarView sidebarModeOnly spaced">
     <Card>
       <VStack>
-        <DynamicImage src="/images/avatar-26.webp" alt="ash's Avatar" radius="2rem" class="bigAvatar" />
+        <DynamicImage
+          src="/images/avatar-26.webp"
+          alt="ash's Avatar"
+          radius="2rem"
+          class="bigAvatar"
+        />
         <h1>ash</h1>
         <h2 class="light" style="margin-top: 0">asboy2035</h2>
       </VStack>
@@ -41,7 +46,11 @@
       <h3>{{ currentTime }}</h3>
       <HStack class="spaced">
         <icon icon="solar:bolt-line-duotone" width="24" height="24" />
-        <a href="https://github.com/asboy2035" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/asboy2035"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>
             <Icon icon="mingcute:github-fill" />
             GitHub

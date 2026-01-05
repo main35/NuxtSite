@@ -13,7 +13,7 @@
 
   function isOldMainHost(): boolean {
     const host = window.location.href
-    return host.includes("pages.dev")
+    return host.includes('pages.dev')
   }
 
   onMounted(() => {
@@ -27,22 +27,16 @@
       <VStack class="fullWidth">
         <HStack class="autoSpace fullWidth">
           <h2>Sites</h2>
-  <!--        Insert close button here -->
+          <!--        Insert close button here -->
           <slot />
         </HStack>
 
         <RouterLink to="/">
-          <SitePick
-            title="Portfolio"
-            icon="solar:bag-heart-line-duotone"
-          />
+          <SitePick title="Portfolio" icon="solar:bag-heart-line-duotone" />
         </RouterLink>
 
         <a href="https://g.a35.dev/" target="_blank">
-          <SitePick
-            title="Guides"
-            icon="solar:book-line-duotone"
-          />
+          <SitePick title="Guides" icon="solar:book-line-duotone" />
         </a>
 
         <a href="https://big.a35.dev" target="_blank">
@@ -53,17 +47,11 @@
         </a>
 
         <a href="https://fonts.asboy2035.com/" target="_blank">
-          <SitePick
-            title="Fonts"
-            icon="solar:text-line-duotone"
-          />
+          <SitePick title="Fonts" icon="solar:text-line-duotone" />
         </a>
 
         <a href="https://pages.asboy2035.com/" target="_blank">
-          <SitePick
-            title="Pages"
-            icon="solar:documents-line-duotone"
-          />
+          <SitePick title="Pages" icon="solar:documents-line-duotone" />
         </a>
       </VStack>
     </Card>
@@ -78,7 +66,7 @@
         @click="showingShareModal = !showingShareModal"
       >
         <Icon icon="solar:qr-code-line-duotone" />
-        {{ showingShareModal ? "Hide" : "Show" }} QR Code
+        {{ showingShareModal ? 'Hide' : 'Show' }} QR Code
       </button>
 
       <VStack v-if="showingShareModal">
@@ -87,12 +75,12 @@
           class="qrCode hiddenDark"
           src="/images/QR-Light.webp"
           alt="QR Code"
-        >
+        />
         <img
           class="qrCode hiddenLight"
           src="/images/QR-Dark.webp"
           alt="QR Code"
-        >
+        />
       </VStack>
     </Card>
   </VStack>

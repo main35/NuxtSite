@@ -6,21 +6,22 @@
     <vue-particles id="confettiParticles" url="/confetti.json" />
   </ClientOnly>
 
-  <NuxtPage/>
+  <NuxtPage />
 
   <div class="progBlurContainer">
-    <ProgressiveBlur class="progBlur" :blur="48" :border-radius="0"/>
+    <ProgressiveBlur class="progBlur" :blur="48" :border-radius="0" />
   </div>
 
   <img
     class="siteBackground"
     :src="`/backgrounds/${currentBackground}.svg`"
-    alt="Background" aria-hidden="true"
+    alt="Background"
+    aria-hidden="true"
     loading="lazy"
     :class="{ fadeInBackground: fadingIn, fadeOutBackground: fadingOut }"
   />
 
-  <TransitionElement ref="cover"/>
+  <TransitionElement ref="cover" />
 
   <Modal v-if="showDomainTip">
     <h1>You're on the old domain!</h1>
@@ -55,9 +56,13 @@
   const router: Router = useRouter()
   const backgrounds: string[] = [
     // Basic
-    "lines", "circles", "blobs", "triangles",
+    'lines',
+    'circles',
+    'blobs',
+    'triangles',
     // Nature
-    "mountains", "waves",
+    'mountains',
+    'waves',
   ]
   const currentBackground: Ref<string> = ref(backgrounds[0] as string)
 
@@ -84,14 +89,13 @@
     cycleBackgrounds()
   })
 
-
   // Background Cycling
   const fadingOut: Ref<boolean> = ref(false)
   const fadingIn: Ref<boolean> = ref(false)
   const animationTime: number = 500
   const waitTime: number = 10000
   const sleep = (time: number) =>
-    new Promise(resolve => setTimeout(resolve, time))
+    new Promise((resolve) => setTimeout(resolve, time))
   async function cycleBackgrounds() {
     while (true) {
       fadingIn.value = true
@@ -109,7 +113,9 @@
     }
   }
   function getNextBackground(): string {
-    const nextBackground: string = backgrounds[Math.floor(Math.random() * backgrounds.length)] as string
+    const nextBackground: string = backgrounds[
+      Math.floor(Math.random() * backgrounds.length)
+    ] as string
 
     if (nextBackground == currentBackground.value) {
       return getNextBackground()

@@ -8,10 +8,7 @@
 
 <template>
   <Card class="spaced">
-    <CardTitle
-      title="My Socials"
-      icon="solar:share-line-duotone"
-    />
+    <CardTitle title="My Socials" icon="solar:share-line-duotone" />
 
     <p>My socials and contact methods :3</p>
     <Spacer />

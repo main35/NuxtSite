@@ -24,10 +24,7 @@
 </script>
 
 <template>
-  <div
-    class="image-wrapper"
-    :style="{ width, height, borderRadius: radius }"
-  >
+  <div class="image-wrapper" :style="{ width, height, borderRadius: radius }">
     <img
       ref="imgEl"
       :src="src"

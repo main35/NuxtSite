@@ -15,7 +15,7 @@
   let targetVelocity = 0.0015
   let isDragging = false
 
-  let globe: any  = null
+  let globe: any = null
 
   const createGlobeInstance = () => {
     if (globe) globe.destroy()
@@ -30,9 +30,11 @@
       diffuse: 1.4,
       mapSamples: 25000,
       mapBrightness: 6,
-      baseColor: isDarkMode.value == 1 ? [0.32, 0.14, 0.93] : [0.64, 0.51, 0.88], // Dark : Light colors
+      baseColor:
+        isDarkMode.value == 1 ? [0.32, 0.14, 0.93] : [0.64, 0.51, 0.88], // Dark : Light colors
       markerColor: [0.63, 0.49, 0.02],
-      glowColor: isDarkMode.value == 1 ? [0.49, 0.43, 0.73] : [0.53, 0.39, 0.79], // Dark : Light colors
+      glowColor:
+        isDarkMode.value == 1 ? [0.49, 0.43, 0.73] : [0.53, 0.39, 0.79], // Dark : Light colors
       markers: [
         { location: [44.84685, 0.62871], size: 0.1 }, // Bordeaux
       ],
@@ -44,12 +46,16 @@
         velocity *= 0.95
         state.phi = phi
         state.theta = theta
-      }
+      },
     })
   }
 
   if (import.meta.client) {
-    isDarkMode.value = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 1 : 0
+    isDarkMode.value =
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 1
+        : 0
 
     if (window.matchMedia) {
       const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
@@ -61,7 +67,7 @@
 
   onMounted(() => {
     createGlobeInstance()
-    const canvas = document.getElementById("globe")
+    const canvas = document.getElementById('globe')
 
     watch(isDarkMode, () => {
       createGlobeInstance()
@@ -99,10 +105,7 @@
 
 <template>
   <Card class="autoSpace locationCard">
-    <CardTitle
-      title="Bordeaux, FR"
-      icon="solar:point-on-map-line-duotone"
-    />
+    <CardTitle title="Bordeaux, FR" icon="solar:point-on-map-line-duotone" />
 
     <!--Cobe Globe-->
     <InteriorItem class="locationGlobe">

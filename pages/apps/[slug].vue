@@ -18,7 +18,9 @@
 
   const route = useRoute()
   const slug: string = route.params.slug as string
-  const app: AppPageMeta | undefined = apps.find(app => app.slug === slug) as AppPageMeta | undefined
+  const app: AppPageMeta | undefined = apps.find((app) => app.slug === slug) as
+    | AppPageMeta
+    | undefined
   const longDescriptionRaw: Ref<string> = ref('')
 
   // Add computed property to render Markdown
@@ -54,11 +56,13 @@
 
 <template>
   <div v-if="app" class="contentView">
-    <hero :image="app.headerImagePath" :image-alt="`${app.title} screenshot`">
-      <updated-badge v-if="app.updatedBadge">{{ app.updatedBadge }}</updated-badge>
+    <Hero :image="app.headerImagePath" :image-alt="`${app.title} screenshot`">
+      <updated-badge v-if="app.updatedBadge">{{
+        app.updatedBadge
+      }}</updated-badge>
       <h1>{{ app.title }}</h1>
       <h2>{{ app.shortDescription }}</h2>
-    </hero>
+    </Hero>
 
     <Card v-if="app.appLinks?.length" class="hStack autoSpace centered">
       <HStack>
@@ -87,7 +91,21 @@
     <Navbar>
       <NuxtLink to="/apps/">
         <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l6 6m-6-6l6-6"/></svg>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 12h14M5 12l6 6m-6-6l6-6"
+            />
+          </svg>
           All Apps
         </button>
       </NuxtLink>

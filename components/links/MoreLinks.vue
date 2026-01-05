@@ -7,10 +7,7 @@
 
 <template>
   <Card class="spaced">
-    <CardTitle
-      title="More Links"
-      icon="solar:menu-dots-line-duotone"
-    />
+    <CardTitle title="More Links" icon="solar:menu-dots-line-duotone" />
 
     <HStack>
       <a href="https://app.warp.dev/referral/KVWRZZ">

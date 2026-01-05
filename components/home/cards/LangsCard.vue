@@ -4,74 +4,62 @@
   import Spacer from '@/components/utils/Spacer.vue'
   import CardTitle from '@/components/utils/CardTitle.vue'
   import IconItem from '@/components/layout/IconItem.vue'
-  import VStack from '@/components/layout/VStack.vue'
+  import HStack from '~/components/layout/HStack.vue'
 </script>
 
 <template>
   <Card class="langsCard spaced">
-    <CardTitle
-      title="Languages"
-      icon="solar:earth-line-duotone"
-    />
+    <CardTitle title="Languages" icon="solar:earth-line-duotone" />
 
     <p>I speak English, French, and a bit of Spanish :)</p>
     <Spacer />
 
     <h3>Programming Languages</h3>
-    <Grid class="spaced">
-      <VStack>
-        <p>Using:</p>
-        <Grid class="langsGrid spaced">
-          <IconItem
-            name="Vue/Nuxt"
-            icon="proicons:vuejs"
-            link="https://vuejs.org/"
-          />
+    <HStack class="noSpace">
+      <p>Using/</p>
+      <p class="light">Learning</p>
+      <p>:</p>
+    </HStack>
+    <Grid class="langsGrid spaced">
+      <IconItem
+        name="Vue/Nuxt"
+        icon="proicons:vuejs"
+        link="https://vuejs.org/"
+      />
 
-          <IconItem
-            name="TS"
-            icon="proicons:typescript"
-            link="https://www.typescriptlang.org/"
-          />
+      <IconItem
+        name="TypeScript"
+        icon="proicons:typescript"
+        link="https://www.typescriptlang.org/"
+      />
 
-          <IconItem
-            name="Swift"
-            icon="iconoir:apple-swift"
-            link="https://www.swift.org/"
-          />
+      <IconItem
+        name="Swift"
+        icon="iconoir:apple-swift"
+        link="https://www.swift.org/"
+      />
 
-          <IconItem
-            name="C++"
-            icon="bxl:c-plus-plus"
-            link="https://cplusplus.com/"
-          />
-        </Grid>
-      </VStack>
+      <IconItem
+        name="C++"
+        icon="bxl:c-plus-plus"
+        link="https://cplusplus.com/"
+      />
 
-      <VStack class="light disabled">
-        <p>Learning:</p>
-        <Grid class="langsGrid spaced">
-          <IconItem
-            name="Go"
-            icon="nonicons:go-16"
-          />
+      <IconItem
+        name="Python"
+        icon="proicons:python"
+        link="https://www.python.org/"
+      />
 
-          <IconItem
-            name="Rust"
-            icon="fluent-mdl2:rust-language-logo"
-          />
+      <IconItem
+        name="SQL"
+        icon="tabler:file-type-sql"
+        link="https://www.sqlite.org/index.html"
+      />
 
-          <IconItem
-            name="Python"
-            icon="proicons:python"
-          />
-
-          <IconItem
-            name="Svelte(?)"
-            icon="proicons:svelte"
-          />
-        </Grid>
-      </VStack>
+      <!-- Learning -->
+      <IconItem name="Go" icon="nonicons:go-16" light />
+      <IconItem name="Rust" icon="fluent-mdl2:rust-language-logo" light />
     </Grid>
   </Card>
 </template>

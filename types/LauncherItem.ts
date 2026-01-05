@@ -1,5 +1,5 @@
 export default interface LauncherItem {
-  name: string,
-  link: string,
+  name: string
+  link: string
   icon: string
 }

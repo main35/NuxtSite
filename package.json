@@ -6,7 +6,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "5.9.5",
+  "version": "5.9.6",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -15,16 +15,15 @@
     "type": "git",
     "url": "https://github.com/studio2035/NuxtSite"
   },
-
   "scripts": {
     "build": "nuxt build",
     "ci": "bun install && bun run build",
     "dev": "nuxi dev --host 0.0.0.0 --port 5173",
     "generate": "nuxt generate",
     "preview": "bun run build && nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "format": "prettier --write --ignore-path .prettierignore ."
   },
-
   "dependencies": {
     "@iconify/vue": "^5.0.0",
     "@tsparticles/vue3": "^3.0.1",
@@ -43,6 +42,7 @@
     "@types/node": "^24.10.0",
     "nuxt": "^4.2.1",
     "postcss-import": "^16.1.1",
+    "prettier": "^3.7.4",
     "sass": "^1.89.0"
   }
 }

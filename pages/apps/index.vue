@@ -12,18 +12,19 @@
   setHeadMeta({
     page: 'Apps',
     subtitle: 'My web/Apple apps.',
-    image: '/images/Apps.jpg'
+    image: '/images/Apps.jpg',
   })
 
   const appsData = ref<AppCategory[]>([])
 
   onMounted(async () => {
     try {
-      const response = await fetch("https://api.asboy2035.com/apps")
-      if (!response.ok) throw new Error(`Failed to fetch: ${response.statusText}`)
+      const response = await fetch('https://api.asboy2035.com/apps')
+      if (!response.ok)
+        throw new Error(`Failed to fetch: ${response.statusText}`)
       appsData.value = await response.json()
     } catch (error) {
-      console.error("Error fetching apps:", error)
+      console.error('Error fetching apps:', error)
     }
   })
 </script>
@@ -40,7 +41,7 @@
           All Apps
         </button>
       </a>
-    </hero>
+    </Hero>
 
     <AppsCategoryList :apps-data="appsData" />
 

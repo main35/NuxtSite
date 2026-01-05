@@ -6,7 +6,9 @@ export default defineNuxtPlugin((): void => {
 
   router.afterEach((to: RouteLocation): void => {
     const baseUrl: string = 'https://asboy2035.com'
-    const canonicalLink: HTMLLinkElement | null = document.querySelector("link[rel='canonical']")
+    const canonicalLink: HTMLLinkElement | null = document.querySelector(
+      "link[rel='canonical']"
+    )
 
     const fullUrl: string = baseUrl + to.fullPath
 

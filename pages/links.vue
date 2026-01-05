@@ -16,7 +16,7 @@
   setHeadMeta({
     page: 'Links',
     subtitle: 'My socials, contacts, and more :)',
-    image: '/images/Links.jpg'
+    image: '/images/Links.jpg',
   })
 </script>
 
@@ -25,7 +25,7 @@
     <Hero image="/images/Links.jpg">
       <h1>Links</h1>
       <h2>My socials, contacts, and more.</h2>
-    </hero>
+    </Hero>
 
     <!-- About -->
     <grid class="spaced">

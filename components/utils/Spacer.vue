@@ -1,5 +1,5 @@
 <template>
- <div class="spacer" />
+  <div class="spacer" />
 </template>
 
 <style scoped lang="sass">

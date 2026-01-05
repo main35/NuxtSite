@@ -1,4 +1,4 @@
-import meta from "./package.json"
+import meta from './package.json'
 
 export default defineNuxtConfig({
   app: {
@@ -7,26 +7,34 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       link: [
-        { rel: 'preconnect', href: 'https://api.iconify.design', crossorigin: '' },
-        { rel: 'preconnect', href: 'https://fonts.asboy2035.com', crossorigin: '' },
+        {
+          rel: 'preconnect',
+          href: 'https://api.iconify.design',
+          crossorigin: '',
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.asboy2035.com',
+          crossorigin: '',
+        },
         { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
         { rel: 'dns-prefetch', href: 'https://fonts.asboy2035.com' },
         { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' },
-        { rel: 'manifest', href: '/manifest.webmanifest' }
-      ]
+        { rel: 'manifest', href: '/manifest.webmanifest' },
+      ],
     },
   },
-  compatibilityDate: '2026-01-01',
+  compatibilityDate: '2026-01-05',
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
-      siteRelease: 'New Year\'s \'26',
+      siteRelease: "New Years '26",
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://us.i.posthog.com',
       posthogDefaults: '2025-05-24',
-    }
+    },
   },
-  modules: [ '@vite-pwa/nuxt' ],
+  modules: ['@vite-pwa/nuxt'],
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
@@ -45,13 +53,11 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  css: [
-    "@/styles/global.sass"
-  ],
+  css: ['@/styles/global.sass'],
   vite: {
     build: {
-      sourcemap: 'inline'
-    }
+      sourcemap: 'inline',
+    },
   },
   nitro: {
     compressPublicAssets: true,

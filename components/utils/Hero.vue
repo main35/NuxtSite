@@ -7,8 +7,8 @@
     components: { Card, InteriorItem, DynamicImage },
     props: {
       image: String,
-      imageAlt: String ?? "Image"
-    }
+      imageAlt: String ?? 'Image',
+    },
   }
 </script>
 

@@ -17,15 +17,13 @@
 <template>
   <Card class="quickContainer">
     <RouterLink :to="baseUrl">
-      <CardTitle
-        :title="title"
-        :icon="icon"
-      />
+      <CardTitle :title="title" :icon="icon" />
     </RouterLink>
 
     <HStack class="tight">
       <a
-        v-for="launcherItem in launcherItems" :key="launcherItem.name"
+        v-for="launcherItem in launcherItems"
+        :key="launcherItem.name"
         :href="launcherItem.link"
       >
         <InteriorItem>

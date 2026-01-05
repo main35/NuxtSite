@@ -36,23 +36,19 @@
   function csvToJson(csv: string): CSVRow[] {
     const lines: string[] = csv
       .split('\n')
-      .map(line => line.trim())
-      .filter(line => line)
+      .map((line) => line.trim())
+      .filter((line) => line)
 
     if (lines.length === 0) return []
 
     const headers: string[] = lines[0]!
       .split(',')
-      .map(h => h.trim().replace(/^"|"$/g, ''))
+      .map((h) => h.trim().replace(/^"|"$/g, ''))
 
-    return lines.slice(1).map(line => {
+    return lines.slice(1).map((line) => {
       const values: string[] = line
         .split(',')
-        .map(
-          v => v
-            .trim()
-            .replace(/^"|"$/g, '')
-        )
+        .map((v) => v.trim().replace(/^"|"$/g, ''))
       const obj: CSVRow = {}
 
       headers.forEach((h, i) => {
@@ -75,7 +71,9 @@
     const a = document.createElement('a')
 
     a.href = URL.createObjectURL(blob)
-    a.download = csvFileName.value.replace('.csv', '.json').replace('.CSV', '.json')
+    a.download = csvFileName.value
+      .replace('.csv', '.json')
+      .replace('.CSV', '.json')
     document.body.appendChild(a)
     a.click()
     document.body.removeChild(a)
@@ -84,10 +82,7 @@
 
 <template>
   <div class="contentView">
-    <CardTitle
-      title="CSV to JSON"
-      icon="solar:undo-right-line-duotone"
-    />
+    <CardTitle title="CSV to JSON" icon="solar:undo-right-line-duotone" />
 
     <HStack>
       <input
@@ -98,7 +93,7 @@
       />
     </HStack>
 
-    <div :class="{ 'hidden': !outputContainerVisible }">
+    <div :class="{ hidden: !outputContainerVisible }">
       <div class="hStack">
         <h3>JSON:</h3>
       </div>
@@ -108,7 +103,7 @@
 
     <Navbar>
       <button
-        :class="{ 'hidden': !outputContainerVisible }"
+        :class="{ hidden: !outputContainerVisible }"
         @click="downloadJson"
         :disabled="!jsonOutput"
       >

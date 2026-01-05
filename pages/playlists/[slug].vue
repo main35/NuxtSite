@@ -19,7 +19,7 @@
   interface PlaylistLink {
     title: string
     url: string
-    type: "apple" | "spotify" | "deezer" | "youtube"
+    type: 'apple' | 'spotify' | 'deezer' | 'youtube'
   }
 
   interface Playlist {
@@ -36,39 +36,40 @@
 
   async function fetchPlaylists() {
     try {
-      const res = await fetch("https://api.asboy2035.com/playlists")
+      const res = await fetch('https://api.asboy2035.com/playlists')
       playlists.value = await res.json()
     } catch (error) {
-      console.error("Failed to load playlists:", error)
+      console.error('Failed to load playlists:', error)
     }
   }
 
-  const playlist = computed(() => playlists.value.find(p => p.slug === route.params.slug))
+  const playlist = computed(() =>
+    playlists.value.find((p) => p.slug === route.params.slug)
+  )
 
   onMounted(async () => {
-    await fetchPlaylists()
-      .then(() => {
-        if (playlist.value) {
-          setHeadMeta({
-            page: playlist.value.title,
-            subtitle: playlist.value.description,
-            image: '/images/Playlists.jpg',
-            icon: playlist.value.image,
-            group: 'Playlist'
-          })
-        }
-      })
+    await fetchPlaylists().then(() => {
+      if (playlist.value) {
+        setHeadMeta({
+          page: playlist.value.title,
+          subtitle: playlist.value.description,
+          image: '/images/Playlists.jpg',
+          icon: playlist.value.image,
+          group: 'Playlist',
+        })
+      }
+    })
   })
 
   function getIconComponent(type: string): Component {
     switch (type) {
-      case "apple":
+      case 'apple':
         return AppleMusic
-      case "spotify":
+      case 'spotify':
         return Spotify
-      case "deezer":
+      case 'deezer':
         return Deezer
-      case "youtube":
+      case 'youtube':
         return YoutubeMusic
       default:
         return LinkIcon
@@ -80,11 +81,15 @@
   <div v-if="playlist" class="contentView">
     <Hero image="/images/Playlists.jpg">
       <h1>{{ playlist.title }}</h1>
-    </hero>
+    </Hero>
 
     <Card class="spaced">
       <HStack class="spaced">
-        <img class="playlistArt" :src="playlist.image" :alt="`${playlist.title} playlist cover`" />
+        <img
+          class="playlistArt"
+          :src="playlist.image"
+          :alt="`${playlist.title} playlist cover`"
+        />
         <VStack>
           <h3 class="light">by {{ playlist.author }}</h3>
           <p class="light">{{ playlist.description }}</p>
@@ -114,7 +119,21 @@
     <Navbar>
       <NuxtLink to="/links/">
         <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l6 6m-6-6l6-6"/></svg>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 12h14M5 12l6 6m-6-6l6-6"
+            />
+          </svg>
           Links
         </button>
       </NuxtLink>

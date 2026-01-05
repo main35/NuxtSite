@@ -15,7 +15,7 @@
   setHeadMeta({
     page: 'Goodies',
     subtitle: 'Misc stuff from me.',
-    image: '/images/Goodies.jpg'
+    image: '/images/Goodies.jpg',
   })
 
   interface CursorAsset {
@@ -34,11 +34,12 @@
 
   onMounted(async () => {
     try {
-      const response = await fetch("https://api.asboy2035.com/cursors")
-      if (!response.ok) throw new Error(`Failed to fetch: ${response.statusText}`)
+      const response = await fetch('https://api.asboy2035.com/cursors')
+      if (!response.ok)
+        throw new Error(`Failed to fetch: ${response.statusText}`)
       cursors.value = await response.json()
     } catch (error) {
-      console.error("Error fetching cursors:", error)
+      console.error('Error fetching cursors:', error)
     }
   })
 </script>
@@ -57,15 +58,12 @@
           </button>
         </a>
       </HStack>
-    </hero>
+    </Hero>
 
     <grid class="spaced">
       <!-- Cursors Card -->
       <Card>
-        <CardTitle
-          title="Cursors"
-          icon="solar:cursor-line-duotone"
-        />
+        <CardTitle title="Cursors" icon="solar:cursor-line-duotone" />
 
         <p class="light">macOS cursors</p>
         <Spacer />
@@ -74,7 +72,11 @@
           <VStack v-for="cursor in cursors" :key="cursor.name" class="spaced">
             <h3>{{ cursor.name }}</h3>
             <HStack class="scrollable">
-              <div v-for="asset in cursor.assets" :key="asset.type" class="cursorAsset">
+              <div
+                v-for="asset in cursor.assets"
+                :key="asset.type"
+                class="cursorAsset"
+              >
                 <img :src="asset.path" :alt="asset.type" />
                 <p>{{ asset.type }}</p>
               </div>
@@ -91,10 +93,7 @@
 
       <!-- Wallpapers Card -->
       <Card>
-        <CardTitle
-          title="Wallpapers"
-          icon="solar:wallpaper-line-duotone"
-        />
+        <CardTitle title="Wallpapers" icon="solar:wallpaper-line-duotone" />
 
         <p class="light">Wallpapers for any device.</p>
         <p class="light">Coming soon.</p>

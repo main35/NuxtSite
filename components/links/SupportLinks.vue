@@ -25,11 +25,7 @@
         icon="ri:instagram-fill"
       />
 
-      <IconItem
-        name="Ko-Fi"
-        link="https://ko-fi.com/a35hie"
-        icon="cib:ko-fi"
-      />
+      <IconItem name="Ko-Fi" link="https://ko-fi.com/a35hie" icon="cib:ko-fi" />
     </grid>
   </Card>
 </template>

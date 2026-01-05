@@ -19,25 +19,30 @@
 
   onMounted(async () => {
     try {
-      const response = await fetch("https://api.asboy2035.com/apps")
-      if (!response.ok) throw new Error(`Failed to fetch: ${response.statusText}`)
+      const response = await fetch('https://api.asboy2035.com/apps')
+      if (!response.ok)
+        throw new Error(`Failed to fetch: ${response.statusText}`)
       appsData.value = await response.json()
     } catch (error) {
-      console.error("Error fetching apps:", error)
+      console.error('Error fetching apps:', error)
     }
   })
 
   useHead({
-    title: "Toolbox - Ash",
+    title: 'Toolbox - Ash',
     meta: [
-      { name: "description", content: "asboy2035 Toolbox app." },
-      { property: "og:title", content: "Toolbox - Ash" },
-      { property: "og:description", content: "asboy2035 Toolbox app." },
-      { name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" },
+      { name: 'description', content: 'asboy2035 Toolbox app.' },
+      { property: 'og:title', content: 'Toolbox - Ash' },
+      { property: 'og:description', content: 'asboy2035 Toolbox app.' },
+      {
+        name: 'viewport',
+        content:
+          'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
+      },
     ],
     link: [
-      { rel: "icon", type: "image/png", href: "/images/icons/Toolbox.png" },
-    ]
+      { rel: 'icon', type: 'image/png', href: '/images/icons/Toolbox.png' },
+    ],
   })
 </script>
 
@@ -45,7 +50,10 @@
   <div class="contentView toolboxView">
     <VStack id="headerLinks">
       <NavigationTitle title="Toolbox">
-        <button @click="showingAboutModal = !showingAboutModal" id="showAboutModalButton">
+        <button
+          @click="showingAboutModal = !showingAboutModal"
+          id="showAboutModalButton"
+        >
           <icon
             v-if="!showingAboutModal"
             class="growIn"
@@ -61,10 +69,7 @@
       </NavigationTitle>
 
       <Card>
-        <CardTitle
-          title="Quick Links"
-          icon="solar:bolt-line-duotone"
-        />
+        <CardTitle title="Quick Links" icon="solar:bolt-line-duotone" />
 
         <HStack>
           <a href="https://g.a35.dev/">
@@ -92,10 +97,7 @@
 
       <divider />
 
-      <CardTitle
-        title="Apps"
-        icon="solar:widget-2-line-duotone"
-      />
+      <CardTitle title="Apps" icon="solar:widget-2-line-duotone" />
       <apps-category-list :apps-data="appsData" />
     </VStack>
 
@@ -103,19 +105,20 @@
 
     <modal v-if="showingAboutModal">
       <img
-        src="/images/icons/Toolbox.png" alt="Toolbox Icon"
+        src="/images/icons/Toolbox.png"
+        alt="Toolbox Icon"
         class="toolboxIcon"
       />
 
       <h1>About</h1>
       <h3>Toolbox is the one-stop shop for all resources and apps by me.</h3>
 
-      <p>Here, you can find apps, tools, and more, right from one app that you can add directly to your home screen.</p>
+      <p>
+        Here, you can find apps, tools, and more, right from one app that you
+        can add directly to your home screen.
+      </p>
 
-      <a
-        href="https://g.a35.dev/misc/web/pwaInstall"
-        target="_blank"
-      >
+      <a href="https://g.a35.dev/misc/web/pwaInstall" target="_blank">
         <button id="howToInstallToolbox">
           <icon icon="solar:download-minimalistic-line-duotone" />
           How to Install

@@ -28,7 +28,12 @@
   <Card class="stackModeOnly">
     <HStack>
       <HStack>
-        <DynamicImage src="/images/avatar-26.webp" alt="ash's Avatar" radius="2rem" class="bigAvatar" />
+        <DynamicImage
+          src="/images/avatar-26.webp"
+          alt="ash's Avatar"
+          radius="2rem"
+          class="bigAvatar"
+        />
         <VStack>
           <HStack>
             <h1>ash</h1>

@@ -14,13 +14,13 @@
 
   onMounted(() => {
     const observer = new IntersectionObserver(
-        ([entry]) => {
-          isStuck.value = !entry?.isIntersecting
-        },
-        {
-          threshold: 0,
-          rootMargin: '0px 0px -1px 0px' // Prevents flickering at the exact intersection point
-        }
+      ([entry]) => {
+        isStuck.value = !entry?.isIntersecting
+      },
+      {
+        threshold: 0,
+        rootMargin: '0px 0px -1px 0px', // Prevents flickering at the exact intersection point
+      }
     )
 
     if (sentinel.value) {
@@ -45,24 +45,15 @@
       <HStack class="titleContent">
         <h1 v-if="!isStuck">{{ title }}</h1>
 
-        <InteriorItem
-          v-else-if="isStuck"
-          class="stuckTitleContent fadeIn"
-        >
+        <InteriorItem v-else-if="isStuck" class="stuckTitleContent fadeIn">
           <p>{{ title }}</p>
         </InteriorItem>
 
-        <HStack
-          class="stuckToolbar fadeIn"
-          v-if="isStuck"
-        >
+        <HStack class="stuckToolbar fadeIn" v-if="isStuck">
           <slot />
         </HStack>
 
-        <h1
-          class="light"
-          v-if="subtitle && !isStuck"
-        >
+        <h1 class="light" v-if="subtitle && !isStuck">
           {{ subtitle }}
         </h1>
 
@@ -72,58 +63,60 @@
       </HStack>
 
       <ProgressiveBlur
-        :blur="48" :border-radius="0"
-        class="stuckBlur" v-if="isStuck"
+        :blur="48"
+        :border-radius="0"
+        class="stuckBlur"
+        v-if="isStuck"
       />
     </div>
   </div>
 </template>
 
 <style scoped lang="sass">
-@use "@/styles/colors"
+  @use "@/styles/colors"
 
-.sentinel
-  position: absolute
-  top: 0
-  height: 1px
-  width: 100%
-  pointer-events: none
-
-.navTitleWrapper
-  display: flex
-  justify-content: flex-start
-  position: relative
-  z-index: 100
-  border-radius: 0
-
-  &.stuck
-    position: fixed
-    justify-content: center
+  .sentinel
+    position: absolute
     top: 0
-    left: 0
-    right: 0
+    height: 1px
     width: 100%
-    padding: 0
+    pointer-events: none
 
-    .titleContent
-      justify-content: center
-      background: linear-gradient(to top, transparent, colors.$backgroundColor)
-
-  .titleContent
+  .navTitleWrapper
     display: flex
-    z-index: 101
-    padding: 0.75rem
-    width: 100%
+    justify-content: flex-start
+    position: relative
+    z-index: 100
     border-radius: 0
 
-    .stuckTitleContent
-      padding: 0.25rem 0.75rem
+    &.stuck
+      position: fixed
+      justify-content: center
+      top: 0
+      left: 0
+      right: 0
+      width: 100%
+      padding: 0
 
-    .stuckToolbar
-      ::v-deep(button)
-        padding: 0.35rem !important
+      .titleContent
+        justify-content: center
+        background: linear-gradient(to top, transparent, colors.$backgroundColor)
 
-  .stuckBlur
-    transform: rotate(-180deg)
-    z-index: 99
+    .titleContent
+      display: flex
+      z-index: 101
+      padding: 0.75rem
+      width: 100%
+      border-radius: 0
+
+      .stuckTitleContent
+        padding: 0.25rem 0.75rem
+
+      .stuckToolbar
+        ::v-deep(button)
+          padding: 0.35rem !important
+
+    .stuckBlur
+      transform: rotate(-180deg)
+      z-index: 99
 </style>

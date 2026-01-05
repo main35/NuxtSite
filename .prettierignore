@@ -1,0 +1,17 @@
+# config
+.gitignore
+.prettierignore
+LICENSE
+README.md
+
+# generated
+bun.lock
+dist
+.output
+.nuxt
+node_modules
+NuxtSite.iml
+
+# IDE config
+.vscode
+.idea
