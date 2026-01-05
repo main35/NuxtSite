@@ -38,6 +38,8 @@ If you'd like to use them commercially, buy a license.
   Progressive blur effect.
 - [**Sass:**](https://sass-lang.com)
   CSS with superpowers. (And prettiness)
+- [**TSParticles](https://particles.js.org/)
+  TS-based particles library.
 
 ### External Tools & Software
 - [**PhpStorm, WebStorm, and IntelliJ IDEA Ultimate:**](https://jetbrains.com) 

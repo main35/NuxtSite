@@ -10,7 +10,6 @@
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
-  "main": "src/main.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/studio2035/NuxtSite"
@@ -19,7 +18,7 @@
     "build": "nuxt build",
     "ci": "bun install && bun run build",
     "dev": "nuxi dev --host 0.0.0.0 --port 5173",
-    "preview": "bun run build && nuxt preview",
+    "preview": "bun run build && nuxt preview --port 5174",
     "generate": "nuxt generate",
     "postinstall": "nuxt prepare",
     "prettier": "prettier --write --ignore-path .prettierignore .",
@@ -29,7 +28,6 @@
   "dependencies": {
     "@iconify/vue": "^5.0.0",
     "@tsparticles/vue3": "^3.0.1",
-    "@vite-pwa/nuxt": "^1.1.0",
     "cobe": "^0.6.5",
     "html2canvas": "^1.4.1",
     "marked": "^15.0.12",
@@ -42,6 +40,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.10.0",
+    "@vite-pwa/nuxt": "^1.1.0",
     "nuxt": "^4.2.1",
     "postcss-import": "^16.1.1",
     "prettier": "^3.7.4",
