@@ -40,7 +40,7 @@ export default defineNuxtConfig({
     manifest: {
       name: 'Toolbox - Ash',
       short_name: 'Toolbox',
-      description: 'asboy2035 Toolbox app.',
+      description: "a35hie's Toolbox app.",
       theme_color: '#9f75e8',
       start_url: '/toolbox',
       icons: [

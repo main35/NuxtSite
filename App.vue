@@ -31,7 +31,11 @@
     alt="Background"
     aria-hidden="true"
     loading="lazy"
-    :class="{ fadeInBackground: fadingIn, fadeOutBackground: fadingOut }"
+    :class="{
+      fadeInBackground: fadingIn,
+      fadeOutBackground: fadingOut,
+      dimmed: showingUi,
+    }"
   />
 
   <TransitionElement ref="cover" />
@@ -72,6 +76,7 @@
   const backgrounds: string[] = [
     // Closeups
     'Purple-Close',
+    'Blue-Close',
 
     // Scenes
     'All-Planets',
@@ -141,7 +146,14 @@
   $blurHeight: 7rem
   $blurTop: calc(100vh - $blurHeight)
   $blurTop: calc(100dvh - $blurHeight)
-  $backgroundOpacity: 0.25
+
+  :root
+    --backgroundOpacity: 1
+
+    .dimmed
+      --backgroundOpacity: 0.25
+
+  $backgroundOpacity: var(--backgroundOpacity)
 
   .progBlurContainer
     position: fixed
@@ -164,6 +176,7 @@
     margin-top: 1rem
     width: calc(100vw - 2rem)
     max-width: 30rem
+    z-index: 11
 
     button
       flex-grow: 1
@@ -179,6 +192,7 @@
     z-index: 0
     pointer-events: none
     opacity: $backgroundOpacity
+    transition: opacity 0.2s ease
 
   // Background animations
   .fadeOutBackground

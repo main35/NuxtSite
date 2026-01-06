@@ -11,7 +11,7 @@
 
   setHeadMeta({
     page: 'Home',
-    subtitle: 'ash (@asboy2035) - Portfolio',
+    subtitle: 'ash (@a35hie) - Portfolio',
     image: '/images/SitePreview.jpg',
   })
 </script>

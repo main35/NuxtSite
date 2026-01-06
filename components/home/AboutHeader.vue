@@ -37,7 +37,7 @@
         <VStack>
           <HStack>
             <h1>ash</h1>
-            <h1 class="light">asboy2035</h1>
+            <h1 class="light">@a35hie</h1>
           </HStack>
         </VStack>
       </HStack>

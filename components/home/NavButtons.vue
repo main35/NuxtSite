@@ -31,7 +31,7 @@
       </button>
     </RouterLink>
 
-    <a href="https://github.com/studio2035/NuxtSite" aria-labelledby="viewSrc">
+    <a href="https://github.com/main35/NuxtSite" aria-labelledby="viewSrc">
       <button
         class="transparent"
         aria-label="View Source Code"

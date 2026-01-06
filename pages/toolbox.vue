@@ -79,7 +79,7 @@
             </button>
           </a>
 
-          <a href="https://github.com/studio2035/NuxtSite">
+          <a href="https://github.com/main35/NuxtSite">
             <button>
               <Icon icon="mingcute:github-fill" />
               GitHub
