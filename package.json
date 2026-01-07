@@ -6,7 +6,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "6.0.0-beta2",
+  "version": "6.0.0-beta3",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -33,14 +33,14 @@
     "marked": "^15.0.12",
     "postcss-load-config": "^6.0.1",
     "posthog-js": "^1.298.1",
-    "vue": "^3.5.25",
+    "vue": "^3.5.26",
     "vue-progressive-blur": "^1.0.2",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@types/node": "^24.10.0",
     "@vite-pwa/nuxt": "^1.1.0",
-    "nuxt": "^4.2.1",
+    "nuxt": "^4.2.2",
     "postcss-import": "^16.1.1",
     "prettier": "^3.7.4",
     "replace-in-files-cli": "^4.0.0",

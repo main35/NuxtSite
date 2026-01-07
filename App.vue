@@ -1,5 +1,6 @@
 <template>
   <h1 class="hidden">Your CSS is disabled!</h1>
+  <noscript><h1>Your JS is disabled!</h1></noscript>
 
   <HStack class="interfaceOptions">
     <button @click="showingUi = !showingUi">
@@ -77,6 +78,7 @@
     // Closeups
     'Purple-Close',
     'Blue-Close',
+    'Moon-Close',
 
     // Scenes
     'All-Planets',

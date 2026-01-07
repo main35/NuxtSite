@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
-      siteRelease: "ashie's Site - 6.0 Beta",
+      siteRelease: "a35hie's Site v6 Beta",
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://us.i.posthog.com',
       posthogDefaults: '2025-05-24',
