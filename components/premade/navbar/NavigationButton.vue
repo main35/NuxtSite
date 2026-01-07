@@ -1,5 +1,7 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
+  import SafeLink from '@/components/utils/SafeLink.vue'
+  const { t } = useI18n()
 
   defineProps<{
     link: string
@@ -11,15 +13,15 @@
 <template>
   <div class="navWrapper">
     <div class="toolTip" v-if="text">
-      <h4>{{ text }}</h4>
+      <h4>{{ t(text) }}</h4>
     </div>
 
-    <RouterLink :to="link">
+    <SafeLink :to="link">
       <button class="navigationButton" :aria-label="'Go to: ' + link">
         <Icon v-if="icon" :icon="icon" />
         <slot />
       </button>
-    </RouterLink>
+    </SafeLink>
   </div>
 </template>
 

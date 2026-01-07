@@ -5,19 +5,21 @@
   import CardTitle from '@/components/utils/CardTitle.vue'
   import IconItem from '@/components/layout/IconItem.vue'
   import HStack from '@/components/layout/HStack.vue'
+  const { t } = useI18n()
 </script>
 
 <template>
   <Card class="langsCard spaced">
-    <CardTitle title="Languages" icon="solar:earth-line-duotone" />
+    <CardTitle title="home.languages.title" icon="solar:earth-line-duotone" />
 
-    <p>I speak English, French, and a bit of Spanish :)</p>
+    <p>{{ t('home.languages.desc') }}</p>
     <Spacer />
 
-    <h3>Programming Languages</h3>
+    <h3>{{ t('home.languages.programming') }}</h3>
     <HStack class="noSpace">
-      <p>Using/</p>
-      <p class="light">Learning</p>
+      <p>{{ t('home.languages.using') }}</p>
+      <p>/</p>
+      <p class="light">{{ t('home.languages.learning') }}</p>
       <p>:</p>
     </HStack>
     <Grid class="langsGrid spaced">

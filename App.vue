@@ -1,61 +1,3 @@
-<template>
-  <h1 class="hidden">Your CSS is disabled!</h1>
-  <noscript><h1>Your JS is disabled!</h1></noscript>
-
-  <HStack class="interfaceOptions">
-    <button @click="showingUi = !showingUi">
-      <Icon
-        :icon="
-          showingUi
-            ? 'solar:window-frame-line-duotone'
-            : 'solar:window-frame-bold-duotone'
-        "
-      />
-      {{ showingUi ? 'Hide' : 'Show' }} Interface
-    </button>
-
-    <button disabled v-tooltip="'Coming Soon!'">
-      <Icon icon="solar:bag-5-line-duotone" />
-      Get Wallpapers
-    </button>
-  </HStack>
-
-  <NuxtPage v-if="showingUi" />
-
-  <div class="progBlurContainer">
-    <ProgressiveBlur class="progBlur" :blur="48" :border-radius="0" />
-  </div>
-
-  <img
-    class="siteBackground"
-    :src="`/backgrounds/${currentBackground}.svg`"
-    alt="Background"
-    aria-hidden="true"
-    loading="lazy"
-    :class="{
-      fadeInBackground: fadingIn,
-      fadeOutBackground: fadingOut,
-      dimmed: showingUi,
-    }"
-  />
-
-  <TransitionElement ref="cover" />
-
-  <Modal v-if="showDomainTip">
-    <h1>You're on the old domain!</h1>
-    <p>Access this site at asboy2035.com for a cleaner link!</p>
-    <Spacer />
-
-    <HStack class="autoSpace fullWidth">
-      <button @click="showDomainTip = false">Later</button>
-
-      <a :href="redirectLink">
-        <button id="goToNewUrlButton">Let's go!</button>
-      </a>
-    </HStack>
-  </Modal>
-</template>
-
 <script setup lang="ts">
   import { ref, onMounted } from 'vue'
   import { useRouter } from '#app'
@@ -68,6 +10,14 @@
   import Modal from '@/components/utils/Modal.vue'
   import Spacer from '@/components/utils/Spacer.vue'
   import HStack from '@/components/layout/HStack.vue'
+  const { t } = useI18n()
+  const i18nHead = useLocaleHead()
+
+  // Set head lang metadata.
+  // @ts-ignore
+  useHead(() => ({
+    ...i18nHead.value
+  }))
 
   const showingUi: Ref<boolean> = ref(true)
   const showDomainTip: Ref<boolean> = ref(false)
@@ -143,6 +93,64 @@
     return nextBackground
   }
 </script>
+
+<template>
+  <h1 class="hidden">Your CSS is disabled!</h1>
+  <noscript><h1>Your JS is disabled!</h1></noscript>
+
+  <HStack class="interfaceOptions">
+    <button @click="showingUi = !showingUi">
+      <Icon
+        :icon="
+          showingUi
+            ? 'solar:window-frame-line-duotone'
+            : 'solar:window-frame-bold-duotone'
+        "
+      />
+      {{ t(showingUi ? 'app.hideInterface' : 'app.showInterface') }}
+    </button>
+
+    <button disabled v-tooltip="t('app.comingSoon')">
+      <Icon icon="solar:bag-5-line-duotone" />
+      {{ t('app.getWalls') }}
+    </button>
+  </HStack>
+
+  <NuxtPage v-if="showingUi" />
+
+  <div class="progBlurContainer">
+    <ProgressiveBlur class="progBlur" :blur="48" :border-radius="0" />
+  </div>
+
+  <img
+    class="siteBackground"
+    :src="`/backgrounds/${currentBackground}.svg`"
+    alt="Background"
+    aria-hidden="true"
+    loading="lazy"
+    :class="{
+      fadeInBackground: fadingIn,
+      fadeOutBackground: fadingOut,
+      dimmed: showingUi,
+    }"
+  />
+
+  <TransitionElement ref="cover" />
+
+  <Modal v-if="showDomainTip">
+    <h1>You're on the old domain!</h1>
+    <p>Access this site at asboy2035.com for a cleaner link!</p>
+    <Spacer />
+
+    <HStack class="autoSpace fullWidth">
+      <button @click="showDomainTip = false">Later</button>
+
+      <a :href="redirectLink">
+        <button id="goToNewUrlButton">Let's go!</button>
+      </a>
+    </HStack>
+  </Modal>
+</template>
 
 <style scoped lang="sass">
   $blurHeight: 7rem

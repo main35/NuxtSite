@@ -11,19 +11,27 @@ export default function setHeadMeta(config: {
   image?: string
   icon?: string
 }): void {
-  // Title (includes a group if specified)
-  let title: string
-  if (!config.group) {
-    title = `${config.page} - Ash`
-  } else {
-    title = `${config.page} - ${config.group}`
-  }
+  const { t } = useI18n()
+
+  const page: ComputedRef<string> = computed((): string => t(config.page))
+  const subtitle: ComputedRef<string> = computed((): string =>
+    t(config.subtitle)
+  )
+  const group: ComputedRef<string | undefined> = computed(
+    (): string | undefined => (config.group ? t(config.group) : undefined)
+  )
+
+  const title: ComputedRef = computed((): string =>
+    group.value
+      ? `${page.value} - ${group.value}`
+      : `${page.value} - ${t('meta.groups.ash')}`
+  )
 
   // Meta-tags (includes image if specified)
   let meta: ResolvableArray<ResolvableMeta> = [
-    { property: 'og:title', content: title },
-    { property: 'og:description', content: config.subtitle },
-    { name: 'description', content: config.subtitle },
+    { property: 'og:title', content: title.value },
+    { property: 'og:description', content: subtitle.value },
+    { name: 'description', content: subtitle.value },
     { name: 'mobile-web-app-capable', content: 'yes' },
     { name: 'apple-mobile-web-app-capable', content: 'yes' },
     {
@@ -41,9 +49,9 @@ export default function setHeadMeta(config: {
     link.push({ rel: 'icon', href: config.icon })
   }
 
-  useHead({
-    title: title,
-    meta: meta,
-    link: link,
-  })
+  useHead(() => ({
+    title: title.value,
+    meta,
+    link,
+  }))
 }

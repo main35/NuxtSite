@@ -6,7 +6,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "6.0.0-beta3",
+  "version": "6.0.0-beta4",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@iconify/vue": "^5.0.0",
+    "@nuxtjs/i18n": "^10.2.1",
     "cobe": "^0.6.5",
     "floating-vue": "^5.2.2",
     "html2canvas": "^1.4.1",

@@ -10,8 +10,8 @@
   import BottomFooter from '@/components/premade/BottomFooter.vue'
 
   setHeadMeta({
-    page: 'Home',
-    subtitle: 'ash (@a35hie) - Portfolio',
+    page: 'pages.home',
+    subtitle: 'meta.subtitles.global',
     image: '/images/SitePreview.jpg',
   })
 </script>

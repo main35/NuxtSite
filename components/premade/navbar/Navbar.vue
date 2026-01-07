@@ -41,16 +41,16 @@
     <FullscreenCover v-if="showSwitcher">
       <VStack>
         <LauncherCard
-          title="Apps"
+          title="navbar.launchers.apps"
           icon="solar:widget-2-line-duotone"
-          base-url="/apps/"
+          base-url="/apps"
           :launcher-items="LauncherApps"
         />
 
         <LauncherCard
-          title="Create..."
+          title="navbar.launchers.creators"
           icon="solar:pen-new-square-line-duotone"
-          base-url="/creator/"
+          base-url="/creator"
           :launcher-items="LauncherCreators"
         />
       </VStack>
@@ -102,7 +102,7 @@
 
       <InteriorItem :class="{ desktopLinks: hideProfile }" class="navBar">
         <HStack v-if="hideProfile !== true" class="profile transparent">
-          <NavigationButton link="/" id="homeButtonContainer" text="Home">
+          <NavigationButton link="/" id="homeButtonContainer" text="pages.home">
             <DynamicImage
               class="avatar"
               src="/images/avatar-26.webp"

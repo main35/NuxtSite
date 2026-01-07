@@ -3,9 +3,7 @@ import meta from './package.json'
 export default defineNuxtConfig({
   app: {
     head: {
-      htmlAttrs: {
-        lang: 'en',
-      },
+      htmlAttrs: {},
       link: [
         {
           rel: 'preconnect',
@@ -34,7 +32,33 @@ export default defineNuxtConfig({
       posthogDefaults: '2025-05-24',
     },
   },
-  modules: ['@vite-pwa/nuxt', 'floating-vue/nuxt'],
+  modules: ['@vite-pwa/nuxt', 'floating-vue/nuxt', '@nuxtjs/i18n'],
+  i18n: {
+    strategy: 'prefix_except_default',
+    baseUrl: 'https://asboy2035.com',
+    defaultLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      alwaysRedirect: false,
+      fallbackLocale: 'en',
+    },
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        language: 'en-US',
+        files: ['en.json', 'meta-en.json'],
+      },
+      {
+        code: 'fr',
+        name: 'Français',
+        language: 'fr-FR',
+        files: ['fr.json', 'meta-fr.json'],
+      },
+    ],
+    langDir: 'locales/',
+  },
   pwa: {
     registerType: 'autoUpdate',
     manifest: {

@@ -1,0 +1,62 @@
+{
+  "pages": {
+    "home": "Accueil",
+    "links": "Liens",
+    "apps": "Applis",
+    "goodies": "Autres",
+    "languages": "Langues"
+  },
+  "sites": {
+    "title": "Sites",
+    "pages": "Pages",
+    "fonts": "Polices",
+    "big": "BIG",
+    "guides": "Guides",
+    "portfolio": "Portfolio"
+  },
+  "app": {
+    "getWalls": "Obtenir les fonds d'écran",
+    "hideInterface": "Masquer l'interface",
+    "showInterface": "Afficher l'interface",
+    "comingSoon": "À venir!",
+    "myTime": "Mon temps"
+  },
+  "sharing": {
+    "title": "Partager",
+    "showQr": "Afficher le code QR",
+    "hideQr": "Masquer le code QR"
+  },
+  "navbar": {
+    "launchers": {
+      "apps": "Applis",
+      "creators": "Créer..."
+    }
+  },
+  "footer": {
+    "thanks": "Merci pour votre lecture!",
+    "createdBy": "Créé par ash, avec NuxtJS, en 2026 <3",
+    "codeOnGh": "Code sur GitHub",
+    "version": "Version:",
+    "release": "Release:",
+    "readMore": "Lire plus:"
+  },
+  "home": {
+    "intro": "Bonjour, je suis ash.",
+    "desc1": "Je suis un jeune de France, et officiellement le plus chic que vous connaissez.",
+    "desc2": "Actuellement, je suis en train d'apprendre le développement pour le Web et les plateformes Apple. De plus, je pratique l'UI et le design graphique.",
+    "languages": {
+      "title": "Langues",
+      "desc": "Je parle anglais, français, et un peu d'espagnol :)",
+      "programming": "Langages de programmation",
+      "using": "Utilise",
+      "learning": "Apprend"
+    }
+  },
+  "languages": {
+    "choose": "Choisir...",
+    "betaNotice": "Ce fonctionnalité est en beta.",
+    "errorNotice": "Traductions peuvent inclure des erreurs.",
+    "foundError": "Trouvé une erreur?",
+    "reportError": "Reportez-la."
+  }
+}

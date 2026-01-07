@@ -7,6 +7,7 @@
   import SitePick from '@/components/premade/navbar/SitePick.vue'
   import HStack from '@/components/layout/HStack.vue'
   import Spacer from '@/components/utils/Spacer.vue'
+  const { t } = useI18n()
 
   const isOldMain = ref(false)
   const showingShareModal = ref(false)
@@ -26,38 +27,41 @@
     <Card v-if="!showingShareModal">
       <VStack class="fullWidth">
         <HStack class="autoSpace fullWidth">
-          <h2>Sites</h2>
+          <h2>{{ t('sites.title') }}</h2>
           <!--        Insert close button here -->
           <slot />
         </HStack>
 
-        <RouterLink to="/">
-          <SitePick title="Portfolio" icon="solar:bag-heart-line-duotone" />
-        </RouterLink>
-
-        <a href="https://g.a35.dev/" target="_blank">
-          <SitePick title="Guides" icon="solar:book-line-duotone" />
-        </a>
-
-        <a href="https://big.a35.dev" target="_blank">
-          <SitePick
-            title="BIG"
-            icon="solar:posts-carousel-vertical-line-duotone"
-          />
-        </a>
-
-        <a href="https://fonts.asboy2035.com/" target="_blank">
-          <SitePick title="Fonts" icon="solar:text-line-duotone" />
-        </a>
-
-        <a href="https://pages.asboy2035.com/" target="_blank">
-          <SitePick title="Pages" icon="solar:documents-line-duotone" />
-        </a>
+        <SitePick
+          to="/"
+          title="sites.portfolio"
+          icon="solar:bag-heart-line-duotone"
+        />
+        <SitePick
+          to="https://g.a35.dev/"
+          title="sites.guides"
+          icon="solar:book-line-duotone"
+        />
+        <SitePick
+          to="https://big.a35.dev"
+          title="sites.big"
+          icon="solar:posts-carousel-vertical-line-duotone"
+        />
+        <SitePick
+          to="https://fonts.asboy2035.com/"
+          title="sites.fonts"
+          icon="solar:text-line-duotone"
+        />
+        <SitePick
+          to="https://pages.asboy2035.com/"
+          title="sites.pages"
+          icon="solar:documents-line-duotone"
+        />
       </VStack>
     </Card>
 
     <Card>
-      <h2>Share</h2>
+      <h2>{{ t('sharing.title') }}</h2>
       <h3 class="light">a35.dev</h3>
 
       <button
@@ -66,7 +70,7 @@
         @click="showingShareModal = !showingShareModal"
       >
         <Icon icon="solar:qr-code-line-duotone" />
-        {{ showingShareModal ? 'Hide' : 'Show' }} QR Code
+        {{ t(showingShareModal ? 'sharing.hideQr' : 'sharing.showQr') }}
       </button>
 
       <VStack v-if="showingShareModal">

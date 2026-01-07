@@ -5,6 +5,8 @@
   import DynamicImage from '@/components/utils/DynamicImage.vue'
   import HStack from '@/components/layout/HStack.vue'
   import Card from '@/components/layout/Card.vue'
+  import SafeLink from '@/components/utils/SafeLink.vue'
+  const { t } = useI18n()
 
   defineProps<{
     title: string
@@ -16,15 +18,15 @@
 
 <template>
   <Card class="quickContainer">
-    <RouterLink :to="baseUrl">
-      <CardTitle :title="title" :icon="icon" />
-    </RouterLink>
+    <SafeLink :to="baseUrl">
+      <CardTitle :title="t(title)" :icon="icon" />
+    </SafeLink>
 
     <HStack class="tight">
-      <a
+      <SafeLink
         v-for="launcherItem in launcherItems"
         :key="launcherItem.name"
-        :href="launcherItem.link"
+        :to="launcherItem.link"
       >
         <InteriorItem>
           <HStack>
@@ -37,7 +39,7 @@
             <p>{{ launcherItem.name }}</p>
           </HStack>
         </InteriorItem>
-      </a>
+      </SafeLink>
     </HStack>
   </Card>
 </template>

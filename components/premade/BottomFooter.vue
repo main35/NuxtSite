@@ -4,6 +4,7 @@
   import VStack from '@/components/layout/VStack.vue'
   import NavButtons from '@/components/home/NavButtons.vue'
   import Divider from '@/components/utils/Divider.vue'
+  const { t } = useI18n()
 
   defineProps<{
     hideReadMore?: boolean
@@ -16,25 +17,27 @@
   <divider class="footerDivider" />
   <footer class="fullWidth">
     <Card class="spaced">
-      <CardTitle title="Thanks for Reading!" icon="solar:heart-line-duotone" />
+      <CardTitle title="footer.thanks" icon="solar:heart-line-duotone" />
 
       <VStack class="light">
-        <p>Created by ash, using NuxtJS, in 2026 <3</p>
+        <p>{{ t('footer.createdBy') }}</p>
 
         <p>
           <a class="prominentLink" href="https://github.com/main35/NuxtSite">
-            Code on GitHub.
+            {{ t('footer.codeOnGh') }}
           </a>
         </p>
 
         <p>
-          <b>Version: {{ meta.public.siteVersion }}</b> (Release:
+          <b>{{ t('footer.version') }} {{ meta.public.siteVersion }}</b> ({{
+            t('footer.release')
+          }}
           {{ meta.public.siteRelease }})
         </p>
       </VStack>
 
       <div v-if="!hideReadMore" id="readMore">
-        <h3>Read more:</h3>
+        <h3>{{ t('footer.readMore') }}</h3>
         <NavButtons />
       </div>
     </Card>

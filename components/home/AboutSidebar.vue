@@ -6,6 +6,7 @@
   import HStack from '@/components/layout/HStack.vue'
   import SitePicker from '@/components/premade/navbar/SitePicker.vue'
   import DynamicImage from '@/components/utils/DynamicImage.vue'
+  const { t } = useI18n()
 
   const currentTime: Ref<string> = ref('')
 
@@ -43,7 +44,7 @@
     </Card>
 
     <Card>
-      <h3 v-tooltip="'My time'">{{ currentTime }}</h3>
+      <h3 v-tooltip="t('app.myTime')">{{ currentTime }}</h3>
       <HStack class="spaced">
         <icon icon="solar:bolt-line-duotone" width="24" height="24" />
         <a

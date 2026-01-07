@@ -6,11 +6,11 @@
 Many thanks to all the projects, tools, and providers that make this site possible.
 
 ### PangramPangram
-[pangrampangram.com](https://pangrampangram.com/)
+Check out all their cool fonts [here](https://pangrampangram.com/).
 
 #### Used:
 - PP Agrandir
-- PP Neue Machina
+- PP Neue Montreal
 - PP Pangaia
 - PP Supply Mono
 
@@ -38,8 +38,6 @@ If you'd like to use them commercially, buy a license.
   Progressive blur effect.
 - [**Sass:**](https://sass-lang.com)
   CSS with superpowers. (And prettiness)
-- [**TSParticles](https://particles.js.org/)
-  TS-based particles library.
 
 ### External Tools & Software
 - [**PhpStorm, WebStorm, and IntelliJ IDEA Ultimate:**](https://jetbrains.com) 
@@ -52,6 +50,9 @@ If you'd like to use them commercially, buy a license.
   Nice browser I use for testing.
 - **[GitHub](https://github.com), [Cloudflare](https://cloudflare.com), and [Vercel](https://vercel.com)**:
   Git/Web hosting!
+
+### Translators
+- ash: English/French
 
 ### Contributors
 - Liz: Design help
