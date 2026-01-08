@@ -54,6 +54,7 @@ If you'd like to use them commercially, buy a license.
   Git/Web hosting!
 
 ### Translators
+*Some languages are automatically translated.*
 - ash: English/French
 
 ### Contributors

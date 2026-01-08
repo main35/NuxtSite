@@ -1,13 +1,14 @@
 <script setup>
   import VStack from '@/components/layout/VStack.vue'
   import { Icon } from '@iconify/vue'
+  import Grid from '@/components/layout/Grid.vue'
 
   const { locale, locales, setLocale } = useI18n()
 </script>
 
 <template>
   <ClientOnly>
-    <VStack class="langList">
+    <Grid class="langList tight">
       <button
         v-for="l in locales"
         :key="l.code"
@@ -23,7 +24,7 @@
         />
         {{ l.name }}
       </button>
-    </VStack>
+    </Grid>
   </ClientOnly>
 </template>
 

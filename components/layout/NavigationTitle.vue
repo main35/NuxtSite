@@ -3,7 +3,7 @@
   import { ProgressiveBlur } from 'vue-progressive-blur'
   import HStack from '@/components/layout/HStack.vue'
   import InteriorItem from '@/components/layout/InteriorItem.vue'
-  const {t} = useI18n()
+  const { t } = useI18n()
 
   defineProps<{
     title: string

@@ -112,8 +112,8 @@
       />
 
       <h1>{{ t('toolbox.about') }}</h1>
-      <h3>{{t('toolbox.desc1')}}</h3>
-      <p>{{t('toolbox.desc2')}}</p>
+      <h3>{{ t('toolbox.desc1') }}</h3>
+      <p>{{ t('toolbox.desc2') }}</p>
 
       <a href="https://g.a35.dev/misc/web/pwaInstall" target="_blank">
         <button id="howToInstallToolbox">

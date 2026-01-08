@@ -48,13 +48,21 @@ export default defineNuxtConfig({
         code: 'en',
         name: 'English',
         language: 'en-US',
-        files: ['global-en.json', 'meta-en.json', 'pages-en.json'],
+        files: [
+          'global/global-en.json',
+          'meta/meta-en.json',
+          'pages/pages-en.json',
+        ],
       },
       {
         code: 'fr',
         name: 'Français',
         language: 'fr-FR',
-        files: ['global-fr.json', 'meta-fr.json', 'pages-fr.json'],
+        files: [
+          'global/global-fr.json',
+          'meta/meta-fr.json',
+          'pages/pages-fr.json',
+        ],
       },
     ],
     langDir: 'locales/',
