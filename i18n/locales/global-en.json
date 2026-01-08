@@ -1,0 +1,36 @@
+{
+  "sites": {
+    "title": "Sites",
+    "pages": "Pages",
+    "fonts": "Fonts",
+    "big": "BIG",
+    "guides": "Guides",
+    "portfolio": "Portfolio"
+  },
+  "app": {
+    "hideInterface": "Hide Interface",
+    "showInterface": "Show Interface",
+    "getWalls": "Get Wallpapers",
+    "comingSoon": "Coming Soon!",
+    "myTime": "My Time"
+  },
+  "sharing": {
+    "title": "Share",
+    "showQr": "Show QR Code",
+    "hideQr": "Hide QR Code"
+  },
+  "navbar": {
+    "launchers": {
+      "apps": "Apps",
+      "creators": "Create..."
+    }
+  },
+  "footer": {
+    "thanks": "Thanks for reading!",
+    "createdBy": "Created by ash, using NuxtJS, in 2026 <3",
+    "codeOnGh": "Code on GitHub.",
+    "version": "Version:",
+    "release": "Release:",
+    "readMore": "Read more:"
+  }
+}

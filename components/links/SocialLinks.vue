@@ -4,13 +4,14 @@
   import Grid from '@/components/layout/Grid.vue'
   import IconItem from '@/components/layout/IconItem.vue'
   import CardTitle from '@/components/utils/CardTitle.vue'
+  const { t } = useI18n()
 </script>
 
 <template>
   <Card class="spaced">
-    <CardTitle title="My Socials" icon="solar:share-line-duotone" />
+    <CardTitle title="links.socialTitle" icon="solar:share-line-duotone" />
 
-    <p>My socials and contact methods :3</p>
+    <p>{{ t('links.socialDesc') }}</p>
     <Spacer />
 
     <grid class="tight spaced">

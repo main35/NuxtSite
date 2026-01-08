@@ -1,0 +1,31 @@
+{
+  "home": {
+    "intro": "Hi, I'm ash.",
+    "desc1": "I'm a teenager from France, and officially the chillest person you'll meet.",
+    "desc2": "I'm currently learning to develop on Web and Apple platforms. I'm also practicing UI and graphic design.",
+    "languages": {
+      "title": "Languages",
+      "desc": "I speak English, French, and a bit of Spanish :)",
+      "programming": "Programming Languages",
+      "using": "Using",
+      "learning": "Learning"
+    }
+  },
+  "links": {
+    "socialTitle": "My Socials",
+    "socialDesc": "My socials and contact methods :3",
+    "more": "More Links",
+    "playlists": "Playlists"
+  },
+  "apps": {
+    "allApps": "All Apps",
+    "pwaInstall": "PWA Installation"
+  },
+  "languages": {
+    "choose": "Choose...",
+    "betaNotice": "This feature is in beta.",
+    "errorNotice": "Translations may include errors.",
+    "foundError": "Found an error?",
+    "reportError": "Report it."
+  }
+}

@@ -1,20 +1,21 @@
-<script>
+<script setup lang="ts">
   import DynamicImage from '@/components/utils/DynamicImage.vue'
   import InteriorItem from '@/components/layout/InteriorItem.vue'
   import Card from '@/components/layout/Card.vue'
 
-  export default {
-    components: { Card, InteriorItem, DynamicImage },
-    props: {
-      image: String,
-      imageAlt: String ?? 'Image',
-    },
-  }
+  defineProps<{
+    image: string
+    imageAlt?: string
+  }>()
 </script>
 
 <template>
   <Card class="hero" :style="{ backgroundImage: `url('${image}')` }">
-    <DynamicImage class="heroResizableImage" :src="image" :alt="imageAlt" />
+    <DynamicImage
+      class="heroResizableImage"
+      :src="image"
+      :alt="imageAlt ?? 'Image'"
+    />
 
     <InteriorItem class="heroContent">
       <slot />

@@ -1,10 +1,19 @@
 {
+  "pages": {
+    "home": "Home",
+    "links": "Links",
+    "apps": "Apps",
+    "goodies": "Goodies",
+    "languages": "Languages"
+  },
   "meta": {
     "groups": {
       "ash": "Ash"
     },
     "subtitles": {
-      "global": "ash (a35hie) - Portfolio"
+      "global": "ash (a35hie) - Portfolio",
+      "links": "My socials, contacts, and more :)",
+      "apps": "My web/Apple apps."
     }
   }
 }

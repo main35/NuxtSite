@@ -16,7 +16,7 @@
   // Set head lang metadata.
   // @ts-ignore
   useHead(() => ({
-    ...i18nHead.value
+    ...i18nHead.value,
   }))
 
   const showingUi: Ref<boolean> = ref(true)

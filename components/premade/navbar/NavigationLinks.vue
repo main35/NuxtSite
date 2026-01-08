@@ -1,7 +1,6 @@
 <script setup lang="ts">
   import HStack from '@/components/layout/HStack.vue'
   import NavigationButton from '@/components/premade/navbar/NavigationButton.vue'
-  const { t } = useI18n()
 </script>
 
 <template>

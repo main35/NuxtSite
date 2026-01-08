@@ -3,11 +3,12 @@
   import Card from '@/components/layout/Card.vue'
   import HStack from '@/components/layout/HStack.vue'
   import CardTitle from '@/components/utils/CardTitle.vue'
+  const { t } = useI18n()
 </script>
 
 <template>
   <Card class="spaced">
-    <CardTitle title="More Links" icon="solar:menu-dots-line-duotone" />
+    <CardTitle title="links.more" icon="solar:menu-dots-line-duotone" />
 
     <HStack>
       <a href="https://app.warp.dev/referral/KVWRZZ">
@@ -32,7 +33,7 @@
       </a>
     </HStack>
 
-    <h3>Playlists</h3>
+    <h3>{{ t('links.playlists') }}</h3>
     <HStack>
       <RouterLink to="/playlists/topsongs">
         <button>

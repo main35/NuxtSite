@@ -12,10 +12,11 @@
   import VStack from '@/components/layout/VStack.vue'
   import SupportLinks from '@/components/links/SupportLinks.vue'
   import Hero from '@/components/utils/Hero.vue'
+  const { t } = useI18n()
 
   setHeadMeta({
-    page: 'Links',
-    subtitle: 'My socials, contacts, and more :)',
+    page: 'pages.links',
+    subtitle: 'meta.subtitles.links',
     image: '/images/Links.jpg',
   })
 </script>
@@ -23,8 +24,8 @@
 <template>
   <div class="contentView">
     <Hero image="/images/Links.jpg">
-      <h1>Links</h1>
-      <h2>My socials, contacts, and more.</h2>
+      <h1>{{ t('pages.links') }}</h1>
+      <h2>{{ t('meta.subtitles.links') }}</h2>
     </Hero>
 
     <!-- About -->
