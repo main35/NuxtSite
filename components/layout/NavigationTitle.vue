@@ -3,6 +3,7 @@
   import { ProgressiveBlur } from 'vue-progressive-blur'
   import HStack from '@/components/layout/HStack.vue'
   import InteriorItem from '@/components/layout/InteriorItem.vue'
+  const {t} = useI18n()
 
   defineProps<{
     title: string
@@ -43,10 +44,10 @@
 
     <div class="navTitleWrapper" :class="{ stuck: isStuck }">
       <HStack class="titleContent">
-        <h1 v-if="!isStuck">{{ title }}</h1>
+        <h1 v-if="!isStuck">{{ t(title) }}</h1>
 
         <InteriorItem v-else-if="isStuck" class="stuckTitleContent fadeIn">
-          <p>{{ title }}</p>
+          <p>{{ t(title) }}</p>
         </InteriorItem>
 
         <HStack class="stuckToolbar fadeIn" v-if="isStuck">
@@ -54,7 +55,7 @@
         </HStack>
 
         <h1 class="light" v-if="subtitle && !isStuck">
-          {{ subtitle }}
+          {{ t(subtitle) }}
         </h1>
 
         <HStack class="toolbar" v-if="!isStuck">

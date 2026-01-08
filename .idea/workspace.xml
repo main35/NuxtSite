@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="localize links page and apps page, split localization files better">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/AppLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppLink.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/MoreLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/MoreLinks.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n/locales/meta-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta-en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n/locales/meta-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta-fr.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n/locales/pages-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages-en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n/locales/pages-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages-fr.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,7 @@
     <option name="directoryName" value="kjZId4l4" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="AISelfReview" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -133,7 +135,7 @@
       <recent name="$PROJECT_DIR$/components/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.format">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -606,15 +608,7 @@
       <workItem from="1767689721313" duration="3177000" />
       <workItem from="1767768653022" duration="82000" />
       <workItem from="1767781777655" duration="17489000" />
-      <workItem from="1767872662033" duration="5598000" />
-    </task>
-    <task id="LOCAL-00024" summary="improve divider, navigationtitle, fix mobile padding">
-      <option name="closed" value="true" />
-      <created>1752683423137</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1752683423137</updated>
+      <workItem from="1767872662033" duration="7633000" />
     </task>
     <task id="LOCAL-00025" summary="new background, updated card, updated rounding">
       <option name="closed" value="true" />
@@ -1000,7 +994,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767886594859</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits">
+      <option name="closed" value="true" />
+      <created>1767889279734</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1767889279734</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1018,7 +1020,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update meta, update package versioning" />
     <MESSAGE value="update sitepicker" />
     <MESSAGE value="add BIMI logo" />
     <MESSAGE value="convert to tinysvg" />
@@ -1043,7 +1044,8 @@
     <MESSAGE value="add no JS warning, update deps, add moon wallpaper, update site preview" />
     <MESSAGE value="localize homepage and some components to french, add langs page, UI updates" />
     <MESSAGE value="localize links page and apps page, split localization files better" />
-    <option name="LAST_COMMIT_MESSAGE" value="localize links page and apps page, split localization files better" />
+    <MESSAGE value="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits" />
+    <option name="LAST_COMMIT_MESSAGE" value="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

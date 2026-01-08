@@ -2,6 +2,7 @@
   import { ref, onMounted, computed } from 'vue'
   import { useRoute } from 'vue-router'
   import setHeadMeta from '@/utils/setHeadMeta'
+  import { Icon } from '@iconify/vue'
   import InteriorItem from '@/components/layout/InteriorItem.vue'
   import AppleMusic from '@/components/playlists/AppleMusic.vue'
   import Spotify from '@/components/playlists/Spotify.vue'
@@ -15,6 +16,9 @@
   import Grid from '@/components/layout/Grid.vue'
   import Hero from '@/components/utils/Hero.vue'
   import Navbar from '@/components/premade/navbar/Navbar.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
+  import SafeLink from '@/components/utils/SafeLink.vue'
+  const { t } = useI18n()
 
   interface PlaylistLink {
     title: string
@@ -91,14 +95,17 @@
           :alt="`${playlist.title} playlist cover`"
         />
         <VStack>
-          <h3 class="light">by {{ playlist.author }}</h3>
+          <h3 class="light">{{ t('playlists.by') }} {{ playlist.author }}</h3>
           <p class="light">{{ playlist.description }}</p>
         </VStack>
       </HStack>
       <Spacer />
 
-      <h2>Stream</h2>
-      <p class="light">Where to stream {{ playlist.title }}:</p>
+      <CardTitle
+        title="playlists.streamTitle"
+        icon="solar:headphones-square-line-duotone"
+      />
+      <p class="light">{{ t('playlists.streamDesc') }}</p>
 
       <grid class="tight spaced">
         <a
@@ -117,26 +124,12 @@
     </Card>
 
     <Navbar>
-      <NuxtLink to="/links/">
+      <SafeLink to="/links">
         <button>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 12h14M5 12l6 6m-6-6l6-6"
-            />
-          </svg>
-          Links
+          <Icon icon="solar:arrow-left-line-duotone" />
+          {{ t('pages.links') }}
         </button>
-      </NuxtLink>
+      </SafeLink>
     </Navbar>
   </div>
 </template>

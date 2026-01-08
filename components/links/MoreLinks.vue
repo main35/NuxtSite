@@ -3,6 +3,7 @@
   import Card from '@/components/layout/Card.vue'
   import HStack from '@/components/layout/HStack.vue'
   import CardTitle from '@/components/utils/CardTitle.vue'
+  import SafeLink from '@/components/utils/SafeLink.vue'
   const { t } = useI18n()
 </script>
 
@@ -35,12 +36,12 @@
 
     <h3>{{ t('links.playlists') }}</h3>
     <HStack>
-      <RouterLink to="/playlists/topsongs">
+      <SafeLink to="/playlists/topsongs">
         <button>
           <Icon icon="solar:music-note-outline" />
           Top Songs
         </button>
-      </RouterLink>
+      </SafeLink>
     </HStack>
   </Card>
 </template>

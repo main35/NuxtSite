@@ -15,6 +15,9 @@
   import LinkIcon from '@/components/apps/LinkIcon.vue'
   import HStack from '@/components/layout/HStack.vue'
   import Navbar from '@/components/premade/navbar/Navbar.vue'
+  import { Icon } from '@iconify/vue'
+  import SafeLink from '@/components/utils/SafeLink.vue'
+  const { t } = useI18n()
 
   const route = useRoute()
   const slug: string = route.params.slug as string
@@ -89,26 +92,12 @@
     <BottomFooter />
 
     <Navbar>
-      <NuxtLink to="/apps/">
+      <SafeLink to="/apps">
         <button>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 12h14M5 12l6 6m-6-6l6-6"
-            />
-          </svg>
-          All Apps
+          <Icon icon="solar:arrow-left-line-duotone" />
+          {{ t('pages.apps') }}
         </button>
-      </NuxtLink>
+      </SafeLink>
     </Navbar>
   </div>
 </template>

@@ -14,8 +14,8 @@
   const { t } = useI18n()
 
   setHeadMeta({
-    page: 'Goodies',
-    subtitle: 'Misc stuff from me.',
+    page: 'pages.goodies',
+    subtitle: 'meta.subtitles.goodies',
     image: '/images/Goodies.jpg',
   })
 

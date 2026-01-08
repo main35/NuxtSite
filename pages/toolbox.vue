@@ -13,6 +13,8 @@
   import HStack from '@/components/layout/HStack.vue'
   import Modal from '@/components/utils/Modal.vue'
   import LauncherCard from '@/components/premade/navbar/LauncherCard.vue'
+  import setHeadMeta from '@/utils/setHeadMeta'
+  const { t } = useI18n()
 
   const appsData = ref<AppCategory[]>([])
   const showingAboutModal = ref(false)
@@ -28,20 +30,19 @@
     }
   })
 
+  setHeadMeta({
+    page: 'pages.toolbox',
+    subtitle: 'meta.subtitles.toolbox',
+    icon: '/images/icons/Toolbox.png',
+  })
+
   useHead({
-    title: 'Toolbox - Ash',
     meta: [
-      { name: 'description', content: 'asboy2035 Toolbox app.' },
-      { property: 'og:title', content: 'Toolbox - Ash' },
-      { property: 'og:description', content: 'asboy2035 Toolbox app.' },
       {
         name: 'viewport',
         content:
           'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
       },
-    ],
-    link: [
-      { rel: 'icon', type: 'image/png', href: '/images/icons/Toolbox.png' },
     ],
   })
 </script>
@@ -49,7 +50,7 @@
 <template>
   <div class="contentView toolboxView">
     <VStack id="headerLinks">
-      <NavigationTitle title="Toolbox">
+      <NavigationTitle title="pages.toolbox">
         <button
           @click="showingAboutModal = !showingAboutModal"
           id="showAboutModalButton"
@@ -69,13 +70,13 @@
       </NavigationTitle>
 
       <Card>
-        <CardTitle title="Quick Links" icon="solar:bolt-line-duotone" />
+        <CardTitle title="toolbox.quickLinks" icon="solar:bolt-line-duotone" />
 
         <HStack>
           <a href="https://g.a35.dev/">
             <button>
               <Icon icon="solar:book-line-duotone" />
-              Guides
+              {{ t('sites.guides') }}
             </button>
           </a>
 
@@ -89,7 +90,7 @@
       </Card>
 
       <LauncherCard
-        title="Tools"
+        title="creators.tools"
         icon="solar:sledgehammer-line-duotone"
         base-url="/toolbox"
         :launcher-items="LauncherCreators"
@@ -97,34 +98,30 @@
 
       <divider />
 
-      <CardTitle title="Apps" icon="solar:widget-2-line-duotone" />
-      <apps-category-list :apps-data="appsData" />
+      <CardTitle title="pages.apps" icon="solar:widget-2-line-duotone" />
+      <AppsCategoryList :apps-data="appsData" />
     </VStack>
 
     <BottomFooter hide-read-more />
 
-    <modal v-if="showingAboutModal">
+    <Modal v-if="showingAboutModal">
       <img
         src="/images/icons/Toolbox.png"
         alt="Toolbox Icon"
         class="toolboxIcon"
       />
 
-      <h1>About</h1>
-      <h3>Toolbox is the one-stop shop for all resources and apps by me.</h3>
-
-      <p>
-        Here, you can find apps, tools, and more, right from one app that you
-        can add directly to your home screen.
-      </p>
+      <h1>{{ t('toolbox.about') }}</h1>
+      <h3>{{t('toolbox.desc1')}}</h3>
+      <p>{{t('toolbox.desc2')}}</p>
 
       <a href="https://g.a35.dev/misc/web/pwaInstall" target="_blank">
         <button id="howToInstallToolbox">
           <icon icon="solar:download-minimalistic-line-duotone" />
-          How to Install
+          {{ t('apps.pwaInstall') }}
         </button>
       </a>
-    </modal>
+    </Modal>
   </div>
 </template>
 

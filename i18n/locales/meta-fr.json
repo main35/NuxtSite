@@ -4,7 +4,9 @@
     "links": "Liens",
     "apps": "Applis",
     "goodies": "Autres",
-    "languages": "Langues"
+    "languages": "Langues",
+    "creators": "Créateurs",
+    "toolbox": "Boîte à Outils"
   },
   "meta": {
     "groups": {
@@ -14,7 +16,9 @@
       "global": "ash (a35hie) - Portfolio",
       "links": "Mes profiles, liens, etc. :D",
       "apps": "Mes applications web et Apple :)",
-      "goodies": "Autres contenus téléchargables."
+      "goodies": "Autres contenus téléchargables.",
+      "creators": "Mes outils et créateurs.",
+      "toolbox": "Boîte à Outils d'a35hie."
     }
   }
 }

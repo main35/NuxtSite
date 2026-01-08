@@ -4,7 +4,9 @@
     "links": "Links",
     "apps": "Apps",
     "goodies": "Goodies",
-    "languages": "Languages"
+    "languages": "Languages",
+    "creators": "Creators",
+    "toolbox": "Toolbox"
   },
   "meta": {
     "groups": {
@@ -14,7 +16,9 @@
       "global": "ash (a35hie) - Portfolio",
       "links": "My socials, contacts, and more :)",
       "apps": "My web/Apple apps.",
-      "goodies": "Other downloadable content."
+      "goodies": "Other downloadable content.",
+      "creators": "My tools and creators.",
+      "toolbox": "a35hie's Toolbox app."
     }
   }
 }
