@@ -4,24 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="localize homepage and some components to french, add langs page, UI updates">
-      <change afterPath="$PROJECT_DIR$/i18n/locales/pages-en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n/locales/pages-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="localize links page and apps page, split localization files better">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/MoreLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/MoreLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global-fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/apps/AppLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppLink.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n/locales/meta-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta-en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n/locales/meta-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages-en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages-fr.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/links.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +26,7 @@
     <execution />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="129" />
+    <option name="cachedIndexableFilesCount" value="131" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -41,8 +35,8 @@
         <option value="JavaScript File" />
         <option value="TypeScript File" />
         <option value="Sass File" />
-        <option value="JSON File" />
         <option value="Vue Composition API Component" />
+        <option value="JSON File" />
       </list>
     </option>
   </component>
@@ -139,7 +133,7 @@
       <recent name="$PROJECT_DIR$/components/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.format">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -612,15 +606,7 @@
       <workItem from="1767689721313" duration="3177000" />
       <workItem from="1767768653022" duration="82000" />
       <workItem from="1767781777655" duration="17489000" />
-      <workItem from="1767872662033" duration="3172000" />
-    </task>
-    <task id="LOCAL-00023" summary="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset">
-      <option name="closed" value="true" />
-      <created>1752667525663</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1752667525663</updated>
+      <workItem from="1767872662033" duration="5598000" />
     </task>
     <task id="LOCAL-00024" summary="improve divider, navigationtitle, fix mobile padding">
       <option name="closed" value="true" />
@@ -1006,7 +992,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767808245299</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="localize links page and apps page, split localization files better">
+      <option name="closed" value="true" />
+      <created>1767886594858</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1767886594859</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1024,7 +1018,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add ids to buttons/links for better tracking" />
     <MESSAGE value="update meta, update package versioning" />
     <MESSAGE value="update sitepicker" />
     <MESSAGE value="add BIMI logo" />
@@ -1049,7 +1042,8 @@
     <MESSAGE value="update username, update site preview image, add new wallpaper (Blue-Close), update footer, improve presentation mode" />
     <MESSAGE value="add no JS warning, update deps, add moon wallpaper, update site preview" />
     <MESSAGE value="localize homepage and some components to french, add langs page, UI updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="localize homepage and some components to french, add langs page, UI updates" />
+    <MESSAGE value="localize links page and apps page, split localization files better" />
+    <option name="LAST_COMMIT_MESSAGE" value="localize links page and apps page, split localization files better" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

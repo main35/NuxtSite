@@ -1,31 +1,43 @@
 {
   "home": {
     "intro": "Bonjour, je suis ash.",
-    "desc1": "Je suis un jeune de France, et officiellement le plus chic que vous connaissez.",
-    "desc2": "Actuellement, je suis en train d'apprendre le développement pour le Web et les plateformes Apple. De plus, je pratique l'UI et le design graphique.",
+    "desc1": "Je suis un jeune français, et officiellement la personne la plus chic que vous connaissiez.",
+    "desc2": "Actuellement, j'apprends le développement web et pour les plateformes Apple. De plus, je pratique l'UI et le design graphique.",
     "languages": {
       "title": "Langues",
       "desc": "Je parle anglais, français, et un peu d'espagnol :)",
       "programming": "Langages de programmation",
-      "using": "Utilise",
-      "learning": "Apprend"
+      "using": "Utilisés",
+      "learning": "Appris"
     }
   },
   "links": {
     "socialTitle": "Mes Réseaux Sociaux",
     "socialDesc": "Mes réseaux sociaux et méthodes de contact :3",
-    "more": "Plus des Liens",
+    "more": "Plus de liens",
     "playlists": "Playlists"
   },
   "apps": {
     "allApps": "Toutes les applications",
     "pwaInstall": "Installer en tant que PWA"
   },
+  "goodies": {
+    "cursors": {
+      "title": "Curseurs",
+      "desc": "Curseurs macOS.",
+      "download": "Télécharger"
+    },
+    "wallpapers": {
+      "title": "Fonds d'écran",
+      "desc": "Fonds d'écran pour tous vos appareils.",
+      "comingSoon": "Bientôt disponible."
+    }
+  },
   "languages": {
     "choose": "Choisir...",
-    "betaNotice": "Ce fonctionnalité est en beta.",
-    "errorNotice": "Traductions peuvent inclure des erreurs.",
-    "foundError": "Trouvé une erreur?",
-    "reportError": "Reportez-la."
+    "betaNotice": "Cette fonctionnalité est en bêta.",
+    "errorNotice": "Les traductions peuvent contenir des erreurs.",
+    "foundError": "Vous avez trouvé une erreur ?",
+    "reportError": "Signalez-la."
   }
 }

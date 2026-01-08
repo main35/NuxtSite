@@ -21,6 +21,18 @@
     "allApps": "All Apps",
     "pwaInstall": "PWA Installation"
   },
+  "goodies": {
+    "cursors": {
+      "title": "Cursors",
+      "desc": "macOS cursors.",
+      "download": "Download"
+    },
+    "wallpapers": {
+      "title": "Wallpapers",
+      "desc": "Wallpapers for any device.",
+      "comingSoon": "Coming soon."
+    }
+  },
   "languages": {
     "choose": "Choose...",
     "betaNotice": "This feature is in beta.",

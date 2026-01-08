@@ -7,6 +7,7 @@
   import SitePick from '@/components/premade/navbar/SitePick.vue'
   import HStack from '@/components/layout/HStack.vue'
   import Spacer from '@/components/utils/Spacer.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
   const { t } = useI18n()
 
   const isOldMain = ref(false)
@@ -27,7 +28,10 @@
     <Card v-if="!showingShareModal">
       <VStack class="fullWidth">
         <HStack class="autoSpace fullWidth">
-          <h2>{{ t('sites.title') }}</h2>
+          <CardTitle
+            title="sites.title"
+            icon="solar:three-squares-line-duotone"
+          />
           <!--        Insert close button here -->
           <slot />
         </HStack>
@@ -61,7 +65,10 @@
     </Card>
 
     <Card>
-      <h2>{{ t('sharing.title') }}</h2>
+      <CardTitle
+        title="sharing.title"
+        icon="solar:square-share-line-line-duotone"
+      />
       <h3 class="light">a35.dev</h3>
 
       <button

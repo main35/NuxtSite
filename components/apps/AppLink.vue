@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
   import { computed } from 'vue'
+  const localePath = useLocalePath()
 
   const props = defineProps<{
     to: string
@@ -17,7 +18,7 @@
   <component
     :is="isExternal ? 'a' : 'RouterLink'"
     :href="isExternal ? to : undefined"
-    :to="!isExternal ? to : undefined"
+    :to="!isExternal ? localePath(to) : undefined"
     :target="isExternal ? '_blank' : undefined"
     :rel="isExternal ? 'noopener noreferrer' : undefined"
     class="app-link"

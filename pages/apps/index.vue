@@ -8,7 +8,7 @@
   import Navbar from '@/components/premade/navbar/Navbar.vue'
   import AppsCategoryList from '@/components/apps/AppsCategoryList.vue'
   import BottomFooter from '@/components/premade/BottomFooter.vue'
-  const {t} = useI18n()
+  const { t } = useI18n()
 
   setHeadMeta({
     page: 'pages.apps',

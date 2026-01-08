@@ -11,6 +11,7 @@
   import BottomFooter from '@/components/premade/BottomFooter.vue'
   import Navbar from '@/components/premade/navbar/Navbar.vue'
   import CardTitle from '@/components/utils/CardTitle.vue'
+  const { t } = useI18n()
 
   setHeadMeta({
     page: 'Goodies',
@@ -47,8 +48,8 @@
 <template>
   <div class="contentView">
     <Hero image="/images/Goodies.jpg">
-      <h1>Goodies</h1>
-      <h2>Other downloadable content.</h2>
+      <h1>{{ t('pages.goodies') }}</h1>
+      <h2>{{ t('meta.subtitles.goodies') }}</h2>
 
       <HStack>
         <a href="https://asboy.gumroad.com">
@@ -63,9 +64,12 @@
     <grid class="spaced">
       <!-- Cursors Card -->
       <Card>
-        <CardTitle title="Cursors" icon="solar:cursor-line-duotone" />
+        <CardTitle
+          title="goodies.cursors.title"
+          icon="solar:cursor-line-duotone"
+        />
 
-        <p class="light">macOS cursors</p>
+        <p class="light">{{ t('goodies.cursors.desc') }}</p>
         <Spacer />
 
         <VStack class="fullWidth">
@@ -81,10 +85,10 @@
                 <p>{{ asset.type }}</p>
               </div>
             </HStack>
-            <a download :href="cursor.downloadURL">
+            <a download :href="`/cursors${cursor.downloadURL}`">
               <button>
                 <Icon icon="iconoir:finder" width="24" height="24" />
-                Download
+                {{ t('goodies.cursors.download') }}
               </button>
             </a>
           </VStack>
@@ -93,10 +97,13 @@
 
       <!-- Wallpapers Card -->
       <Card>
-        <CardTitle title="Wallpapers" icon="solar:wallpaper-line-duotone" />
+        <CardTitle
+          title="goodies.wallpapers.title"
+          icon="solar:wallpaper-line-duotone"
+        />
 
-        <p class="light">Wallpapers for any device.</p>
-        <p class="light">Coming soon.</p>
+        <p class="light">{{ t('goodies.wallpapers.desc') }}</p>
+        <p class="light">{{ t('goodies.wallpapers.comingSoon') }}</p>
       </Card>
     </grid>
 

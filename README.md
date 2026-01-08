@@ -28,6 +28,8 @@ If you'd like to use them commercially, buy a license.
   Huge collection of icons as Vue components.
 - [**VitePWA:**](https://vite-pwa-org.netlify.app/frameworks/nuxt/)
   Adds Progressive Web App support to Nuxt.
+- [**Nuxt I18N**](https://i18n.nuxtjs.org/)
+  Internationalization for Nuxt Applications.
 - [**Cobe:**](https://cobe.vercel.app/)
   Light, interactive globe for the web.
 - [**html2canvas:**](https://html2canvas.hertzen.com/)
@@ -42,13 +44,13 @@ If you'd like to use them commercially, buy a license.
 ### External Tools & Software
 - [**PhpStorm, WebStorm, and IntelliJ IDEA Ultimate:**](https://jetbrains.com) 
   Awesome IDEs!
-- [**Pixelmator Pro:**](https://pixelmator.com/pro/) 
+- [**Pixelmator Pro:**](https://pixelmator.com/pro/) and [**Adobe Illustrator:**](https://www.adobe.com/products/illustrator.html) 
   Graphic design software.
 - [**Tower:**](https://www.git-tower.com/)
   Fantastic Git client for macOS/Windows.
 - [**Yandex Browser:**](https://browser.yandex.ru)
   Nice browser I use for testing.
-- **[GitHub](https://github.com), [Cloudflare](https://cloudflare.com), and [Vercel](https://vercel.com)**:
+- **[GitHub](https://github.com) and [Cloudflare](https://cloudflare.com)**:
   Git/Web hosting!
 
 ### Translators
