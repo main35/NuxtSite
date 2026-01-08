@@ -4,21 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="localize toolbox, creators page, fix goodies page meta, fix broken links">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update languages page design, reformat, rearrange localization files">
+      <change afterPath="$PROJECT_DIR$/i18n/locales/global/global-cn.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/global/global-de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/global/global-es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/global/global-jp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-cn.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-jp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-cn.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-es.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-jp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-ru.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/LangPicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/LangPicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-fr.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/languages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/languages.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/fonts.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +141,7 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.format">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -609,15 +614,7 @@
       <workItem from="1767689721313" duration="3177000" />
       <workItem from="1767768653022" duration="82000" />
       <workItem from="1767781777655" duration="17489000" />
-      <workItem from="1767872662033" duration="8435000" />
-    </task>
-    <task id="LOCAL-00026" summary="new navigationtitle design, updated toolbox">
-      <option name="closed" value="true" />
-      <created>1752746896695</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1752746896695</updated>
+      <workItem from="1767872662033" duration="10876000" />
     </task>
     <task id="LOCAL-00027" summary="navigationtitle animation improvements">
       <option name="closed" value="true" />
@@ -1003,7 +1000,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767891280338</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="update languages page design, reformat, rearrange localization files">
+      <option name="closed" value="true" />
+      <created>1767892028034</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1767892028034</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1021,7 +1026,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add BIMI logo" />
     <MESSAGE value="convert to tinysvg" />
     <MESSAGE value="update domains" />
     <MESSAGE value="update favicon to new style" />
@@ -1046,7 +1050,8 @@
     <MESSAGE value="localize links page and apps page, split localization files better" />
     <MESSAGE value="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits" />
     <MESSAGE value="localize toolbox, creators page, fix goodies page meta, fix broken links" />
-    <option name="LAST_COMMIT_MESSAGE" value="localize toolbox, creators page, fix goodies page meta, fix broken links" />
+    <MESSAGE value="update languages page design, reformat, rearrange localization files" />
+    <option name="LAST_COMMIT_MESSAGE" value="update languages page design, reformat, rearrange localization files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

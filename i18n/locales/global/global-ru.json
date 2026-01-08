@@ -1,0 +1,36 @@
+{
+  "sites": {
+    "title": "Сайты",
+    "pages": "Страницы",
+    "fonts": "Шрифты",
+    "big": "BIG",
+    "guides": "Гайды",
+    "portfolio": "Портфолио"
+  },
+  "app": {
+    "hideInterface": "Скрыть интерфейс",
+    "showInterface": "Показать интерфейс",
+    "getWalls": "Получить обои",
+    "comingSoon": "Скоро!",
+    "myTime": "Мое время"
+  },
+  "sharing": {
+    "title": "Поделиться",
+    "showQr": "Показать QR-код",
+    "hideQr": "Скрыть QR-код"
+  },
+  "navbar": {
+    "launchers": {
+      "apps": "Приложения",
+      "creators": "Создать..."
+    }
+  },
+  "footer": {
+    "thanks": "Спасибо за чтение!",
+    "createdBy": "Создано Ash, с использованием NuxtJS, в 2026 <3",
+    "codeOnGh": "Код на GitHub.",
+    "version": "Версия:",
+    "release": "Релиз:",
+    "readMore": "Читать далее:"
+  }
+}

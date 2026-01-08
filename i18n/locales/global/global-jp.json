@@ -1,0 +1,36 @@
+{
+  "sites": {
+    "title": "サイト",
+    "pages": "ページ",
+    "fonts": "フォント",
+    "big": "BIG",
+    "guides": "ガイド",
+    "portfolio": "ポートフォリオ"
+  },
+  "app": {
+    "hideInterface": "インターフェースを隠す",
+    "showInterface": "インターフェースを表示",
+    "getWalls": "壁紙を入手",
+    "comingSoon": "近日公開！",
+    "myTime": "私の時間"
+  },
+  "sharing": {
+    "title": "共有",
+    "showQr": "QRコードを表示",
+    "hideQr": "QRコードを隠す"
+  },
+  "navbar": {
+    "launchers": {
+      "apps": "アプリ",
+      "creators": "作成..."
+    }
+  },
+  "footer": {
+    "thanks": "読んでくれてありがとう！",
+    "createdBy": "Created by Ash, using NuxtJS, in 2026 <3",
+    "codeOnGh": "GitHubのコード。",
+    "version": "バージョン:",
+    "release": "リリース:",
+    "readMore": "もっと読む:"
+  }
+}

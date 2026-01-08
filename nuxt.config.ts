@@ -64,6 +64,56 @@ export default defineNuxtConfig({
           'pages/pages-fr.json',
         ],
       },
+      {
+        code: 'es',
+        name: 'Español',
+        language: 'es-ES',
+        files: [
+          'global/global-es.json',
+          'meta/meta-es.json',
+          'pages/pages-es.json',
+        ],
+      },
+      {
+        code: 'jp',
+        name: '日本語',
+        language: 'jp-JP',
+        files: [
+          'global/global-jp.json',
+          'meta/meta-jp.json',
+          'pages/pages-jp.json',
+        ],
+      },
+      {
+        code: 'cn',
+        name: '中文',
+        language: 'zh-CN',
+        files: [
+          'global/global-cn.json',
+          'meta/meta-cn.json',
+          'pages/pages-cn.json',
+        ],
+      },
+      {
+        code: 'de',
+        name: 'Deutsch',
+        language: 'de-DE',
+        files: [
+          'global/global-de.json',
+          'meta/meta-de.json',
+          'pages/pages-de.json',
+        ],
+      },
+      {
+        code: 'ru',
+        name: 'Русский',
+        language: 'ru-RU',
+        files: [
+          'global/global-ru.json',
+          'meta/meta-ru.json',
+          'pages/pages-ru.json',
+        ],
+      },
     ],
     langDir: 'locales/',
   },

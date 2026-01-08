@@ -1,0 +1,36 @@
+{
+  "sites": {
+    "title": "Seiten",
+    "pages": "Seiten",
+    "fonts": "Schriften",
+    "big": "GROSS",
+    "guides": "Guides",
+    "portfolio": "Portfolio"
+  },
+  "app": {
+    "hideInterface": "Interface ausblenden",
+    "showInterface": "Interface anzeigen",
+    "getWalls": "Hintergründe holen",
+    "comingSoon": "Demnächst!",
+    "myTime": "Meine Zeit"
+  },
+  "sharing": {
+    "title": "Teilen",
+    "showQr": "QR-Code anzeigen",
+    "hideQr": "QR-Code ausblenden"
+  },
+  "navbar": {
+    "launchers": {
+      "apps": "Apps",
+      "creators": "Erstellen..."
+    }
+  },
+  "footer": {
+    "thanks": "Danke fürs Lesen!",
+    "createdBy": "Erstellt von Ash, mit NuxtJS, in 2026 <3",
+    "codeOnGh": "Code auf GitHub.",
+    "version": "Version:",
+    "release": "Release:",
+    "readMore": "Mehr lesen:"
+  }
+}

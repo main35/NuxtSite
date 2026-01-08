@@ -1,0 +1,36 @@
+{
+  "sites": {
+    "title": "Sitios",
+    "pages": "Páginas",
+    "fonts": "Fuentes",
+    "big": "GRANDE",
+    "guides": "Guías",
+    "portfolio": "Portafolio"
+  },
+  "app": {
+    "hideInterface": "Ocultar Interfaz",
+    "showInterface": "Mostrar Interfaz",
+    "getWalls": "Obtener Fondos",
+    "comingSoon": "¡Próximamente!",
+    "myTime": "Mi Hora"
+  },
+  "sharing": {
+    "title": "Compartir",
+    "showQr": "Mostrar Código QR",
+    "hideQr": "Ocultar Código QR"
+  },
+  "navbar": {
+    "launchers": {
+      "apps": "Apps",
+      "creators": "Crear..."
+    }
+  },
+  "footer": {
+    "thanks": "¡Gracias por leer!",
+    "createdBy": "Creado por Ash, usando NuxtJS, en 2026 <3",
+    "codeOnGh": "Código en GitHub.",
+    "version": "Versión:",
+    "release": "Lanzamiento:",
+    "readMore": "Leer más:"
+  }
+}
