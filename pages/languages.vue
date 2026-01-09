@@ -5,6 +5,7 @@
   import setHeadMeta from '@/utils/setHeadMeta'
   import Grid from '@/components/layout/Grid.vue'
   import LangsCard from '@/components/langs/LangsCard.vue'
+  import BottomFooter from '@/components/premade/BottomFooter.vue'
 
   const { t } = useI18n()
 
@@ -37,6 +38,8 @@
         </p>
       </Card>
     </Grid>
+
+    <BottomFooter />
 
     <Navbar />
   </div>

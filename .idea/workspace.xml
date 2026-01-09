@@ -4,33 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add Russian, Japanese, Chinese, Spanish, German, add new fonts for Russian, make prominent font same as header">
-      <change afterPath="$PROJECT_DIR$/components/langs/LangsCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/setUserFlag.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, clean up code">
+      <change afterPath="$PROJECT_DIR$/i18n/locales/global/global-kr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-kr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-kr.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/TransitionElement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/TransitionElement.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/LangPicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/langs/LangPicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Modal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-cn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-jp.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-jp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-cn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-jp.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-jp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/languages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/languages.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +31,9 @@
       <list>
         <option value="JavaScript File" />
         <option value="Sass File" />
-        <option value="JSON File" />
         <option value="TypeScript File" />
         <option value="Vue Composition API Component" />
+        <option value="JSON File" />
       </list>
     </option>
   </component>
@@ -622,15 +604,7 @@
       <workItem from="1767768653022" duration="82000" />
       <workItem from="1767781777655" duration="17489000" />
       <workItem from="1767872662033" duration="10876000" />
-      <workItem from="1767976485246" duration="6049000" />
-    </task>
-    <task id="LOCAL-00027" summary="navigationtitle animation improvements">
-      <option name="closed" value="true" />
-      <created>1752758956245</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1752758956245</updated>
+      <workItem from="1767976485246" duration="7087000" />
     </task>
     <task id="LOCAL-00028" summary="add share menu to site picker">
       <option name="closed" value="true" />
@@ -1016,7 +990,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767892028034</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, clean up code">
+      <option name="closed" value="true" />
+      <created>1767983832100</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1767983832101</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1034,8 +1016,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="convert to tinysvg" />
-    <MESSAGE value="update domains" />
     <MESSAGE value="update favicon to new style" />
     <MESSAGE value="update navigation, update card design" />
     <MESSAGE value="update apps page" />
@@ -1059,7 +1039,9 @@
     <MESSAGE value="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits" />
     <MESSAGE value="localize toolbox, creators page, fix goodies page meta, fix broken links" />
     <MESSAGE value="update languages page design, reformat, rearrange localization files" />
-    <option name="LAST_COMMIT_MESSAGE" value="update languages page design, reformat, rearrange localization files" />
+    <MESSAGE value="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, cleanup code" />
+    <MESSAGE value="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, clean up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, clean up code" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

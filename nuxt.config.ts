@@ -95,6 +95,16 @@ export default defineNuxtConfig({
         ],
       },
       {
+        code: 'kr',
+        name: '한국어',
+        language: 'ko-KR',
+        files: [
+          'global/global-kr.json',
+          'meta/meta-kr.json',
+          'pages/pages-kr.json',
+        ],
+      },
+      {
         code: 'de',
         name: 'Deutsch',
         language: 'de-DE',

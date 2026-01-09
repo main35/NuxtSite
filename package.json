@@ -6,7 +6,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "6.0.0-beta10",
+  "version": "6.0.0-beta11",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
