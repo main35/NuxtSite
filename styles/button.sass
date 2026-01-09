@@ -17,6 +17,9 @@ button
   transition: 0.2s ease-in-out
   backdrop-filter: blur(2rem) saturate(150%)
 
+  &.prominent
+    background: colors.$accentColor
+
   &:not(.transparent)::after
     content: ""
     position: absolute

@@ -12,7 +12,15 @@
     "showInterface": "Mostrar Interfaz",
     "getWalls": "Obtener Fondos",
     "comingSoon": "¡Próximamente!",
-    "myTime": "Mi Hora"
+    "myTime": "Mi Hora",
+    "connecting": "Conectando...",
+    "oldDomain": {
+      "title": "¡Estás en el dominio antiguo!",
+      "desc": "Accede a este sitio desde asboy2035.com para un enlace más limpio.",
+      "never": "Nunca",
+      "later": "Más tarde",
+      "go": "¡Vamos!"
+    }
   },
   "sharing": {
     "title": "Compartir",

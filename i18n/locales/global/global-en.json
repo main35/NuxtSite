@@ -12,7 +12,15 @@
     "showInterface": "Show Interface",
     "getWalls": "Get Wallpapers",
     "comingSoon": "Coming Soon!",
-    "myTime": "My Time"
+    "myTime": "My Time",
+    "connecting": "Connecting...",
+    "oldDomain": {
+      "title": "You're on the old domain!",
+      "desc": "Access this site at asboy2035.com for a cleaner link!",
+      "never": "Never",
+      "later": "Later",
+      "go": "Let's go!"
+    }
   },
   "sharing": {
     "title": "Share",

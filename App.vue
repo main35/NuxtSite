@@ -10,6 +10,8 @@
   import Modal from '@/components/utils/Modal.vue'
   import Spacer from '@/components/utils/Spacer.vue'
   import HStack from '@/components/layout/HStack.vue'
+  import { getFlag, setFlag } from '@/utils/setUserFlag'
+  import LangsCard from '@/components/langs/LangsCard.vue'
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
 
@@ -21,6 +23,7 @@
 
   const showingUi: Ref<boolean> = ref(true)
   const showDomainTip: Ref<boolean> = ref(false)
+  const showLangPicker: Ref<boolean> = ref(false)
   const redirectLink: Ref<string> = ref('')
   const cover: Ref = ref(null)
   const router: Router = useRouter()
@@ -35,12 +38,28 @@
   ]
   const currentBackground: Ref<string> = ref(backgrounds[0] as string)
 
+  function neverShowDomainTip(): void {
+    setFlag('hideDomainTip', true)
+    showDomainTip.value = false
+  }
+
+  function hideLangPicker(): void {
+    setFlag('showLangPicker', false)
+    showLangPicker.value = false
+  }
+
   onMounted(() => {
-    if (location.hostname.includes('pages.dev')) {
+    if (getFlag('hideDomainTip')) {
+      showDomainTip.value = false
+    } else if (
+      location.hostname.includes('pages.dev') ||
+      location.port.includes('5173')
+    ) {
       showDomainTip.value = true
     }
-
     redirectLink.value = `https://asboy2035.com${location.pathname}${location.search}${location.hash}`
+
+    showLangPicker.value = getFlag('showLangPicker', true)
 
     router.beforeEach((_to, _from, next) => {
       cover.value?.show()
@@ -138,17 +157,30 @@
   <TransitionElement ref="cover" />
 
   <Modal v-if="showDomainTip">
-    <h1>You're on the old domain!</h1>
-    <p>Access this site at asboy2035.com for a cleaner link!</p>
+    <h1>{{ t('app.oldDomain.title') }}</h1>
+    <p>{{ t('app.oldDomain.desc') }}</p>
     <Spacer />
 
     <HStack class="autoSpace fullWidth">
-      <button @click="showDomainTip = false">Later</button>
+      <HStack>
+        <button @click="neverShowDomainTip">
+          {{ t('app.oldDomain.never') }}
+        </button>
+        <button @click="showDomainTip = false">
+          {{ t('app.oldDomain.later') }}
+        </button>
+      </HStack>
 
       <a :href="redirectLink">
-        <button id="goToNewUrlButton">Let's go!</button>
+        <button id="goToNewUrlButton" class="prominent">
+          {{ t('app.oldDomain.go') }}
+        </button>
       </a>
     </HStack>
+  </Modal>
+
+  <Modal plain v-if="showLangPicker">
+    <LangsCard @set="hideLangPicker" />
   </Modal>
 </template>
 

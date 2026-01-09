@@ -12,7 +12,15 @@
     "showInterface": "インターフェースを表示",
     "getWalls": "壁紙を入手",
     "comingSoon": "近日公開！",
-    "myTime": "私の時間"
+    "myTime": "私の時間",
+    "connecting": "接続中...",
+    "oldDomain": {
+      "title": "古いドメインを使用しています！",
+      "desc": "よりきれいなリンクのために asboy2035.com からアクセスしてください！",
+      "never": "しない",
+      "later": "後で",
+      "go": "行こう！"
+    }
   },
   "sharing": {
     "title": "共有",

@@ -12,7 +12,15 @@
     "showInterface": "Interface anzeigen",
     "getWalls": "Hintergründe holen",
     "comingSoon": "Demnächst!",
-    "myTime": "Meine Zeit"
+    "myTime": "Meine Zeit",
+    "connecting": "Verbindung wird hergestellt...",
+    "oldDomain": {
+      "title": "Du bist auf der alten Domain!",
+      "desc": "Rufe diese Seite unter asboy2035.com auf für einen saubereren Link!",
+      "never": "Nie",
+      "later": "Später",
+      "go": "Los geht’s!"
+    }
   },
   "sharing": {
     "title": "Teilen",

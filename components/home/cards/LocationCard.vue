@@ -31,10 +31,10 @@
       mapSamples: 25000,
       mapBrightness: 6,
       baseColor:
-        isDarkMode.value == 1 ? [0.32, 0.14, 0.93] : [0.64, 0.51, 0.88], // Dark : Light colors
+        isDarkMode.value == 1 ? [0.32, 0.14, 0.93] : [0.64, 0.51, 0.88], // Dark: Light colors
       markerColor: [0.63, 0.49, 0.02],
       glowColor:
-        isDarkMode.value == 1 ? [0.49, 0.43, 0.73] : [0.53, 0.39, 0.79], // Dark : Light colors
+        isDarkMode.value == 1 ? [0.49, 0.43, 0.73] : [0.53, 0.39, 0.79], // Dark: Light colors
       markers: [
         { location: [44.84685, 0.62871], size: 0.1 }, // Bordeaux
       ],
@@ -105,7 +105,7 @@
 
 <template>
   <Card class="autoSpace locationCard">
-    <CardTitle title="Bordeaux, FR" icon="solar:point-on-map-line-duotone" />
+    <CardTitle title="home.location" icon="solar:point-on-map-line-duotone" />
 
     <!--Cobe Globe-->
     <InteriorItem class="locationGlobe">
