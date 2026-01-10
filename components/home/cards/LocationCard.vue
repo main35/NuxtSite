@@ -28,7 +28,7 @@
       theta,
       dark: isDarkMode.value,
       diffuse: 1.4,
-      mapSamples: 25000,
+      mapSamples: 12000,
       mapBrightness: 6,
       baseColor:
         isDarkMode.value == 1 ? [0.32, 0.14, 0.93] : [0.64, 0.51, 0.88], // Dark: Light colors

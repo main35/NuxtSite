@@ -11,7 +11,7 @@
   import Spacer from '@/components/utils/Spacer.vue'
   import HStack from '@/components/layout/HStack.vue'
   import { getFlag, setFlag } from '@/utils/setUserFlag'
-  import LangsCard from '@/components/langs/LangsCard.vue'
+  import LangPickerCard from '~/components/langs/LangPickerCard.vue'
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
 
@@ -32,9 +32,15 @@
     'Purple-Close',
     'Blue-Close',
     'Moon-Close',
+    'Green-Close',
 
     // Scenes
     'All-Planets',
+
+    // Collections
+    'Moon-Purple',
+    'Moon-Purple-Green',
+    'Blue-Purple',
   ]
   const currentBackground: Ref<string> = ref(backgrounds[0] as string)
 
@@ -180,7 +186,7 @@
   </Modal>
 
   <Modal plain v-if="showLangPicker">
-    <LangsCard @set="hideLangPicker" />
+    <LangPickerCard @set="hideLangPicker" />
   </Modal>
 </template>
 
