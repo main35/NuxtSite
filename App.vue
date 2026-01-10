@@ -11,7 +11,7 @@
   import Spacer from '@/components/utils/Spacer.vue'
   import HStack from '@/components/layout/HStack.vue'
   import { getFlag, setFlag } from '@/utils/setUserFlag'
-  import LangPickerCard from '~/components/langs/LangPickerCard.vue'
+  import LangPickerCard from '@/components/langs/LangPickerCard.vue'
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
 

@@ -4,7 +4,7 @@
   import CardTitle from '@/components/utils/CardTitle.vue'
   import setHeadMeta from '@/utils/setHeadMeta'
   import Grid from '@/components/layout/Grid.vue'
-  import LangPickerCard from '~/components/langs/LangPickerCard.vue'
+  import LangPickerCard from '@/components/langs/LangPickerCard.vue'
   import BottomFooter from '@/components/premade/BottomFooter.vue'
 
   const { t } = useI18n()
