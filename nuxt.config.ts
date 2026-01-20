@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
-      siteRelease: "a35hee's Site v6 Beta",
+      siteRelease: "a35hie's Site v6 Beta",
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://us.i.posthog.com',
       posthogDefaults: '2025-05-24',
@@ -132,7 +132,7 @@ export default defineNuxtConfig({
     manifest: {
       name: 'Toolbox - Ash',
       short_name: 'Toolbox',
-      description: "a35hee's Toolbox app.",
+      description: "a35hie's Toolbox app.",
       theme_color: '#9f75e8',
       start_url: '/toolbox',
       icons: [

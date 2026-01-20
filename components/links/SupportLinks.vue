@@ -21,7 +21,7 @@
 
       <IconItem
         name="Instagram"
-        link="https://www.instagram.com/a35hee/"
+        link="https://www.instagram.com/a35hie/"
         icon="ri:instagram-fill"
       />
 

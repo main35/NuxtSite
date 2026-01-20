@@ -39,7 +39,7 @@
           class="bigAvatar"
         />
         <h1>ash</h1>
-        <h2 class="light" style="margin-top: 0">@a35hee</h2>
+        <h2 class="light" style="margin-top: 0">@a35hie</h2>
       </VStack>
     </Card>
 
