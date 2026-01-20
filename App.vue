@@ -54,7 +54,7 @@
     showLangPicker.value = false
   }
 
-  onMounted(() => {
+  onMounted(() => {35
     if (getFlag('hideDomainTip')) {
       showDomainTip.value = false
     } else if (
