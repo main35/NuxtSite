@@ -47,7 +47,7 @@
           icon="solar:book-line-duotone"
         />
         <SitePick
-          to="https://big.a35.dev"
+          to="https://byg.a35.dev"
           title="sites.big"
           icon="solar:posts-carousel-vertical-line-duotone"
         />
