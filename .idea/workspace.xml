@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add korean, fix text wrapping">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-cn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-jp.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-jp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-kr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-kr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +45,12 @@
     &quot;assignee&quot;: &quot;asboy2035&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://asboy2035@github.com/main35/NuxtSite.git",
-    "accountId": "3a099e4d-a960-4419-accc-5f28f60b6a13"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://asboy2035@github.com/main35/NuxtSite.git&quot;,
+    &quot;accountId&quot;: &quot;3a099e4d-a960-4419-accc-5f28f60b6a13&quot;
   }
-}]]></component>
+}</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="kjZId4l4" />
   </component>
@@ -82,6 +73,7 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -137,7 +129,7 @@
       <recent name="$PROJECT_DIR$/i18n" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.format">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -204,7 +196,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-IU-253.28294.251" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.20" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.20" />
       </set>
     </attachedChunks>
   </component>
@@ -613,14 +606,9 @@
       <workItem from="1767872662033" duration="10876000" />
       <workItem from="1767976485246" duration="7298000" />
       <workItem from="1768064569548" duration="557000" />
-    </task>
-    <task id="LOCAL-00029" summary="bump version">
-      <option name="closed" value="true" />
-      <created>1753106571001</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1753106571001</updated>
+      <workItem from="1768998827886" duration="47000" />
+      <workItem from="1768999349607" duration="203000" />
+      <workItem from="1769012169954" duration="758000" />
     </task>
     <task id="LOCAL-00030" summary="update astro to astro+">
       <option name="closed" value="true" />
@@ -1006,7 +994,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767984925169</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="add korean, fix text wrapping">
+      <option name="closed" value="true" />
+      <created>1768920962620</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1768920962620</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
