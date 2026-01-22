@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add prompt">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update prompt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +131,7 @@
       <recent name="$PROJECT_DIR$/i18n" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.format">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -609,15 +611,8 @@
       <workItem from="1768998827886" duration="47000" />
       <workItem from="1768999349607" duration="203000" />
       <workItem from="1769012169954" duration="780000" />
-      <workItem from="1769013237966" duration="240000" />
-    </task>
-    <task id="LOCAL-00031" summary="update tewfa to authie, remove old france map asset">
-      <option name="closed" value="true" />
-      <created>1754168133564</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1754168133564</updated>
+      <workItem from="1769013237966" duration="1116000" />
+      <workItem from="1769105312568" duration="575000" />
     </task>
     <task id="LOCAL-00032" summary="update clocs to tickity">
       <option name="closed" value="true" />
@@ -1003,7 +998,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769012949785</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="update prompt">
+      <option name="closed" value="true" />
+      <created>1769013565573</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1769013565573</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1021,7 +1024,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update apps page" />
     <MESSAGE value="remove caching rules" />
     <MESSAGE value="update images, add new wallpaper system" />
     <MESSAGE value="add snow :)" />
@@ -1046,7 +1048,8 @@
     <MESSAGE value="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, clean up code" />
     <MESSAGE value="add korean, fix text wrapping" />
     <MESSAGE value="add prompt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add prompt" />
+    <MESSAGE value="update prompt" />
+    <option name="LAST_COMMIT_MESSAGE" value="update prompt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

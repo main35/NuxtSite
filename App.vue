@@ -12,6 +12,7 @@
   import HStack from '@/components/layout/HStack.vue'
   import { getFlag, setFlag } from '@/utils/setUserFlag'
   import LangPickerCard from '@/components/langs/LangPickerCard.vue'
+  import type {LocationQuery} from "vue-router";
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
 
@@ -27,6 +28,7 @@
   const redirectLink: Ref<string> = ref('')
   const cover: Ref = ref(null)
   const router: Router = useRouter()
+  const params: LocationQuery = router.currentRoute.value.query
   const backgrounds: string[] = [
     // Closeups
     'Purple-Close',
@@ -65,7 +67,15 @@
     }
     redirectLink.value = `https://asboy2035.com${location.pathname}${location.search}${location.hash}`
 
-    showLangPicker.value = getFlag('showLangPicker', true)
+    if (params.noLangPicker == 'true') {
+      showLangPicker.value = false
+      setFlag('showLangPicker', false)
+    } else if (params.noLangPicker == 'false') {
+      showLangPicker.value = true
+      setFlag('showLangPicker', true)
+    } else {
+      showLangPicker.value = getFlag('showLangPicker', true)
+    }
 
     router.beforeEach((_to, _from, next) => {
       cover.value?.show()
