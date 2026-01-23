@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import Card from '@/components/layout/Card.vue'
-  import Grid from '@/components/layout/Grid.vue'
-  import IconItem from '@/components/layout/IconItem.vue'
+  import Card from '+/layout/Card.vue'
+  import Grid from '+/layout/Grid.vue'
+  import IconItem from '+/layout/IconItem.vue'
 </script>
 
 <template>

@@ -4,11 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update prompt">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="improve lang picker handling with URL overrides">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/AboutHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/AboutSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutSidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/NavButtons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/NavButtons.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/cards/AboutCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/AboutCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/langs/LangPicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/langs/LangPicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/langs/LangPickerCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/langs/LangPickerCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/IconItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/MoreLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/MoreLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/SupportLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SupportLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/Description.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/Description.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/LauncherCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/LauncherCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/BannerNotification.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/BannerNotification.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/CardTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/CardTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Modal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/launchers/LauncherApps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/launchers/LauncherApps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/launchers/LauncherCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/launchers/LauncherCreators.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/creator/csv-to-json/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/csv-to-json/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/languages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/languages.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/links.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tests/audio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tests/audio.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +171,7 @@
       <recent name="$PROJECT_DIR$/i18n" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -612,15 +652,10 @@
       <workItem from="1768999349607" duration="203000" />
       <workItem from="1769012169954" duration="780000" />
       <workItem from="1769013237966" duration="1116000" />
-      <workItem from="1769105312568" duration="575000" />
-    </task>
-    <task id="LOCAL-00032" summary="update clocs to tickity">
-      <option name="closed" value="true" />
-      <created>1754228105696</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1754228105696</updated>
+      <workItem from="1769105312568" duration="669000" />
+      <workItem from="1769107026097" duration="3612000" />
+      <workItem from="1769159190183" duration="13000" />
+      <workItem from="1769186783564" duration="1342000" />
     </task>
     <task id="LOCAL-00033" summary="update js to ts and update iml file">
       <option name="closed" value="true" />
@@ -1006,7 +1041,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769013565573</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="improve lang picker handling with URL overrides">
+      <option name="closed" value="true" />
+      <created>1769105960940</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1769105960940</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1024,7 +1067,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove caching rules" />
     <MESSAGE value="update images, add new wallpaper system" />
     <MESSAGE value="add snow :)" />
     <MESSAGE value="add version indication, releases" />
@@ -1049,7 +1091,8 @@
     <MESSAGE value="add korean, fix text wrapping" />
     <MESSAGE value="add prompt" />
     <MESSAGE value="update prompt" />
-    <option name="LAST_COMMIT_MESSAGE" value="update prompt" />
+    <MESSAGE value="improve lang picker handling with URL overrides" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve lang picker handling with URL overrides" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

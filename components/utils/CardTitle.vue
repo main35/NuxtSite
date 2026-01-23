@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import HStack from '@/components/layout/HStack.vue'
+  import HStack from '+/layout/HStack.vue'
   const { t } = useI18n()
 
   defineProps<{

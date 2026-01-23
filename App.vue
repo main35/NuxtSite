@@ -6,13 +6,13 @@
   import { Icon } from '@iconify/vue'
 
   import { ProgressiveBlur } from 'vue-progressive-blur'
-  import TransitionElement from '@/components/premade/TransitionElement.vue'
-  import Modal from '@/components/utils/Modal.vue'
-  import Spacer from '@/components/utils/Spacer.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import { getFlag, setFlag } from '@/utils/setUserFlag'
-  import LangPickerCard from '@/components/langs/LangPickerCard.vue'
-  import type {LocationQuery} from "vue-router";
+  import TransitionElement from '+/premade/TransitionElement.vue'
+  import Modal from '+/utils/Modal.vue'
+  import Spacer from '+/utils/Spacer.vue'
+  import HStack from '+/layout/HStack.vue'
+  import { getFlag, setFlag } from '&/setUserFlag'
+  import LangPickerCard from '+/langs/LangPickerCard.vue'
+  import type { LocationQuery } from 'vue-router'
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
 

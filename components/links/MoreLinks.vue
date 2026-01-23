@@ -1,9 +1,9 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import Card from '@/components/layout/Card.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
-  import SafeLink from '@/components/utils/SafeLink.vue'
+  import Card from '+/layout/Card.vue'
+  import HStack from '+/layout/HStack.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
+  import SafeLink from '+/utils/SafeLink.vue'
   const { t } = useI18n()
 </script>
 

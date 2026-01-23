@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import { LauncherCreators } from '@/data/launchers/LauncherCreators'
-  import setHeadMeta from '@/utils/setHeadMeta'
-  import Navbar from '@/components/premade/navbar/Navbar.vue'
-  import Hero from '@/components/utils/Hero.vue'
-  import LauncherCard from '@/components/premade/navbar/LauncherCard.vue'
-  import BottomFooter from '@/components/premade/BottomFooter.vue'
+  import { LauncherCreators } from '$/launchers/LauncherCreators'
+  import setHeadMeta from '&/setHeadMeta'
+  import Navbar from '+/premade/navbar/Navbar.vue'
+  import Hero from '+/utils/Hero.vue'
+  import LauncherCard from '+/premade/navbar/LauncherCard.vue'
+  import BottomFooter from '+/premade/BottomFooter.vue'
   const { t } = useI18n()
 
   setHeadMeta({

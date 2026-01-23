@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import Spacer from '@/components/utils/Spacer.vue'
-  import Card from '@/components/layout/Card.vue'
-  import Grid from '@/components/layout/Grid.vue'
-  import IconItem from '@/components/layout/IconItem.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
+  import Spacer from '+/utils/Spacer.vue'
+  import Card from '+/layout/Card.vue'
+  import Grid from '+/layout/Grid.vue'
+  import IconItem from '+/layout/IconItem.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
   const { t } = useI18n()
 </script>
 

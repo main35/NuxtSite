@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
   import type { LocaleObject } from '@nuxtjs/i18n'
-  import Grid from '@/components/layout/Grid.vue'
+  import Grid from '+/layout/Grid.vue'
 
   const { locale, locales, setLocale } = useI18n()
 

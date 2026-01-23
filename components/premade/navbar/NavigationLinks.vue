@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import HStack from '@/components/layout/HStack.vue'
-  import NavigationButton from '@/components/premade/navbar/NavigationButton.vue'
+  import HStack from '+/layout/HStack.vue'
+  import NavigationButton from '+/premade/navbar/NavigationButton.vue'
 </script>
 
 <template>

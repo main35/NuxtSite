@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import Card from '@/components/layout/Card.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
-  import VStack from '@/components/layout/VStack.vue'
-  import NavButtons from '@/components/home/NavButtons.vue'
-  import Divider from '@/components/utils/Divider.vue'
+  import Card from '+/layout/Card.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
+  import VStack from '+/layout/VStack.vue'
+  import NavButtons from '+/home/NavButtons.vue'
+  import Divider from '+/utils/Divider.vue'
   const { t } = useI18n()
 
   defineProps<{

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-  import type LauncherItem from '@/types/LauncherItem'
-  import InteriorItem from '@/components/layout/InteriorItem.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
-  import DynamicImage from '@/components/utils/DynamicImage.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import Card from '@/components/layout/Card.vue'
-  import SafeLink from '@/components/utils/SafeLink.vue'
+  import type LauncherItem from ':/LauncherItem'
+  import InteriorItem from '+/layout/InteriorItem.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
+  import DynamicImage from '+/utils/DynamicImage.vue'
+  import HStack from '+/layout/HStack.vue'
+  import Card from '+/layout/Card.vue'
+  import SafeLink from '+/utils/SafeLink.vue'
   const { t } = useI18n()
 
   defineProps<{

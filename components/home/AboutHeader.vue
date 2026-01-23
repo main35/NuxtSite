@@ -2,12 +2,12 @@
   import { ref } from 'vue'
   import { Icon } from '@iconify/vue'
   import type { Ref } from 'vue'
-  import Card from '@/components/layout/Card.vue'
-  import VStack from '@/components/layout/VStack.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import FullscreenCover from '@/components/premade/FullscreenCover.vue'
-  import SitePicker from '@/components/premade/navbar/SitePicker.vue'
-  import DynamicImage from '@/components/utils/DynamicImage.vue'
+  import Card from '+/layout/Card.vue'
+  import VStack from '+/layout/VStack.vue'
+  import HStack from '+/layout/HStack.vue'
+  import FullscreenCover from '+/premade/FullscreenCover.vue'
+  import SitePicker from '+/premade/navbar/SitePicker.vue'
+  import DynamicImage from '+/utils/DynamicImage.vue'
 
   const showSiteSwitcher: Ref<boolean> = ref(false)
 

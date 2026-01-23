@@ -2,12 +2,12 @@
   import { Icon } from '@iconify/vue'
   import { ref, onMounted } from 'vue'
 
-  import VStack from '@/components/layout/VStack.vue'
-  import Card from '@/components/layout/Card.vue'
-  import SitePick from '@/components/premade/navbar/SitePick.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import Spacer from '@/components/utils/Spacer.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
+  import VStack from '+/layout/VStack.vue'
+  import Card from '+/layout/Card.vue'
+  import SitePick from '+/premade/navbar/SitePick.vue'
+  import HStack from '+/layout/HStack.vue'
+  import Spacer from '+/utils/Spacer.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
   const { t } = useI18n()
 
   const isOldMain = ref(false)

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import DynamicImage from '@/components/utils/DynamicImage.vue'
-  import InteriorItem from '@/components/layout/InteriorItem.vue'
-  import Card from '@/components/layout/Card.vue'
+  import DynamicImage from '+/utils/DynamicImage.vue'
+  import InteriorItem from '+/layout/InteriorItem.vue'
+  import Card from '+/layout/Card.vue'
 
   defineProps<{
     image: string

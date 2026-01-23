@@ -1,19 +1,19 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
   import { onMounted, ref } from 'vue'
-  import { LauncherCreators } from '@/data/launchers/LauncherCreators'
-  import type { AppCategory } from '@/types/appsViews'
+  import { LauncherCreators } from '$/launchers/LauncherCreators'
+  import type { AppCategory } from ':/appsViews'
 
-  import VStack from '@/components/layout/VStack.vue'
-  import Card from '@/components/layout/Card.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
-  import Divider from '@/components/utils/Divider.vue'
-  import NavigationTitle from '@/components/layout/NavigationTitle.vue'
-  import BottomFooter from '@/components/premade/BottomFooter.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import Modal from '@/components/utils/Modal.vue'
-  import LauncherCard from '@/components/premade/navbar/LauncherCard.vue'
-  import setHeadMeta from '@/utils/setHeadMeta'
+  import VStack from '+/layout/VStack.vue'
+  import Card from '+/layout/Card.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
+  import Divider from '+/utils/Divider.vue'
+  import NavigationTitle from '+/layout/NavigationTitle.vue'
+  import BottomFooter from '+/premade/BottomFooter.vue'
+  import HStack from '+/layout/HStack.vue'
+  import Modal from '+/utils/Modal.vue'
+  import LauncherCard from '+/premade/navbar/LauncherCard.vue'
+  import setHeadMeta from '&/setHeadMeta'
   const { t } = useI18n()
 
   const appsData = ref<AppCategory[]>([])

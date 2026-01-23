@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import HStack from '@/components/layout/HStack.vue'
+  import HStack from '+/layout/HStack.vue'
   import { Icon } from '@iconify/vue'
-  import SafeLink from '@/components/utils/SafeLink.vue'
+  import SafeLink from '+/utils/SafeLink.vue'
 
   const { t } = useI18n()
 </script>

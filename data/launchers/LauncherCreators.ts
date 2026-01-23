@@ -1,4 +1,4 @@
-import type LauncherItem from '@/types/LauncherItem'
+import type LauncherItem from ':/LauncherItem'
 
 export const LauncherCreators: LauncherItem[] = [
   {

@@ -1,9 +1,9 @@
 <script setup lang="ts">
   import { ref } from 'vue'
   import { Icon } from '@iconify/vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
-  import Navbar from '@/components/premade/navbar/Navbar.vue'
+  import HStack from '+/layout/HStack.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
 
   interface CSVRow extends Record<string, unknown> {}
 

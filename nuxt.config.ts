@@ -1,4 +1,5 @@
 import meta from './package.json'
+import { fileURLToPath } from 'node:url'
 
 export default defineNuxtConfig({
   app: {
@@ -33,6 +34,13 @@ export default defineNuxtConfig({
     },
   },
   modules: ['@vite-pwa/nuxt', 'floating-vue/nuxt', '@nuxtjs/i18n'],
+  alias: {
+    '@': fileURLToPath(new URL('./', import.meta.url)),
+    $: fileURLToPath(new URL('./data', import.meta.url)),
+    ':': fileURLToPath(new URL('./types', import.meta.url)),
+    '+': fileURLToPath(new URL('./components', import.meta.url)),
+    '&': fileURLToPath(new URL('./utils', import.meta.url)),
+  },
   i18n: {
     strategy: 'prefix_except_default',
     baseUrl: 'https://asboy2035.com',

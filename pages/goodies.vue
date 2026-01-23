@@ -1,16 +1,16 @@
 <script setup lang="ts">
-  import setHeadMeta from '@/utils/setHeadMeta'
+  import setHeadMeta from '&/setHeadMeta'
   import { ref, onMounted } from 'vue'
   import { Icon } from '@iconify/vue'
-  import Card from '@/components/layout/Card.vue'
-  import Spacer from '@/components/utils/Spacer.vue'
-  import VStack from '@/components/layout/VStack.vue'
-  import Grid from '@/components/layout/Grid.vue'
-  import Hero from '@/components/utils/Hero.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import BottomFooter from '@/components/premade/BottomFooter.vue'
-  import Navbar from '@/components/premade/navbar/Navbar.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
+  import Card from '+/layout/Card.vue'
+  import Spacer from '+/utils/Spacer.vue'
+  import VStack from '+/layout/VStack.vue'
+  import Grid from '+/layout/Grid.vue'
+  import Hero from '+/utils/Hero.vue'
+  import HStack from '+/layout/HStack.vue'
+  import BottomFooter from '+/premade/BottomFooter.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
   const { t } = useI18n()
 
   setHeadMeta({
