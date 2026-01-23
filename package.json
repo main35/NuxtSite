@@ -22,7 +22,7 @@
     "generate": "nuxt generate",
     "postinstall": "nuxt prepare",
     "prettier": "prettier --write --ignore-path .prettierignore .",
-    "fixPaths": "replace-in-files --string='~/' --replacement='@/' './**/*.{js,ts,vue}'",
+    "fixPaths": "replace-in-files --string='@/data/' --replacement='$/' './**/*.{js,ts,vue}' && replace-in-files --string='@/types/' --replacement=':/' './**/*.{js,ts,vue}' && replace-in-files --string='@/components/' --replacement='+/' './**/*.{js,ts,vue}' && replace-in-files --string='@/utils/' --replacement='&/' './**/*.{js,ts,vue}'",
     "format": "bun run prettier && bun run fixPaths"
   },
   "dependencies": {
