@@ -8,6 +8,7 @@
   import FullscreenCover from '+/premade/FullscreenCover.vue'
   import SitePicker from '+/premade/navbar/SitePicker.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
+  import LinkTickerClient from '+/links/LinkTicker.client.vue'
 
   const showSiteSwitcher: Ref<boolean> = ref(false)
 
@@ -20,7 +21,7 @@
   <FullscreenCover :class="{ hidden: !showSiteSwitcher }">
     <SitePicker>
       <button @click="toggleSiteSwitcher()" style="--buttonRadius: 2rem">
-        <Icon icon="mingcute:close-fill" width="24" height="24" />
+        <Icon icon="mingcute:close-fill" />
       </button>
     </SitePicker>
   </FullscreenCover>
@@ -47,5 +48,7 @@
         Sites
       </button>
     </HStack>
+
+    <LinkTickerClient />
   </Card>
 </template>

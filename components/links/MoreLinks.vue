@@ -4,6 +4,7 @@
   import HStack from '+/layout/HStack.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import SafeLink from '+/utils/SafeLink.vue'
+  import { MoreLinks } from '$/SocialLinks'
   const { t } = useI18n()
 </script>
 
@@ -12,24 +13,10 @@
     <CardTitle title="links.more" icon="solar:menu-dots-line-duotone" />
 
     <HStack>
-      <a href="https://app.warp.dev/referral/KVWRZZ">
+      <a v-for="link in MoreLinks" :href="link.url">
         <button>
-          <Icon icon="mingcute:terminal-fill" />
-          Warp
-        </button>
-      </a>
-
-      <a href="https://stats.foldingathome.org/donor/id/732018511">
-        <button>
-          <Icon icon="material-symbols:network-node" />
-          FaH
-        </button>
-      </a>
-
-      <a href="https://www.last.fm/user/asboy_lfm">
-        <button>
-          <Icon icon="solar:music-note-outline" />
-          Last.fm
+          <Icon :icon="link.icon" />
+          {{ link.name }}
         </button>
       </a>
     </HStack>

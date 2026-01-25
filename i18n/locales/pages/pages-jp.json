@@ -13,10 +13,11 @@
     }
   },
   "links": {
-    "socialTitle": "SNS",
-    "socialDesc": "私のSNSと連絡方法 :3",
-    "more": "その他のリンク",
-    "playlists": "プレイリスト"
+    "socialTitle": "私のソーシャル",
+    "socialDesc": "私のソーシャルと連絡方法 :3",
+    "more": "もっとリンク",
+    "playlists": "プレイリスト",
+    "check": "私のものをチェック"
   },
   "apps": {
     "allApps": "すべてのアプリ",

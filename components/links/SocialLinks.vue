@@ -4,6 +4,7 @@
   import Grid from '+/layout/Grid.vue'
   import IconItem from '+/layout/IconItem.vue'
   import CardTitle from '+/utils/CardTitle.vue'
+  import { SocialMediaLinks } from '$/SocialLinks'
   const { t } = useI18n()
 </script>
 
@@ -16,27 +17,10 @@
 
     <grid class="tight spaced">
       <IconItem
-        name="Discord"
-        link="https://discord.com/users/1118629361675939860"
-        icon="ic:baseline-discord"
-      />
-
-      <IconItem
-        name="Snapchat"
-        link="https://snapchat.com/t/BzWqgpTE"
-        icon="mingcute:snapchat-fill"
-      />
-
-      <IconItem
-        name="Reddit"
-        link="https://www.reddit.com/user/asboy2035/"
-        icon="fa6-brands:reddit-alien"
-      />
-
-      <IconItem
-        name="BlueSky"
-        link="https://asboy2035.bsky.social/"
-        icon="ri:bluesky-fill"
+        v-for="link in SocialMediaLinks"
+        :name="link.name"
+        :link="link.url"
+        :icon="link.icon"
       />
     </grid>
   </Card>

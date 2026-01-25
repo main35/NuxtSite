@@ -6,7 +6,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "6.0.0-beta15",
+  "version": "6.0.0-beta16",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -19,11 +19,12 @@
     "ci": "bun install && bun run build",
     "dev": "nuxi dev --host 0.0.0.0 --port 5173",
     "preview": "bun run build && nuxt preview --port 5174",
-    "generate": "nuxt generate",
-    "postinstall": "nuxt prepare",
     "prettier": "prettier --write --ignore-path .prettierignore .",
     "fixPaths": "replace-in-files --string='@/data/' --replacement='$/' './**/*.{js,ts,vue}' && replace-in-files --string='@/types/' --replacement=':/' './**/*.{js,ts,vue}' && replace-in-files --string='@/components/' --replacement='+/' './**/*.{js,ts,vue}' && replace-in-files --string='@/utils/' --replacement='&/' './**/*.{js,ts,vue}'",
-    "format": "bun run prettier && bun run fixPaths"
+    "verifyTranslations": "bun run utils/verifyTranslations.ts",
+    "format": "bun run prettier && bun run fixPaths",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@iconify/vue": "^5.0.0",
@@ -41,7 +42,7 @@
   "devDependencies": {
     "@types/node": "^24.10.0",
     "@vite-pwa/nuxt": "^1.1.0",
-    "nuxt": "^4.2.2",
+    "nuxt": "^4.3.0",
     "postcss-import": "^16.1.1",
     "prettier": "^3.7.4",
     "replace-in-files-cli": "^4.0.0",

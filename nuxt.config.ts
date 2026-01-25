@@ -1,5 +1,6 @@
 import meta from './package.json'
 import { fileURLToPath } from 'node:url'
+import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   app: {

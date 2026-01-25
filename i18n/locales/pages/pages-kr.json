@@ -13,10 +13,11 @@
     }
   },
   "links": {
-    "socialTitle": "소셜 미디어",
-    "socialDesc": "제 소셜 미디어와 연락처입니다 :3",
-    "more": "기타 링크",
-    "playlists": "플레이리스트"
+    "socialTitle": "내 소셜",
+    "socialDesc": "내 소셜과 연락 방법 :3",
+    "more": "더 많은 링크",
+    "playlists": "플레이리스트",
+    "check": "내 것을 확인해"
   },
   "apps": {
     "allApps": "모든 앱",

@@ -13,6 +13,7 @@
   import { getFlag, setFlag } from '&/setUserFlag'
   import LangPickerCard from '+/langs/LangPickerCard.vue'
   import type { LocationQuery } from 'vue-router'
+  import '&/randomElement'
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
 
@@ -117,9 +118,7 @@
     }
   }
   function getNextBackground(): string {
-    const nextBackground: string = backgrounds[
-      Math.floor(Math.random() * backgrounds.length)
-    ] as string
+    const nextBackground: string = backgrounds.randomElement() as string
 
     if (nextBackground == currentBackground.value) {
       return getNextBackground()

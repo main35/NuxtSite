@@ -14,9 +14,10 @@
   },
   "links": {
     "socialTitle": "我的社交",
-    "socialDesc": "我的社交账号和联系方式 :3",
+    "socialDesc": "我的社交和联系方式 :3",
     "more": "更多链接",
-    "playlists": "播放列表"
+    "playlists": "播放列表",
+    "check": "查看我的"
   },
   "apps": {
     "allApps": "所有应用",

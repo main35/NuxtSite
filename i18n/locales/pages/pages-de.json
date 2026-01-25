@@ -13,10 +13,11 @@
     }
   },
   "links": {
-    "socialTitle": "Meine Socials",
-    "socialDesc": "Meine Socials und Kontaktmethoden :3",
+    "socialTitle": "Meine Sozialen Medien",
+    "socialDesc": "Meine sozialen Medien und Kontaktmethoden :3",
     "more": "Mehr Links",
-    "playlists": "Playlists"
+    "playlists": "Playlists",
+    "check": "Schau dir meine"
   },
   "apps": {
     "allApps": "Alle Apps",

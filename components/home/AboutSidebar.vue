@@ -6,6 +6,7 @@
   import HStack from '+/layout/HStack.vue'
   import SitePicker from '+/premade/navbar/SitePicker.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
+  import LinkTickerClient from '+/links/LinkTicker.client.vue'
   const { t } = useI18n()
 
   const currentTime: Ref<string> = ref('')
@@ -31,7 +32,7 @@
 <template>
   <div class="sidebarView sidebarModeOnly spaced">
     <Card>
-      <VStack>
+      <VStack class="fullWidth">
         <DynamicImage
           src="/images/avatar-26.webp"
           alt="ash's Avatar"
@@ -40,6 +41,8 @@
         />
         <h1>ash</h1>
         <h2 class="light" style="margin-top: 0">@a35hie</h2>
+
+        <LinkTickerClient />
       </VStack>
     </Card>
 
