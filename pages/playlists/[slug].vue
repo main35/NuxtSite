@@ -18,22 +18,8 @@
   import Navbar from '+/premade/navbar/Navbar.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import SafeLink from '+/utils/SafeLink.vue'
+  import type { Playlist } from ':/playlists'
   const { t } = useI18n()
-
-  interface PlaylistLink {
-    title: string
-    url: string
-    type: 'apple' | 'spotify' | 'deezer' | 'youtube'
-  }
-
-  interface Playlist {
-    slug: string
-    title: string
-    description: string
-    author: string
-    image: string
-    links: PlaylistLink[]
-  }
 
   const playlists = ref<Playlist[]>([])
   const route = useRoute()

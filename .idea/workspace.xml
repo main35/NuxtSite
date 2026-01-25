@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add translation verification, improve localization, add link ticker, update Nuxt">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="improve prettier config, improve bottom logo, improve links data, update usernames">
+      <change afterPath="$PROJECT_DIR$/types/cursors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/playlists.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/LinkTicker.client.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/LinkTicker.client.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/MoreLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/MoreLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SocialLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/SocialLinks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -653,15 +652,8 @@
       <workItem from="1769186783564" duration="3710000" />
       <workItem from="1769190521633" duration="12616000" />
       <workItem from="1769343392796" duration="1469000" />
-      <workItem from="1769345077294" duration="2376000" />
-    </task>
-    <task id="LOCAL-00036" summary="update code styling, improve langs card, coloring improvements">
-      <option name="closed" value="true" />
-      <created>1754579478698</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1754579478698</updated>
+      <workItem from="1769345077294" duration="2613000" />
+      <workItem from="1769348818215" duration="1141000" />
     </task>
     <task id="LOCAL-00037" summary="updates to light mode coloring">
       <option name="closed" value="true" />
@@ -1047,7 +1039,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769344854284</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="improve prettier config, improve bottom logo, improve links data, update usernames">
+      <option name="closed" value="true" />
+      <created>1769348577658</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1769348577658</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1065,7 +1065,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove char card creator, make head management more efficient, fix canonical updating" />
     <MESSAGE value="update site preview image" />
     <MESSAGE value="switch to Bun" />
     <MESSAGE value="add install to build script (CF has auto install deps disabled)" />
@@ -1090,7 +1089,8 @@
     <MESSAGE value="clean up imports with new aliases" />
     <MESSAGE value="update fix paths command" />
     <MESSAGE value="add translation verification, improve localization, add link ticker, update Nuxt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add translation verification, improve localization, add link ticker, update Nuxt" />
+    <MESSAGE value="improve prettier config, improve bottom logo, improve links data, update usernames" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve prettier config, improve bottom logo, improve links data, update usernames" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

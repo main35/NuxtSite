@@ -2,6 +2,7 @@
   import setHeadMeta from '&/setHeadMeta'
   import { ref, onMounted } from 'vue'
   import { Icon } from '@iconify/vue'
+  import type { Cursor } from ':/cursors'
   import Card from '+/layout/Card.vue'
   import Spacer from '+/utils/Spacer.vue'
   import VStack from '+/layout/VStack.vue'
@@ -18,18 +19,6 @@
     subtitle: 'meta.subtitles.goodies',
     image: '/images/Goodies.jpg',
   })
-
-  interface CursorAsset {
-    type: string
-    path: string
-  }
-
-  interface Cursor {
-    name: string
-    version: string
-    downloadURL: string
-    assets: CursorAsset[]
-  }
 
   const cursors = ref<Cursor[]>([])
 
