@@ -13,7 +13,7 @@
     <CardTitle title="links.more" icon="solar:menu-dots-line-duotone" />
 
     <HStack>
-      <a v-for="link in MoreLinks" :href="link.url">
+      <a v-for="link in MoreLinks" :href="link.url" target="_blank">
         <button>
           <Icon :icon="link.icon" />
           {{ link.name }}

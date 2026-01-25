@@ -59,8 +59,8 @@ export const MoreLinks: SocialLink[] = [
   },
   {
     name: 'Last.fm',
-    url: 'https://www.last.fm/user/asboy_lfm',
-    icon: 'solar:music-note-outline',
+    url: 'https://www.last.fm/user/a35hie',
+    icon: 'ph:lastfm-logo-bold',
   },
 ]
 

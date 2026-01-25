@@ -6,7 +6,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "6.0.0-beta16",
+  "version": "6.0.0-preview17",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -19,7 +19,7 @@
     "ci": "bun install && bun run build",
     "dev": "nuxi dev --host 0.0.0.0 --port 5173",
     "preview": "bun run build && nuxt preview --port 5174",
-    "prettier": "prettier --write --ignore-path .prettierignore .",
+    "prettier": "prettier --write --experimental-cli --ignore-path .prettierignore .",
     "fixPaths": "replace-in-files --string='@/data/' --replacement='$/' './**/*.{js,ts,vue}' && replace-in-files --string='@/types/' --replacement=':/' './**/*.{js,ts,vue}' && replace-in-files --string='@/components/' --replacement='+/' './**/*.{js,ts,vue}' && replace-in-files --string='@/utils/' --replacement='&/' './**/*.{js,ts,vue}'",
     "verifyTranslations": "bun run utils/verifyTranslations.ts",
     "format": "bun run prettier && bun run fixPaths",

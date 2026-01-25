@@ -149,10 +149,12 @@
       {{ t(showingUi ? 'app.hideInterface' : 'app.showInterface') }}
     </button>
 
-    <button disabled v-tooltip="t('app.comingSoon')">
-      <Icon icon="solar:bag-5-line-duotone" />
-      {{ t('app.getWalls') }}
-    </button>
+    <a href="https://ko-fi.com/s/b635cf0ef1" target="_blank">
+      <button>
+        <Icon icon="solar:bag-heart-line-duotone" />
+        {{ t('app.getWalls') }}
+      </button>
+    </a>
   </HStack>
 
   <NuxtPage v-if="showingUi" />
@@ -240,7 +242,7 @@
     max-width: 30rem
     z-index: 11
 
-    button
+    button, a
       flex-grow: 1
 
   .siteBackground
