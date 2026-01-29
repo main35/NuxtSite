@@ -8,6 +8,7 @@
   import HStack from '+/layout/HStack.vue'
   import Spacer from '+/utils/Spacer.vue'
   import CardTitle from '+/utils/CardTitle.vue'
+  import NotificationDot from '+/premade/NotificationDot.vue'
   const { t } = useI18n()
 
   const isOldMain = ref(false)
@@ -46,11 +47,15 @@
           title="sites.guides"
           icon="solar:book-line-duotone"
         />
-        <SitePick
-          to="https://byg.a35.dev"
-          title="sites.big"
-          icon="solar:posts-carousel-vertical-line-duotone"
-        />
+        <HStack>
+          <SitePick
+            to="https://byg.a35.dev"
+            title="sites.big"
+            icon="solar:posts-carousel-vertical-line-duotone"
+          />
+
+          <NotificationDot />
+        </HStack>
         <SitePick
           to="https://fonts.asboy2035.com/"
           title="sites.fonts"
@@ -100,10 +105,7 @@
 <style lang="sass">
   .sitePicker
     min-width: 15rem
-    max-width: fit-content
-
-    &.fullWidth
-      max-width: 100%
+    max-width: 100%
 
   .qrCode
     width: 100%

@@ -8,9 +8,9 @@
     "portfolio": "Портфолио"
   },
   "app": {
-    "hideInterface": "Скрыть интерфейс",
+    "hideInterface": "Скрыть страницу",
     "showInterface": "Показать интерфейс",
-    "getWalls": "Получить обои",
+    "getWalls": "Обои",
     "comingSoon": "Скоро!",
     "myTime": "Мое время",
     "connecting": "Подключение...",

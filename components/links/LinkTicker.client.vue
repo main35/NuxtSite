@@ -23,28 +23,30 @@
 </script>
 
 <template>
-  <HStack class="linkTicker autoSpace">
-    <!-- prettier-ignore -->
-    <div class="currentLink">
-      <transition name="fade" mode="out-in">
-        <span :key="currentLink.name">
-          {{ t('links.check') }}
-          <Icon class="linkIcon" :icon="currentLink.icon" />
+  <ClientOnly>
+    <HStack class="linkTicker autoSpace">
+      <!-- prettier-ignore -->
+      <div class="currentLink">
+        <transition name="fade" mode="out-in">
+          <span :key="currentLink.name">
+            {{ t('links.check') }}
+            <Icon class="linkIcon" :icon="currentLink.icon" />
 
-          <a :href="currentLink.url">
-            <strong>{{ currentLink.name }}</strong>
-          </a>!
-        </span>
-      </transition>
-    </div>
+            <a :href="currentLink.url">
+              <strong>{{ currentLink.name }}</strong>
+            </a>!
+          </span>
+        </transition>
+      </div>
 
-    <SafeLink to="/links">
-      <button class="transparent">
-        <Icon icon="solar:link-minimalistic-2-line-duotone" />
-        More
-      </button>
-    </SafeLink>
-  </HStack>
+      <SafeLink to="/links">
+        <button class="transparent">
+          <Icon icon="solar:link-minimalistic-2-line-duotone" />
+          More
+        </button>
+      </SafeLink>
+    </HStack>
+  </ClientOnly>
 </template>
 
 <style scoped lang="sass">

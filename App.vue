@@ -14,6 +14,7 @@
   import LangPickerCard from '+/langs/LangPickerCard.vue'
   import type { LocationQuery } from 'vue-router'
   import '&/randomElement'
+
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
 
@@ -131,6 +132,8 @@
 </script>
 
 <template>
+  <VitePwaManifest />
+
   <h1 class="hidden">Your CSS is disabled!</h1>
   <noscript><h1>Your JS is disabled!</h1></noscript>
 

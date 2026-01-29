@@ -14,6 +14,7 @@
   import NavigationButton from '+/premade/navbar/NavigationButton.vue'
   import SitePicker from '+/premade/navbar/SitePicker.vue'
   import LauncherCard from '+/premade/navbar/LauncherCard.vue'
+  import SafeLink from '+/utils/SafeLink.vue'
 
   const showSwitcher = ref(false)
 
@@ -101,7 +102,7 @@
       </button>
 
       <InteriorItem :class="{ desktopLinks: hideProfile }" class="navBar">
-        <HStack v-if="hideProfile !== true" class="profile transparent">
+        <HStack v-if="!hideProfile" class="profile transparent">
           <NavigationButton link="/" id="homeButtonContainer" text="pages.home">
             <DynamicImage
               class="avatar"
@@ -138,6 +139,12 @@
         <NavigationLinks class="desktopLinks" />
       </InteriorItem>
 
+      <SafeLink to="/">
+        <InteriorItem v-if="hideProfile" class="minimalProfile">
+          ash
+        </InteriorItem>
+      </SafeLink>
+
       <button
         id="mobileButton"
         @click="toggleNavigation"
@@ -169,6 +176,7 @@
     position: sticky
     flex-wrap: wrap
     bottom: 1rem
+    width: 100%
     max-width: calc(100vw - 2rem)
     z-index: 18
     align-items: center
@@ -178,13 +186,11 @@
       z-index: 19
       transition: 0.3s ease
 
-      &:hover
-        scale: 1.1
-        transform: translateY(-15%)
-        gap: 1rem
+      .minimalProfile
+        display: none
 
   .navBar
-    --interior-radius: 2rem !important
+    --interiorRadius: 2rem !important
     flex-direction: row
     z-index: 20
 
@@ -244,24 +250,6 @@
     100%
       transform: none
 
-  @media (max-width: 35rem)
-    .navBar
-      --interior-radius: 1.75rem !important
-
-    #mobileButton
-      --buttonRadius: 2rem
-      display: flex
-
-    .desktopLinks
-      display: none
-
-    .name
-      display: none
-
-  @media (min-width: 35rem)
-    #mobileNav
-      display: none !important
-
   #siteSwitcherButton
     cursor: pointer
 
@@ -290,4 +278,30 @@
     svg
       width: 1.25rem
       height: 1.25rem
+
+  @media (max-width: 35rem)
+    .navBarRow
+      width: 100%
+      justify-content: space-between
+
+      .minimalProfile
+        display: block !important
+        padding: 0.5rem 1rem
+
+    .navBar
+      --interiorRadius: 1.75rem !important
+
+    #mobileButton
+      --buttonRadius: 2rem
+      display: flex
+
+    .desktopLinks
+      display: none
+
+    .name
+      display: none
+
+  @media (min-width: 35rem)
+    #mobileNav
+      display: none !important
 </style>

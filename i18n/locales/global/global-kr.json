@@ -8,9 +8,9 @@
     "portfolio": "포트폴리오"
   },
   "app": {
-    "hideInterface": "인터페이스 숨기기",
+    "hideInterface": "페이지 숨기기",
     "showInterface": "인터페이스 표시",
-    "getWalls": "배경화면 받기",
+    "getWalls": "배경화면",
     "comingSoon": "곧 출시됩니다!",
     "myTime": "현재 제 시간",
     "connecting": "연결 중...",

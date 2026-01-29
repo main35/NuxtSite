@@ -8,7 +8,7 @@
   @use "@/styles/colors"
 
   .card
-    --card-radius: 2.5rem
+    --card-radius: 3rem
 
     width: calc(100% - 3rem)
     position: relative
@@ -18,7 +18,7 @@
 
     border-radius: var(--card-radius)
     background: colors.$foregroundColor
-    backdrop-filter: blur(0.75rem) saturate(125%)
+    backdrop-filter: blur(0.5rem) saturate(125%)
     z-index: 2
 
     &::after // Specular Highlighting
@@ -42,13 +42,6 @@
       &::after
         opacity: 0.8
 
-      .cardShadowContainer
-        opacity: 0.4
-
-        .cardShadow
-          border-width: 1rem
-
-
     ::v-deep(img)
       max-width: 100%
       border-radius: 0.75rem
@@ -56,21 +49,8 @@
 
   @media (max-width: 35rem)
     .card
-      --card-radius: 2rem
+      --card-radius: 2.25rem
 
       width: calc(100% - 1.5rem)
       padding: 0.75rem
-
-      .cardShadowContainer
-        top: -0.5rem
-        bottom: -0.5rem
-        right: -0.5rem
-        left: -0.5rem
-
-        .cardShadow
-          top: 0.5rem
-          bottom: 0.5rem
-          right: 0.5rem
-          left: 0.5rem
-          filter: blur(0.5rem)
 </style>

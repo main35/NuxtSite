@@ -20,11 +20,10 @@ export default defineNuxtConfig({
         { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
         { rel: 'dns-prefetch', href: 'https://fonts.asboy2035.com' },
         { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' },
-        { rel: 'manifest', href: '/manifest.webmanifest' },
       ],
     },
   },
-  compatibilityDate: '2026-01-05',
+  compatibilityDate: '2026-01-29',
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
@@ -168,5 +167,8 @@ export default defineNuxtConfig({
         baseURL: '/',
       },
     ],
+    externals: {
+      inline: ['vue'],
+    },
   },
 })

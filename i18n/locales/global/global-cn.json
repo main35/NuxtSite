@@ -8,9 +8,9 @@
     "portfolio": "作品集"
   },
   "app": {
-    "hideInterface": "隐藏界面",
+    "hideInterface": "隐藏页面",
     "showInterface": "显示界面",
-    "getWalls": "获取壁纸",
+    "getWalls": "壁纸",
     "comingSoon": "即将推出！",
     "myTime": "我的时间",
     "connecting": "正在连接...",

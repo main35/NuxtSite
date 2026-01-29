@@ -8,9 +8,9 @@
     "portfolio": "Portafolio"
   },
   "app": {
-    "hideInterface": "Ocultar Interfaz",
+    "hideInterface": "Ocultar Página",
     "showInterface": "Mostrar Interfaz",
-    "getWalls": "Obtener Fondos",
+    "getWalls": "Fondos",
     "comingSoon": "¡Próximamente!",
     "myTime": "Mi Hora",
     "connecting": "Conectando...",

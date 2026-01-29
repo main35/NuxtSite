@@ -35,12 +35,11 @@
     transition: 0.2s ease-in-out
     padding: 0
 
-  .navigationButton
     ::v-deep(svg)
       height: 1.25rem
       width: 1.25rem
 
-  /* Tooltip Styling */
+  // Tooltip Styling
   .toolTip
     display: none
     position: absolute
@@ -54,7 +53,7 @@
     h4
       margin: 0
 
-  /* Show tooltip on hover */
+  // Show tooltip on hover
   .navWrapper:hover .toolTip
     display: flex
 </style>

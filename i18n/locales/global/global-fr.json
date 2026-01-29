@@ -8,8 +8,8 @@
     "portfolio": "Portfolio"
   },
   "app": {
-    "getWalls": "Obtenir les fonds d'écran",
-    "hideInterface": "Masquer l'interface",
+    "getWalls": "Fonds d'écran",
+    "hideInterface": "Masquer la page",
     "showInterface": "Afficher l'interface",
     "comingSoon": "À venir!",
     "myTime": "Mon temps",

@@ -8,9 +8,9 @@
     "portfolio": "ポートフォリオ"
   },
   "app": {
-    "hideInterface": "インターフェースを隠す",
+    "hideInterface": "ページを隠す",
     "showInterface": "インターフェースを表示",
-    "getWalls": "壁紙を入手",
+    "getWalls": "壁紙",
     "comingSoon": "近日公開！",
     "myTime": "私の時間",
     "connecting": "接続中...",

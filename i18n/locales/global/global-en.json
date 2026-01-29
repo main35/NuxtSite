@@ -8,9 +8,9 @@
     "portfolio": "Portfolio"
   },
   "app": {
-    "hideInterface": "Hide Interface",
+    "hideInterface": "Hide Page",
     "showInterface": "Show Interface",
-    "getWalls": "Get Wallpapers",
+    "getWalls": "Wallpapers",
     "comingSoon": "Coming Soon!",
     "myTime": "My Time",
     "connecting": "Connecting...",
