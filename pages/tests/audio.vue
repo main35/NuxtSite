@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { ref } from 'vue'
+
   import Card from '+/layout/Card.vue'
 
   const audio = new Audio('/audioTest.mp3')

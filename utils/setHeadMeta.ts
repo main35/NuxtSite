@@ -1,7 +1,7 @@
 import type {
   ResolvableArray,
-  ResolvableMeta,
   ResolvableLink,
+  ResolvableMeta,
 } from '@unhead/vue/types'
 
 export default function setHeadMeta(config: {

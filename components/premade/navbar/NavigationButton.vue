@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
+
   import SafeLink from '+/utils/SafeLink.vue'
   const { t } = useI18n()
 

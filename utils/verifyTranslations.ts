@@ -11,7 +11,7 @@ function readJson(filePath: string): JsonObject {
 function collectKeys(obj: JsonObject, prefix = ''): Set<string> {
   const keys = new Set<string>()
 
-  for (const [key, value] of Object.entries(obj)) {
+  for (const [ key, value ] of Object.entries(obj)) {
     const fullKey: string = prefix ? `${prefix}.${key}` : key
     keys.add(fullKey)
 
@@ -59,7 +59,7 @@ export async function verifyTranslations(): Promise<boolean> {
       const match = file.match(/^(.*)-([a-zA-Z0-9_-]+)\.json$/)
       if (!match) continue
 
-      const [, , lang] = match
+      const [ , , lang ] = match
       if (!languages.includes(lang)) continue
 
       const keys = collectKeys(readJson(path.join(namespaceDir, file)))
@@ -91,11 +91,11 @@ export async function verifyTranslations(): Promise<boolean> {
         continue
       }
 
-      const allKeys = new Set([...referenceKeys, ...keys])
-      const missing = [...allKeys].filter(
+      const allKeys = new Set([ ...referenceKeys, ...keys ])
+      const missing = [ ...allKeys ].filter(
         (k) => referenceKeys.has(k) && !keys.has(k)
       )
-      const extra = [...allKeys].filter(
+      const extra = [ ...allKeys ].filter(
         (k) => !referenceKeys.has(k) && keys.has(k)
       )
 

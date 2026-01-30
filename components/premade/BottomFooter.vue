@@ -1,8 +1,8 @@
 <script setup lang="ts">
-  import Card from '+/layout/Card.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
-  import VStack from '+/layout/VStack.vue'
   import NavButtons from '+/home/NavButtons.vue'
+  import Card from '+/layout/Card.vue'
+  import VStack from '+/layout/VStack.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
   import Divider from '+/utils/Divider.vue'
   const { t } = useI18n()
 

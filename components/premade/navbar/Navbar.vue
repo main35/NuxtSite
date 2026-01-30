@@ -1,20 +1,20 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
   import { Icon } from '@iconify/vue'
+  import { ref } from 'vue'
   import { ProgressiveBlur } from 'vue-progressive-blur'
-  import { LauncherApps } from '$/launchers/LauncherApps'
-  import { LauncherCreators } from '$/launchers/LauncherCreators'
 
   import HStack from '+/layout/HStack.vue'
-  import VStack from '+/layout/VStack.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
+  import VStack from '+/layout/VStack.vue'
   import FullscreenCover from '+/premade/FullscreenCover.vue'
-  import DynamicImage from '+/utils/DynamicImage.vue'
-  import NavigationLinks from '+/premade/navbar/NavigationLinks.vue'
-  import NavigationButton from '+/premade/navbar/NavigationButton.vue'
-  import SitePicker from '+/premade/navbar/SitePicker.vue'
   import LauncherCard from '+/premade/navbar/LauncherCard.vue'
+  import NavigationButton from '+/premade/navbar/NavigationButton.vue'
+  import NavigationLinks from '+/premade/navbar/NavigationLinks.vue'
+  import SitePicker from '+/premade/navbar/SitePicker.vue'
+  import DynamicImage from '+/utils/DynamicImage.vue'
   import SafeLink from '+/utils/SafeLink.vue'
+  import { LauncherApps } from '$/launchers/LauncherApps'
+  import { LauncherCreators } from '$/launchers/LauncherCreators'
 
   const showSwitcher = ref(false)
 

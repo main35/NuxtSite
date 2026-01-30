@@ -1,9 +1,10 @@
 <script setup lang="ts">
-  import { onMounted, ref, watch } from 'vue'
   import createGlobe from 'cobe'
+  import { onMounted, ref, watch } from 'vue'
+
   import Card from '+/layout/Card.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
 
   const canvasRef = ref<HTMLCanvasElement | null>(null)
   const isDarkMode = ref(0)
@@ -31,12 +32,12 @@
       mapSamples: 12000,
       mapBrightness: 6,
       baseColor:
-        isDarkMode.value == 1 ? [0.32, 0.14, 0.93] : [0.64, 0.51, 0.88], // Dark: Light colors
-      markerColor: [0.63, 0.49, 0.02],
+        isDarkMode.value == 1 ? [ 0.32, 0.14, 0.93 ] : [ 0.64, 0.51, 0.88 ], // Dark: Light colors
+      markerColor: [ 0.63, 0.49, 0.02 ],
       glowColor:
-        isDarkMode.value == 1 ? [0.49, 0.43, 0.73] : [0.53, 0.39, 0.79], // Dark: Light colors
+        isDarkMode.value == 1 ? [ 0.49, 0.43, 0.73 ] : [ 0.53, 0.39, 0.79 ], // Dark: Light colors
       markers: [
-        { location: [44.84685, 0.62871], size: 0.1 }, // Bordeaux
+        { location: [ 44.84685, 0.62871 ], size: 0.1 }, // Bordeaux
       ],
       onRender: (state) => {
         if (!isDragging) {

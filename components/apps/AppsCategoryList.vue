@@ -1,12 +1,13 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
+
   import type { AppCategory } from ':/appsViews'
+  import AppLink from '+/apps/AppLink.vue'
   import Card from '+/layout/Card.vue'
   import Grid from '+/layout/Grid.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
-  import AppLink from '+/apps/AppLink.vue'
-  import DynamicImage from '+/utils/DynamicImage.vue'
   import VStack from '+/layout/VStack.vue'
+  import DynamicImage from '+/utils/DynamicImage.vue'
 
   defineProps<{
     appsData: AppCategory[]

@@ -1,14 +1,14 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import { ref, onMounted } from 'vue'
+  import { onMounted, ref } from 'vue'
 
-  import VStack from '+/layout/VStack.vue'
   import Card from '+/layout/Card.vue'
-  import SitePick from '+/premade/navbar/SitePick.vue'
   import HStack from '+/layout/HStack.vue'
-  import Spacer from '+/utils/Spacer.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
+  import VStack from '+/layout/VStack.vue'
+  import SitePick from '+/premade/navbar/SitePick.vue'
   import NotificationDot from '+/premade/NotificationDot.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
+  import Spacer from '+/utils/Spacer.vue'
   const { t } = useI18n()
 
   const isOldMain = ref(false)

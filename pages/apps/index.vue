@@ -1,13 +1,14 @@
 <script setup lang="ts">
-  import setHeadMeta from '&/setHeadMeta'
   import { Icon } from '@iconify/vue'
-  import { ref, onMounted } from 'vue'
+  import { onMounted, ref } from 'vue'
+
   import type { AppCategory } from ':/appsViews'
-  import Hero from '+/utils/Hero.vue'
-  import Spacer from '+/utils/Spacer.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
+  import setHeadMeta from '&/setHeadMeta'
   import AppsCategoryList from '+/apps/AppsCategoryList.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
+  import Hero from '+/utils/Hero.vue'
+  import Spacer from '+/utils/Spacer.vue'
   const { t } = useI18n()
 
   setHeadMeta({

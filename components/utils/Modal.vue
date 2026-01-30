@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import FullscreenCover from '+/premade/FullscreenCover.vue'
   import Card from '+/layout/Card.vue'
+  import FullscreenCover from '+/premade/FullscreenCover.vue'
 
   defineProps<{
     plain?: boolean

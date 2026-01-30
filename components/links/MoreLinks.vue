@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
+
   import Card from '+/layout/Card.vue'
   import HStack from '+/layout/HStack.vue'
   import CardTitle from '+/utils/CardTitle.vue'

@@ -1,22 +1,22 @@
 <script setup lang="ts">
-  import { ref, onMounted, computed } from 'vue'
-  import setHeadMeta from '&/setHeadMeta'
-  import { useRoute } from 'vue-router'
-  import { apps } from '$/apps'
-  import { marked } from 'marked'
-  import type { AppPageMeta } from '$/apps'
-
-  import Hero from '+/utils/Hero.vue'
-  import BottomFooter from '+/premade/BottomFooter.vue'
-  import Card from '+/layout/Card.vue'
-  import UpdatedBadge from '+/apps/UpdatedBadge.vue'
-  import GithubIcon from '+/apps/GithubIcon.vue'
-  import AppStoreIcon from '+/apps/AppStoreIcon.vue'
-  import LinkIcon from '+/apps/LinkIcon.vue'
-  import HStack from '+/layout/HStack.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
   import { Icon } from '@iconify/vue'
+  import { marked } from 'marked'
+  import { computed, onMounted, ref } from 'vue'
+  import { useRoute } from 'vue-router'
+
+  import setHeadMeta from '&/setHeadMeta'
+  import AppStoreIcon from '+/apps/AppStoreIcon.vue'
+  import GithubIcon from '+/apps/GithubIcon.vue'
+  import LinkIcon from '+/apps/LinkIcon.vue'
+  import UpdatedBadge from '+/apps/UpdatedBadge.vue'
+  import Card from '+/layout/Card.vue'
+  import HStack from '+/layout/HStack.vue'
+  import BottomFooter from '+/premade/BottomFooter.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
+  import Hero from '+/utils/Hero.vue'
   import SafeLink from '+/utils/SafeLink.vue'
+  import type { AppPageMeta } from '$/apps'
+  import { apps } from '$/apps'
   const { t } = useI18n()
 
   const route = useRoute()

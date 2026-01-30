@@ -1,19 +1,20 @@
 <script setup lang="ts">
-  import { ref, onMounted } from 'vue'
-  import { useRouter } from '#app'
-  import type { Ref } from 'vue'
-  import type { Router } from '#vue-router'
-  import { Icon } from '@iconify/vue'
+  import '&/randomElement'
 
+  import { Icon } from '@iconify/vue'
+  import type { Ref } from 'vue'
+  import { onMounted, ref } from 'vue'
   import { ProgressiveBlur } from 'vue-progressive-blur'
+  import type { LocationQuery } from 'vue-router'
+
+  import { getFlag, setFlag } from '&/setUserFlag'
+  import { useRouter } from '#app'
+  import type { Router } from '#vue-router'
+  import LangPickerCard from '+/langs/LangPickerCard.vue'
+  import HStack from '+/layout/HStack.vue'
   import TransitionElement from '+/premade/TransitionElement.vue'
   import Modal from '+/utils/Modal.vue'
   import Spacer from '+/utils/Spacer.vue'
-  import HStack from '+/layout/HStack.vue'
-  import { getFlag, setFlag } from '&/setUserFlag'
-  import LangPickerCard from '+/langs/LangPickerCard.vue'
-  import type { LocationQuery } from 'vue-router'
-  import '&/randomElement'
 
   const { t } = useI18n()
   const i18nHead = useLocaleHead()

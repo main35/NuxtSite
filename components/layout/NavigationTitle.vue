@@ -1,6 +1,7 @@
 <script setup lang="ts">
-  import { ref, onMounted, onBeforeUnmount } from 'vue'
+  import { onBeforeUnmount, onMounted, ref } from 'vue'
   import { ProgressiveBlur } from 'vue-progressive-blur'
+
   import HStack from '+/layout/HStack.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
   const { t } = useI18n()
@@ -15,7 +16,7 @@
 
   onMounted(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
+      ([ entry ]) => {
         isStuck.value = !entry?.isIntersecting
       },
       {

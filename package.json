@@ -6,7 +6,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "6.0.0-preview18",
+  "version": "6.0.0-preview19",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -21,8 +21,9 @@
     "preview": "bun run build && nuxt preview --port 4173",
     "prettier": "prettier --write --experimental-cli --ignore-path .prettierignore .",
     "fixPaths": "replace-in-files --string='@/data/' --replacement='$/' './**/*.{js,ts,vue}' && replace-in-files --string='@/types/' --replacement=':/' './**/*.{js,ts,vue}' && replace-in-files --string='@/components/' --replacement='+/' './**/*.{js,ts,vue}' && replace-in-files --string='@/utils/' --replacement='&/' './**/*.{js,ts,vue}'",
+    "lint": "eslint . --fix",
+    "format": "bun run prettier && bun run fixPaths && bun run lint",
     "verifyTranslations": "bun run utils/verifyTranslations.ts",
-    "format": "bun run prettier && bun run fixPaths",
     "generate": "nuxt generate",
     "postinstall": "nuxt prepare"
   },
@@ -41,11 +42,15 @@
   },
   "devDependencies": {
     "@types/node": "^24.10.0",
+    "@typescript-eslint/parser": "^8.54.0",
     "@vite-pwa/nuxt": "^1.1.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "nuxt": "^4.3.0",
     "postcss-import": "^16.1.1",
     "prettier": "^3.7.4",
     "replace-in-files-cli": "^4.0.0",
-    "sass": "^1.89.0"
+    "sass": "^1.89.0",
+    "vue-eslint-parser": "^10.2.0"
   }
 }

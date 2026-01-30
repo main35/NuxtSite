@@ -1,11 +1,11 @@
 <script setup lang="ts">
-  import Navbar from '+/premade/navbar/Navbar.vue'
-  import Card from '+/layout/Card.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
   import setHeadMeta from '&/setHeadMeta'
-  import Grid from '+/layout/Grid.vue'
   import LangPickerCard from '+/langs/LangPickerCard.vue'
+  import Card from '+/layout/Card.vue'
+  import Grid from '+/layout/Grid.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
 
   const { t } = useI18n()
 

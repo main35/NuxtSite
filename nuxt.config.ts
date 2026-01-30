@@ -1,6 +1,8 @@
-import meta from './package.json'
 import { fileURLToPath } from 'node:url'
+
 import { defineNuxtConfig } from 'nuxt/config'
+
+import meta from './package.json'
 
 export default defineNuxtConfig({
   app: {
@@ -33,7 +35,7 @@ export default defineNuxtConfig({
       posthogDefaults: '2025-05-24',
     },
   },
-  modules: ['@vite-pwa/nuxt', 'floating-vue/nuxt', '@nuxtjs/i18n'],
+  modules: [ '@vite-pwa/nuxt', 'floating-vue/nuxt', '@nuxtjs/i18n' ],
   alias: {
     '@': fileURLToPath(new URL('./', import.meta.url)),
     $: fileURLToPath(new URL('./data', import.meta.url)),
@@ -153,7 +155,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  css: ['@/styles/global.sass'],
+  css: [ '@/styles/global.sass' ],
   vite: {
     build: {
       sourcemap: 'inline',
@@ -168,7 +170,7 @@ export default defineNuxtConfig({
       },
     ],
     externals: {
-      inline: ['vue'],
+      inline: [ 'vue' ],
     },
   },
 })

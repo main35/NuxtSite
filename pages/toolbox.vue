@@ -1,19 +1,19 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
   import { onMounted, ref } from 'vue'
-  import { LauncherCreators } from '$/launchers/LauncherCreators'
-  import type { AppCategory } from ':/appsViews'
 
-  import VStack from '+/layout/VStack.vue'
+  import type { AppCategory } from ':/appsViews'
+  import setHeadMeta from '&/setHeadMeta'
   import Card from '+/layout/Card.vue'
+  import HStack from '+/layout/HStack.vue'
+  import NavigationTitle from '+/layout/NavigationTitle.vue'
+  import VStack from '+/layout/VStack.vue'
+  import BottomFooter from '+/premade/BottomFooter.vue'
+  import LauncherCard from '+/premade/navbar/LauncherCard.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import Divider from '+/utils/Divider.vue'
-  import NavigationTitle from '+/layout/NavigationTitle.vue'
-  import BottomFooter from '+/premade/BottomFooter.vue'
-  import HStack from '+/layout/HStack.vue'
   import Modal from '+/utils/Modal.vue'
-  import LauncherCard from '+/premade/navbar/LauncherCard.vue'
-  import setHeadMeta from '&/setHeadMeta'
+  import { LauncherCreators } from '$/launchers/LauncherCreators'
   const { t } = useI18n()
 
   const appsData = ref<AppCategory[]>([])

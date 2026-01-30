@@ -1,6 +1,7 @@
-import { defineNuxtPlugin } from '#app'
-import posthog, { type ConfigDefaults, type PostHog } from 'posthog-js'
 import type { RuntimeConfig } from 'nuxt/schema'
+import posthog, { type ConfigDefaults, type PostHog } from 'posthog-js'
+
+import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin(() => {
   const runtimeConfig: RuntimeConfig = useRuntimeConfig()

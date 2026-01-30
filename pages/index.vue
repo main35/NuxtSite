@@ -1,13 +1,13 @@
 <script setup>
   import setHeadMeta from '&/setHeadMeta.ts'
-  import AboutSidebar from '+/home/AboutSidebar.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
   import AboutHeader from '+/home/AboutHeader.vue'
-  import LocationCard from '+/home/cards/LocationCard.vue'
+  import AboutSidebar from '+/home/AboutSidebar.vue'
   import AboutCard from '+/home/cards/AboutCard.vue'
-  import Grid from '+/layout/Grid.vue'
   import LangsCard from '+/home/cards/LangsCard.vue'
+  import LocationCard from '+/home/cards/LocationCard.vue'
+  import Grid from '+/layout/Grid.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
 
   setHeadMeta({
     page: 'pages.home',

@@ -1,10 +1,10 @@
 <script setup lang="ts">
   import type LauncherItem from ':/LauncherItem'
+  import Card from '+/layout/Card.vue'
+  import HStack from '+/layout/HStack.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
-  import HStack from '+/layout/HStack.vue'
-  import Card from '+/layout/Card.vue'
   import SafeLink from '+/utils/SafeLink.vue'
   const { t } = useI18n()
 

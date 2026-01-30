@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import CardTitle from '+/utils/CardTitle.vue'
-  import Card from '+/layout/Card.vue'
   import LangPicker from '+/langs/LangPicker.vue'
+  import Card from '+/layout/Card.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
 
-  defineEmits(['set'])
+  defineEmits([ 'set' ])
 </script>
 
 <template>

@@ -1,14 +1,15 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
   import { Icon } from '@iconify/vue'
   import type { Ref } from 'vue'
+  import { ref } from 'vue'
+
   import Card from '+/layout/Card.vue'
-  import VStack from '+/layout/VStack.vue'
   import HStack from '+/layout/HStack.vue'
+  import VStack from '+/layout/VStack.vue'
+  import LinkTickerClient from '+/links/LinkTicker.client.vue'
   import FullscreenCover from '+/premade/FullscreenCover.vue'
   import SitePicker from '+/premade/navbar/SitePicker.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
-  import LinkTickerClient from '+/links/LinkTicker.client.vue'
 
   const showSiteSwitcher: Ref<boolean> = ref(false)
 

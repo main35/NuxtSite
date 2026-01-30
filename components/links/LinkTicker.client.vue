@@ -1,9 +1,10 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
+
   import type SocialLink from ':/SocialLink'
-  import { SocialLinks } from '$/SocialLinks'
   import HStack from '+/layout/HStack.vue'
   import SafeLink from '+/utils/SafeLink.vue'
+  import { SocialLinks } from '$/SocialLinks'
 
   const { t } = useI18n()
   const currentLink: Ref<SocialLink> = ref(SocialLinks.randomElement()!)

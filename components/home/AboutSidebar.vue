@@ -1,12 +1,13 @@
 <script setup lang="ts">
-  import { ref, onMounted } from 'vue'
   import { Icon } from '@iconify/vue'
+  import { onMounted, ref } from 'vue'
+
   import Card from '+/layout/Card.vue'
-  import VStack from '+/layout/VStack.vue'
   import HStack from '+/layout/HStack.vue'
+  import VStack from '+/layout/VStack.vue'
+  import LinkTickerClient from '+/links/LinkTicker.client.vue'
   import SitePicker from '+/premade/navbar/SitePicker.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
-  import LinkTickerClient from '+/links/LinkTicker.client.vue'
   const { t } = useI18n()
 
   const currentTime: Ref<string> = ref('')
