@@ -15,6 +15,7 @@
   import TransitionElement from '+/premade/TransitionElement.vue'
   import Modal from '+/utils/Modal.vue'
   import Spacer from '+/utils/Spacer.vue'
+  import { showingInterfaceOptions } from '$/visibility'
 
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
@@ -138,7 +139,7 @@
   <h1 class="hidden">Your CSS is disabled!</h1>
   <noscript><h1>Your JS is disabled!</h1></noscript>
 
-  <HStack class="interfaceOptions">
+  <HStack class="interfaceOptions" v-if="showingInterfaceOptions">
     <button @click="showingUi = !showingUi">
       <Icon
         :icon="

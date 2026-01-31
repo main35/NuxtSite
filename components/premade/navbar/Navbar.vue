@@ -103,7 +103,11 @@
 
       <InteriorItem :class="{ desktopLinks: hideProfile }" class="navBar">
         <HStack v-if="!hideProfile" class="profile transparent">
-          <NavigationButton link="/" id="homeButtonContainer" text="pages.home">
+          <NavigationButton
+            link="/home"
+            id="homeButtonContainer"
+            text="pages.home"
+          >
             <DynamicImage
               class="avatar"
               src="/images/avatar-26.webp"
@@ -139,7 +143,7 @@
         <NavigationLinks class="desktopLinks" />
       </InteriorItem>
 
-      <SafeLink to="/">
+      <SafeLink to="/home">
         <InteriorItem v-if="hideProfile" class="minimalProfile">
           ash
         </InteriorItem>
