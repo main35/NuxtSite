@@ -15,7 +15,7 @@
   import SafeLink from '+/utils/SafeLink.vue'
   import { LauncherApps } from '$/launchers/LauncherApps'
   import { LauncherCreators } from '$/launchers/LauncherCreators'
-  import {showingNavProfile} from "$/visibility";
+  import { showingNavProfile } from '$/visibility'
 
   const showLaunchers: Ref<boolean> = ref(false)
   const showMobileNav: Ref<boolean> = ref(false)
@@ -41,13 +41,13 @@
         const el = component.$el
 
         const currentWidth = el.getBoundingClientRect().width
-        el.style.width = currentWidth + "px"
-        el.style.overflow = "hidden"
+        el.style.width = currentWidth + 'px'
+        el.style.overflow = 'hidden'
 
         await nextTick()
 
         const tempWidth = el.style.width
-        el.style.width = "auto"
+        el.style.width = 'auto'
         void el.offsetWidth
 
         const targetWidth = el.getBoundingClientRect().width
@@ -56,17 +56,17 @@
         void el.offsetWidth
 
         requestAnimationFrame(() => {
-          el.style.transition = "width 0.2s ease"
-          el.style.width = targetWidth + "px"
+          el.style.transition = 'width 0.2s ease'
+          el.style.width = targetWidth + 'px'
         })
 
         setTimeout(() => {
-          el.style.transition = ""
-          el.style.width = ""
-          el.style.overflow = ""
+          el.style.transition = ''
+          el.style.width = ''
+          el.style.overflow = ''
         }, 220)
       },
-      { flush: "sync" }
+      { flush: 'sync' }
     )
   })
 </script>
@@ -98,7 +98,7 @@
       :class="{ hidden: !showMobileNav }"
       class="navBar"
     >
-      <NavigationLinks />
+      <NavigationLinks @click="showMobileNav = false" />
     </InteriorItem>
 
     <SitePicker id="siteSwitcher" :class="{ hidden: !showSiteSwitcher }">
@@ -137,8 +137,12 @@
         />
       </button>
 
-      <InteriorItem ref="navRef" class="navBar">
-        <HStack class="navBarInner" :class="{ desktopLinks: !showingNavProfile }">
+      <InteriorItem
+        ref="navRef"
+        class="navBar"
+        :class="{ desktopLinks: !showingNavProfile }"
+      >
+        <HStack class="navBarInner">
           <HStack v-if="showingNavProfile" class="profile transparent">
             <NavigationButton
               link="/home"
@@ -181,10 +185,8 @@
         <NavigationLinks class="desktopLinks" />
       </InteriorItem>
 
-      <SafeLink to="/home">
-        <InteriorItem v-if="!showingNavProfile" class="minimalProfile">
-          ash
-        </InteriorItem>
+      <SafeLink to="/home" v-if="!showingNavProfile">
+        <InteriorItem class="minimalProfile"> ash </InteriorItem>
       </SafeLink>
 
       <button
@@ -340,10 +342,7 @@
       --buttonRadius: 2rem
       display: flex
 
-    .desktopLinks
-      display: none
-
-    .name
+    .desktopLinks, .name
       display: none
 
   @media (min-width: 35rem)

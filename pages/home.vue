@@ -7,7 +7,7 @@
   import LocationCard from '+/home/cards/LocationCard.vue'
   import Grid from '+/layout/Grid.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
-  import {showingNavProfile} from "$/visibility.ts";
+  import { showingNavProfile } from '$/visibility.ts'
 
   setHeadMeta({
     page: 'pages.home',

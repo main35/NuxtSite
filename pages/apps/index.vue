@@ -6,7 +6,6 @@
   import setHeadMeta from '&/setHeadMeta'
   import AppsCategoryList from '+/apps/AppsCategoryList.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
   import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
   const { t } = useI18n()
@@ -59,7 +58,6 @@
     </p>
 
     <BottomFooter />
-
   </div>
 </template>
 

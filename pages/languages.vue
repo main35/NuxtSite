@@ -4,7 +4,6 @@
   import Card from '+/layout/Card.vue'
   import Grid from '+/layout/Grid.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
   import CardTitle from '+/utils/CardTitle.vue'
 
   const { t } = useI18n()
@@ -40,8 +39,6 @@
     </Grid>
 
     <BottomFooter />
-
-
   </div>
 </template>
 

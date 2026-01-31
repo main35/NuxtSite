@@ -9,7 +9,6 @@
   import HStack from '+/layout/HStack.vue'
   import VStack from '+/layout/VStack.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
@@ -98,7 +97,6 @@
     </grid>
 
     <BottomFooter />
-
   </div>
 </template>
 

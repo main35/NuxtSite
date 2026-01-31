@@ -12,11 +12,11 @@
   import type { Router } from '#vue-router'
   import LangPickerCard from '+/langs/LangPickerCard.vue'
   import HStack from '+/layout/HStack.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
   import TransitionElement from '+/premade/TransitionElement.vue'
   import Modal from '+/utils/Modal.vue'
   import Spacer from '+/utils/Spacer.vue'
   import { showingInterfaceOptions } from '$/visibility'
-  import Navbar from "+/premade/navbar/Navbar.vue";
 
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
