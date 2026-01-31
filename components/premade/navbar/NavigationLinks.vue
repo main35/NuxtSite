@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <HStack class="tight">
+  <HStack class="tight noWrap">
     <NavigationButton
       link="/links"
       text="pages.links"

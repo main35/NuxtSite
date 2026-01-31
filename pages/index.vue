@@ -34,30 +34,30 @@
   <div class="contentView introView">
     <VStack class="introHead">
       <img class="introAvatar" src="/images/avatar-26.webp" alt="avatar" />
-      <h1 class="introTitle">hi, I'm ash.</h1>
+      <h1 class="introTitle">{{ t('intro.hi') }}</h1>
       <h2 class="introSubtitle">
-        I'm a designer and developer based in France.
+        {{ t('intro.desc') }}
       </h2>
     </VStack>
 
     <Divider />
 
     <Card class="introInfoCard spaced">
-      <CardTitle title="Get to know me!" icon="solar:hearts-line-duotone" />
+      <CardTitle title="intro.knowMe" icon="solar:hearts-line-duotone" />
 
       <HStack class="fullWidth autoSpace">
         <HStack>
           <SafeLink to="https://github.com/asboy2035">
             <button>
               <Icon icon="mingcute:github-fill" />
-              Github
+              {{ t('intro.github') }}
             </button>
           </SafeLink>
 
           <SafeLink to="mailto:ash@a35.dev">
             <button>
               <Icon icon="solar:plain-line-duotone" />
-              Email
+              {{ t('intro.email') }}
             </button>
           </SafeLink>
         </HStack>
@@ -76,7 +76,7 @@
     <SafeLink to="/home" class="introCta fullWidth">
       <button>
         <Icon icon="solar:info-circle-line-duotone" />
-        About Me
+        {{ t('intro.about') }}
       </button>
     </SafeLink>
   </div>
@@ -99,7 +99,7 @@
 
       .introTitle
         font-size: clamp(1.5rem, 30cqw, 8rem)
-        line-height: 0.8
+        line-height: 0.9
 
     .introInfoCard
       max-height: fit-content

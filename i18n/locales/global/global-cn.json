@@ -1,4 +1,12 @@
 {
+  "intro": {
+    "hi": "嗨，我是 ash。",
+    "desc": "我是一名设计师和开发者，现居法国。",
+    "knowMe": "了解我！",
+    "github": "Github",
+    "email": "邮件",
+    "about": "关于我"
+  },
   "sites": {
     "title": "站点",
     "pages": "页面",

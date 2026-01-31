@@ -46,6 +46,6 @@
     <MoreLinks />
     <BottomFooter />
 
-    <Navbar />
+
   </div>
 </template>

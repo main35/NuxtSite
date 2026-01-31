@@ -7,12 +7,20 @@
   import LocationCard from '+/home/cards/LocationCard.vue'
   import Grid from '+/layout/Grid.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
+  import {showingNavProfile} from "$/visibility.ts";
 
   setHeadMeta({
     page: 'pages.home',
     subtitle: 'meta.subtitles.global',
     image: '/images/SitePreview.jpg',
+  })
+
+  onMounted(() => {
+    showingNavProfile.value = false
+  })
+
+  onUnmounted(() => {
+    showingNavProfile.value = true
   })
 </script>
 
@@ -32,8 +40,6 @@
         <LangsCard />
         <BottomFooter />
       </div>
-
-      <Navbar hide-profile />
     </div>
   </div>
 </template>

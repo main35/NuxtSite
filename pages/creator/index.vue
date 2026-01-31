@@ -30,6 +30,6 @@
 
     <BottomFooter />
 
-    <Navbar />
+
   </div>
 </template>

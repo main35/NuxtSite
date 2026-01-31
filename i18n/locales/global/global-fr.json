@@ -1,4 +1,12 @@
 {
+  "intro": {
+    "hi": "salut, c'est ash.",
+    "desc": "Je suis designer et développeur basé en France.",
+    "knowMe": "Apprenez à me connaître !",
+    "github": "Github",
+    "email": "Email",
+    "about": "À propos de moi"
+  },
   "sites": {
     "title": "Sites",
     "pages": "Pages",

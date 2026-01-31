@@ -41,7 +41,7 @@
 
     <BottomFooter />
 
-    <Navbar />
+
   </div>
 </template>
 

@@ -16,6 +16,7 @@
   import Modal from '+/utils/Modal.vue'
   import Spacer from '+/utils/Spacer.vue'
   import { showingInterfaceOptions } from '$/visibility'
+  import Navbar from "+/premade/navbar/Navbar.vue";
 
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
@@ -177,6 +178,8 @@
       dimmed: showingUi,
     }"
   />
+
+  <Navbar />
 
   <TransitionElement ref="cover" />
 

@@ -59,7 +59,7 @@
     </p>
 
     <BottomFooter />
-    <Navbar />
+
   </div>
 </template>
 

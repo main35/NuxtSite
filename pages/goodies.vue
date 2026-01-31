@@ -98,7 +98,7 @@
     </grid>
 
     <BottomFooter />
-    <Navbar />
+
   </div>
 </template>
 

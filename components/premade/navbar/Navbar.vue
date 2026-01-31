@@ -15,31 +15,67 @@
   import SafeLink from '+/utils/SafeLink.vue'
   import { LauncherApps } from '$/launchers/LauncherApps'
   import { LauncherCreators } from '$/launchers/LauncherCreators'
+  import {showingNavProfile} from "$/visibility";
 
-  const showSwitcher = ref(false)
-
-  defineProps<{
-    hideProfile?: boolean
-  }>()
-
-  const showMobileNav = ref(false)
+  const showLaunchers: Ref<boolean> = ref(false)
+  const showMobileNav: Ref<boolean> = ref(false)
+  const showSiteSwitcher: Ref<boolean> = ref(false)
+  const navRef: Ref<HTMLElement | null> = ref(null)
 
   function toggleNavigation() {
     showMobileNav.value = !showMobileNav.value
   }
 
-  const showSiteSwitcher = ref(false)
-
   function toggleSiteSwitcher() {
     showSiteSwitcher.value = !showSiteSwitcher.value
   }
+
+  onMounted(() => {
+    watch(
+      showingNavProfile,
+      async () => {
+        const component = navRef.value
+        // @ts-ignore
+        if (!component?.$el) return
+        // @ts-ignore
+        const el = component.$el
+
+        const currentWidth = el.getBoundingClientRect().width
+        el.style.width = currentWidth + "px"
+        el.style.overflow = "hidden"
+
+        await nextTick()
+
+        const tempWidth = el.style.width
+        el.style.width = "auto"
+        void el.offsetWidth
+
+        const targetWidth = el.getBoundingClientRect().width
+
+        el.style.width = tempWidth
+        void el.offsetWidth
+
+        requestAnimationFrame(() => {
+          el.style.transition = "width 0.2s ease"
+          el.style.width = targetWidth + "px"
+        })
+
+        setTimeout(() => {
+          el.style.transition = ""
+          el.style.width = ""
+          el.style.overflow = ""
+        }, 220)
+      },
+      { flush: "sync" }
+    )
+  })
 </script>
 
 <template>
   <VStack class="navBarContainer">
     <slot />
 
-    <FullscreenCover v-if="showSwitcher">
+    <FullscreenCover v-if="showLaunchers">
       <VStack>
         <LauncherCard
           title="navbar.launchers.apps"
@@ -80,7 +116,7 @@
 
     <HStack class="navBarRow">
       <button
-        @click="showSwitcher = !showSwitcher"
+        @click="showLaunchers = !showLaunchers"
         class="createBtn"
         id="openLauncher"
         aria-label="Launch app or create..."
@@ -88,54 +124,56 @@
         <Icon
           icon="heroicons:sparkles-20-solid"
           class="growIn"
-          v-if="!showSwitcher"
+          v-if="!showLaunchers"
           width="20"
           height="20"
         />
         <Icon
           icon="mingcute:close-fill"
           class="spinIn"
-          v-if="showSwitcher"
+          v-if="showLaunchers"
           width="20"
           height="20"
         />
       </button>
 
-      <InteriorItem :class="{ desktopLinks: hideProfile }" class="navBar">
-        <HStack v-if="!hideProfile" class="profile transparent">
-          <NavigationButton
-            link="/home"
-            id="homeButtonContainer"
-            text="pages.home"
-          >
-            <DynamicImage
-              class="avatar"
-              src="/images/avatar-26.webp"
-              alt="ash's Avatar (Go Home)"
-              id="avatarButton"
-            />
-
-            <Icon
-              icon="solar:home-angle-bold-duotone"
-              aria-label="Go Home"
-              id="homeButton"
-              style="scale: 1.25"
-              width="24"
-              height="24"
-            />
-          </NavigationButton>
-
-          <HStack style="margin-right: 0.75rem">
-            <h1 class="name">ash</h1>
-
-            <HStack
-              id="siteSwitcherButton"
-              class="light tight"
-              :class="{ active: showSiteSwitcher }"
-              @click="toggleSiteSwitcher"
+      <InteriorItem ref="navRef" class="navBar">
+        <HStack class="navBarInner" :class="{ desktopLinks: !showingNavProfile }">
+          <HStack v-if="showingNavProfile" class="profile transparent">
+            <NavigationButton
+              link="/home"
+              id="homeButtonContainer"
+              text="pages.home"
             >
-              <h1>Port</h1>
-              <Icon icon="fa6-solid:chevron-down" width="24" height="24" />
+              <DynamicImage
+                class="avatar"
+                src="/images/avatar-26.webp"
+                alt="ash's Avatar (Go Home)"
+                id="avatarButton"
+              />
+
+              <Icon
+                icon="solar:home-angle-bold-duotone"
+                aria-label="Go Home"
+                id="homeButton"
+                style="scale: 1.25"
+                width="24"
+                height="24"
+              />
+            </NavigationButton>
+
+            <HStack style="margin-right: 0.75rem">
+              <h1 class="name">ash</h1>
+
+              <HStack
+                id="siteSwitcherButton"
+                class="light tight"
+                :class="{ active: showSiteSwitcher }"
+                @click="toggleSiteSwitcher"
+              >
+                <h1>Port</h1>
+                <Icon icon="fa6-solid:chevron-down" width="24" height="24" />
+              </HStack>
             </HStack>
           </HStack>
         </HStack>
@@ -144,7 +182,7 @@
       </InteriorItem>
 
       <SafeLink to="/home">
-        <InteriorItem v-if="hideProfile" class="minimalProfile">
+        <InteriorItem v-if="!showingNavProfile" class="minimalProfile">
           ash
         </InteriorItem>
       </SafeLink>
@@ -197,6 +235,9 @@
     --interiorRadius: 2rem !important
     flex-direction: row
     z-index: 20
+
+    *
+      flex-wrap: nowrap !important
 
   .profile h1
     margin: 0
