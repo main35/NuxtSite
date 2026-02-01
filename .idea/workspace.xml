@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="[EXPERIMENTAL] switch to native ads">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="move ads to footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/fonts.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -661,15 +662,8 @@
       <workItem from="1769757904104" duration="1916000" />
       <workItem from="1769795519903" duration="123000" />
       <workItem from="1769881661757" duration="7384000" />
-      <workItem from="1769944921548" duration="2863000" />
-    </task>
-    <task id="LOCAL-00047" summary="add ids to buttons/links for better tracking">
-      <option name="closed" value="true" />
-      <created>1764265737987</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1764265737987</updated>
+      <workItem from="1769944921548" duration="2923000" />
+      <workItem from="1769950023249" duration="37000" />
     </task>
     <task id="LOCAL-00048" summary="update meta, update package versioning">
       <option name="closed" value="true" />
@@ -1055,7 +1049,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769946905730</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="move ads to footer">
+      <option name="closed" value="true" />
+      <created>1769948378128</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1769948378128</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1076,7 +1078,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="localize homepage and some components to french, add langs page, UI updates" />
     <MESSAGE value="localize links page and apps page, split localization files better" />
     <MESSAGE value="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits" />
     <MESSAGE value="localize toolbox, creators page, fix goodies page meta, fix broken links" />
@@ -1101,7 +1102,8 @@
     <MESSAGE value="[EXPERIMENTAL] add ads" />
     <MESSAGE value="[EXPERIMENTAL] update ads id" />
     <MESSAGE value="[EXPERIMENTAL] switch to native ads" />
-    <option name="LAST_COMMIT_MESSAGE" value="[EXPERIMENTAL] switch to native ads" />
+    <MESSAGE value="move ads to footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="move ads to footer" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

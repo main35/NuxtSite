@@ -54,9 +54,6 @@
     font-family: fonts.$prominent
     font-weight: 500
     font-size: 5rem
-    overflow-wrap: anywhere
-    word-break: break-word
-    hyphens: auto
 
   ::v-deep(h1), ::v-deep(h2), ::v-deep(p), ::v-deep(button), ::v-deep(button > svg)
     color: white
