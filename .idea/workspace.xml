@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="move ads to footer">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="apply text wrap everywhere">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/fonts.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +16,7 @@
     <execution />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="168" />
+    <option name="cachedIndexableFilesCount" value="169" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -86,7 +83,7 @@
     &quot;git-widget-placeholder&quot;: &quot;6&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/NuxtSite/public/backgrounds&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/NuxtSite/.idea&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -119,11 +116,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$/public/backgrounds" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/images/icons" />
-      <recent name="$PROJECT_DIR$/pages/create" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/langs" />
@@ -663,15 +660,9 @@
       <workItem from="1769795519903" duration="123000" />
       <workItem from="1769881661757" duration="7384000" />
       <workItem from="1769944921548" duration="2923000" />
-      <workItem from="1769950023249" duration="37000" />
-    </task>
-    <task id="LOCAL-00048" summary="update meta, update package versioning">
-      <option name="closed" value="true" />
-      <created>1764506508496</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1764506508496</updated>
+      <workItem from="1769950023249" duration="64000" />
+      <workItem from="1769968781036" duration="32000" />
+      <workItem from="1769968820817" duration="262000" />
     </task>
     <task id="LOCAL-00049" summary="update sitepicker">
       <option name="closed" value="true" />
@@ -1057,7 +1048,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769948378128</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="apply text wrap everywhere">
+      <option name="closed" value="true" />
+      <created>1769950074975</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1769950074975</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1078,7 +1077,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="localize links page and apps page, split localization files better" />
     <MESSAGE value="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits" />
     <MESSAGE value="localize toolbox, creators page, fix goodies page meta, fix broken links" />
     <MESSAGE value="update languages page design, reformat, rearrange localization files" />
@@ -1103,7 +1101,8 @@
     <MESSAGE value="[EXPERIMENTAL] update ads id" />
     <MESSAGE value="[EXPERIMENTAL] switch to native ads" />
     <MESSAGE value="move ads to footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="move ads to footer" />
+    <MESSAGE value="apply text wrap everywhere" />
+    <option name="LAST_COMMIT_MESSAGE" value="apply text wrap everywhere" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
