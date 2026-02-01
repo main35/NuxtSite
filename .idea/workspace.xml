@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="localize intro, animate navbar">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="bump version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +131,7 @@
       <recent name="$PROJECT_DIR$/i18n" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.format">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -659,23 +659,8 @@
       <workItem from="1769709114671" duration="4117000" />
       <workItem from="1769757904104" duration="1916000" />
       <workItem from="1769795519903" duration="123000" />
-      <workItem from="1769881661757" duration="7199000" />
-    </task>
-    <task id="LOCAL-00042" summary="update">
-      <option name="closed" value="true" />
-      <created>1761038427016</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1761038427016</updated>
-    </task>
-    <task id="LOCAL-00043" summary="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues, update Nuxt, update site version">
-      <option name="closed" value="true" />
-      <created>1762543099030</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1762543099030</updated>
+      <workItem from="1769881661757" duration="7384000" />
+      <workItem from="1769944921548" duration="278000" />
     </task>
     <task id="LOCAL-00044" summary="round avatar corners :)">
       <option name="closed" value="true" />
@@ -1053,7 +1038,23 @@
       <option name="project" value="LOCAL" />
       <updated>1769890269257</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="reformat, fix mobile navbar spacing">
+      <option name="closed" value="true" />
+      <created>1769890679575</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1769890679575</updated>
+    </task>
+    <task id="LOCAL-00092" summary="bump version">
+      <option name="closed" value="true" />
+      <created>1769890701528</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1769890701529</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1074,8 +1075,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="enforce @/ over ~/ in formatting" />
-    <MESSAGE value="update package.json, finalize NuxtSite 5." />
     <MESSAGE value="remove particles, update to 6.0 beta, add new space backgrounds, update ui components, add option to hide interface, add tooltips" />
     <MESSAGE value="update username, update site preview image, add new wallpaper (Blue-Close), update footer, improve presentation mode" />
     <MESSAGE value="add no JS warning, update deps, add moon wallpaper, update site preview" />
@@ -1099,7 +1098,9 @@
     <MESSAGE value="add eslint import fixing" />
     <MESSAGE value="fix localization for link ticker, add intro page" />
     <MESSAGE value="localize intro, animate navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="localize intro, animate navbar" />
+    <MESSAGE value="reformat, fix mobile navbar spacing" />
+    <MESSAGE value="bump version" />
+    <option name="LAST_COMMIT_MESSAGE" value="bump version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

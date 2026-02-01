@@ -95,6 +95,21 @@
       }, 200)
     })
 
+    const script = document.createElement('script')
+    script.src = 'https://www.highperformanceformat.com/39931ea84a815a33a5270160b827baef/invoke.js'
+    script.async = true
+
+    // global config
+    ;(window as any).atOptions = {
+      key: '39931ea84a815a33a5270160b827baef',
+      format: 'iframe',
+      height: 600,
+      width: 160,
+      params: {}
+    }
+
+    document.body.appendChild(script)
+
     cycleBackgrounds()
   })
 
@@ -209,6 +224,8 @@
   <Modal plain v-if="showLangPicker">
     <LangPickerCard @set="hideLangPicker" />
   </Modal>
+
+  <div id="ad-slot" />
 </template>
 
 <style scoped lang="sass">
