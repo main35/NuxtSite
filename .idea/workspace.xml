@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="[EXPERIMENTAL] update ads id">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="[EXPERIMENTAL] switch to native ads">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -660,15 +661,7 @@
       <workItem from="1769757904104" duration="1916000" />
       <workItem from="1769795519903" duration="123000" />
       <workItem from="1769881661757" duration="7384000" />
-      <workItem from="1769944921548" duration="1720000" />
-    </task>
-    <task id="LOCAL-00046" summary="add PostHog">
-      <option name="closed" value="true" />
-      <created>1764264955508</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1764264955508</updated>
+      <workItem from="1769944921548" duration="2863000" />
     </task>
     <task id="LOCAL-00047" summary="add ids to buttons/links for better tracking">
       <option name="closed" value="true" />
@@ -1054,7 +1047,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769945765173</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="[EXPERIMENTAL] switch to native ads">
+      <option name="closed" value="true" />
+      <created>1769946905730</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1769946905730</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1075,7 +1076,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add no JS warning, update deps, add moon wallpaper, update site preview" />
     <MESSAGE value="localize homepage and some components to french, add langs page, UI updates" />
     <MESSAGE value="localize links page and apps page, split localization files better" />
     <MESSAGE value="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits" />
@@ -1100,7 +1100,8 @@
     <MESSAGE value="bump version" />
     <MESSAGE value="[EXPERIMENTAL] add ads" />
     <MESSAGE value="[EXPERIMENTAL] update ads id" />
-    <option name="LAST_COMMIT_MESSAGE" value="[EXPERIMENTAL] update ads id" />
+    <MESSAGE value="[EXPERIMENTAL] switch to native ads" />
+    <option name="LAST_COMMIT_MESSAGE" value="[EXPERIMENTAL] switch to native ads" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
