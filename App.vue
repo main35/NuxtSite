@@ -96,12 +96,12 @@
     })
 
     const script = document.createElement('script')
-    script.src = 'https://www.highperformanceformat.com/39931ea84a815a33a5270160b827baef/invoke.js'
+    script.src = 'https://www.highperformanceformat.com/db14e4bb392e06333ff934d3323e13c0/invoke.js'
     script.async = true
 
     // global config
     ;(window as any).atOptions = {
-      key: '39931ea84a815a33a5270160b827baef',
+      key: 'db14e4bb392e06333ff934d3323e13c0',
       format: 'iframe',
       height: 600,
       width: 160,
