@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="[EXPERIMENTAL] add ads" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="[EXPERIMENTAL] update ads id">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -657,15 +660,7 @@
       <workItem from="1769757904104" duration="1916000" />
       <workItem from="1769795519903" duration="123000" />
       <workItem from="1769881661757" duration="7384000" />
-      <workItem from="1769944921548" duration="806000" />
-    </task>
-    <task id="LOCAL-00045" summary="update body font to PP Frama">
-      <option name="closed" value="true" />
-      <created>1763304117378</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1763304117378</updated>
+      <workItem from="1769944921548" duration="1720000" />
     </task>
     <task id="LOCAL-00046" summary="add PostHog">
       <option name="closed" value="true" />
@@ -1051,7 +1046,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769945463614</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="[EXPERIMENTAL] update ads id">
+      <option name="closed" value="true" />
+      <created>1769945765173</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1769945765173</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1072,7 +1075,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update username, update site preview image, add new wallpaper (Blue-Close), update footer, improve presentation mode" />
     <MESSAGE value="add no JS warning, update deps, add moon wallpaper, update site preview" />
     <MESSAGE value="localize homepage and some components to french, add langs page, UI updates" />
     <MESSAGE value="localize links page and apps page, split localization files better" />
@@ -1097,7 +1099,8 @@
     <MESSAGE value="reformat, fix mobile navbar spacing" />
     <MESSAGE value="bump version" />
     <MESSAGE value="[EXPERIMENTAL] add ads" />
-    <option name="LAST_COMMIT_MESSAGE" value="[EXPERIMENTAL] add ads" />
+    <MESSAGE value="[EXPERIMENTAL] update ads id" />
+    <option name="LAST_COMMIT_MESSAGE" value="[EXPERIMENTAL] update ads id" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

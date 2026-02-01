@@ -95,20 +95,12 @@
       }, 200)
     })
 
-    const script = document.createElement('script')
-    script.src = 'https://www.highperformanceformat.com/db14e4bb392e06333ff934d3323e13c0/invoke.js'
-    script.async = true
-
-    // global config
-    ;(window as any).atOptions = {
-      key: 'db14e4bb392e06333ff934d3323e13c0',
-      format: 'iframe',
-      height: 600,
-      width: 160,
-      params: {}
-    }
-
-    document.body.appendChild(script)
+    // Ads
+    useHead({
+      script: [
+        {async: "true", 'data-cfasync': 'false', src: 'https://pl28624330.effectivegatecpm.com/dd3399c931e92adf4503fb60a831da88/invoke.js' }
+      ]
+    })
 
     cycleBackgrounds()
   })
@@ -175,6 +167,9 @@
     </a>
   </HStack>
 
+  <p>ad</p>
+  <div id="container-dd3399c931e92adf4503fb60a831da88" />
+
   <NuxtPage v-if="showingUi" />
 
   <div class="progBlurContainer">
@@ -224,8 +219,6 @@
   <Modal plain v-if="showLangPicker">
     <LangPickerCard @set="hideLangPicker" />
   </Modal>
-
-  <div id="ad-slot" />
 </template>
 
 <style scoped lang="sass">
