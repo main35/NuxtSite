@@ -16,8 +16,12 @@
     // Ads
     useHead({
       script: [
-        {async: "true", 'data-cfasync': 'false', src: 'https://pl28624330.effectivegatecpm.com/dd3399c931e92adf4503fb60a831da88/invoke.js' }
-      ]
+        {
+          async: 'true',
+          'data-cfasync': 'false',
+          src: 'https://pl28624330.effectivegatecpm.com/dd3399c931e92adf4503fb60a831da88/invoke.js',
+        },
+      ],
     })
   })
 </script>

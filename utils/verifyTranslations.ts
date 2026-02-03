@@ -1,3 +1,4 @@
+import type { NuxtConfig } from '@nuxt/schema'
 import fs from 'fs'
 import path from 'path'
 import process from 'process'
@@ -35,7 +36,7 @@ export async function verifyTranslations(): Promise<boolean> {
   const nuxtConfigModule = await import(
     path.resolve(process.cwd(), 'nuxt.config.ts')
   )
-  const nuxtConfig = nuxtConfigModule.default ?? nuxtConfigModule
+  const nuxtConfig: NuxtConfig = nuxtConfigModule.default ?? nuxtConfigModule
 
   if (!nuxtConfig.i18n || !Array.isArray(nuxtConfig.i18n.locales)) {
     throw new Error('i18n.locales not found or invalid in nuxt.config.ts')
@@ -46,23 +47,27 @@ export async function verifyTranslations(): Promise<boolean> {
   let valid: boolean = true
 
   for (const namespace of fs.readdirSync(baseDir)) {
-    const namespaceDir = path.join(baseDir, namespace)
+    const namespaceDir: string = path.join(baseDir, namespace)
     if (!fs.statSync(namespaceDir).isDirectory()) continue
 
-    const files = fs
+    const files: string[] = fs
       .readdirSync(namespaceDir)
-      .filter((f) => f.endsWith('.json'))
+      .filter((f: string) => f.endsWith('.json'))
 
     const perLang = new Map<string, Set<string>>()
 
     for (const file of files) {
-      const match = file.match(/^(.*)-([a-zA-Z0-9_-]+)\.json$/)
+      const match: RegExpMatchArray = file.match(
+        /^(.*)-([a-zA-Z0-9_-]+)\.json$/
+      )!
       if (!match) continue
 
       const [ , , lang ] = match
       if (!languages.includes(lang)) continue
 
-      const keys = collectKeys(readJson(path.join(namespaceDir, file)))
+      const keys: Set<string> = collectKeys(
+        readJson(path.join(namespaceDir, file))
+      )
       perLang.set(lang!, keys)
     }
 

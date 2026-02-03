@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="apply text wrap everywhere">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add project icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/verifyTranslations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/verifyTranslations.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +19,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/ash/IdeaProjects/NuxtSite" value="2yxnrGuSyB5nzJx9RxlRIFQ2Iof" />
+    </persistenceIdMap>
+  </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="169" />
+    <option name="cachedIndexableFilesCount" value="173" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -105,7 +114,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/System/Volumes/Data/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -663,14 +672,14 @@
       <workItem from="1769950023249" duration="64000" />
       <workItem from="1769968781036" duration="32000" />
       <workItem from="1769968820817" duration="262000" />
-    </task>
-    <task id="LOCAL-00049" summary="update sitepicker">
-      <option name="closed" value="true" />
-      <created>1764507436253</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1764507436253</updated>
+      <workItem from="1769969091055" duration="80000" />
+      <workItem from="1770015450901" duration="1812000" />
+      <workItem from="1770017479459" duration="46000" />
+      <workItem from="1770102765765" duration="111000" />
+      <workItem from="1770108129332" duration="31000" />
+      <workItem from="1770108174509" duration="21000" />
+      <workItem from="1770113476466" duration="656000" />
+      <workItem from="1770132739408" duration="66000" />
     </task>
     <task id="LOCAL-00050" summary="add BIMI logo">
       <option name="closed" value="true" />
@@ -1056,7 +1065,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769950074975</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="add project icon">
+      <option name="closed" value="true" />
+      <created>1769969160388</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1769969160399</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1077,7 +1094,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits" />
     <MESSAGE value="localize toolbox, creators page, fix goodies page meta, fix broken links" />
     <MESSAGE value="update languages page design, reformat, rearrange localization files" />
     <MESSAGE value="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, cleanup code" />
@@ -1102,10 +1118,19 @@
     <MESSAGE value="[EXPERIMENTAL] switch to native ads" />
     <MESSAGE value="move ads to footer" />
     <MESSAGE value="apply text wrap everywhere" />
-    <option name="LAST_COMMIT_MESSAGE" value="apply text wrap everywhere" />
+    <MESSAGE value="add project icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="add project icon" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

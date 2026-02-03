@@ -23,7 +23,7 @@ export default defineConfig([
     ],
   },
   {
-    files: [ '**/*.ts', '**/*.tsx', '**/*.vue' ],
+    files: [ '**/*.ts', '**/*.tsx', '**/*.vue', '**/*.json' ],
     languageOptions: {
       parser: vueParser,
       parserOptions: {
