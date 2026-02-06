@@ -21,9 +21,6 @@ export const SocialMediaLinks: SocialLink[] = [
     url: 'https://bsky.app/profile/asboy2035.com',
     icon: 'ri:bluesky-fill',
   },
-]
-
-export const SupportLinks: SocialLink[] = [
   {
     name: 'Email',
     url: 'mailto:ash@a35.dev',
@@ -31,7 +28,7 @@ export const SupportLinks: SocialLink[] = [
   },
   {
     name: 'GitHub',
-    url: 'https://github.com/asboy2035',
+    url: 'https://github.com/a35hie',
     icon: 'mingcute:github-fill',
   },
   {
@@ -64,8 +61,4 @@ export const MoreLinks: SocialLink[] = [
   },
 ]
 
-export const SocialLinks: SocialLink[] = [
-  ...SocialMediaLinks,
-  ...SupportLinks,
-  ...MoreLinks,
-]
+export const SocialLinks: SocialLink[] = [ ...SocialMediaLinks, ...MoreLinks ]

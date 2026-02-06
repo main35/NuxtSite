@@ -1,17 +1,11 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
-
   import setHeadMeta from '&/setHeadMeta'
   import Card from '+/layout/Card.vue'
-  import Grid from '+/layout/Grid.vue'
-  import VStack from '+/layout/VStack.vue'
   import MoreLinks from '+/links/MoreLinks.vue'
   import SocialLinks from '+/links/SocialLinks.vue'
-  import SupportLinks from '+/links/SupportLinks.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
   import Description from '+/premade/Description.vue'
   import Hero from '+/utils/Hero.vue'
-  import Spacer from '+/utils/Spacer.vue'
   const { t } = useI18n()
 
   setHeadMeta({
@@ -29,19 +23,11 @@
     </Hero>
 
     <!-- About -->
-    <grid class="spaced">
-      <Card class="autoSpace">
-        <VStack class="edgeToEdge">
-          <description />
-          <Spacer />
-        </VStack>
-
-        <Icon icon="solar:heart-bold-duotone" width="24" height="24" />
-      </Card>
-    </grid>
+    <Card>
+      <description />
+    </Card>
 
     <SocialLinks />
-    <SupportLinks />
     <MoreLinks />
     <BottomFooter />
   </div>

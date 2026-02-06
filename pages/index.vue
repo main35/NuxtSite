@@ -54,7 +54,7 @@
 
       <HStack class="fullWidth autoSpace">
         <HStack>
-          <SafeLink to="https://github.com/asboy2035">
+          <SafeLink to="https://github.com/a35hie">
             <button>
               <Icon icon="mingcute:github-fill" />
               {{ t('intro.github') }}

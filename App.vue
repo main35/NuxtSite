@@ -163,7 +163,7 @@
   <NuxtPage v-if="showingUi" />
 
   <div class="progBlurContainer">
-    <ProgressiveBlur class="progBlur" :blur="48" :border-radius="0" />
+    <ProgressiveBlur class="progBlur" :blur="18" :border-radius="0" />
   </div>
 
   <img
@@ -212,7 +212,7 @@
 </template>
 
 <style scoped lang="sass">
-  $blurHeight: 7rem
+  $blurHeight: 9rem
   $blurTop: calc(100vh - $blurHeight)
   $blurTop: calc(100dvh - $blurHeight)
 
@@ -266,6 +266,7 @@
   // Background animations
   .fadeOutBackground
     animation: fadeOutBackground 0.5s forwards ease
+
   @keyframes fadeOutBackground
     0%
       opacity: $backgroundOpacity
@@ -274,6 +275,7 @@
 
   .fadeInBackground
     animation: fadeInBackground 0.5s forwards ease
+
   @keyframes fadeInBackground
     0%
       opacity: 0

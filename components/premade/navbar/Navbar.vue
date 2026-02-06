@@ -63,7 +63,7 @@
         setTimeout(() => {
           el.style.transition = ''
           el.style.width = ''
-          el.style.overflow = ''
+          el.style.overflow = 'visible'
         }, 220)
       },
       { flush: 'sync' }
@@ -73,9 +73,11 @@
 
 <template>
   <VStack class="navBarContainer">
+    <!-- Insert toolbar items here -->
     <slot />
 
-    <FullscreenCover v-if="showLaunchers">
+    <!-- Launchers -->
+    <FullscreenCover id="navLaunchers" v-if="showLaunchers">
       <VStack>
         <LauncherCard
           title="navbar.launchers.apps"
@@ -93,6 +95,7 @@
       </VStack>
     </FullscreenCover>
 
+    <!-- Nav on Mobile -->
     <InteriorItem
       id="mobileNav"
       :class="{ hidden: !showMobileNav }"
@@ -101,19 +104,21 @@
       <NavigationLinks @click="showMobileNav = false" />
     </InteriorItem>
 
-    <SitePicker id="siteSwitcher" :class="{ hidden: !showSiteSwitcher }">
-      <button @click="toggleSiteSwitcher()" style="--buttonRadius: 2rem">
+    <!-- Site Switcher -->
+    <SitePicker id="siteSwitcher" v-if="showSiteSwitcher">
+      <button @click="toggleSiteSwitcher()">
         <Icon icon="mingcute:close-fill" width="24" height="24" />
       </button>
     </SitePicker>
 
     <ProgressiveBlur
       class="siteSwitchBlur"
-      :blur="64"
+      v-if="showSiteSwitcher"
+      :blur="28"
       :border-radius="0"
-      :class="{ hidden: !showSiteSwitcher }"
     />
 
+    <!-- Main Nav Sections -->
     <HStack class="navBarRow">
       <button
         @click="showLaunchers = !showLaunchers"
@@ -122,21 +127,14 @@
         aria-label="Launch app or create..."
       >
         <Icon
-          icon="heroicons:sparkles-20-solid"
+          icon="solar:bolt-line-duotone"
           class="growIn"
           v-if="!showLaunchers"
-          width="20"
-          height="20"
         />
-        <Icon
-          icon="mingcute:close-fill"
-          class="spinIn"
-          v-if="showLaunchers"
-          width="20"
-          height="20"
-        />
+        <Icon icon="mingcute:close-fill" class="spinIn" v-else />
       </button>
 
+      <!-- Main Nav -->
       <InteriorItem
         ref="navRef"
         class="navBar"
@@ -160,13 +158,10 @@
                 icon="solar:home-angle-bold-duotone"
                 aria-label="Go Home"
                 id="homeButton"
-                style="scale: 1.25"
-                width="24"
-                height="24"
               />
             </NavigationButton>
 
-            <HStack style="margin-right: 0.75rem">
+            <HStack class="navBarInnerName">
               <h1 class="name">ash</h1>
 
               <HStack
@@ -176,7 +171,7 @@
                 @click="toggleSiteSwitcher"
               >
                 <h1>Port</h1>
-                <Icon icon="fa6-solid:chevron-down" width="24" height="24" />
+                <Icon icon="fa6-solid:chevron-down" />
               </HStack>
             </HStack>
           </HStack>
@@ -195,19 +190,11 @@
         aria-label="Show navigation"
       >
         <Icon
-          icon="solar:compass-bold"
+          icon="solar:compass-line-duotone"
           class="growIn"
           v-if="!showMobileNav"
-          width="20"
-          height="20"
         />
-        <Icon
-          icon="mingcute:close-fill"
-          class="spinIn"
-          v-if="showMobileNav"
-          width="20"
-          height="20"
-        />
+        <Icon icon="mingcute:close-fill" class="spinIn" v-if="showMobileNav" />
       </button>
     </HStack>
   </VStack>
@@ -234,45 +221,35 @@
         display: none
 
   .navBar
-    --interiorRadius: 2rem !important
+    --interiorRadius: 20rem !important
+    padding: 0.75rem
     flex-direction: row
     z-index: 20
 
     *
       flex-wrap: nowrap !important
 
-  .profile h1
-    margin: 0
+    .navBarInnerName
+      margin-right: 0.75rem
+
+    .profile h1
+      overflow-wrap: normal
+      word-break: keep-all
+      margin: 0
 
   .avatar
-    width: 3rem
-    height: 3rem
-    border-radius: 1.25rem
+    width: 2.5rem
+    height: 2.5rem
+    border-radius: 2rem
 
   .createBtn
-    --buttonRadius: 2rem
-    height: fit-content
     z-index: 20
-
-    &::before
-      content: ""
-      position: absolute
-      top: 0
-      bottom: 0
-      right: 0
-      left: 0
-      padding: 0.5rem
-
-      border-radius: 50%
-      background: colors.$accentColor
-      z-index: -1
-      filter: blur(1rem)
-      transition: opacity 0.4s ease
 
   #avatarButton
     display: block
 
   #homeButton
+    scale: 1.25
     display: none
 
   #homeButtonContainer:hover #avatarButton
@@ -284,7 +261,7 @@
   #homeButton, #avatarButton
     animation: blurIn 0.3s ease forwards
 
-  #mobileButton
+  #mobileButton, #mobileNav
     display: none
 
   #mobileNav, #siteSwitcher
@@ -326,6 +303,7 @@
       width: 1.25rem
       height: 1.25rem
 
+  // Mobile Behaviors
   @media (max-width: 35rem)
     .navBarRow
       width: 100%
@@ -335,17 +313,10 @@
         display: block !important
         padding: 0.5rem 1rem
 
-    .navBar
-      --interiorRadius: 1.75rem !important
-
-    #mobileButton
-      --buttonRadius: 2rem
+    // Conditions
+    #mobileButton, #mobileNav
       display: flex
 
     .desktopLinks, .name
       display: none
-
-  @media (min-width: 35rem)
-    #mobileNav
-      display: none !important
 </style>

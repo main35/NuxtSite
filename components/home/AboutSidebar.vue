@@ -50,9 +50,8 @@
     <Card>
       <h3 v-tooltip="t('app.myTime')">{{ currentTime }}</h3>
       <HStack class="spaced">
-        <icon icon="solar:bolt-line-duotone" width="24" height="24" />
         <a
-          href="https://github.com/asboy2035"
+          href="https://github.com/a35hie"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -37,7 +37,7 @@ export const apps: AppPageMeta[] = [
       },
       {
         title: 'GitHub',
-        url: 'https://github.com/asboy2035/Stand/releases/latest',
+        url: 'https://github.com/a35hie/Stand/releases/latest',
         type: 'github',
       },
     ],

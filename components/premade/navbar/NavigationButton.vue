@@ -30,9 +30,8 @@
   @use "@/styles/colors"
 
   .navigationButton
-    --buttonRadius: 1.25rem
-    width: 3rem
-    height: 3rem
+    width: 2.75rem
+    height: 2.75rem
     transition: 0.2s ease-in-out
     padding: 0
 
@@ -46,7 +45,7 @@
     position: absolute
     background: colors.$foregroundOpaque
     padding: 0.5rem 0.75rem
-    border-radius: 1rem
+    border-radius: 2rem
     white-space: nowrap
     z-index: 25
     animation: slideIn 0.2s ease-in-out forwards

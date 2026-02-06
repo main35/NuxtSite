@@ -7,7 +7,7 @@
 
 <template>
   <VStack>
-    <CardTitle title="home.intro" icon="solar:arrow-right-line-duotone" />
+    <CardTitle title="home.intro" icon="solar:heart-line-duotone" />
 
     <p>{{ t('home.desc1') }}</p>
     <p>{{ t('home.desc2') }}</p>

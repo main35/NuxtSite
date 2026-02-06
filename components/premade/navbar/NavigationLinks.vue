@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <HStack class="tight noWrap">
+  <HStack class="navigationLinks noWrap">
     <NavigationButton
       link="/links"
       text="pages.links"
@@ -15,7 +15,7 @@
     <NavigationButton
       link="/apps"
       text="pages.apps"
-      icon="solar:widget-2-line-duotone"
+      icon="solar:widget-3-line-duotone"
       aria-label="ash's Apps"
     />
 
@@ -23,14 +23,19 @@
       link="/goodies"
       text="pages.goodies"
       icon="solar:inbox-line-line-duotone"
-      aria-label="Goodies"
+      aria-label="ash's Goodies"
     />
 
     <NavigationButton
       link="/languages"
       text="pages.languages"
       icon="solar:global-line-duotone"
-      aria-label="Languages"
+      aria-label="ash's Languages"
     />
   </HStack>
 </template>
+
+<style scoped lang="sass">
+  .navigationLinks
+    gap: 0.5rem
+</style>

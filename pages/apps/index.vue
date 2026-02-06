@@ -36,7 +36,7 @@
       <h1>{{ t('pages.apps') }}</h1>
       <h2>{{ t('meta.subtitles.apps') }}</h2>
       <Spacer />
-      <a href="https://github.com/asboy2035?tab=repositories">
+      <a href="https://github.com/a35hie?tab=repositories">
         <button id="allAppsButton">
           <Icon icon="mingcute:github-fill" width="24" height="24" />
           {{ t('apps.allApps') }}
