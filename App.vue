@@ -70,7 +70,7 @@
     ) {
       showDomainTip.value = true
     }
-    redirectLink.value = `https://asboy2035.com${location.pathname}${location.search}${location.hash}`
+    redirectLink.value = `https://a35hie.me${location.pathname}${location.search}${location.hash}`
 
     if (params.noLangPicker == 'true') {
       showLangPicker.value = false
@@ -179,7 +179,7 @@
     }"
   />
 
-  <Navbar />
+  <Navbar v-if="showingUi" />
 
   <TransitionElement ref="cover" />
 
