@@ -12,6 +12,7 @@
   import { showingInterfaceOptions, showingNavProfile } from '$/visibility'
 
   const { t } = useI18n()
+  const router = useRouter()
 
   setHeadMeta({
     page: 'pages.home',
@@ -22,6 +23,12 @@
   onMounted(() => {
     showingInterfaceOptions.value = false
     showingNavProfile.value = false
+
+    if (getFlag('seenIntroPage')) {
+      router.push('/home')
+    } else {
+      setFlag('seenIntroPage', true)
+    }
   })
 
   onUnmounted(() => {

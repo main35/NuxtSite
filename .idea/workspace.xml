@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="screw ads">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update to new domain, improve UI toggle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-cn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-jp.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-jp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/updateCanonical.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/updateCanonical.client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +138,7 @@
       <recent name="$PROJECT_DIR$/i18n" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.format">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -696,15 +688,7 @@
       <workItem from="1770228841404" duration="6000" />
       <workItem from="1770229002855" duration="20000" />
       <workItem from="1770307703748" duration="188000" />
-      <workItem from="1770394472525" duration="924000" />
-    </task>
-    <task id="LOCAL-00052" summary="update domains">
-      <option name="closed" value="true" />
-      <created>1765886206831</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1765886206832</updated>
+      <workItem from="1770394472525" duration="1485000" />
     </task>
     <task id="LOCAL-00053" summary="update favicon to new style">
       <option name="closed" value="true" />
@@ -1090,7 +1074,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770149146637</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="update to new domain, improve UI toggle">
+      <option name="closed" value="true" />
+      <created>1770395678720</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1770395678722</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1111,7 +1103,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, cleanup code" />
     <MESSAGE value="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, clean up code" />
     <MESSAGE value="add korean, fix text wrapping" />
     <MESSAGE value="add prompt" />
@@ -1136,7 +1127,8 @@
     <MESSAGE value="add project icon" />
     <MESSAGE value="add project icon, reformat" />
     <MESSAGE value="screw ads" />
-    <option name="LAST_COMMIT_MESSAGE" value="screw ads" />
+    <MESSAGE value="update to new domain, improve UI toggle" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to new domain, improve UI toggle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
