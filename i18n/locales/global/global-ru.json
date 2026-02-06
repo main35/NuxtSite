@@ -1,0 +1,53 @@
+{
+  "intro": {
+    "hi": "привет, я ash.",
+    "desc": "Я дизайнер и разработчик из Франции.",
+    "knowMe": "Узнай меня!",
+    "github": "Github",
+    "email": "Почта",
+    "about": "Обо мне"
+  },
+  "sites": {
+    "title": "Сайты",
+    "pages": "Страницы",
+    "fonts": "Шрифты",
+    "big": "Byg",
+    "guides": "Гайды",
+    "portfolio": "Портфолио"
+  },
+  "app": {
+    "hideInterface": "Скрыть страницу",
+    "showInterface": "Показать интерфейс",
+    "getWalls": "Обои",
+    "comingSoon": "Скоро!",
+    "myTime": "Мое время",
+    "connecting": "Подключение...",
+    "oldDomain": {
+      "title": "Вы на старом домене!",
+      "desc": "Откройте этот сайт на a35hie.me для более чистой ссылки!",
+      "never": "Никогда",
+      "later": "Позже",
+      "go": "Поехали!"
+    },
+    "more": "Больше"
+  },
+  "sharing": {
+    "title": "Поделиться",
+    "showQr": "Показать QR-код",
+    "hideQr": "Скрыть QR-код"
+  },
+  "navbar": {
+    "launchers": {
+      "apps": "Приложения",
+      "creators": "Создать..."
+    }
+  },
+  "footer": {
+    "thanks": "Спасибо за чтение!",
+    "createdBy": "Создано Ash, с использованием NuxtJS, в 2026 <3",
+    "codeOnGh": "Код на GitHub.",
+    "version": "Версия:",
+    "release": "Релиз:",
+    "readMore": "Читать далее:"
+  }
+}

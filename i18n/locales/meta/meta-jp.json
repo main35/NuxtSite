@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "home": "ホーム",
+    "links": "リンク",
+    "apps": "アプリ",
+    "goodies": "グッズ",
+    "languages": "言語",
+    "creators": "クリエイター",
+    "toolbox": "Toolbox"
+  },
+  "meta": {
+    "groups": {
+      "ash": "Ash"
+    },
+    "subtitles": {
+      "global": "ash (a35hie) - ポートフォリオ",
+      "links": "SNS、連絡先、その他 :)",
+      "apps": "私のWeb/Appleアプリ。",
+      "goodies": "その他のダウンロードコンテンツ。",
+      "creators": "私のツールとクリエイター。",
+      "toolbox": "a35hieのToolboxアプリ。"
+    }
+  }
+}

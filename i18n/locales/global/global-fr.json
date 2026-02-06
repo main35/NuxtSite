@@ -1,0 +1,53 @@
+{
+  "intro": {
+    "hi": "salut, c'est ash.",
+    "desc": "Je suis designer et développeur basé en France.",
+    "knowMe": "Apprenez à me connaître !",
+    "github": "Github",
+    "email": "Email",
+    "about": "À propos de moi"
+  },
+  "sites": {
+    "title": "Sites",
+    "pages": "Pages",
+    "fonts": "Polices",
+    "big": "Byg",
+    "guides": "Guides",
+    "portfolio": "Portfolio"
+  },
+  "app": {
+    "getWalls": "Fonds d'écran",
+    "hideInterface": "Masquer la page",
+    "showInterface": "Afficher l'interface",
+    "comingSoon": "À venir!",
+    "myTime": "Mon temps",
+    "connecting": "Connexion...",
+    "oldDomain": {
+      "title": "Vous êtes sur l’ancien domaine !",
+      "desc": "Accédez à ce site via a35hie.me pour un lien plus propre !",
+      "never": "Jamais",
+      "later": "Plus tard",
+      "go": "Allons-y !"
+    },
+    "more": "Plus"
+  },
+  "sharing": {
+    "title": "Partager",
+    "showQr": "Afficher le code QR",
+    "hideQr": "Masquer le code QR"
+  },
+  "navbar": {
+    "launchers": {
+      "apps": "Applis",
+      "creators": "Créer..."
+    }
+  },
+  "footer": {
+    "thanks": "Merci pour votre lecture!",
+    "createdBy": "Créé par ash, avec NuxtJS, en 2026 <3",
+    "codeOnGh": "Code sur GitHub",
+    "version": "Version:",
+    "release": "Release:",
+    "readMore": "Lire plus:"
+  }
+}

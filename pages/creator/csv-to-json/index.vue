@@ -1,9 +1,10 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
   import { Icon } from '@iconify/vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
-  import Navbar from '@/components/premade/navbar/Navbar.vue'
+  import { ref } from 'vue'
+
+  import HStack from '+/layout/HStack.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
 
   interface CSVRow extends Record<string, unknown> {}
 
@@ -67,7 +68,7 @@
     if (!jsonOutput.value) return
 
     const jsonStr = JSON.stringify(jsonOutput.value, null, 4)
-    const blob = new Blob([jsonStr], { type: 'application/json' })
+    const blob = new Blob([ jsonStr ], { type: 'application/json' })
     const a = document.createElement('a')
 
     a.href = URL.createObjectURL(blob)

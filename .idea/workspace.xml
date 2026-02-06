@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="enforce @/ over ~/ in formatting">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update to new domain, improve UI toggle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,22 +18,32 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/ash/IdeaProjects/NuxtSite" value="2yxnrGuSyB5nzJx9RxlRIFQ2Iof" />
+    </persistenceIdMap>
+  </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="125" />
+    <option name="cachedIndexableFilesCount" value="173" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Sass File" />
-        <option value="Vue Composition API Component" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
+        <option value="Sass File" />
         <option value="JSON File" />
+        <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -45,12 +54,16 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/main35/NuxtSite.git&quot;,
+    &quot;url&quot;: &quot;https://asboy2035@github.com/main35/NuxtSite.git&quot;,
     &quot;accountId&quot;: &quot;3a099e4d-a960-4419-accc-5f28f60b6a13&quot;
   }
 }</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="kjZId4l4" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
@@ -63,66 +76,69 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "javascript.preferred.runtime.type.id": "node",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/images",
-    "list.type.of.created.stylesheet": "Sass",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.cleanup.executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.format.executor": "Run",
-    "npm.preview.executor": "Run",
-    "npm.reInit.executor": "Run",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.sync",
-    "ts.external.directory.path": "/Users/ash/Library/Application Support/JetBrains/IntelliJIdea2025.3/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;6&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/NuxtSite/.idea&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.cleanup.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.format.executor&quot;: &quot;Run&quot;,
+    &quot;npm.prettier.executor&quot;: &quot;Run&quot;,
+    &quot;npm.preview.executor&quot;: &quot;Run&quot;,
+    &quot;npm.reInit.executor&quot;: &quot;Run&quot;,
+    &quot;npm.verifyTranslations.executor&quot;: &quot;Run&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$/public/backgrounds" />
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/images/icons" />
-      <recent name="$PROJECT_DIR$/pages/create" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/components/layout" />
-      <recent name="$PROJECT_DIR$/components/utils" />
-      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/components/langs" />
+      <recent name="$PROJECT_DIR$/i18n/locales/pages" />
+      <recent name="$PROJECT_DIR$/i18n/locales/meta" />
+      <recent name="$PROJECT_DIR$/i18n/locales/global" />
+      <recent name="$PROJECT_DIR$/i18n" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.preview">
+  <component name="RunManager" selected="npm.format">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -165,6 +181,20 @@
       </EXTENSION>
       <method v="2" />
     </configuration>
+    <configuration name="prettier" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
     <configuration name="preview" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -179,17 +209,34 @@
       </EXTENSION>
       <method v="2" />
     </configuration>
+    <configuration name="verifyTranslations" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="verifyTranslations" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="npm.build" />
       <item itemvalue="npm.dev" />
       <item itemvalue="npm.format" />
+      <item itemvalue="npm.prettier" />
       <item itemvalue="npm.preview" />
+      <item itemvalue="npm.verifyTranslations" />
     </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-IU-253.28294.251" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.20" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.20" />
       </set>
     </attachedChunks>
   </component>
@@ -591,287 +638,57 @@
       <workItem from="1767453001217" duration="11000" />
       <workItem from="1767458808975" duration="39000" />
       <workItem from="1767602845850" duration="2010000" />
-      <workItem from="1767625438462" duration="2712000" />
-    </task>
-    <task id="LOCAL-00018" summary="update repo url references in code">
-      <option name="closed" value="true" />
-      <created>1751794071697</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1751794071697</updated>
-    </task>
-    <task id="LOCAL-00019" summary="new specular highlights design">
-      <option name="closed" value="true" />
-      <created>1752074128453</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1752074128453</updated>
-    </task>
-    <task id="LOCAL-00020" summary="bump version">
-      <option name="closed" value="true" />
-      <created>1752074722021</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1752074722021</updated>
-    </task>
-    <task id="LOCAL-00021" summary="update interface">
-      <option name="closed" value="true" />
-      <created>1752606225566</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1752606225566</updated>
-    </task>
-    <task id="LOCAL-00022" summary="update more links card">
-      <option name="closed" value="true" />
-      <created>1752608706881</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1752608706882</updated>
-    </task>
-    <task id="LOCAL-00023" summary="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset">
-      <option name="closed" value="true" />
-      <created>1752667525663</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1752667525663</updated>
-    </task>
-    <task id="LOCAL-00024" summary="improve divider, navigationtitle, fix mobile padding">
-      <option name="closed" value="true" />
-      <created>1752683423137</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1752683423137</updated>
-    </task>
-    <task id="LOCAL-00025" summary="new background, updated card, updated rounding">
-      <option name="closed" value="true" />
-      <created>1752695903714</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1752695903714</updated>
-    </task>
-    <task id="LOCAL-00026" summary="new navigationtitle design, updated toolbox">
-      <option name="closed" value="true" />
-      <created>1752746896695</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1752746896695</updated>
-    </task>
-    <task id="LOCAL-00027" summary="navigationtitle animation improvements">
-      <option name="closed" value="true" />
-      <created>1752758956245</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1752758956245</updated>
-    </task>
-    <task id="LOCAL-00028" summary="add share menu to site picker">
-      <option name="closed" value="true" />
-      <created>1753106360960</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1753106360960</updated>
-    </task>
-    <task id="LOCAL-00029" summary="bump version">
-      <option name="closed" value="true" />
-      <created>1753106571001</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1753106571001</updated>
-    </task>
-    <task id="LOCAL-00030" summary="update astro to astro+">
-      <option name="closed" value="true" />
-      <created>1753725924192</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1753725924192</updated>
-    </task>
-    <task id="LOCAL-00031" summary="update tewfa to authie, remove old france map asset">
-      <option name="closed" value="true" />
-      <created>1754168133564</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1754168133564</updated>
-    </task>
-    <task id="LOCAL-00032" summary="update clocs to tickity">
-      <option name="closed" value="true" />
-      <created>1754228105696</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1754228105696</updated>
-    </task>
-    <task id="LOCAL-00033" summary="update js to ts and update iml file">
-      <option name="closed" value="true" />
-      <created>1754503436640</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1754503436640</updated>
-    </task>
-    <task id="LOCAL-00034" summary="optimize assets, improve accessibility">
-      <option name="closed" value="true" />
-      <created>1754570829557</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1754570829557</updated>
-    </task>
-    <task id="LOCAL-00035" summary="add aria label to mobile nav button">
-      <option name="closed" value="true" />
-      <created>1754571131668</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1754571131668</updated>
-    </task>
-    <task id="LOCAL-00036" summary="update code styling, improve langs card, coloring improvements">
-      <option name="closed" value="true" />
-      <created>1754579478698</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1754579478698</updated>
-    </task>
-    <task id="LOCAL-00037" summary="updates to light mode coloring">
-      <option name="closed" value="true" />
-      <created>1754581584789</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1754581584789</updated>
-    </task>
-    <task id="LOCAL-00038" summary="use pangrampangram fonts!">
-      <option name="closed" value="true" />
-      <created>1754668250151</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1754668250151</updated>
-    </task>
-    <task id="LOCAL-00039" summary="add thanks and update meta">
-      <option name="closed" value="true" />
-      <created>1754669942810</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1754669942810</updated>
-    </task>
-    <task id="LOCAL-00040" summary="update coloring, update CSS handling">
-      <option name="closed" value="true" />
-      <created>1756472783033</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1756472783033</updated>
-    </task>
-    <task id="LOCAL-00041" summary="update packages">
-      <option name="closed" value="true" />
-      <created>1758130279031</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1758130279031</updated>
-    </task>
-    <task id="LOCAL-00042" summary="update">
-      <option name="closed" value="true" />
-      <created>1761038427016</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1761038427016</updated>
-    </task>
-    <task id="LOCAL-00043" summary="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues, update Nuxt, update site version">
-      <option name="closed" value="true" />
-      <created>1762543099030</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1762543099030</updated>
-    </task>
-    <task id="LOCAL-00044" summary="round avatar corners :)">
-      <option name="closed" value="true" />
-      <created>1762545732313</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1762545732313</updated>
-    </task>
-    <task id="LOCAL-00045" summary="update body font to PP Frama">
-      <option name="closed" value="true" />
-      <created>1763304117378</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1763304117378</updated>
-    </task>
-    <task id="LOCAL-00046" summary="add PostHog">
-      <option name="closed" value="true" />
-      <created>1764264955508</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1764264955508</updated>
-    </task>
-    <task id="LOCAL-00047" summary="add ids to buttons/links for better tracking">
-      <option name="closed" value="true" />
-      <created>1764265737987</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1764265737987</updated>
-    </task>
-    <task id="LOCAL-00048" summary="update meta, update package versioning">
-      <option name="closed" value="true" />
-      <created>1764506508496</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1764506508496</updated>
-    </task>
-    <task id="LOCAL-00049" summary="update sitepicker">
-      <option name="closed" value="true" />
-      <created>1764507436253</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1764507436253</updated>
-    </task>
-    <task id="LOCAL-00050" summary="add BIMI logo">
-      <option name="closed" value="true" />
-      <created>1765118088260</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1765118088260</updated>
-    </task>
-    <task id="LOCAL-00051" summary="convert to tinysvg">
-      <option name="closed" value="true" />
-      <created>1765118741136</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1765118741136</updated>
-    </task>
-    <task id="LOCAL-00052" summary="update domains">
-      <option name="closed" value="true" />
-      <created>1765886206831</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1765886206832</updated>
+      <workItem from="1767625438462" duration="9906000" />
+      <workItem from="1767689721313" duration="3177000" />
+      <workItem from="1767768653022" duration="82000" />
+      <workItem from="1767781777655" duration="17489000" />
+      <workItem from="1767872662033" duration="10876000" />
+      <workItem from="1767976485246" duration="7298000" />
+      <workItem from="1768064569548" duration="557000" />
+      <workItem from="1768998827886" duration="47000" />
+      <workItem from="1768999349607" duration="203000" />
+      <workItem from="1769012169954" duration="780000" />
+      <workItem from="1769013237966" duration="1116000" />
+      <workItem from="1769105312568" duration="669000" />
+      <workItem from="1769107026097" duration="3612000" />
+      <workItem from="1769159190183" duration="13000" />
+      <workItem from="1769186783564" duration="3710000" />
+      <workItem from="1769190521633" duration="12616000" />
+      <workItem from="1769343392796" duration="1469000" />
+      <workItem from="1769345077294" duration="2613000" />
+      <workItem from="1769348818215" duration="3402000" />
+      <workItem from="1769370720782" duration="18000" />
+      <workItem from="1769410973287" duration="770000" />
+      <workItem from="1769441800743" duration="10000" />
+      <workItem from="1769442020526" duration="89000" />
+      <workItem from="1769445789378" duration="4000" />
+      <workItem from="1769527580573" duration="1517000" />
+      <workItem from="1769709114671" duration="4117000" />
+      <workItem from="1769757904104" duration="1916000" />
+      <workItem from="1769795519903" duration="123000" />
+      <workItem from="1769881661757" duration="7384000" />
+      <workItem from="1769944921548" duration="2923000" />
+      <workItem from="1769950023249" duration="64000" />
+      <workItem from="1769968781036" duration="32000" />
+      <workItem from="1769968820817" duration="262000" />
+      <workItem from="1769969091055" duration="80000" />
+      <workItem from="1770015450901" duration="1812000" />
+      <workItem from="1770017479459" duration="46000" />
+      <workItem from="1770102765765" duration="111000" />
+      <workItem from="1770108129332" duration="31000" />
+      <workItem from="1770108174509" duration="21000" />
+      <workItem from="1770113476466" duration="656000" />
+      <workItem from="1770132739408" duration="66000" />
+      <workItem from="1770148833797" duration="384000" />
+      <workItem from="1770218956187" duration="3000" />
+      <workItem from="1770218995952" duration="266000" />
+      <workItem from="1770220610781" duration="11000" />
+      <workItem from="1770220701686" duration="16000" />
+      <workItem from="1770228713503" duration="95000" />
+      <workItem from="1770228841404" duration="6000" />
+      <workItem from="1770229002855" duration="20000" />
+      <workItem from="1770307703748" duration="188000" />
+      <workItem from="1770394472525" duration="1485000" />
     </task>
     <task id="LOCAL-00053" summary="update favicon to new style">
       <option name="closed" value="true" />
@@ -985,11 +802,294 @@
       <option name="project" value="LOCAL" />
       <updated>1767627629293</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="update package.json, finalize NuxtSite 5.">
+      <option name="closed" value="true" />
+      <created>1767628341558</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1767628341558</updated>
+    </task>
+    <task id="LOCAL-00068" summary="remove particles, update to 6.0 beta, add new space backgrounds, update ui components, add option to hide interface, add tooltips">
+      <option name="closed" value="true" />
+      <created>1767637379282</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1767637379282</updated>
+    </task>
+    <task id="LOCAL-00069" summary="update username, update site preview image, add new wallpaper (Blue-Close), update footer, improve presentation mode">
+      <option name="closed" value="true" />
+      <created>1767717937849</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1767717937849</updated>
+    </task>
+    <task id="LOCAL-00070" summary="add no JS warning, update deps, add moon wallpaper, update site preview">
+      <option name="closed" value="true" />
+      <created>1767784995656</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1767784995657</updated>
+    </task>
+    <task id="LOCAL-00071" summary="localize homepage and some components to french, add langs page, UI updates">
+      <option name="closed" value="true" />
+      <created>1767808245299</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1767808245299</updated>
+    </task>
+    <task id="LOCAL-00072" summary="localize links page and apps page, split localization files better">
+      <option name="closed" value="true" />
+      <created>1767886594858</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1767886594859</updated>
+    </task>
+    <task id="LOCAL-00073" summary="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits">
+      <option name="closed" value="true" />
+      <created>1767889279734</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1767889279734</updated>
+    </task>
+    <task id="LOCAL-00074" summary="localize toolbox, creators page, fix goodies page meta, fix broken links">
+      <option name="closed" value="true" />
+      <created>1767891280338</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1767891280338</updated>
+    </task>
+    <task id="LOCAL-00075" summary="update languages page design, reformat, rearrange localization files">
+      <option name="closed" value="true" />
+      <created>1767892028034</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1767892028034</updated>
+    </task>
+    <task id="LOCAL-00076" summary="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, clean up code">
+      <option name="closed" value="true" />
+      <created>1767983832100</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1767983832101</updated>
+    </task>
+    <task id="LOCAL-00077" summary="add korean, fix text wrapping">
+      <option name="closed" value="true" />
+      <created>1767984925169</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1767984925169</updated>
+    </task>
+    <task id="LOCAL-00078" summary="add korean, fix text wrapping">
+      <option name="closed" value="true" />
+      <created>1768920962620</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1768920962620</updated>
+    </task>
+    <task id="LOCAL-00079" summary="add prompt">
+      <option name="closed" value="true" />
+      <created>1769012949784</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1769012949785</updated>
+    </task>
+    <task id="LOCAL-00080" summary="update prompt">
+      <option name="closed" value="true" />
+      <created>1769013565573</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1769013565573</updated>
+    </task>
+    <task id="LOCAL-00081" summary="improve lang picker handling with URL overrides">
+      <option name="closed" value="true" />
+      <created>1769105960940</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1769105960940</updated>
+    </task>
+    <task id="LOCAL-00082" summary="clean up imports with new aliases">
+      <option name="closed" value="true" />
+      <created>1769188212378</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1769188212378</updated>
+    </task>
+    <task id="LOCAL-00083" summary="update fix paths command">
+      <option name="closed" value="true" />
+      <created>1769188525247</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1769188525247</updated>
+    </task>
+    <task id="LOCAL-00084" summary="add translation verification, improve localization, add link ticker, update Nuxt">
+      <option name="closed" value="true" />
+      <created>1769344854271</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1769344854284</updated>
+    </task>
+    <task id="LOCAL-00085" summary="improve prettier config, improve bottom logo, improve links data, update usernames">
+      <option name="closed" value="true" />
+      <created>1769348577658</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1769348577658</updated>
+    </task>
+    <task id="LOCAL-00086" summary="improve formatting, move interfaces to types/">
+      <option name="closed" value="true" />
+      <created>1769350702480</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1769350702480</updated>
+    </task>
+    <task id="LOCAL-00087" summary="improve card styling, improve navbar, increase corner rounding, improve light mode coloring, add notification badge to site picker Byg, shorten toolbar strings, misc fixes">
+      <option name="closed" value="true" />
+      <created>1769713241613</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1769713241613</updated>
+    </task>
+    <task id="LOCAL-00088" summary="add eslint import fixing">
+      <option name="closed" value="true" />
+      <created>1769795624902</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1769795624902</updated>
+    </task>
+    <task id="LOCAL-00089" summary="fix localization for link ticker, add intro page">
+      <option name="closed" value="true" />
+      <created>1769884566953</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1769884566954</updated>
+    </task>
+    <task id="LOCAL-00090" summary="localize intro, animate navbar">
+      <option name="closed" value="true" />
+      <created>1769890269257</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1769890269257</updated>
+    </task>
+    <task id="LOCAL-00091" summary="reformat, fix mobile navbar spacing">
+      <option name="closed" value="true" />
+      <created>1769890679575</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1769890679575</updated>
+    </task>
+    <task id="LOCAL-00092" summary="bump version">
+      <option name="closed" value="true" />
+      <created>1769890701528</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1769890701529</updated>
+    </task>
+    <task id="LOCAL-00093" summary="[EXPERIMENTAL] add ads">
+      <option name="closed" value="true" />
+      <created>1769945463614</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1769945463614</updated>
+    </task>
+    <task id="LOCAL-00094" summary="[EXPERIMENTAL] update ads id">
+      <option name="closed" value="true" />
+      <created>1769945765173</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1769945765173</updated>
+    </task>
+    <task id="LOCAL-00095" summary="[EXPERIMENTAL] switch to native ads">
+      <option name="closed" value="true" />
+      <created>1769946905730</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1769946905730</updated>
+    </task>
+    <task id="LOCAL-00096" summary="move ads to footer">
+      <option name="closed" value="true" />
+      <created>1769948378128</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1769948378128</updated>
+    </task>
+    <task id="LOCAL-00097" summary="apply text wrap everywhere">
+      <option name="closed" value="true" />
+      <created>1769950074975</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1769950074975</updated>
+    </task>
+    <task id="LOCAL-00098" summary="add project icon">
+      <option name="closed" value="true" />
+      <created>1769969160388</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1769969160399</updated>
+    </task>
+    <task id="LOCAL-00099" summary="add project icon, reformat">
+      <option name="closed" value="true" />
+      <created>1770148884380</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1770148884381</updated>
+    </task>
+    <task id="LOCAL-00100" summary="screw ads">
+      <option name="closed" value="true" />
+      <created>1770149146636</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1770149146637</updated>
+    </task>
+    <task id="LOCAL-00101" summary="update to new domain, improve UI toggle">
+      <option name="closed" value="true" />
+      <created>1770395678720</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1770395678722</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="bun.lock" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1003,35 +1103,43 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues" />
-    <MESSAGE value="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues, update Nuxt, update site version" />
-    <MESSAGE value="round avatar corners :)" />
-    <MESSAGE value="update body font to PP Frama" />
-    <MESSAGE value="add PostHog" />
-    <MESSAGE value="add ids to buttons/links for better tracking" />
-    <MESSAGE value="update meta, update package versioning" />
-    <MESSAGE value="update sitepicker" />
-    <MESSAGE value="add BIMI logo" />
-    <MESSAGE value="convert to tinysvg" />
-    <MESSAGE value="update domains" />
-    <MESSAGE value="update favicon to new style" />
-    <MESSAGE value="update navigation, update card design" />
-    <MESSAGE value="update apps page" />
-    <MESSAGE value="remove caching rules" />
-    <MESSAGE value="update images, add new wallpaper system" />
-    <MESSAGE value="add snow :)" />
-    <MESSAGE value="add version indication, releases" />
-    <MESSAGE value="remove char card creator, make head management more efficient, fix canonical updating" />
-    <MESSAGE value="update site preview image" />
-    <MESSAGE value="switch to Bun" />
-    <MESSAGE value="add install to build script (CF has auto install deps disabled)" />
-    <MESSAGE value="update to 2026, add confetti" />
-    <MESSAGE value="add Prettier formatting, refresh Languages card design, other improvements" />
-    <MESSAGE value="enforce @/ over ~/ in formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="enforce @/ over ~/ in formatting" />
+    <MESSAGE value="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, clean up code" />
+    <MESSAGE value="add korean, fix text wrapping" />
+    <MESSAGE value="add prompt" />
+    <MESSAGE value="update prompt" />
+    <MESSAGE value="improve lang picker handling with URL overrides" />
+    <MESSAGE value="clean up imports with new aliases" />
+    <MESSAGE value="update fix paths command" />
+    <MESSAGE value="add translation verification, improve localization, add link ticker, update Nuxt" />
+    <MESSAGE value="improve prettier config, improve bottom logo, improve links data, update usernames" />
+    <MESSAGE value="improve formatting, move interfaces to types/" />
+    <MESSAGE value="improve card styling, improve navbar, increase corner rounding, improve light mode coloring, add notification badge to site picker Byg, shorten toolbar strings, misc fixes" />
+    <MESSAGE value="add eslint import fixing" />
+    <MESSAGE value="fix localization for link ticker, add intro page" />
+    <MESSAGE value="localize intro, animate navbar" />
+    <MESSAGE value="reformat, fix mobile navbar spacing" />
+    <MESSAGE value="bump version" />
+    <MESSAGE value="[EXPERIMENTAL] add ads" />
+    <MESSAGE value="[EXPERIMENTAL] update ads id" />
+    <MESSAGE value="[EXPERIMENTAL] switch to native ads" />
+    <MESSAGE value="move ads to footer" />
+    <MESSAGE value="apply text wrap everywhere" />
+    <MESSAGE value="add project icon" />
+    <MESSAGE value="add project icon, reformat" />
+    <MESSAGE value="screw ads" />
+    <MESSAGE value="update to new domain, improve UI toggle" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to new domain, improve UI toggle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

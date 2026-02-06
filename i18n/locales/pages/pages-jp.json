@@ -1,0 +1,60 @@
+{
+  "home": {
+    "intro": "こんにちは、Ashです。",
+    "desc1": "フランス在住のティーンエイジャーで、あなたが会う中で最も「チル」な人間です。",
+    "desc2": "現在、WebおよびAppleプラットフォームでの開発を学んでいます。UIやグラフィックデザインも練習中です。",
+    "location": "フランス・ボルドー",
+    "languages": {
+      "title": "言語",
+      "desc": "英語、フランス語、そして少しのスペイン語を話します :)",
+      "programming": "プログラミング言語",
+      "using": "使用中",
+      "learning": "学習中"
+    }
+  },
+  "links": {
+    "socialTitle": "私のソーシャル",
+    "socialDesc": "私のソーシャルと連絡方法 :3",
+    "more": "もっとリンク",
+    "playlists": "プレイリスト",
+    "check": "私のものをチェック"
+  },
+  "apps": {
+    "allApps": "すべてのアプリ",
+    "pwaInstall": "PWAのインストール"
+  },
+  "goodies": {
+    "cursors": {
+      "title": "カーソル",
+      "desc": "macOS用カーソル。",
+      "download": "ダウンロード"
+    },
+    "wallpapers": {
+      "title": "壁紙",
+      "desc": "あらゆるデバイス用の壁紙。",
+      "comingSoon": "近日公開。"
+    }
+  },
+  "playlists": {
+    "by": "作成者:",
+    "streamTitle": "ストリーム",
+    "streamDesc": "プレイリストの配信先:"
+  },
+  "creators": {
+    "choose": "ツールを選択...",
+    "tools": "ツール"
+  },
+  "toolbox": {
+    "desc1": "Toolboxは、私のリソースやアプリが集まるワンストップショップです。",
+    "desc2": "ここでは、アプリやツールなどを、ホーム画面に直接追加できる1つのアプリから見つけることができます。",
+    "quickLinks": "クイックリンク",
+    "about": "概要"
+  },
+  "languages": {
+    "choose": "選択...",
+    "betaNotice": "この機能はベータ版です。",
+    "errorNotice": "翻訳に誤りが含まれる場合があります。",
+    "foundError": "間違いを見つけましたか？",
+    "reportError": "報告する。"
+  }
+}

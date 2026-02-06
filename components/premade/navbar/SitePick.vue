@@ -1,39 +1,43 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import HStack from '@/components/layout/HStack.vue'
+
+  import HStack from '+/layout/HStack.vue'
+  import SafeLink from '+/utils/SafeLink.vue'
+  const { t } = useI18n()
 
   defineProps<{
+    to: string
     title: string
     icon: string
   }>()
 </script>
 
 <template>
-  <HStack class="sitePicker">
-    <div class="icon">
-      <Icon :icon="icon" />
-    </div>
+  <SafeLink :to="to">
+    <HStack class="sitePick">
+      <div class="icon">
+        <Icon :icon="icon" />
+      </div>
 
-    <h3>{{ title }}</h3>
-  </HStack>
+      <h3>{{ t(title) }}</h3>
+    </HStack>
+  </SafeLink>
 </template>
 
 <style scoped lang="sass">
   @use "@/styles/colors"
 
-  .icon
-    width: 2.5rem
-    height: 2.5rem
-    padding: 0.1rem
-    background: colors.$foregroundColor
-    align-items: center
-    justify-content: center
-    border-radius: 1rem
+  .sitePick
+    .icon
+      width: 2.75rem
+      height: 2.75rem
+      padding: 0.1rem
+      background: colors.$foregroundColor
+      align-items: center
+      justify-content: center
+      border-radius: 1.25rem
 
-  .icon > ::v-deep(svg)
-    width: 1.5rem
-    height: 1.5rem
-
-  .sitePicker
-    padding-right: 1rem
+    .icon > ::v-deep(svg)
+      width: 1.5rem
+      height: 1.5rem
 </style>

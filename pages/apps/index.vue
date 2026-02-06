@@ -1,17 +1,18 @@
 <script setup lang="ts">
-  import setHeadMeta from '@/utils/setHeadMeta'
   import { Icon } from '@iconify/vue'
-  import { ref, onMounted } from 'vue'
-  import type { AppCategory } from '@/types/appsViews'
-  import Hero from '@/components/utils/Hero.vue'
-  import Spacer from '@/components/utils/Spacer.vue'
-  import Navbar from '@/components/premade/navbar/Navbar.vue'
-  import AppsCategoryList from '@/components/apps/AppsCategoryList.vue'
-  import BottomFooter from '@/components/premade/BottomFooter.vue'
+  import { onMounted, ref } from 'vue'
+
+  import type { AppCategory } from ':/appsViews'
+  import setHeadMeta from '&/setHeadMeta'
+  import AppsCategoryList from '+/apps/AppsCategoryList.vue'
+  import BottomFooter from '+/premade/BottomFooter.vue'
+  import Hero from '+/utils/Hero.vue'
+  import Spacer from '+/utils/Spacer.vue'
+  const { t } = useI18n()
 
   setHeadMeta({
-    page: 'Apps',
-    subtitle: 'My web/Apple apps.',
+    page: 'pages.apps',
+    subtitle: 'meta.subtitles.apps',
     image: '/images/Apps.jpg',
   })
 
@@ -32,13 +33,13 @@
 <template>
   <div class="contentView">
     <Hero image="/images/Apps.jpg" image-alt="Apps Header Image">
-      <h1>Apps</h1>
-      <h2>My web/Apple apps.</h2>
+      <h1>{{ t('pages.apps') }}</h1>
+      <h2>{{ t('meta.subtitles.apps') }}</h2>
       <Spacer />
       <a href="https://github.com/asboy2035?tab=repositories">
         <button id="allAppsButton">
           <Icon icon="mingcute:github-fill" width="24" height="24" />
-          All Apps
+          {{ t('apps.allApps') }}
         </button>
       </a>
     </Hero>
@@ -52,12 +53,11 @@
         target="_blank"
         class="prominentLink"
       >
-        PWA Installation
+        {{ t('apps.pwaInstall') }}
       </a>
     </p>
 
     <BottomFooter />
-    <Navbar />
   </div>
 </template>
 

@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
   import { ref } from 'vue'
+  const { t } = useI18n()
 
   const isActive: Ref<boolean> = ref(false)
   const showingConnecting: Ref<boolean> = ref(false)
@@ -28,14 +29,9 @@
   <div class="progressBar" :class="{ active: isActive }" />
 
   <div class="transitionElement" :class="{ active: isActive }">
-    <Icon
-      icon="svg-spinners:90-ring-with-bg"
-      width="24"
-      height="24"
-      class="spinner"
-    />
+    <Icon icon="svg-spinners:90-ring-with-bg" class="spinner" />
 
-    <p :class="{ hidden: !showingConnecting }">Connecting...</p>
+    <p :class="{ hidden: !showingConnecting }">{{ t('app.connecting') }}</p>
   </div>
 </template>
 

@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import InteriorItem from '@/components/layout/InteriorItem.vue'
+
+  import InteriorItem from '+/layout/InteriorItem.vue'
 
   defineProps<{
     name: string

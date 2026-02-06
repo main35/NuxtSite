@@ -1,18 +1,20 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
   import { onMounted, ref } from 'vue'
-  import { LauncherCreators } from '@/data/launchers/LauncherCreators'
-  import type { AppCategory } from '@/types/appsViews'
 
-  import VStack from '@/components/layout/VStack.vue'
-  import Card from '@/components/layout/Card.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
-  import Divider from '@/components/utils/Divider.vue'
-  import NavigationTitle from '@/components/layout/NavigationTitle.vue'
-  import BottomFooter from '@/components/premade/BottomFooter.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import Modal from '@/components/utils/Modal.vue'
-  import LauncherCard from '@/components/premade/navbar/LauncherCard.vue'
+  import type { AppCategory } from ':/appsViews'
+  import setHeadMeta from '&/setHeadMeta'
+  import Card from '+/layout/Card.vue'
+  import HStack from '+/layout/HStack.vue'
+  import NavigationTitle from '+/layout/NavigationTitle.vue'
+  import VStack from '+/layout/VStack.vue'
+  import BottomFooter from '+/premade/BottomFooter.vue'
+  import LauncherCard from '+/premade/navbar/LauncherCard.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
+  import Divider from '+/utils/Divider.vue'
+  import Modal from '+/utils/Modal.vue'
+  import { LauncherCreators } from '$/launchers/LauncherCreators'
+  const { t } = useI18n()
 
   const appsData = ref<AppCategory[]>([])
   const showingAboutModal = ref(false)
@@ -28,20 +30,19 @@
     }
   })
 
+  setHeadMeta({
+    page: 'pages.toolbox',
+    subtitle: 'meta.subtitles.toolbox',
+    icon: '/images/icons/Toolbox.png',
+  })
+
   useHead({
-    title: 'Toolbox - Ash',
     meta: [
-      { name: 'description', content: 'asboy2035 Toolbox app.' },
-      { property: 'og:title', content: 'Toolbox - Ash' },
-      { property: 'og:description', content: 'asboy2035 Toolbox app.' },
       {
         name: 'viewport',
         content:
           'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
       },
-    ],
-    link: [
-      { rel: 'icon', type: 'image/png', href: '/images/icons/Toolbox.png' },
     ],
   })
 </script>
@@ -49,7 +50,7 @@
 <template>
   <div class="contentView toolboxView">
     <VStack id="headerLinks">
-      <NavigationTitle title="Toolbox">
+      <NavigationTitle title="pages.toolbox">
         <button
           @click="showingAboutModal = !showingAboutModal"
           id="showAboutModalButton"
@@ -69,17 +70,17 @@
       </NavigationTitle>
 
       <Card>
-        <CardTitle title="Quick Links" icon="solar:bolt-line-duotone" />
+        <CardTitle title="toolbox.quickLinks" icon="solar:bolt-line-duotone" />
 
         <HStack>
           <a href="https://g.a35.dev/">
             <button>
               <Icon icon="solar:book-line-duotone" />
-              Guides
+              {{ t('sites.guides') }}
             </button>
           </a>
 
-          <a href="https://github.com/studio2035/NuxtSite">
+          <a href="https://github.com/main35/NuxtSite">
             <button>
               <Icon icon="mingcute:github-fill" />
               GitHub
@@ -89,7 +90,7 @@
       </Card>
 
       <LauncherCard
-        title="Tools"
+        title="creators.tools"
         icon="solar:sledgehammer-line-duotone"
         base-url="/toolbox"
         :launcher-items="LauncherCreators"
@@ -97,34 +98,30 @@
 
       <divider />
 
-      <CardTitle title="Apps" icon="solar:widget-2-line-duotone" />
-      <apps-category-list :apps-data="appsData" />
+      <CardTitle title="pages.apps" icon="solar:widget-2-line-duotone" />
+      <AppsCategoryList :apps-data="appsData" />
     </VStack>
 
     <BottomFooter hide-read-more />
 
-    <modal v-if="showingAboutModal">
+    <Modal v-if="showingAboutModal">
       <img
         src="/images/icons/Toolbox.png"
         alt="Toolbox Icon"
         class="toolboxIcon"
       />
 
-      <h1>About</h1>
-      <h3>Toolbox is the one-stop shop for all resources and apps by me.</h3>
-
-      <p>
-        Here, you can find apps, tools, and more, right from one app that you
-        can add directly to your home screen.
-      </p>
+      <h1>{{ t('toolbox.about') }}</h1>
+      <h3>{{ t('toolbox.desc1') }}</h3>
+      <p>{{ t('toolbox.desc2') }}</p>
 
       <a href="https://g.a35.dev/misc/web/pwaInstall" target="_blank">
         <button id="howToInstallToolbox">
           <icon icon="solar:download-minimalistic-line-duotone" />
-          How to Install
+          {{ t('apps.pwaInstall') }}
         </button>
       </a>
-    </modal>
+    </Modal>
   </div>
 </template>
 

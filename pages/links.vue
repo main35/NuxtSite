@@ -1,21 +1,22 @@
 <script setup lang="ts">
-  import setHeadMeta from '@/utils/setHeadMeta'
   import { Icon } from '@iconify/vue'
-  import Navbar from '@/components/premade/navbar/Navbar.vue'
-  import Grid from '@/components/layout/Grid.vue'
-  import Card from '@/components/layout/Card.vue'
-  import Spacer from '@/components/utils/Spacer.vue'
-  import BottomFooter from '@/components/premade/BottomFooter.vue'
-  import MoreLinks from '@/components/links/MoreLinks.vue'
-  import SocialLinks from '@/components/links/SocialLinks.vue'
-  import Description from '@/components/premade/Description.vue'
-  import VStack from '@/components/layout/VStack.vue'
-  import SupportLinks from '@/components/links/SupportLinks.vue'
-  import Hero from '@/components/utils/Hero.vue'
+
+  import setHeadMeta from '&/setHeadMeta'
+  import Card from '+/layout/Card.vue'
+  import Grid from '+/layout/Grid.vue'
+  import VStack from '+/layout/VStack.vue'
+  import MoreLinks from '+/links/MoreLinks.vue'
+  import SocialLinks from '+/links/SocialLinks.vue'
+  import SupportLinks from '+/links/SupportLinks.vue'
+  import BottomFooter from '+/premade/BottomFooter.vue'
+  import Description from '+/premade/Description.vue'
+  import Hero from '+/utils/Hero.vue'
+  import Spacer from '+/utils/Spacer.vue'
+  const { t } = useI18n()
 
   setHeadMeta({
-    page: 'Links',
-    subtitle: 'My socials, contacts, and more :)',
+    page: 'pages.links',
+    subtitle: 'meta.subtitles.links',
     image: '/images/Links.jpg',
   })
 </script>
@@ -23,8 +24,8 @@
 <template>
   <div class="contentView">
     <Hero image="/images/Links.jpg">
-      <h1>Links</h1>
-      <h2>My socials, contacts, and more.</h2>
+      <h1>{{ t('pages.links') }}</h1>
+      <h2>{{ t('meta.subtitles.links') }}</h2>
     </Hero>
 
     <!-- About -->
@@ -43,7 +44,5 @@
     <SupportLinks />
     <MoreLinks />
     <BottomFooter />
-
-    <Navbar />
   </div>
 </template>

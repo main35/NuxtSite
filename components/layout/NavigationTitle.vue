@@ -1,8 +1,10 @@
 <script setup lang="ts">
-  import { ref, onMounted, onBeforeUnmount } from 'vue'
+  import { onBeforeUnmount, onMounted, ref } from 'vue'
   import { ProgressiveBlur } from 'vue-progressive-blur'
-  import HStack from '@/components/layout/HStack.vue'
-  import InteriorItem from '@/components/layout/InteriorItem.vue'
+
+  import HStack from '+/layout/HStack.vue'
+  import InteriorItem from '+/layout/InteriorItem.vue'
+  const { t } = useI18n()
 
   defineProps<{
     title: string
@@ -14,7 +16,7 @@
 
   onMounted(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
+      ([ entry ]) => {
         isStuck.value = !entry?.isIntersecting
       },
       {
@@ -43,10 +45,10 @@
 
     <div class="navTitleWrapper" :class="{ stuck: isStuck }">
       <HStack class="titleContent">
-        <h1 v-if="!isStuck">{{ title }}</h1>
+        <h1 v-if="!isStuck">{{ t(title) }}</h1>
 
         <InteriorItem v-else-if="isStuck" class="stuckTitleContent fadeIn">
-          <p>{{ title }}</p>
+          <p>{{ t(title) }}</p>
         </InteriorItem>
 
         <HStack class="stuckToolbar fadeIn" v-if="isStuck">
@@ -54,7 +56,7 @@
         </HStack>
 
         <h1 class="light" v-if="subtitle && !isStuck">
-          {{ subtitle }}
+          {{ t(subtitle) }}
         </h1>
 
         <HStack class="toolbar" v-if="!isStuck">

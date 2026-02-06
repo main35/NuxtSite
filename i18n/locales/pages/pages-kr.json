@@ -1,0 +1,60 @@
+{
+  "home": {
+    "intro": "안녕하세요, ash입니다.",
+    "desc1": "저는 프랑스에 사는 10대이며, 아마 여러분이 만날 사람 중 가장 느긋한 사람일 거예요.",
+    "desc2": "현재 웹과 Apple 플랫폼 개발을 배우고 있습니다. UI와 그래픽 디자인도 연습 중이에요.",
+    "location": "프랑스 보르도",
+    "languages": {
+      "title": "언어",
+      "desc": "영어, 프랑스어, 그리고 스페인어 조금 할 줄 알아요 :)",
+      "programming": "프로그래밍 언어",
+      "using": "사용 중",
+      "learning": "배우는 중"
+    }
+  },
+  "links": {
+    "socialTitle": "내 소셜",
+    "socialDesc": "내 소셜과 연락 방법 :3",
+    "more": "더 많은 링크",
+    "playlists": "플레이리스트",
+    "check": "내 것을 확인해"
+  },
+  "apps": {
+    "allApps": "모든 앱",
+    "pwaInstall": "PWA 설치"
+  },
+  "goodies": {
+    "cursors": {
+      "title": "커서",
+      "desc": "macOS 커서입니다.",
+      "download": "다운로드"
+    },
+    "wallpapers": {
+      "title": "배경화면",
+      "desc": "모든 기기용 배경화면입니다.",
+      "comingSoon": "준비 중입니다."
+    }
+  },
+  "playlists": {
+    "by": "제작:",
+    "streamTitle": "스트리밍",
+    "streamDesc": "제 플레이리스트를 들을 수 있는 곳:"
+  },
+  "creators": {
+    "choose": "도구를 선택하세요...",
+    "tools": "도구"
+  },
+  "toolbox": {
+    "desc1": "툴박스는 제가 만든 모든 리소스와 앱을 한곳에서 볼 수 있는 곳입니다.",
+    "desc2": "여기서 앱, 도구 등을 찾아보고 홈 화면에 바로 추가할 수 있습니다.",
+    "quickLinks": "빠른 링크",
+    "about": "소개"
+  },
+  "languages": {
+    "choose": "선택...",
+    "betaNotice": "이 기능은 베타 버전입니다.",
+    "errorNotice": "번역에 오류가 있을 수 있습니다.",
+    "foundError": "오류를 발견하셨나요?",
+    "reportError": "신고하기."
+  }
+}

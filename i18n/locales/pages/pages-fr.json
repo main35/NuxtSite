@@ -1,0 +1,60 @@
+{
+  "home": {
+    "intro": "Bonjour, je suis ash.",
+    "desc1": "Je suis un jeune français, et officiellement la personne la plus chic que vous connaissiez.",
+    "desc2": "Actuellement, j'apprends le développement web et pour les plateformes Apple. De plus, je pratique l'UI et le design graphique.",
+    "location": "Bordeaux, France",
+    "languages": {
+      "title": "Langues",
+      "desc": "Je parle anglais, français, et un peu d'espagnol :)",
+      "programming": "Langages de programmation",
+      "using": "Utilisés",
+      "learning": "Appris"
+    }
+  },
+  "links": {
+    "socialTitle": "Mes Réseaux Sociaux",
+    "socialDesc": "Mes réseaux sociaux et méthodes de contact :3",
+    "more": "Plus de liens",
+    "playlists": "Playlists",
+    "check": "Découvrez mon"
+  },
+  "apps": {
+    "allApps": "Toutes les applications",
+    "pwaInstall": "Installer en tant que PWA"
+  },
+  "goodies": {
+    "cursors": {
+      "title": "Curseurs",
+      "desc": "Curseurs macOS.",
+      "download": "Télécharger"
+    },
+    "wallpapers": {
+      "title": "Fonds d'écran",
+      "desc": "Fonds d'écran pour tous vos appareils.",
+      "comingSoon": "Bientôt disponible."
+    }
+  },
+  "playlists": {
+    "by": "Par:",
+    "streamTitle": "Diffuser",
+    "streamDesc": "Où je diffuse ce playlist:"
+  },
+  "creators": {
+    "choose": "Choisissez un outil...",
+    "tools": "Outils"
+  },
+  "toolbox": {
+    "desc1": "Toolbox est le guichet unique pour toutes les ressources et applications que je propose.",
+    "desc2": "Ici, vous pouvez trouver des applications, des outils et bien plus encore, directement à partir d'une application que vous pouvez ajouter directement à votre écran d'accueil.",
+    "quickLinks": "Liens rapides",
+    "about": "À Propos"
+  },
+  "languages": {
+    "choose": "Choisir...",
+    "betaNotice": "Cette fonctionnalité est en bêta.",
+    "errorNotice": "Les traductions peuvent contenir des erreurs.",
+    "foundError": "Vous avez trouvé une erreur ?",
+    "reportError": "Signalez-la."
+  }
+}

@@ -1,6 +1,8 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import HStack from '@/components/layout/HStack.vue'
+
+  import HStack from '+/layout/HStack.vue'
+  const { t } = useI18n()
 
   defineProps<{
     title: string
@@ -11,7 +13,7 @@
 <template>
   <HStack class="cardTitle">
     <icon :icon="icon" />
-    <h2>{{ title }}</h2>
+    <h2>{{ t(title) }}</h2>
   </HStack>
 </template>
 

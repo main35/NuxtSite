@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "home": "Inicio",
+    "links": "Enlaces",
+    "apps": "Apps",
+    "goodies": "Extras",
+    "languages": "Idiomas",
+    "creators": "Creadores",
+    "toolbox": "Toolbox"
+  },
+  "meta": {
+    "groups": {
+      "ash": "Ash"
+    },
+    "subtitles": {
+      "global": "ash (a35hie) - Portafolio",
+      "links": "Mis redes, contactos y más :)",
+      "apps": "Mis aplicaciones web/Apple.",
+      "goodies": "Otro contenido descargable.",
+      "creators": "Mis herramientas y creadores.",
+      "toolbox": "La aplicación Toolbox de a35hie."
+    }
+  }
+}

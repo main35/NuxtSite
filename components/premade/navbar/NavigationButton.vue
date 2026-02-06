@@ -1,6 +1,9 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
 
+  import SafeLink from '+/utils/SafeLink.vue'
+  const { t } = useI18n()
+
   defineProps<{
     link: string
     text?: string
@@ -11,15 +14,15 @@
 <template>
   <div class="navWrapper">
     <div class="toolTip" v-if="text">
-      <h4>{{ text }}</h4>
+      <h4>{{ t(text) }}</h4>
     </div>
 
-    <RouterLink :to="link">
+    <SafeLink :to="link">
       <button class="navigationButton" :aria-label="'Go to: ' + link">
         <Icon v-if="icon" :icon="icon" />
         <slot />
       </button>
-    </RouterLink>
+    </SafeLink>
   </div>
 </template>
 
@@ -33,12 +36,11 @@
     transition: 0.2s ease-in-out
     padding: 0
 
-  .navigationButton
     ::v-deep(svg)
       height: 1.25rem
       width: 1.25rem
 
-  /* Tooltip Styling */
+  // Tooltip Styling
   .toolTip
     display: none
     position: absolute
@@ -52,7 +54,7 @@
     h4
       margin: 0
 
-  /* Show tooltip on hover */
+  // Show tooltip on hover
   .navWrapper:hover .toolTip
     display: flex
 </style>

@@ -1,20 +1,21 @@
-<script>
-  import DynamicImage from '@/components/utils/DynamicImage.vue'
-  import InteriorItem from '@/components/layout/InteriorItem.vue'
-  import Card from '@/components/layout/Card.vue'
+<script setup lang="ts">
+  import Card from '+/layout/Card.vue'
+  import InteriorItem from '+/layout/InteriorItem.vue'
+  import DynamicImage from '+/utils/DynamicImage.vue'
 
-  export default {
-    components: { Card, InteriorItem, DynamicImage },
-    props: {
-      image: String,
-      imageAlt: String ?? 'Image',
-    },
-  }
+  defineProps<{
+    image: string
+    imageAlt?: string
+  }>()
 </script>
 
 <template>
   <Card class="hero" :style="{ backgroundImage: `url('${image}')` }">
-    <DynamicImage class="heroResizableImage" :src="image" :alt="imageAlt" />
+    <DynamicImage
+      class="heroResizableImage"
+      :src="image"
+      :alt="imageAlt ?? 'Image'"
+    />
 
     <InteriorItem class="heroContent">
       <slot />
@@ -60,4 +61,7 @@
   @media (max-width: 35rem)
     .hero
       max-height: 75vh
+
+    .heroContent
+      width: calc(100% - 1rem)
 </style>

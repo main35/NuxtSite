@@ -1,20 +1,23 @@
 <script setup lang="ts">
-  import { ref, onMounted, computed } from 'vue'
-  import setHeadMeta from '@/utils/setHeadMeta'
-  import { useRoute } from 'vue-router'
-  import { apps } from '@/data/apps'
+  import { Icon } from '@iconify/vue'
   import { marked } from 'marked'
-  import type { AppPageMeta } from '@/data/apps'
+  import { computed, onMounted, ref } from 'vue'
+  import { useRoute } from 'vue-router'
 
-  import Hero from '@/components/utils/Hero.vue'
-  import BottomFooter from '@/components/premade/BottomFooter.vue'
-  import Card from '@/components/layout/Card.vue'
-  import UpdatedBadge from '@/components/apps/UpdatedBadge.vue'
-  import GithubIcon from '@/components/apps/GithubIcon.vue'
-  import AppStoreIcon from '@/components/apps/AppStoreIcon.vue'
-  import LinkIcon from '@/components/apps/LinkIcon.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import Navbar from '@/components/premade/navbar/Navbar.vue'
+  import setHeadMeta from '&/setHeadMeta'
+  import AppStoreIcon from '+/apps/AppStoreIcon.vue'
+  import GithubIcon from '+/apps/GithubIcon.vue'
+  import LinkIcon from '+/apps/LinkIcon.vue'
+  import UpdatedBadge from '+/apps/UpdatedBadge.vue'
+  import Card from '+/layout/Card.vue'
+  import HStack from '+/layout/HStack.vue'
+  import BottomFooter from '+/premade/BottomFooter.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
+  import Hero from '+/utils/Hero.vue'
+  import SafeLink from '+/utils/SafeLink.vue'
+  import type { AppPageMeta } from '$/apps'
+  import { apps } from '$/apps'
+  const { t } = useI18n()
 
   const route = useRoute()
   const slug: string = route.params.slug as string
@@ -89,26 +92,12 @@
     <BottomFooter />
 
     <Navbar>
-      <NuxtLink to="/apps/">
+      <SafeLink to="/apps">
         <button>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 12h14M5 12l6 6m-6-6l6-6"
-            />
-          </svg>
-          All Apps
+          <Icon icon="solar:arrow-left-line-duotone" />
+          {{ t('pages.apps') }}
         </button>
-      </NuxtLink>
+      </SafeLink>
     </Navbar>
   </div>
 </template>

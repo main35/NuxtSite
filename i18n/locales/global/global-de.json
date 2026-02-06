@@ -1,0 +1,53 @@
+{
+  "intro": {
+    "hi": "hi, ich bin ash.",
+    "desc": "Ich bin Designer und Entwickler aus Frankreich.",
+    "knowMe": "Lern mich kennen!",
+    "github": "Github",
+    "email": "E-Mail",
+    "about": "Über mich"
+  },
+  "sites": {
+    "title": "Seiten",
+    "pages": "Seiten",
+    "fonts": "Schriften",
+    "big": "Byg",
+    "guides": "Guides",
+    "portfolio": "Portfolio"
+  },
+  "app": {
+    "hideInterface": "Seite ausblenden",
+    "showInterface": "Interface anzeigen",
+    "getWalls": "Hintergründe",
+    "comingSoon": "Demnächst!",
+    "myTime": "Meine Zeit",
+    "connecting": "Verbindung wird hergestellt...",
+    "oldDomain": {
+      "title": "Du bist auf der alten Domain!",
+      "desc": "Rufe diese Seite unter a35hie.me auf für einen saubereren Link!",
+      "never": "Nie",
+      "later": "Später",
+      "go": "Los geht’s!"
+    },
+    "more": "Mehr"
+  },
+  "sharing": {
+    "title": "Teilen",
+    "showQr": "QR-Code anzeigen",
+    "hideQr": "QR-Code ausblenden"
+  },
+  "navbar": {
+    "launchers": {
+      "apps": "Apps",
+      "creators": "Erstellen..."
+    }
+  },
+  "footer": {
+    "thanks": "Danke fürs Lesen!",
+    "createdBy": "Erstellt von Ash, mit NuxtJS, in 2026 <3",
+    "codeOnGh": "Code auf GitHub.",
+    "version": "Version:",
+    "release": "Release:",
+    "readMore": "Mehr lesen:"
+  }
+}

@@ -1,35 +1,26 @@
 <script setup lang="ts">
-  import { ref, onMounted, computed } from 'vue'
+  import { Icon } from '@iconify/vue'
+  import { computed, onMounted, ref } from 'vue'
   import { useRoute } from 'vue-router'
-  import setHeadMeta from '@/utils/setHeadMeta'
-  import InteriorItem from '@/components/layout/InteriorItem.vue'
-  import AppleMusic from '@/components/playlists/AppleMusic.vue'
-  import Spotify from '@/components/playlists/Spotify.vue'
-  import Deezer from '@/components/playlists/Deezer.vue'
-  import LinkIcon from '@/components/apps/LinkIcon.vue'
-  import YoutubeMusic from '@/components/playlists/YoutubeMusic.vue'
-  import Card from '@/components/layout/Card.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import VStack from '@/components/layout/VStack.vue'
-  import Spacer from '@/components/utils/Spacer.vue'
-  import Grid from '@/components/layout/Grid.vue'
-  import Hero from '@/components/utils/Hero.vue'
-  import Navbar from '@/components/premade/navbar/Navbar.vue'
 
-  interface PlaylistLink {
-    title: string
-    url: string
-    type: 'apple' | 'spotify' | 'deezer' | 'youtube'
-  }
-
-  interface Playlist {
-    slug: string
-    title: string
-    description: string
-    author: string
-    image: string
-    links: PlaylistLink[]
-  }
+  import type { Playlist } from ':/playlists'
+  import setHeadMeta from '&/setHeadMeta'
+  import LinkIcon from '+/apps/LinkIcon.vue'
+  import Card from '+/layout/Card.vue'
+  import Grid from '+/layout/Grid.vue'
+  import HStack from '+/layout/HStack.vue'
+  import InteriorItem from '+/layout/InteriorItem.vue'
+  import VStack from '+/layout/VStack.vue'
+  import AppleMusic from '+/playlists/AppleMusic.vue'
+  import Deezer from '+/playlists/Deezer.vue'
+  import Spotify from '+/playlists/Spotify.vue'
+  import YoutubeMusic from '+/playlists/YoutubeMusic.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
+  import Hero from '+/utils/Hero.vue'
+  import SafeLink from '+/utils/SafeLink.vue'
+  import Spacer from '+/utils/Spacer.vue'
+  const { t } = useI18n()
 
   const playlists = ref<Playlist[]>([])
   const route = useRoute()
@@ -91,14 +82,17 @@
           :alt="`${playlist.title} playlist cover`"
         />
         <VStack>
-          <h3 class="light">by {{ playlist.author }}</h3>
+          <h3 class="light">{{ t('playlists.by') }} {{ playlist.author }}</h3>
           <p class="light">{{ playlist.description }}</p>
         </VStack>
       </HStack>
       <Spacer />
 
-      <h2>Stream</h2>
-      <p class="light">Where to stream {{ playlist.title }}:</p>
+      <CardTitle
+        title="playlists.streamTitle"
+        icon="solar:headphones-square-line-duotone"
+      />
+      <p class="light">{{ t('playlists.streamDesc') }}</p>
 
       <grid class="tight spaced">
         <a
@@ -117,26 +111,12 @@
     </Card>
 
     <Navbar>
-      <NuxtLink to="/links/">
+      <SafeLink to="/links">
         <button>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 12h14M5 12l6 6m-6-6l6-6"
-            />
-          </svg>
-          Links
+          <Icon icon="solar:arrow-left-line-duotone" />
+          {{ t('pages.links') }}
         </button>
-      </NuxtLink>
+      </SafeLink>
     </Navbar>
   </div>
 </template>

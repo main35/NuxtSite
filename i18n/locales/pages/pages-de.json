@@ -1,0 +1,60 @@
+{
+  "home": {
+    "intro": "Hi, ich bin Ash.",
+    "desc1": "Ich bin ein Teenager aus Frankreich und offiziell die entspannteste Person, die du treffen wirst.",
+    "desc2": "Ich lerne derzeit die Entwicklung auf Web- und Apple-Plattformen. Ich übe auch UI- und Grafikdesign.",
+    "location": "Bordeaux, Frankreich",
+    "languages": {
+      "title": "Sprachen",
+      "desc": "Ich spreche Englisch, Französisch und ein bisschen Spanisch :)",
+      "programming": "Programmiersprachen",
+      "using": "Nutze",
+      "learning": "Lerne"
+    }
+  },
+  "links": {
+    "socialTitle": "Meine Sozialen Medien",
+    "socialDesc": "Meine sozialen Medien und Kontaktmethoden :3",
+    "more": "Mehr Links",
+    "playlists": "Playlists",
+    "check": "Schau dir meine"
+  },
+  "apps": {
+    "allApps": "Alle Apps",
+    "pwaInstall": "PWA-Installation"
+  },
+  "goodies": {
+    "cursors": {
+      "title": "Cursor",
+      "desc": "macOS-Cursor.",
+      "download": "Download"
+    },
+    "wallpapers": {
+      "title": "Hintergrundbilder",
+      "desc": "Hintergründe für jedes Gerät.",
+      "comingSoon": "Demnächst."
+    }
+  },
+  "playlists": {
+    "by": "Von:",
+    "streamTitle": "Stream",
+    "streamDesc": "Wo ich meine Playlists streame:"
+  },
+  "creators": {
+    "choose": "Wähle ein Tool...",
+    "tools": "Tools"
+  },
+  "toolbox": {
+    "desc1": "Toolbox ist die zentrale Anlaufstelle für alle meine Ressourcen und Apps.",
+    "desc2": "Hier findest du Apps, Tools und mehr, direkt aus einer App, die du deinem Startbildschirm hinzufügen kannst.",
+    "quickLinks": "Quick Links",
+    "about": "Über"
+  },
+  "languages": {
+    "choose": "Wählen...",
+    "betaNotice": "Dieses Feature ist in der Beta.",
+    "errorNotice": "Übersetzungen können Fehler enthalten.",
+    "foundError": "Fehler gefunden?",
+    "reportError": "Melde es."
+  }
+}

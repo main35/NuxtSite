@@ -19,13 +19,13 @@
 
   .interior
     position: relative
-    --interior-radius: 1.25rem
+    --interiorRadius: 1.75rem
 
     background: colors.$foregroundColor
-    border-radius: var(--interior-radius)
+    border-radius: var(--interiorRadius)
     padding: 0.75rem
     transition: 0.2s ease
-    backdrop-filter: saturate(175%) blur(1rem)
+    backdrop-filter: saturate(175%) blur(0.5rem)
 
     &::after // Specular Highlight
       content: ""
@@ -37,7 +37,7 @@
 
       border: 0.1rem solid colors.$shadowColor
       box-shadow: inset 0 0 0.5rem colors.$shadowColor
-      border-radius: var(--interior-radius)
+      border-radius: var(--interiorRadius)
       opacity: 0.4
       pointer-events: none
       transition: 0.2s ease
@@ -52,7 +52,7 @@
       left: 0
 
       box-shadow: 0 0.5rem 0.5rem colors.$shadowColor
-      border-radius: var(--interior-radius)
+      border-radius: var(--interiorRadius)
       opacity: 0.15
       pointer-events: none
       transition: 0.2s ease
@@ -75,6 +75,5 @@
 
   @media (max-width: 35rem)
     .interior
-      --interior-radius: 1.25rem
       padding: 0.5rem
 </style>

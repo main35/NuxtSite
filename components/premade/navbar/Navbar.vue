@@ -1,56 +1,93 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
   import { Icon } from '@iconify/vue'
+  import { ref } from 'vue'
   import { ProgressiveBlur } from 'vue-progressive-blur'
-  import { LauncherApps } from '@/data/launchers/LauncherApps'
-  import { LauncherCreators } from '@/data/launchers/LauncherCreators'
 
-  import HStack from '@/components/layout/HStack.vue'
-  import VStack from '@/components/layout/VStack.vue'
-  import InteriorItem from '@/components/layout/InteriorItem.vue'
-  import FullscreenCover from '@/components/premade/FullscreenCover.vue'
-  import DynamicImage from '@/components/utils/DynamicImage.vue'
-  import NavigationLinks from '@/components/premade/navbar/NavigationLinks.vue'
-  import NavigationButton from '@/components/premade/navbar/NavigationButton.vue'
-  import SitePicker from '@/components/premade/navbar/SitePicker.vue'
-  import LauncherCard from '@/components/premade/navbar/LauncherCard.vue'
+  import HStack from '+/layout/HStack.vue'
+  import InteriorItem from '+/layout/InteriorItem.vue'
+  import VStack from '+/layout/VStack.vue'
+  import FullscreenCover from '+/premade/FullscreenCover.vue'
+  import LauncherCard from '+/premade/navbar/LauncherCard.vue'
+  import NavigationButton from '+/premade/navbar/NavigationButton.vue'
+  import NavigationLinks from '+/premade/navbar/NavigationLinks.vue'
+  import SitePicker from '+/premade/navbar/SitePicker.vue'
+  import DynamicImage from '+/utils/DynamicImage.vue'
+  import SafeLink from '+/utils/SafeLink.vue'
+  import { LauncherApps } from '$/launchers/LauncherApps'
+  import { LauncherCreators } from '$/launchers/LauncherCreators'
+  import { showingNavProfile } from '$/visibility'
 
-  const showSwitcher = ref(false)
-
-  defineProps<{
-    hideProfile?: boolean
-  }>()
-
-  const showMobileNav = ref(false)
+  const showLaunchers: Ref<boolean> = ref(false)
+  const showMobileNav: Ref<boolean> = ref(false)
+  const showSiteSwitcher: Ref<boolean> = ref(false)
+  const navRef: Ref<HTMLElement | null> = ref(null)
 
   function toggleNavigation() {
     showMobileNav.value = !showMobileNav.value
   }
 
-  const showSiteSwitcher = ref(false)
-
   function toggleSiteSwitcher() {
     showSiteSwitcher.value = !showSiteSwitcher.value
   }
+
+  onMounted(() => {
+    watch(
+      showingNavProfile,
+      async () => {
+        const component = navRef.value
+        // @ts-ignore
+        if (!component?.$el) return
+        // @ts-ignore
+        const el = component.$el
+
+        const currentWidth = el.getBoundingClientRect().width
+        el.style.width = currentWidth + 'px'
+        el.style.overflow = 'hidden'
+
+        await nextTick()
+
+        const tempWidth = el.style.width
+        el.style.width = 'auto'
+        void el.offsetWidth
+
+        const targetWidth = el.getBoundingClientRect().width
+
+        el.style.width = tempWidth
+        void el.offsetWidth
+
+        requestAnimationFrame(() => {
+          el.style.transition = 'width 0.2s ease'
+          el.style.width = targetWidth + 'px'
+        })
+
+        setTimeout(() => {
+          el.style.transition = ''
+          el.style.width = ''
+          el.style.overflow = ''
+        }, 220)
+      },
+      { flush: 'sync' }
+    )
+  })
 </script>
 
 <template>
   <VStack class="navBarContainer">
     <slot />
 
-    <FullscreenCover v-if="showSwitcher">
+    <FullscreenCover v-if="showLaunchers">
       <VStack>
         <LauncherCard
-          title="Apps"
+          title="navbar.launchers.apps"
           icon="solar:widget-2-line-duotone"
-          base-url="/apps/"
+          base-url="/apps"
           :launcher-items="LauncherApps"
         />
 
         <LauncherCard
-          title="Create..."
+          title="navbar.launchers.creators"
           icon="solar:pen-new-square-line-duotone"
-          base-url="/creator/"
+          base-url="/creator"
           :launcher-items="LauncherCreators"
         />
       </VStack>
@@ -61,7 +98,7 @@
       :class="{ hidden: !showMobileNav }"
       class="navBar"
     >
-      <NavigationLinks />
+      <NavigationLinks @click="showMobileNav = false" />
     </InteriorItem>
 
     <SitePicker id="siteSwitcher" :class="{ hidden: !showSiteSwitcher }">
@@ -79,7 +116,7 @@
 
     <HStack class="navBarRow">
       <button
-        @click="showSwitcher = !showSwitcher"
+        @click="showLaunchers = !showLaunchers"
         class="createBtn"
         id="openLauncher"
         aria-label="Launch app or create..."
@@ -87,56 +124,70 @@
         <Icon
           icon="heroicons:sparkles-20-solid"
           class="growIn"
-          v-if="!showSwitcher"
+          v-if="!showLaunchers"
           width="20"
           height="20"
         />
         <Icon
           icon="mingcute:close-fill"
           class="spinIn"
-          v-if="showSwitcher"
+          v-if="showLaunchers"
           width="20"
           height="20"
         />
       </button>
 
-      <InteriorItem :class="{ desktopLinks: hideProfile }" class="navBar">
-        <HStack v-if="hideProfile !== true" class="profile transparent">
-          <NavigationButton link="/" id="homeButtonContainer" text="Home">
-            <DynamicImage
-              class="avatar"
-              src="/images/avatar-26.webp"
-              alt="ash's Avatar (Go Home)"
-              id="avatarButton"
-            />
-
-            <Icon
-              icon="solar:home-angle-bold-duotone"
-              aria-label="Go Home"
-              id="homeButton"
-              style="scale: 1.25"
-              width="24"
-              height="24"
-            />
-          </NavigationButton>
-
-          <HStack style="margin-right: 0.75rem">
-            <h1 class="name">ash</h1>
-
-            <HStack
-              id="siteSwitcherButton"
-              class="light tight"
-              :class="{ active: showSiteSwitcher }"
-              @click="toggleSiteSwitcher"
+      <InteriorItem
+        ref="navRef"
+        class="navBar"
+        :class="{ desktopLinks: !showingNavProfile }"
+      >
+        <HStack class="navBarInner">
+          <HStack v-if="showingNavProfile" class="profile transparent">
+            <NavigationButton
+              link="/home"
+              id="homeButtonContainer"
+              text="pages.home"
             >
-              <h1>Port</h1>
-              <Icon icon="fa6-solid:chevron-down" width="24" height="24" />
+              <DynamicImage
+                class="avatar"
+                src="/images/avatar-26.webp"
+                alt="ash's Avatar (Go Home)"
+                id="avatarButton"
+              />
+
+              <Icon
+                icon="solar:home-angle-bold-duotone"
+                aria-label="Go Home"
+                id="homeButton"
+                style="scale: 1.25"
+                width="24"
+                height="24"
+              />
+            </NavigationButton>
+
+            <HStack style="margin-right: 0.75rem">
+              <h1 class="name">ash</h1>
+
+              <HStack
+                id="siteSwitcherButton"
+                class="light tight"
+                :class="{ active: showSiteSwitcher }"
+                @click="toggleSiteSwitcher"
+              >
+                <h1>Port</h1>
+                <Icon icon="fa6-solid:chevron-down" width="24" height="24" />
+              </HStack>
             </HStack>
           </HStack>
         </HStack>
 
         <NavigationLinks class="desktopLinks" />
       </InteriorItem>
+
+      <SafeLink to="/home" v-if="!showingNavProfile">
+        <InteriorItem class="minimalProfile"> ash </InteriorItem>
+      </SafeLink>
 
       <button
         id="mobileButton"
@@ -169,6 +220,7 @@
     position: sticky
     flex-wrap: wrap
     bottom: 1rem
+    width: 100%
     max-width: calc(100vw - 2rem)
     z-index: 18
     align-items: center
@@ -178,15 +230,16 @@
       z-index: 19
       transition: 0.3s ease
 
-      &:hover
-        scale: 1.1
-        transform: translateY(-15%)
-        gap: 1rem
+      .minimalProfile
+        display: none
 
   .navBar
-    --interior-radius: 2rem !important
+    --interiorRadius: 2rem !important
     flex-direction: row
     z-index: 20
+
+    *
+      flex-wrap: nowrap !important
 
   .profile h1
     margin: 0
@@ -244,24 +297,6 @@
     100%
       transform: none
 
-  @media (max-width: 35rem)
-    .navBar
-      --interior-radius: 1.75rem !important
-
-    #mobileButton
-      --buttonRadius: 2rem
-      display: flex
-
-    .desktopLinks
-      display: none
-
-    .name
-      display: none
-
-  @media (min-width: 35rem)
-    #mobileNav
-      display: none !important
-
   #siteSwitcherButton
     cursor: pointer
 
@@ -290,4 +325,27 @@
     svg
       width: 1.25rem
       height: 1.25rem
+
+  @media (max-width: 35rem)
+    .navBarRow
+      width: 100%
+      justify-content: space-between
+
+      .minimalProfile
+        display: block !important
+        padding: 0.5rem 1rem
+
+    .navBar
+      --interiorRadius: 1.75rem !important
+
+    #mobileButton
+      --buttonRadius: 2rem
+      display: flex
+
+    .desktopLinks, .name
+      display: none
+
+  @media (min-width: 35rem)
+    #mobileNav
+      display: none !important
 </style>

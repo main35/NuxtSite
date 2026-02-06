@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "home": "Home",
+    "links": "Links",
+    "apps": "Apps",
+    "goodies": "Goodies",
+    "languages": "Languages",
+    "creators": "Creators",
+    "toolbox": "Toolbox"
+  },
+  "meta": {
+    "groups": {
+      "ash": "Ash"
+    },
+    "subtitles": {
+      "global": "ash (a35hie) - Portfolio",
+      "links": "My socials, contacts, and more :)",
+      "apps": "My web/Apple apps.",
+      "goodies": "Other downloadable content.",
+      "creators": "My tools and creators.",
+      "toolbox": "a35hie's Toolbox app."
+    }
+  }
+}

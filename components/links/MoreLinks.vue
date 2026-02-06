@@ -1,45 +1,35 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import Card from '@/components/layout/Card.vue'
-  import HStack from '@/components/layout/HStack.vue'
-  import CardTitle from '@/components/utils/CardTitle.vue'
+
+  import Card from '+/layout/Card.vue'
+  import HStack from '+/layout/HStack.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
+  import SafeLink from '+/utils/SafeLink.vue'
+  import { MoreLinks } from '$/SocialLinks'
+  const { t } = useI18n()
 </script>
 
 <template>
   <Card class="spaced">
-    <CardTitle title="More Links" icon="solar:menu-dots-line-duotone" />
+    <CardTitle title="links.more" icon="solar:menu-dots-line-duotone" />
 
     <HStack>
-      <a href="https://app.warp.dev/referral/KVWRZZ">
+      <a v-for="link in MoreLinks" :href="link.url" target="_blank">
         <button>
-          <Icon icon="mingcute:terminal-fill" />
-          Warp
-        </button>
-      </a>
-
-      <a href="https://stats.foldingathome.org/donor/id/732018511">
-        <button>
-          <Icon icon="material-symbols:network-node" />
-          FaH
-        </button>
-      </a>
-
-      <a href="https://www.last.fm/user/asboy_lfm">
-        <button>
-          <Icon icon="solar:music-note-outline" />
-          Last.fm
+          <Icon :icon="link.icon" />
+          {{ link.name }}
         </button>
       </a>
     </HStack>
 
-    <h3>Playlists</h3>
+    <h3>{{ t('links.playlists') }}</h3>
     <HStack>
-      <RouterLink to="/playlists/topsongs">
+      <SafeLink to="/playlists/topsongs">
         <button>
           <Icon icon="solar:music-note-outline" />
           Top Songs
         </button>
-      </RouterLink>
+      </SafeLink>
     </HStack>
   </Card>
 </template>
