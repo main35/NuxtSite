@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update links page, update navbar design, simplify code, improve mobile behaviors, update icons">
-      <change afterPath="$PROJECT_DIR$/package.config.ts" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update to package.config.ts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +24,7 @@
     </persistenceIdMap>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="171" />
+    <option name="cachedIndexableFilesCount" value="172" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -691,15 +691,10 @@
       <workItem from="1770394472525" duration="1485000" />
       <workItem from="1770406078381" duration="3252000" />
       <workItem from="1770409705903" duration="1814000" />
-      <workItem from="1770568546116" duration="1824000" />
-    </task>
-    <task id="LOCAL-00054" summary="update navigation, update card design">
-      <option name="closed" value="true" />
-      <created>1766075375820</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1766075375821</updated>
+      <workItem from="1770568546116" duration="1885000" />
+      <workItem from="1770570787477" duration="71000" />
+      <workItem from="1770577973949" duration="16000" />
+      <workItem from="1770635227920" duration="1722000" />
     </task>
     <task id="LOCAL-00055" summary="update apps page">
       <option name="closed" value="true" />
@@ -1085,7 +1080,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770411524066</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="update to package.config.ts">
+      <option name="closed" value="true" />
+      <created>1770570429389</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1770570429390</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1106,7 +1109,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add korean, fix text wrapping" />
     <MESSAGE value="add prompt" />
     <MESSAGE value="update prompt" />
     <MESSAGE value="improve lang picker handling with URL overrides" />
@@ -1131,7 +1133,8 @@
     <MESSAGE value="screw ads" />
     <MESSAGE value="update to new domain, improve UI toggle" />
     <MESSAGE value="update links page, update navbar design, simplify code, improve mobile behaviors, update icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="update links page, update navbar design, simplify code, improve mobile behaviors, update icons" />
+    <MESSAGE value="update to package.config.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to package.config.ts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

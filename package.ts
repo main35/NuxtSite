@@ -1,6 +1,6 @@
-import { definePackageConfig } from '@a35hie/ts-pkg'
+import { definePackage } from '@a35hie/ts-pkg'
 
-export default definePackageConfig({
+export default definePackage({
   name: '@a35hie/nuxt-site',
   description: 'My personal website.',
   version: '6.1.1',
@@ -39,16 +39,16 @@ export default definePackageConfig({
   },
 
   dependencies: {
-    '@a35hie/ts-pkg': '^0.1.3',
+    '@a35hie/ts-pkg': '^0.3.0',
     '@iconify/vue': '^5.0.0',
     '@nuxtjs/i18n': '^10.2.1',
-    cobe: '^0.6.5',
+    'cobe': '^0.6.5',
     'floating-vue': '^5.2.2',
-    html2canvas: '^1.4.1',
-    marked: '^15.0.12',
+    'html2canvas': '^1.4.1',
+    'marked': '^15.0.12',
     'postcss-load-config': '^6.0.1',
     'posthog-js': '^1.298.1',
-    vue: '^3.5.26',
+    'vue': '^3.5.26',
     'vue-progressive-blur': '^1.0.2',
     'vue-router': '^4.5.1',
   },
@@ -57,14 +57,14 @@ export default definePackageConfig({
     '@types/node': '^24.10.0',
     '@typescript-eslint/parser': '^8.54.0',
     '@vite-pwa/nuxt': '^1.1.0',
-    eslint: '^9.39.2',
+    'eslint': '^9.39.2',
     'eslint-plugin-import': '^2.32.0',
     'eslint-plugin-simple-import-sort': '^12.1.1',
-    nuxt: '^4.3.0',
+    'nuxt': '^4.3.0',
     'postcss-import': '^16.1.1',
-    prettier: '^3.7.4',
+    'prettier': '^3.7.4',
     'replace-in-files-cli': '^4.0.0',
-    sass: '^1.89.0',
+    'sass': '^1.89.0',
     'vue-eslint-parser': '^10.2.0',
   },
 })
