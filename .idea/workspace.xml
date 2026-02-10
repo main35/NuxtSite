@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update to package.config.ts">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -694,15 +698,11 @@
       <workItem from="1770568546116" duration="1885000" />
       <workItem from="1770570787477" duration="71000" />
       <workItem from="1770577973949" duration="16000" />
-      <workItem from="1770635227920" duration="1722000" />
-    </task>
-    <task id="LOCAL-00055" summary="update apps page">
-      <option name="closed" value="true" />
-      <created>1766076286056</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1766076286060</updated>
+      <workItem from="1770635227920" duration="1860000" />
+      <workItem from="1770639820791" duration="26000" />
+      <workItem from="1770641108906" duration="460000" />
+      <workItem from="1770658516593" duration="3329000" />
+      <workItem from="1770716743931" duration="2742000" />
     </task>
     <task id="LOCAL-00056" summary="remove caching rules">
       <option name="closed" value="true" />
@@ -1088,7 +1088,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770570429390</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="update to package.config.ts">
+      <option name="closed" value="true" />
+      <created>1770639172578</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1770639172578</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1109,7 +1117,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add prompt" />
     <MESSAGE value="update prompt" />
     <MESSAGE value="improve lang picker handling with URL overrides" />
     <MESSAGE value="clean up imports with new aliases" />
@@ -1134,7 +1141,8 @@
     <MESSAGE value="update to new domain, improve UI toggle" />
     <MESSAGE value="update links page, update navbar design, simplify code, improve mobile behaviors, update icons" />
     <MESSAGE value="update to package.config.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to package.config.ts" />
+    <MESSAGE value="update to new ts-pkg version" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to new ts-pkg version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
