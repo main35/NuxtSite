@@ -56,5 +56,29 @@
     "errorNotice": "Translations may include errors.",
     "foundError": "Found an error?",
     "reportError": "Report it."
+  },
+  "starhop": {
+    "title": "Starhop",
+    "description": "A dreamy infinite platformer: hop between glowing platforms, snag starlight tokens, and dodge the tiny red critters.",
+    "controls": "Controls: Tap/click or press Space to jump.",
+    "metaDesc": "A tiny pastel platformer hidden as an easter egg.",
+    "hud": "Hop across glowing platforms, grab tokens, and dodge the red critters.",
+    "statusReady": "Tap or press Space to hop",
+    "statusRetry": "Oops! Tap or press Space to retry",
+    "easyMode": "Easy mode (no enemies)",
+    "gameOver": "Game Over",
+    "score": "Score",
+    "tokens": "Tokens",
+    "best": "Best",
+    "aria": "Starhop mini game"
+  },
+  "error": {
+    "label": "Error",
+    "title404": "Lost in the stars",
+    "titleDefault": "Something went wrong",
+    "message404": "We couldn't find that page, but we did find a tiny hidden game.",
+    "messageDefault": "Try again or head back home.",
+    "goHome": "Go Home",
+    "openFullGame": "Open Full Game"
   }
 }

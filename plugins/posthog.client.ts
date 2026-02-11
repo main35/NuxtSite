@@ -11,6 +11,7 @@ export default defineNuxtPlugin(() => {
       api_host: runtimeConfig.public.posthogHost as string,
       defaults: runtimeConfig.public.posthogDefaults as ConfigDefaults,
       person_profiles: 'always',
+      // @ts-ignore
       loaded: (posthog: PostHog): void => {
         if (import.meta.env.MODE === 'development') posthog.debug()
       },

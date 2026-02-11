@@ -56,5 +56,29 @@
     "errorNotice": "Les traductions peuvent contenir des erreurs.",
     "foundError": "Vous avez trouvé une erreur ?",
     "reportError": "Signalez-la."
+  },
+  "starhop": {
+    "title": "Starhop",
+    "description": "Un plateforme infini et rêveur : saute entre des plateformes lumineuses, attrape des jetons d’étoiles et évite les petits monstres rouges.",
+    "controls": "Commandes : touche/clic ou Espace pour sauter.",
+    "metaDesc": "Un petit jeu de plateforme pastel caché en easter egg.",
+    "hud": "Saute sur les plateformes lumineuses, attrape des jetons et évite les petits monstres rouges.",
+    "statusReady": "Touche/clic ou Espace pour sauter",
+    "statusRetry": "Oups ! Touche/clic ou Espace pour réessayer",
+    "easyMode": "Mode facile (sans ennemis)",
+    "gameOver": "Partie terminée",
+    "score": "Score",
+    "tokens": "Jetons",
+    "best": "Record",
+    "aria": "Mini-jeu Starhop"
+  },
+  "error": {
+    "label": "Erreur",
+    "title404": "Perdu·e dans les étoiles",
+    "titleDefault": "Un problème est survenu",
+    "message404": "Cette page est introuvable, mais on a trouvé un petit jeu caché.",
+    "messageDefault": "Réessaie ou retourne à l’accueil.",
+    "goHome": "Accueil",
+    "openFullGame": "Ouvrir le jeu complet"
   }
 }

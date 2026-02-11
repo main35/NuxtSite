@@ -56,5 +56,29 @@
     "errorNotice": "번역에 오류가 있을 수 있습니다.",
     "foundError": "오류를 발견하셨나요?",
     "reportError": "신고하기."
+  },
+  "starhop": {
+    "title": "Starhop",
+    "description": "몽환적인 무한 플랫포머: 빛나는 발판을 건너고, 별빛 토큰을 모으며, 작은 빨간 적을 피하세요.",
+    "controls": "조작: 탭/클릭 또는 스페이스바로 점프.",
+    "metaDesc": "이스터 에그로 숨겨진 작은 파스텔 플랫폼 게임.",
+    "hud": "빛나는 발판을 건너 토큰을 모으고 작은 빨간 적을 피하세요.",
+    "statusReady": "탭하거나 스페이스바로 점프",
+    "statusRetry": "앗! 탭하거나 스페이스바로 다시 시도",
+    "easyMode": "쉬운 모드 (적 없음)",
+    "gameOver": "게임 오버",
+    "score": "점수",
+    "tokens": "토큰",
+    "best": "최고",
+    "aria": "Starhop 미니 게임"
+  },
+  "error": {
+    "label": "오류",
+    "title404": "별 사이에서 길을 잃었어요",
+    "titleDefault": "문제가 발생했어요",
+    "message404": "페이지를 찾지 못했지만, 숨겨진 작은 게임을 발견했어요.",
+    "messageDefault": "다시 시도하거나 홈으로 돌아가세요.",
+    "goHome": "홈으로",
+    "openFullGame": "전체 게임 열기"
   }
 }

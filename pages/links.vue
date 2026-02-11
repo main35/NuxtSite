@@ -6,6 +6,7 @@
   import BottomFooter from '+/premade/BottomFooter.vue'
   import Description from '+/premade/Description.vue'
   import Hero from '+/utils/Hero.vue'
+
   const { t } = useI18n()
 
   setHeadMeta({
