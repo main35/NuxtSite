@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "home": "Koti",
+    "links": "Linkit",
+    "apps": "Sovellukset",
+    "goodies": "Herkkuja",
+    "languages": "Kielet",
+    "creators": "Tekijät",
+    "toolbox": "Toolbox"
+  },
+  "meta": {
+    "groups": {
+      "ash": "Ash"
+    },
+    "subtitles": {
+      "global": "Ash (a35hie) - Portfolio",
+      "links": "Minun sosiaalinen media, yhteystiedot ja paljon muuta :)",
+      "apps": "Minun web-/Apple-sovellukset.",
+      "goodies": "Muu ladattava sisältö.",
+      "creators": "Minun työkalut ja tekijät.",
+      "toolbox": "a35hien Toolbox-sovellus."
+    }
+  }
+}

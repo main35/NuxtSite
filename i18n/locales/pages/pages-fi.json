@@ -1,0 +1,84 @@
+{
+  "home": {
+    "intro": "Terve, olen ash~",
+    "desc1": "Olen teini-ikäinen Ranskasta ja virallisesti ystävällisin ihminen jonka tapauksesi.",
+    "desc2": "Parhaillaan opiskelen kehittämistä Web- ja Apple-alustoilla. Harjoittelen myös käyttöliittymä- ja grafiikkasuunnittelua.",
+    "location": "Bordeaux, Ranska",
+    "languages": {
+      "title": "Kielet",
+      "desc": "Puhun englantia ja ranskaa äidinkielenään, olen sujuva espanjassa ja kiinassa, ja opiskelen venäjää",
+      "programming": "Ohjelmointikielet",
+      "using": "Käytä",
+      "learning": "Oppii"
+    }
+  },
+  "links": {
+    "socialTitle": "Minun sosiaalinen media",
+    "socialDesc": "Sosiaaliset median ja yhteystapani :3",
+    "more": "Lisää linkkejä",
+    "playlists": "Soittolistat",
+    "check": "Tarkista minun"
+  },
+  "apps": {
+    "allApps": "Kaikki sovellukset",
+    "pwaInstall": "PWA-asennus"
+  },
+  "goodies": {
+    "cursors": {
+      "title": "Kursorit",
+      "desc": "macOS-kursorit.",
+      "download": "Lataa"
+    },
+    "wallpapers": {
+      "title": "Taustakuvat",
+      "desc": "Taustakuvat mihin tahansa laitteeseen.",
+      "comingSoon": "Tulossa pian."
+    }
+  },
+  "playlists": {
+    "by": "Tekijä:",
+    "streamTitle": "Suoratoisto",
+    "streamDesc": "Missä välitän soittolistojani:"
+  },
+  "creators": {
+    "choose": "Valitse työkalu...",
+    "tools": "Työkalut"
+  },
+  "toolbox": {
+    "desc1": "Toolbox on kaiken mitä-haluat-kaiken myymälä kaikille minun resursseille ja sovelluksille.",
+    "desc2": "Täällä voit löytää sovelluksia, työkaluja ja paljon muuta, kaikki yhdessä sovelluksessa, jonka voit lisätä suoraan kotiruutuusi.",
+    "quickLinks": "Pika-linkit",
+    "about": "Tietoja"
+  },
+  "languages": {
+    "choose": "Valitse...",
+    "betaNotice": "Tämä ominaisuus on beta-versiossa.",
+    "errorNotice": "Käännökset voivat sisältää virheitä.",
+    "foundError": "Löysitkö virheen?",
+    "reportError": "Ilmoita se."
+  },
+  "starhop": {
+    "title": "Starhop",
+    "description": "Unelmallinen loputon alusta: hyppää loistavien alustojen välillä, napaa tähtivalohjaustokenit ja väistele pieniä punaisia olentoja.",
+    "controls": "Ohjaimet: Napauta/napsauta tai paina välilyöntiä hypätäksesi.",
+    "metaDesc": "Pieni pastelli-alusta piilotettu pääsiäismuna.",
+    "hud": "Hyppää loistavien alustojen välillä, napaa tokenit ja väistele punaisia olentoja.",
+    "statusReady": "Napauta tai paina välilyöntiä hypätäksesi",
+    "statusRetry": "Oops! Napauta tai paina välilyöntiä yrittääksesi uudelleen",
+    "easyMode": "Helppo tila (ei vihollisia)",
+    "gameOver": "Peli Ohi",
+    "score": "Pisteet",
+    "tokens": "Rahakkeet",
+    "best": "Paras",
+    "aria": "Starhop minipeli"
+  },
+  "error": {
+    "label": "Virhe",
+    "title404": "Eksynyt tähtiin",
+    "titleDefault": "Jotain meni pieleen",
+    "message404": "Emme löytäneet sitä sivua, mutta löysimme pienen piilotetun pelin.",
+    "messageDefault": "Yritä uudelleen tai mene takaisin kotiin.",
+    "goHome": "Mene kotiin",
+    "openFullGame": "Avaa täysi peli"
+  }
+}

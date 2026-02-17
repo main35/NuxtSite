@@ -8,6 +8,7 @@
   import LinkTickerClient from '+/links/LinkTicker.client.vue'
   import SitePicker from '+/premade/navbar/SitePicker.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
+  import Spacer from "+/utils/Spacer.vue";
   const { t } = useI18n()
 
   const currentTime: Ref<string> = ref('')
@@ -40,9 +41,13 @@
           radius="2rem"
           class="bigAvatar"
         />
-        <h1>ash</h1>
-        <h2 class="light" style="margin-top: 0">@a35hie</h2>
 
+        <VStack class="name noSpace">
+          <h1 class="noMargins">ash</h1>
+          <h2 class="light noMargins">@a35hie</h2>
+        </VStack>
+
+        <Spacer />
         <LinkTickerClient />
       </VStack>
     </Card>

@@ -134,6 +134,26 @@ export default defineNuxtConfig({
           'pages/pages-ru.json',
         ],
       },
+      {
+        code: 'pt',
+        name: 'Português',
+        language: 'pt-PT',
+        files: [
+          'global/global-pt.json',
+          'meta/meta-pt.json',
+          'pages/pages-pt.json',
+        ],
+      },
+      {
+        code: 'fi',
+        name: 'Suomi',
+        language: 'fi-FI',
+        files: [
+          'global/global-fi.json',
+          'meta/meta-fi.json',
+          'pages/pages-fi.json',
+        ],
+      },
     ],
     langDir: 'locales/',
   },

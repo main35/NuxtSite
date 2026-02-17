@@ -1,0 +1,84 @@
+{
+  "home": {
+    "intro": "Oi, sou ash~",
+    "desc1": "Sou um adolescente da França, e oficialmente a pessoa mais tranquila que você conhecerá.",
+    "desc2": "Estou aprendendo a desenvolver em plataformas Web e Apple. Também estou praticando design de UI e design gráfico.",
+    "location": "Bordeaux, França",
+    "languages": {
+      "title": "Idiomas",
+      "desc": "Falo inglês e francês nativamente, sou proficiente em espanhol e chinês, e estou aprendendo russo",
+      "programming": "Linguagens de Programação",
+      "using": "Usando",
+      "learning": "Aprendendo"
+    }
+  },
+  "links": {
+    "socialTitle": "Meus Sociais",
+    "socialDesc": "Minhas redes sociais e métodos de contato :3",
+    "more": "Mais Links",
+    "playlists": "Playlists",
+    "check": "Confira meu"
+  },
+  "apps": {
+    "allApps": "Todos os Apps",
+    "pwaInstall": "Instalação de PWA"
+  },
+  "goodies": {
+    "cursors": {
+      "title": "Cursores",
+      "desc": "Cursores do macOS.",
+      "download": "Download"
+    },
+    "wallpapers": {
+      "title": "Papéis de Parede",
+      "desc": "Papéis de parede para qualquer dispositivo.",
+      "comingSoon": "Em breve."
+    }
+  },
+  "playlists": {
+    "by": "Por:",
+    "streamTitle": "Stream",
+    "streamDesc": "Onde transmito minhas playlists:"
+  },
+  "creators": {
+    "choose": "Escolha uma ferramenta...",
+    "tools": "Ferramentas"
+  },
+  "toolbox": {
+    "desc1": "Toolbox é a loja tudo-em-um para todos os recursos e aplicativos meus.",
+    "desc2": "Aqui, você pode encontrar aplicativos, ferramentas e muito mais, tudo em um aplicativo que você pode adicionar diretamente à sua tela inicial.",
+    "quickLinks": "Links Rápidos",
+    "about": "Sobre"
+  },
+  "languages": {
+    "choose": "Escolha...",
+    "betaNotice": "Este recurso está em beta.",
+    "errorNotice": "As traduções podem incluir erros.",
+    "foundError": "Encontrou um erro?",
+    "reportError": "Reporte-o."
+  },
+  "starhop": {
+    "title": "Starhop",
+    "description": "Um plataformador infinito de sonho: pule entre plataformas brilhantes, pegue tokens de luz estelar e desvie das pequenas criaturas vermelhas.",
+    "controls": "Controles: Toque/clique ou pressione Espaço para pular.",
+    "metaDesc": "Um pequeno plataformador pastel escondido como um ovo de páscoa.",
+    "hud": "Pule entre plataformas brilhantes, pegue tokens e desvie das criaturas vermelhas.",
+    "statusReady": "Toque ou pressione Espaço para pular",
+    "statusRetry": "Ops! Toque ou pressione Espaço para tentar novamente",
+    "easyMode": "Modo fácil (sem inimigos)",
+    "gameOver": "Fim de Jogo",
+    "score": "Pontuação",
+    "tokens": "Tokens",
+    "best": "Melhor",
+    "aria": "Minigame Starhop"
+  },
+  "error": {
+    "label": "Erro",
+    "title404": "Perdido nas estrelas",
+    "titleDefault": "Algo deu errado",
+    "message404": "Não conseguimos encontrar essa página, mas encontramos um pequeno jogo escondido.",
+    "messageDefault": "Tente novamente ou volte para casa.",
+    "goHome": "Ir para Casa",
+    "openFullGame": "Abrir Jogo Completo"
+  }
+}

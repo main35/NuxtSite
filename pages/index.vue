@@ -13,6 +13,7 @@
 
   const { t } = useI18n()
   const router = useRouter()
+  const localePath = useLocalePath()
 
   setHeadMeta({
     page: 'pages.home',
@@ -25,7 +26,7 @@
     showingNavProfile.value = false
 
     if (getFlag('seenIntroPage')) {
-      router.push('/home')
+      router.push(localePath('/home'))
     } else {
       setFlag('seenIntroPage', true)
     }
