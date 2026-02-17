@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "home": "🏠",
+    "links": "🔗",
+    "apps": "📱",
+    "goodies": "🎁",
+    "languages": "🗣️",
+    "creators": "👥",
+    "toolbox": "🧰"
+  },
+  "meta": {
+    "groups": {
+      "ash": "🎨"
+    },
+    "subtitles": {
+      "global": "🎨 (a35hie) - 📚",
+      "links": "📱🌐📬 ✨",
+      "apps": "📱🌐🍎",
+      "goodies": "📦⬇️",
+      "creators": "🛠️👥",
+      "toolbox": "🧰📱"
+    }
+  }
+}

@@ -12,7 +12,7 @@ export default definePackage({
     email: 'ash@a35.dev',
     url: 'https://a35.dev/',
   },
-  version: '6.1.3',
+  version: '6.2.2',
   license: 'Apache-2.0',
   private: false,
   type: 'module',

@@ -1,0 +1,87 @@
+{
+  "home": {
+    "intro": "👋✨",
+    "desc1": "👧🇫🇷 ➡️ 😎👑",
+    "desc2": "🎓💻 🌐🍎 | 🎨📐✨",
+    "location": "🗺️ 🇫🇷",
+    "languages": {
+      "title": "🗣️",
+      "desc": "💬 🇬🇧🇫🇷 ✅ | 👍 🇪🇸🇨🇳 | 📚 🇷🇺",
+      "programming": "💻",
+      "using": "⚙️",
+      "learning": "📚",
+      "find": "🔍🗣️...",
+      "selected": "✅:",
+      "confirm": "✔️"
+    }
+  },
+  "links": {
+    "socialTitle": "📱🌐",
+    "socialDesc": "📱📬 :3",
+    "more": "➕🔗",
+    "playlists": "🎵",
+    "check": "👁️"
+  },
+  "apps": {
+    "allApps": "📱✨",
+    "pwaInstall": "📲"
+  },
+  "goodies": {
+    "cursors": {
+      "title": "🖱️",
+      "desc": "🖱️ 🍎",
+      "download": "⬇️"
+    },
+    "wallpapers": {
+      "title": "🖼️",
+      "desc": "🖼️ 📱📱📱",
+      "comingSoon": "⏰"
+    }
+  },
+  "playlists": {
+    "by": "👤:",
+    "streamTitle": "▶️",
+    "streamDesc": "📡:"
+  },
+  "creators": {
+    "choose": "🛠️...",
+    "tools": "🛠️⚙️"
+  },
+  "toolbox": {
+    "desc1": "🧰 = 📦🎁 + 📱",
+    "desc2": "📱⬇️ ➡️ 🏠📺",
+    "quickLinks": "⚡🔗",
+    "about": "ℹ️👤"
+  },
+  "languages": {
+    "choose": "...",
+    "betaNotice": "🧪⏰",
+    "errorNotice": "❌🔄",
+    "foundError": "❌?",
+    "reportError": "📝"
+  },
+  "starhop": {
+    "title": "⭐🦘",
+    "description": "💫🎮: 🦘 ✨ 📍 | 🎁💫 | 🏃❌🔴👾",
+    "controls": "🎮: 👆/🖱️ SPACE = 🦘",
+    "metaDesc": "🎨🎮 = 🥚",
+    "hud": "🦘 ✨ | 💫🎁 | ❌🔴",
+    "statusReady": "🦘 GO",
+    "statusRetry": "🔄 TRY",
+    "easyMode": "😊 (❌👹)",
+    "gameOver": "❌💔",
+    "score": "💯",
+    "tokens": "💎",
+    "best": "🏆",
+    "aria": "⭐🦘"
+  },
+  "error": {
+    "label": "❌",
+    "title404": "❌📄 ⭐",
+    "titleDefault": "⚠️",
+    "message404": "❌📄 ✅🎮",
+    "messageDefault": "🔄 📍 🏠",
+    "goHome": "🏠",
+    "openFullGame": "🎮🎮"
+  }
+}

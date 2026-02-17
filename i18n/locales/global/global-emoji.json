@@ -1,0 +1,53 @@
+{
+  "intro": {
+    "hi": "👋",
+    "desc": "🎨💻 -> 🇫🇷",
+    "knowMe": "👁️💡",
+    "github": "🐙",
+    "email": "📧",
+    "about": "ℹ️"
+  },
+  "sites": {
+    "title": "🌐",
+    "pages": "📄",
+    "fonts": "🔤",
+    "big": "Byg",
+    "guides": "📚",
+    "portfolio": "🎨"
+  },
+  "app": {
+    "hideInterface": "👻",
+    "showInterface": "👁️",
+    "getWalls": "🖼️",
+    "comingSoon": "⏰",
+    "myTime": "⏰",
+    "connecting": "🔗...",
+    "oldDomain": {
+      "title": "🌐🆙❌",
+      "desc": "a35hie.me ✨",
+      "never": "❌",
+      "later": "⏰",
+      "go": "🚀"
+    },
+    "more": "➕"
+  },
+  "sharing": {
+    "title": "📤",
+    "showQr": "QR 👁️",
+    "hideQr": "QR 👻"
+  },
+  "navbar": {
+    "launchers": {
+      "apps": "📱",
+      "creators": "🎨"
+    }
+  },
+  "footer": {
+    "thanks": "👏📖",
+    "createdBy": "👤 ash + NuxtJS 2026 ❤️",
+    "codeOnGh": "💻 🐙",
+    "version": "📌:",
+    "release": "🎉:",
+    "readMore": "📖:"
+  }
+}
