@@ -106,7 +106,12 @@
   const sleep = (time: number) =>
     new Promise((resolve) => setTimeout(resolve, time))
 
-  async function cycleBackgrounds(): Promise<never> {
+  async function cycleBackgrounds(): Promise<never | void> {
+    if (window.location.href.includes('uwu')) {
+      currentBackground.value = 'catgirl'
+      return
+    }
+
     while (true) {
       fadingIn.value = true
       fadingOut.value = false
@@ -216,11 +221,14 @@
   $blurTop: calc(100vh - $blurHeight)
   $blurTop: calc(100dvh - $blurHeight)
 
-  :root
+  html
     --backgroundOpacity: 1
 
     .dimmed
       --backgroundOpacity: 0.25
+
+    html[lang="ca-ES"]
+      --backgroundOpacity: 0.5
 
   $backgroundOpacity: var(--backgroundOpacity)
 

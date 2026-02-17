@@ -1,5 +1,9 @@
 import { definePackage } from '@a35hie/ts-pkg'
 
+function fixPathScript(search: string, replace: string): string {
+  return `replace-in-files --string='${search}' --replacement='${replace}' './**/*.{js,ts,vue}' '!./package.*'`
+}
+
 export default definePackage({
   name: '@a35hie/nuxt-site',
   description: 'My personal website.',
@@ -28,11 +32,12 @@ export default definePackage({
     // code style
     prettier:
       'prettier --write --experimental-cli --ignore-path .prettierignore .',
-    fixPaths:
-      "replace-in-files --string='$/' --replacement='$/' './**/*.{js,ts,vue}' && " +
-      "replace-in-files --string=':/' --replacement=':/' './**/*.{js,ts,vue}' && " +
-      "replace-in-files --string='+/' --replacement='+/' './**/*.{js,ts,vue}' && " +
-      "replace-in-files --string='&/' --replacement='&/' './**/*.{js,ts,vue}'",
+    fixPaths: [
+      fixPathScript('@/data/', '$/'),
+      fixPathScript('@/types/', ':/'),
+      fixPathScript('@/components/', '+/'),
+      fixPathScript('@/utils/', '&/'),
+    ].join(' && '),
     lint: 'eslint . --fix',
     format: 'bun run prettier && bun run fixPaths && bun run lint',
     fastFormat: 'bun run prettier && bun run lint',

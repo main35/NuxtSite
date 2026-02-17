@@ -58,6 +58,14 @@ export default defineNuxtConfig({
         code: 'en',
         name: 'English',
         language: 'en-US',
+        geo: {
+          center: [ 39.8283, -98.5795 ],
+          regions: [
+            [ 37.0902, -95.7129 ], // United States
+            [ 55.3781, -3.436 ], // United Kingdom
+            [ -25.2744, 133.7751 ], // Australia
+          ],
+        },
         files: [
           'global/global-en.json',
           'meta/meta-en.json',
@@ -68,6 +76,14 @@ export default defineNuxtConfig({
         code: 'fr',
         name: 'Français',
         language: 'fr-FR',
+        geo: {
+          center: [ 46.2276, 2.2137 ],
+          regions: [
+            [ 46.2276, 2.2137 ], // France
+            [ 50.5039, 4.4699 ], // Belgium
+            [ 46.8182, 8.2275 ], // Switzerland
+          ],
+        },
         files: [
           'global/global-fr.json',
           'meta/meta-fr.json',
@@ -78,6 +94,14 @@ export default defineNuxtConfig({
         code: 'es',
         name: 'Español',
         language: 'es-ES',
+        geo: {
+          center: [ 40.4637, -3.7492 ],
+          regions: [
+            [ 40.4637, -3.7492 ], // Spain
+            [ 23.6345, -102.5528 ], // Mexico
+            [ -34.6037, -58.3816 ], // Argentina
+          ],
+        },
         files: [
           'global/global-es.json',
           'meta/meta-es.json',
@@ -88,6 +112,14 @@ export default defineNuxtConfig({
         code: 'jp',
         name: '日本語',
         language: 'jp-JP',
+        geo: {
+          center: [ 36.2048, 138.2529 ],
+          regions: [
+            [ 35.6762, 139.6503 ], // Tokyo
+            [ 34.6937, 135.5023 ], // Osaka
+            [ 43.0618, 141.3545 ], // Sapporo
+          ],
+        },
         files: [
           'global/global-jp.json',
           'meta/meta-jp.json',
@@ -98,6 +130,14 @@ export default defineNuxtConfig({
         code: 'cn',
         name: '中文',
         language: 'zh-CN',
+        geo: {
+          center: [ 35.8617, 104.1954 ],
+          regions: [
+            [ 39.9042, 116.4074 ], // Beijing
+            [ 31.2304, 121.4737 ], // Shanghai
+            [ 23.1291, 113.2644 ], // Guangzhou
+          ],
+        },
         files: [
           'global/global-cn.json',
           'meta/meta-cn.json',
@@ -108,6 +148,14 @@ export default defineNuxtConfig({
         code: 'kr',
         name: '한국어',
         language: 'ko-KR',
+        geo: {
+          center: [ 36.5, 127.8 ],
+          regions: [
+            [ 37.5665, 126.978 ], // Seoul
+            [ 35.1796, 129.0756 ], // Busan
+            [ 35.8714, 128.6014 ], // Daegu
+          ],
+        },
         files: [
           'global/global-kr.json',
           'meta/meta-kr.json',
@@ -118,6 +166,14 @@ export default defineNuxtConfig({
         code: 'de',
         name: 'Deutsch',
         language: 'de-DE',
+        geo: {
+          center: [ 51.1657, 10.4515 ],
+          regions: [
+            [ 52.52, 13.405 ], // Berlin
+            [ 48.1351, 11.582 ], // Munich
+            [ 50.1109, 8.6821 ], // Frankfurt
+          ],
+        },
         files: [
           'global/global-de.json',
           'meta/meta-de.json',
@@ -128,6 +184,14 @@ export default defineNuxtConfig({
         code: 'ru',
         name: 'Русский',
         language: 'ru-RU',
+        geo: {
+          center: [ 61.524, 105.3188 ],
+          regions: [
+            [ 55.7558, 37.6173 ], // Moscow
+            [ 59.9343, 30.3351 ], // Saint Petersburg
+            [ 56.8389, 60.6057 ], // Yekaterinburg
+          ],
+        },
         files: [
           'global/global-ru.json',
           'meta/meta-ru.json',
@@ -138,6 +202,14 @@ export default defineNuxtConfig({
         code: 'pt',
         name: 'Português',
         language: 'pt-PT',
+        geo: {
+          center: [ 39.3999, -8.2245 ],
+          regions: [
+            [ 38.7223, -9.1393 ], // Lisbon
+            [ -23.5505, -46.6333 ], // Sao Paulo
+            [ -22.9068, -43.1729 ], // Rio de Janeiro
+          ],
+        },
         files: [
           'global/global-pt.json',
           'meta/meta-pt.json',
@@ -148,10 +220,82 @@ export default defineNuxtConfig({
         code: 'fi',
         name: 'Suomi',
         language: 'fi-FI',
+        geo: {
+          center: [ 61.9241, 25.7482 ],
+          regions: [
+            [ 60.1699, 24.9384 ], // Helsinki
+            [ 61.4978, 23.761 ], // Tampere
+            [ 65.0121, 25.4651 ], // Oulu
+          ],
+        },
         files: [
           'global/global-fi.json',
           'meta/meta-fi.json',
           'pages/pages-fi.json',
+        ],
+      },
+      {
+        code: 'nl',
+        name: 'Nederlands',
+        language: 'nl-NL',
+        geo: {
+          center: [ 52.1326, 5.2913 ],
+          regions: [
+            [ 52.3676, 4.9041 ], // Amsterdam
+            [ 51.9225, 4.47917 ], // Rotterdam
+            [ 52.5166, 5.1913 ], // Utrecht
+          ],
+        },
+        files: [
+          'global/global-nl.json',
+          'meta/meta-nl.json',
+          'pages/pages-nl.json',
+        ],
+      },
+      {
+        code: 'sv',
+        name: 'Svenska',
+        language: 'sv-SE',
+        geo: {
+          center: [ 60.1282, 18.6435 ],
+          regions: [
+            [ 59.3293, 18.0686 ], // Stockholm
+            [ 57.7089, 11.9746 ], // Gothenburg
+            [ 55.6052, 13.0001 ], // Malmö
+          ],
+        },
+        files: [
+          'global/global-sv.json',
+          'meta/meta-sv.json',
+          'pages/pages-sv.json',
+        ],
+      },
+      {
+        code: 'uwu',
+        name: 'Catspeak :3',
+        language: 'ca-ES',
+        files: [
+          'global/global-ca-uw.json',
+          'meta/meta-ca-uw.json',
+          'pages/pages-ca-uw.json',
+        ],
+      },
+      {
+        code: 'pl',
+        name: 'Polski',
+        language: 'pl-PL',
+        geo: {
+          center: [ 51.9194, 19.1451 ],
+          regions: [
+            [ 52.2297, 21.0122 ], // Warsaw
+            [ 51.1079, 17.0385 ], // Wrocław
+            [ 50.0647, 19.945 ], // Kraków
+          ],
+        },
+        files: [
+          'global/global-pl.json',
+          'meta/meta-pl.json',
+          'pages/pages-pl.json',
         ],
       },
     ],

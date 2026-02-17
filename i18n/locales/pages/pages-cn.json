@@ -9,7 +9,10 @@
       "desc": "我的母语是英语和法语，精通西班牙语和中文，正在学习俄语",
       "programming": "编程语言",
       "using": "正在使用",
-      "learning": "正在学习"
+      "learning": "正在学习",
+      "find": "搜索语言...",
+      "selected": "已选择:",
+      "confirm": "确认语言"
     }
   },
   "links": {

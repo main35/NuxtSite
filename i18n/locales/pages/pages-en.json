@@ -9,7 +9,10 @@
       "desc": "I speak English and French natively, I'm proficient in Spanish and Chinese, and am learning Russian",
       "programming": "Programming Languages",
       "using": "Using",
-      "learning": "Learning"
+      "learning": "Learning",
+      "find": "Find language...",
+      "selected": "Selected:",
+      "confirm": "Confirm language"
     }
   },
   "links": {

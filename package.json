@@ -19,7 +19,7 @@
     "build": "nuxt build",
     "ci": "bun install && bun run build",
     "prettier": "prettier --write --experimental-cli --ignore-path .prettierignore .",
-    "fixPaths": "replace-in-files --string='$/' --replacement='$/' './**/*.{js,ts,vue}' && replace-in-files --string=':/' --replacement=':/' './**/*.{js,ts,vue}' && replace-in-files --string='+/' --replacement='+/' './**/*.{js,ts,vue}' && replace-in-files --string='&/' --replacement='&/' './**/*.{js,ts,vue}'",
+    "fixPaths": "replace-in-files --string='@/data/' --replacement='$/' './**/*.{js,ts,vue}' '!./package.*' && replace-in-files --string='@/types/' --replacement=':/' './**/*.{js,ts,vue}' '!./package.*' && replace-in-files --string='@/components/' --replacement='+/' './**/*.{js,ts,vue}' '!./package.*' && replace-in-files --string='@/utils/' --replacement='&/' './**/*.{js,ts,vue}' '!./package.*'",
     "lint": "eslint . --fix",
     "format": "bun run prettier && bun run fixPaths && bun run lint",
     "fastFormat": "bun run prettier && bun run lint",

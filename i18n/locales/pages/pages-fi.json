@@ -9,7 +9,10 @@
       "desc": "Puhun englantia ja ranskaa äidinkielenään, olen sujuva espanjassa ja kiinassa, ja opiskelen venäjää",
       "programming": "Ohjelmointikielet",
       "using": "Käytä",
-      "learning": "Oppii"
+      "learning": "Oppii",
+      "find": "Hae kielta...",
+      "selected": "Valittu:",
+      "confirm": "Vahvista kieli"
     }
   },
   "links": {

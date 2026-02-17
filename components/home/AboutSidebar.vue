@@ -8,7 +8,7 @@
   import LinkTickerClient from '+/links/LinkTicker.client.vue'
   import SitePicker from '+/premade/navbar/SitePicker.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
-  import Spacer from "+/utils/Spacer.vue";
+  import Spacer from '+/utils/Spacer.vue'
   const { t } = useI18n()
 
   const currentTime: Ref<string> = ref('')

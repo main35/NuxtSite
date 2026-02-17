@@ -9,7 +9,10 @@
       "desc": "Ich spreche Englisch und Französisch als Muttersprache, beherrsche Spanisch und Chinesisch, und lerne Russisch",
       "programming": "Programmiersprachen",
       "using": "Nutze",
-      "learning": "Lerne"
+      "learning": "Lerne",
+      "find": "Sprache suchen...",
+      "selected": "Ausgewählt:",
+      "confirm": "Sprache bestätigen"
     }
   },
   "links": {

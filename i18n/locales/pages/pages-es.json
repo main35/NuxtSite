@@ -9,7 +9,10 @@
       "desc": "Hablo inglés y francés de forma nativa, domino el español y el chino, y estoy aprendiendo ruso",
       "programming": "Lenguajes de programación",
       "using": "Uso",
-      "learning": "Aprendiendo"
+      "learning": "Aprendiendo",
+      "find": "Buscar idioma...",
+      "selected": "Seleccionado:",
+      "confirm": "Confirmar idioma"
     }
   },
   "links": {
