@@ -2,8 +2,31 @@
 
 [My personal site](https://a35.dev).
 
+## Supported Languages
+- English
+- French
+- Spanish
+- Chinese
+- Russian
+- Japanese
+- Korean
+- Portuguese
+- Polish
+- Eesti
+- Swedish
+- Dutch
+- Finnish
+- Catspeak
+- Piratespeak
+- Hieroglyphs
+- Emojis
+
+### Translators
+*Some languages are automatically translated.*
+- ash: English/French
+
 ## Thanks
-Many thanks to all the projects, tools, and providers that make this site possible.
+Many thanks to all the people, projects, tools, and providers that make this site possible.
 
 ### PangramPangram
 Check out all their cool fonts [here](https://pangrampangram.com/).
@@ -53,9 +76,6 @@ If you'd like to use them commercially, buy a license.
 - **[GitHub](https://github.com) and [Cloudflare](https://cloudflare.com)**:
   Git/Web hosting!
 
-### Translators
-*Some languages are automatically translated.*
-- ash: English/French
 
 ### Contributors
 - Liz: Design help

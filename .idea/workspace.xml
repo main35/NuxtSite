@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update language picker, add catspeak, add swedish, add polish, add dutch">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add emojispeak, piratespeak, bump version, remove dead code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
@@ -31,7 +33,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="176" />
+    <option name="cachedIndexableFilesCount" value="202" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -149,7 +151,7 @@
       <recent name="$PROJECT_DIR$/i18n" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.fastFormat">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -755,15 +757,9 @@
       <workItem from="1771000963256" duration="4000" />
       <workItem from="1771077007262" duration="1461000" />
       <workItem from="1771352449780" duration="928000" />
-      <workItem from="1771364310456" duration="1354000" />
-    </task>
-    <task id="LOCAL-00060" summary="remove char card creator, make head management more efficient, fix canonical updating">
-      <option name="closed" value="true" />
-      <created>1766171831463</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1766171831467</updated>
+      <workItem from="1771364310456" duration="1448000" />
+      <workItem from="1771601701158" duration="21000" />
+      <workItem from="1771607218771" duration="820000" />
     </task>
     <task id="LOCAL-00061" summary="update site preview image">
       <option name="closed" value="true" />
@@ -1149,7 +1145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771363420356</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="add emojispeak, piratespeak, bump version, remove dead code">
+      <option name="closed" value="true" />
+      <created>1771365750684</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1771365750684</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1170,7 +1174,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add translation verification, improve localization, add link ticker, update Nuxt" />
     <MESSAGE value="improve prettier config, improve bottom logo, improve links data, update usernames" />
     <MESSAGE value="improve formatting, move interfaces to types/" />
     <MESSAGE value="improve card styling, improve navbar, increase corner rounding, improve light mode coloring, add notification badge to site picker Byg, shorten toolbar strings, misc fixes" />
@@ -1195,7 +1198,8 @@
     <MESSAGE value="add 404 game" />
     <MESSAGE value="update packages" />
     <MESSAGE value="update language picker, add catspeak, add swedish, add polish, add dutch" />
-    <option name="LAST_COMMIT_MESSAGE" value="update language picker, add catspeak, add swedish, add polish, add dutch" />
+    <MESSAGE value="add emojispeak, piratespeak, bump version, remove dead code" />
+    <option name="LAST_COMMIT_MESSAGE" value="add emojispeak, piratespeak, bump version, remove dead code" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

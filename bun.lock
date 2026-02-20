@@ -5,7 +5,7 @@
     "": {
       "name": "nuxt-site",
       "dependencies": {
-        "@a35hie/ts-pkg": "^0.3.1",
+        "@a35hie/ts-pkg": "^0.4.0",
         "@iconify/vue": "^5.0.0",
         "@nuxtjs/i18n": "^10.2.3",
         "cobe": "^0.6.5",
@@ -35,7 +35,7 @@
     },
   },
   "packages": {
-    "@a35hie/ts-pkg": ["@a35hie/ts-pkg@0.3.1", "", { "peerDependencies": { "typescript": "^5.9.3" }, "bin": { "ts-pkg": "dist/cli.js" } }, "sha512-YQexb8HtH3HlikDBhlTabfi8t6DzbuqigdMYDw5BbiP9+p+Y5Vas7B7hFTTUccyL93okijb84mRu6vV4AyXslQ=="],
+    "@a35hie/ts-pkg": ["@a35hie/ts-pkg@0.4.0", "", { "peerDependencies": { "typescript": "^6.0.0-beta" }, "bin": { "ts-pkg": "dist/cli.js" } }, "sha512-/yqbOvCtmpbKvuhnEOaa6uc7t5xKnff2P4t4hKdgDiw+XzXzNv9xx/d4k0/P9Nq+IqKpt7Y9Dpi5m8UKdfRstw=="],
 
     "@apideck/better-ajv-errors": ["@apideck/better-ajv-errors@0.3.6", "", { "dependencies": { "json-schema": "^0.4.0", "jsonpointer": "^5.0.0", "leven": "^3.1.0" }, "peerDependencies": { "ajv": ">=8" } }, "sha512-P+ZygBLZtkp0qqOAJJVX4oX/sFo5JR3eBWwwuqHHhK0GIgQOKWrAfiAaWX0aArHkRWHMuggFEgAZNxVPwPZYaA=="],
 

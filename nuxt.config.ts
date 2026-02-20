@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
-      siteRelease: "a35hie's Site v6",
+      siteRelease: "a35hie's site becomes a globetrotter",
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://us.i.posthog.com',
       posthogDefaults: '2025-05-24',
@@ -175,16 +175,6 @@ export default defineNuxtConfig({
         ],
       },
       {
-        code: 'uwu',
-        name: 'Catspeak :3',
-        language: 'ca-ES',
-        files: [
-          'global/global-ca-uw.json',
-          'meta/meta-ca-uw.json',
-          'pages/pages-ca-uw.json',
-        ],
-      },
-      {
         code: 'pl',
         name: 'Polski',
         language: 'pl-PL',
@@ -192,6 +182,16 @@ export default defineNuxtConfig({
           'global/global-pl.json',
           'meta/meta-pl.json',
           'pages/pages-pl.json',
+        ],
+      },
+      {
+        code: 'uwu',
+        name: 'Catspeak :3',
+        language: 'ca-ES',
+        files: [
+          'global/global-ca-uw.json',
+          'meta/meta-ca-uw.json',
+          'pages/pages-ca-uw.json',
         ],
       },
       {
@@ -212,6 +212,26 @@ export default defineNuxtConfig({
           'global/global-emoji.json',
           'meta/meta-emoji.json',
           'pages/pages-emoji.json',
+        ],
+      },
+      {
+        code: 'hgy',
+        name: '𓀀 Hieroglyph',
+        language: 'egy-Hluw',
+        files: [
+          'global/global-hgy.json',
+          'meta/meta-hgy.json',
+          'pages/pages-hgy.json',
+        ],
+      },
+      {
+        code: 'et',
+        name: 'Eesti',
+        language: 'et-EE',
+        files: [
+          'global/global-et.json',
+          'meta/meta-et.json',
+          'pages/pages-et.json',
         ],
       },
     ],

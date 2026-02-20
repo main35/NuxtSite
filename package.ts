@@ -12,7 +12,7 @@ export default definePackage({
     email: 'ash@a35.dev',
     url: 'https://a35.dev/',
   },
-  version: '6.2.2',
+  version: '6.2.3',
   license: 'Apache-2.0',
   private: false,
   type: 'module',
@@ -49,7 +49,7 @@ export default definePackage({
   },
 
   dependencies: {
-    '@a35hie/ts-pkg': '^0.3.1',
+    '@a35hie/ts-pkg': '^0.4.0',
     '@iconify/vue': '^5.0.0',
     '@nuxtjs/i18n': '^10.2.3',
     cobe: '^0.6.5',
