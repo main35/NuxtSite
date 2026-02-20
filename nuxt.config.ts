@@ -185,6 +185,16 @@ export default defineNuxtConfig({
         ],
       },
       {
+        code: 'et',
+        name: 'Eesti',
+        language: 'et-EE',
+        files: [
+          'global/global-et.json',
+          'meta/meta-et.json',
+          'pages/pages-et.json',
+        ],
+      },
+      {
         code: 'uwu',
         name: 'Catspeak :3',
         language: 'ca-ES',
@@ -222,16 +232,6 @@ export default defineNuxtConfig({
           'global/global-hgy.json',
           'meta/meta-hgy.json',
           'pages/pages-hgy.json',
-        ],
-      },
-      {
-        code: 'et',
-        name: 'Eesti',
-        language: 'et-EE',
-        files: [
-          'global/global-et.json',
-          'meta/meta-et.json',
-          'pages/pages-et.json',
         ],
       },
     ],
