@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update readme, add hieroglyphics, add polish, update meta">
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update language ordering">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +31,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="202" />
+    <option name="cachedIndexableFilesCount" value="208" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -754,15 +757,9 @@
       <workItem from="1771352449780" duration="928000" />
       <workItem from="1771364310456" duration="1448000" />
       <workItem from="1771601701158" duration="21000" />
-      <workItem from="1771607218771" duration="892000" />
-    </task>
-    <task id="LOCAL-00062" summary="switch to Bun">
-      <option name="closed" value="true" />
-      <created>1766404700489</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1766404700490</updated>
+      <workItem from="1771607218771" duration="944000" />
+      <workItem from="1771698877605" duration="463000" />
+      <workItem from="1771700593673" duration="3252000" />
     </task>
     <task id="LOCAL-00063" summary="add install to build script (CF has auto install deps disabled)">
       <option name="closed" value="true" />
@@ -1148,7 +1145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771608080979</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="update language ordering">
+      <option name="closed" value="true" />
+      <created>1771608140142</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1771608140142</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1169,7 +1174,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="improve formatting, move interfaces to types/" />
     <MESSAGE value="improve card styling, improve navbar, increase corner rounding, improve light mode coloring, add notification badge to site picker Byg, shorten toolbar strings, misc fixes" />
     <MESSAGE value="add eslint import fixing" />
     <MESSAGE value="fix localization for link ticker, add intro page" />
@@ -1194,7 +1198,8 @@
     <MESSAGE value="update language picker, add catspeak, add swedish, add polish, add dutch" />
     <MESSAGE value="add emojispeak, piratespeak, bump version, remove dead code" />
     <MESSAGE value="update readme, add hieroglyphics, add polish, update meta" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme, add hieroglyphics, add polish, update meta" />
+    <MESSAGE value="update language ordering" />
+    <option name="LAST_COMMIT_MESSAGE" value="update language ordering" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

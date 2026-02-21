@@ -1,6 +1,6 @@
 {
   "name": "@a35hie/nuxt-site",
-  "version": "6.2.3",
+  "version": "6.2.4",
   "description": "My personal website.",
   "license": "Apache-2.0",
   "author": {
@@ -28,9 +28,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@a35hie/ts-pkg": "^0.4.0",
     "@iconify/vue": "^5.0.0",
     "@nuxtjs/i18n": "^10.2.3",
+    "@opk/ts-pkg": "^0.5.0",
     "cobe": "^0.6.5",
     "floating-vue": "^5.2.2",
     "html2canvas": "^1.4.1",

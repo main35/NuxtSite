@@ -1,10 +1,11 @@
-import { definePackage } from '@a35hie/ts-pkg'
+import { BunPm, definePackage } from '@opk/ts-pkg'
 
 function fixPathScript(search: string, replace: string): string {
   return `replace-in-files --string='${search}' --replacement='${replace}' './**/*.{js,ts,vue}' '!./package.*'`
 }
 
 export default definePackage({
+  pm: BunPm,
   name: '@a35hie/nuxt-site',
   description: 'My personal website.',
   author: {
@@ -12,7 +13,7 @@ export default definePackage({
     email: 'ash@a35.dev',
     url: 'https://a35.dev/',
   },
-  version: '6.2.3',
+  version: '6.2.4',
   license: 'Apache-2.0',
   private: false,
   type: 'module',
@@ -49,9 +50,9 @@ export default definePackage({
   },
 
   dependencies: {
-    '@a35hie/ts-pkg': '^0.4.0',
     '@iconify/vue': '^5.0.0',
     '@nuxtjs/i18n': '^10.2.3',
+    '@opk/ts-pkg': '^0.5.0',
     cobe: '^0.6.5',
     'floating-vue': '^5.2.2',
     html2canvas: '^1.4.1',
