@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "Servicios"
+  },
   "home": {
     "intro": "Hai, soy ash~",
     "desc1": "Soy un adolescente de Francia y, oficialmente, la persona más relajada que conocerás.",
@@ -74,6 +77,12 @@
     "tokens": "Fichas",
     "best": "Mejor",
     "aria": "Minijuego Starhop"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Servicios alojados y en la nube.",
+    "source": "Código fuente",
+    "use": "Usar"
   },
   "error": {
     "label": "Error",

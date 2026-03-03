@@ -37,6 +37,7 @@
     "hideQr": "QR-Code ausblenden"
   },
   "navbar": {
+    "hide": "Ausblenden",
     "launchers": {
       "apps": "Apps",
       "creators": "Erstellen..."

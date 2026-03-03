@@ -37,6 +37,7 @@
     "hideQr": "Скрыть QR-код"
   },
   "navbar": {
+    "hide": "Скрыть",
     "launchers": {
       "apps": "Приложения",
       "creators": "Создать..."

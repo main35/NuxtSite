@@ -17,10 +17,7 @@
   <InteriorItem class="serviceItem">
     <HStack class="noWrap serviceItemContent">
       <VStack class="serviceImage">
-        <img
-          :src="service.iconUrl"
-          :alt="`${service.name} icon`"
-        />
+        <img :src="service.iconUrl" :alt="`${service.name} icon`" />
       </VStack>
 
       <VStack class="serviceInfo">
@@ -31,7 +28,7 @@
 
     <HStack class="serviceLinks fullWidth">
       <a v-if="service.vcsUrl" :href="service.vcsUrl">
-        {{t('services.source')}}
+        {{ t('services.source') }}
       </a>
 
       <a :href="service.url">

@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "Palvelut"
+  },
   "home": {
     "intro": "Terve, olen ash~",
     "desc1": "Olen teini-ikäinen Ranskasta ja virallisesti ystävällisin ihminen jonka tapauksesi.",
@@ -74,6 +77,12 @@
     "tokens": "Rahakkeet",
     "best": "Paras",
     "aria": "Starhop minipeli"
+  },
+  "services": {
+    "title": "Palvelut",
+    "subtitle": "Isännöidyt ja pilvipalvelut.",
+    "source": "Lähde",
+    "use": "Käytä"
   },
   "error": {
     "label": "Virhe",

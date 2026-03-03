@@ -37,6 +37,7 @@
     "hideQr": "隐藏二维码"
   },
   "navbar": {
+    "hide": "隐藏",
     "launchers": {
       "apps": "应用",
       "creators": "创建..."

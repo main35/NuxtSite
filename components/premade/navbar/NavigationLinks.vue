@@ -1,43 +1,19 @@
 <script setup lang="ts">
   import HStack from '+/layout/HStack.vue'
   import NavigationButton from '+/premade/navbar/NavigationButton.vue'
+  import { NavLinks } from '$/NavLinks'
+
+  defineProps<{
+    expanded?: boolean
+  }>()
 </script>
 
 <template>
-  <HStack class="navigationLinks noWrap">
+  <HStack class="navigationLinks noWrap" :class="{ expanded }">
     <NavigationButton
-      link="/links"
-      text="pages.links"
-      icon="solar:link-minimalistic-2-line-duotone"
-      aria-label="ash's Links"
-    />
-
-    <NavigationButton
-      link="/apps"
-      text="pages.apps"
-      icon="solar:widget-3-line-duotone"
-      aria-label="ash's Apps"
-    />
-
-    <NavigationButton
-      link="/services"
-      text="pages.services"
-      icon="solar:cloud-line-duotone"
-      aria-label="ash's Services"
-    />
-
-    <NavigationButton
-      link="/goodies"
-      text="pages.goodies"
-      icon="solar:inbox-line-line-duotone"
-      aria-label="ash's Goodies"
-    />
-
-    <NavigationButton
-      link="/languages"
-      text="pages.languages"
-      icon="solar:global-line-duotone"
-      aria-label="ash's Languages"
+      v-for="link in NavLinks"
+      :link="link"
+      :expanded="expanded"
     />
   </HStack>
 </template>
@@ -45,4 +21,10 @@
 <style scoped lang="sass">
   .navigationLinks
     gap: 0.5rem
+    transition: 0.2s ease
+
+    &.expanded
+      flex-direction: column
+      align-items: flex-start
+      min-width: 18rem
 </style>

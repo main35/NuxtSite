@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "Usługi"
+  },
   "home": {
     "intro": "Cześć, jestem ash~",
     "desc1": "Jestem nastolatkiem z Francji i oficjalnie najbardziej chłodnym człowiekiem, którego spotkasz.",
@@ -74,6 +77,12 @@
     "tokens": "Żetony",
     "best": "Najlepsze",
     "aria": "Minigra Starhop"
+  },
+  "services": {
+    "title": "Usługi",
+    "subtitle": "Usługi hostowane i chmurowe.",
+    "source": "Źródło",
+    "use": "Użyj"
   },
   "error": {
     "label": "Błąd",

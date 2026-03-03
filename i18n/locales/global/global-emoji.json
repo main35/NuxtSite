@@ -37,6 +37,7 @@
     "hideQr": "QR 👻"
   },
   "navbar": {
+    "hide": "👻",
     "launchers": {
       "apps": "📱",
       "creators": "🎨"

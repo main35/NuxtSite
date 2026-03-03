@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "Teenused"
+  },
   "home": {
     "intro": "Tere, olen ash~",
     "desc1": "Olen teismeline Prantsusmaalt ja ametlikult kõige rahulikum inimene, keda kohtusite.",
@@ -74,6 +77,12 @@
     "tokens": "Märgid",
     "best": "Parim",
     "aria": "Starhop minipeli"
+  },
+  "services": {
+    "title": "Teenused",
+    "subtitle": "Majutatud ja pilveteenused.",
+    "source": "Allikas",
+    "use": "Kasuta"
   },
   "error": {
     "label": "Viga",

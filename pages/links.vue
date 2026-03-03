@@ -12,13 +12,12 @@
   setHeadMeta({
     page: 'pages.links',
     subtitle: 'meta.subtitles.links',
-    image: '/images/Links.jpg',
   })
 </script>
 
 <template>
   <div class="contentView">
-    <Hero image="/images/Links.jpg">
+    <Hero icon="solar:link-minimalistic-2-line-duotone" tint="#af58eb">
       <h1>{{ t('pages.links') }}</h1>
       <h2>{{ t('meta.subtitles.links') }}</h2>
     </Hero>

@@ -37,6 +37,7 @@
     "hideQr": "Dölj QR-kod"
   },
   "navbar": {
+    "hide": "Dölj",
     "launchers": {
       "apps": "Appar",
       "creators": "Skapa..."

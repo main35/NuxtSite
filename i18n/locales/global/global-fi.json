@@ -37,6 +37,7 @@
     "hideQr": "Piilota QR-koodi"
   },
   "navbar": {
+    "hide": "Piilota",
     "launchers": {
       "apps": "Sovellukset",
       "creators": "Luo..."

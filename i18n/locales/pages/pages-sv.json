@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "Tjänster"
+  },
   "home": {
     "intro": "Hej, jag är ash~",
     "desc1": "Jag är en tonåring från Frankrike och officiellt den mest avslappnad person du kommer att träffa.",
@@ -74,6 +77,12 @@
     "tokens": "Tokens",
     "best": "Bästa",
     "aria": "Starhop minigame"
+  },
+  "services": {
+    "title": "Tjänster",
+    "subtitle": "Hostade tjänster och molntjänster.",
+    "source": "Källa",
+    "use": "Använd"
   },
   "error": {
     "label": "Fel",

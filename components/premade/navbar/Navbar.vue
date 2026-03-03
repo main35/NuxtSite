@@ -15,12 +15,16 @@
   import SafeLink from '+/utils/SafeLink.vue'
   import { LauncherApps } from '$/launchers/LauncherApps'
   import { LauncherCreators } from '$/launchers/LauncherCreators'
+  import { HomeNavLink } from '$/NavLinks'
   import { showingNavProfile } from '$/visibility'
+
+  const { t } = useI18n()
 
   const showLaunchers: Ref<boolean> = ref(false)
   const showMobileNav: Ref<boolean> = ref(false)
   const showSiteSwitcher: Ref<boolean> = ref(false)
   const navRef: Ref<HTMLElement | null> = ref(null)
+  const expandedNavbar: Ref<boolean> = ref(false)
 
   function toggleNavigation() {
     showMobileNav.value = !showMobileNav.value
@@ -28,6 +32,11 @@
 
   function toggleSiteSwitcher() {
     showSiteSwitcher.value = !showSiteSwitcher.value
+  }
+
+  function hideMobileNav() {
+    showMobileNav.value = false
+    expandedNavbar.value = false
   }
 
   onMounted(() => {
@@ -101,13 +110,23 @@
       :class="{ hidden: !showMobileNav }"
       class="navBar"
     >
-      <NavigationLinks @click="showMobileNav = false" />
+      <NavigationLinks @click="hideMobileNav()" :expanded="expandedNavbar" />
+
+      <button class="transparent" @click="expandedNavbar = !expandedNavbar">
+        <Icon
+          :icon="
+            expandedNavbar
+              ? 'solar:alt-arrow-up-line-duotone'
+              : 'solar:alt-arrow-down-line-duotone'
+          "
+        />
+      </button>
     </InteriorItem>
 
     <!-- Site Switcher -->
-    <SitePicker id="siteSwitcher" v-if="showSiteSwitcher">
+    <SitePicker id="siteSwitcher" v-if="showSiteSwitcher && !expandedNavbar">
       <button @click="toggleSiteSwitcher()">
-        <Icon icon="mingcute:close-fill" width="24" height="24" />
+        <Icon icon="mingcute:close-fill" />
       </button>
     </SitePicker>
 
@@ -138,15 +157,11 @@
       <InteriorItem
         ref="navRef"
         class="navBar"
-        :class="{ desktopLinks: !showingNavProfile }"
+        :class="{ desktopLinks: !showingNavProfile, expanded: expandedNavbar }"
       >
-        <HStack class="navBarInner">
-          <HStack v-if="showingNavProfile" class="profile transparent">
-            <NavigationButton
-              link="/home"
-              id="homeButtonContainer"
-              text="pages.home"
-            >
+        <HStack class="navBarInner" v-if="showingNavProfile && !expandedNavbar">
+          <HStack class="profile transparent">
+            <NavigationButton :link="HomeNavLink" id="homeButtonContainer">
               <DynamicImage
                 class="avatar"
                 src="/images/avatar-26.webp"
@@ -177,7 +192,22 @@
           </HStack>
         </HStack>
 
-        <NavigationLinks class="desktopLinks" />
+        <NavigationLinks
+          class="desktopLinks"
+          :expanded="expandedNavbar"
+          @click="expandedNavbar = false"
+        />
+
+        <button class="transparent" @click="expandedNavbar = !expandedNavbar">
+          <Icon
+            :icon="
+              expandedNavbar
+                ? 'solar:alt-arrow-up-line-duotone'
+                : 'solar:alt-arrow-down-line-duotone'
+            "
+          />
+          <span class="toggleButtonText">{{ t('navbar.hide') }}</span>
+        </button>
       </InteriorItem>
 
       <SafeLink to="/home" v-if="!showingNavProfile">
@@ -221,13 +251,25 @@
         display: none
 
   .navBar
-    --interiorRadius: 20rem !important
+    --interiorRadius: 2rem !important
     padding: 0.75rem
     flex-direction: row
     z-index: 20
+    backdrop-filter: blur(0.5rem)
 
     *
       flex-wrap: nowrap !important
+
+    .toggleButtonText
+      display: none
+
+    &.expanded
+      flex-direction: column !important
+      align-items: flex-start
+      gap: 1rem
+
+      .toggleButtonText
+        display: block
 
     .navBarInnerName
       margin-right: 0.75rem

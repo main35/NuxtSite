@@ -1,25 +1,34 @@
 <script setup lang="ts">
   import Card from '+/layout/Card.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
+  import VStack from '+/layout/VStack.vue'
+  import LargeIcon from '+/premade/LargeIcon.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
 
   defineProps<{
-    image: string
+    image?: string
     imageAlt?: string
+    icon?: string
+    tint?: string
   }>()
 </script>
 
 <template>
-  <Card class="hero" :style="{ backgroundImage: `url('${image}')` }">
-    <DynamicImage
-      class="heroResizableImage"
-      :src="image"
-      :alt="imageAlt ?? 'Image'"
-    />
+  <Card class="hero">
+    <!--    <DynamicImage-->
+    <!--      v-if="image"-->
+    <!--      class="heroResizableImage"-->
+    <!--      :src="image"-->
+    <!--      :alt="imageAlt ?? 'Image'"-->
+    <!--    />-->
 
-    <InteriorItem class="heroContent">
+    <LargeIcon class="heroIcon" v-if="icon && tint" :icon="icon" :tint="tint" />
+
+    <p v-else>invalid props</p>
+
+    <VStack class="heroContent">
       <slot />
-    </InteriorItem>
+    </VStack>
   </Card>
 </template>
 
@@ -31,10 +40,10 @@
     z-index: 2
     height: fit-content
     min-height: 75vh
-    max-height: 100vh
+    max-height: 90vh
     overflow: hidden
 
-    .heroResizableImage
+    .heroResizableImage, .heroIcon
       position: absolute
       top: 0
       bottom: 0
@@ -43,25 +52,19 @@
 
       object-fit: cover
       z-index: 1
-      opacity: 0.8
 
   .heroContent
     z-index: 5
     align-items: flex-start
-    width: calc(100% - 1.5rem)
+    width: 100%
+    gap: 0.25rem
 
   ::v-deep(h1)
     font-family: fonts.$prominent
-    font-weight: 500
     font-size: 5rem
-
-  ::v-deep(h1), ::v-deep(h2), ::v-deep(p), ::v-deep(button), ::v-deep(button > svg)
-    color: white
+    line-height: 0.9
 
   @media (max-width: 35rem)
     .hero
-      max-height: 75vh
-
-    .heroContent
-      width: calc(100% - 1rem)
+      max-height: 65vh
 </style>

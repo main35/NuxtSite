@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "서비스"
+  },
   "home": {
     "intro": "하이, 나는 ash~입니다",
     "desc1": "저는 프랑스에 사는 10대이며, 아마 여러분이 만날 사람 중 가장 느긋한 사람일 거예요.",
@@ -74,6 +77,12 @@
     "tokens": "토큰",
     "best": "최고",
     "aria": "Starhop 미니 게임"
+  },
+  "services": {
+    "title": "서비스",
+    "subtitle": "호스팅 및 클라우드 서비스.",
+    "source": "소스",
+    "use": "사용"
   },
   "error": {
     "label": "오류",

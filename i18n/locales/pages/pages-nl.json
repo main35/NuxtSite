@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "Diensten"
+  },
   "home": {
     "intro": "Hallo, ik ben ash~",
     "desc1": "Ik ben een tiener uit Frankrijk en officieel de meest relaxte persoon die je zult ontmoeten.",
@@ -74,6 +77,12 @@
     "tokens": "Tokens",
     "best": "Beste",
     "aria": "Starhop minigame"
+  },
+  "services": {
+    "title": "Diensten",
+    "subtitle": "Gehoste en clouddiensten.",
+    "source": "Broncode",
+    "use": "Gebruiken"
   },
   "error": {
     "label": "Fout",

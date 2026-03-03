@@ -37,6 +37,7 @@
     "hideQr": "Hide QR Map"
   },
   "navbar": {
+    "hide": "Hide",
     "launchers": {
       "apps": "Pirate Apps",
       "creators": "Create..."

@@ -1,27 +1,49 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
 
+  import type { NavLink } from ':/navLink'
+  import HStack from '+/layout/HStack.vue'
   import SafeLink from '+/utils/SafeLink.vue'
   const { t } = useI18n()
 
-  defineProps<{
-    link: string
-    text?: string
-    icon?: string
+  const router = useRouter()
+  const localePath = useLocalePath()
+
+  const props = defineProps<{
+    link: NavLink
+    expanded?: boolean
   }>()
+
+  function isSelected(path: string): boolean {
+    return localePath(router.currentRoute.value.path).includes(props.link.link)
+  }
 </script>
 
 <template>
   <div class="navWrapper">
-    <div class="toolTip" v-if="text">
-      <h4>{{ t(text) }}</h4>
+    <div class="toolTip" v-if="!expanded">
+      <h4>{{ t(link.text) }}</h4>
     </div>
 
-    <SafeLink :to="link">
-      <button class="navigationButton" :aria-label="'Go to: ' + link">
-        <Icon v-if="icon" :icon="icon" />
-        <slot />
-      </button>
+    <SafeLink :to="link.link">
+      <HStack class="navigationRow">
+        <button
+          class="navigationButton"
+          :class="{ prominent: isSelected(link.link) }"
+        >
+          <Icon
+            v-if="link.icon"
+            :icon="
+              isSelected(link.link)
+                ? link.icon.replace('line-duotone', 'bold-duotone')
+                : link.icon
+            "
+          />
+          <slot />
+        </button>
+
+        <p class="navigationButtonText" v-if="expanded">{{ t(link.text) }}</p>
+      </HStack>
     </SafeLink>
   </div>
 </template>

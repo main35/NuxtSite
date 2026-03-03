@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "服务"
+  },
   "home": {
     "intro": "嗨，我是 ash~",
     "desc1": "我是一名来自法国的青少年，也是你见过的最“佛系”的人。",
@@ -74,6 +77,12 @@
     "tokens": "代币",
     "best": "最佳",
     "aria": "Starhop 迷你游戏"
+  },
+  "services": {
+    "title": "服务",
+    "subtitle": "托管和云服务。",
+    "source": "源码",
+    "use": "使用"
   },
   "error": {
     "label": "错误",

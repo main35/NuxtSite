@@ -17,7 +17,6 @@
   setHeadMeta({
     page: 'pages.goodies',
     subtitle: 'meta.subtitles.goodies',
-    image: '/images/Goodies.jpg',
   })
 
   const cursors = ref<Cursor[]>([])
@@ -36,7 +35,7 @@
 
 <template>
   <div class="contentView">
-    <Hero image="/images/Goodies.jpg">
+    <Hero icon="solar:inbox-line-bold-duotone" tint="#dfac3b">
       <h1>{{ t('pages.goodies') }}</h1>
       <h2>{{ t('meta.subtitles.goodies') }}</h2>
 

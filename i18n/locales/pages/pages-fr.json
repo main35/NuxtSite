@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "Services"
+  },
   "home": {
     "intro": "Hai, je suis ash~",
     "desc1": "Je suis un jeune français, et officiellement la personne la plus chic que vous connaissiez.",
@@ -74,6 +77,12 @@
     "tokens": "Jetons",
     "best": "Record",
     "aria": "Mini-jeu Starhop"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Services hébergés et cloud.",
+    "source": "Source",
+    "use": "Utiliser"
   },
   "error": {
     "label": "Erreur",

@@ -37,6 +37,7 @@
     "hideQr": "Ocultar Código QR"
   },
   "navbar": {
+    "hide": "Ocultar",
     "launchers": {
       "apps": "Apps",
       "creators": "Criar..."

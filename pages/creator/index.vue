@@ -9,13 +9,12 @@
   setHeadMeta({
     page: 'pages.creators',
     subtitle: 'meta.subtitles.creators',
-    image: '/images/Creator.jpg',
   })
 </script>
 
 <template>
   <div class="contentView">
-    <Hero image="/images/Creator.jpg">
+    <Hero icon="solar:pen-new-square-bold-duotone" tint="#d877af">
       <h1>{{ t('navbar.launchers.creators') }}</h1>
       <h2>{{ t('creators.choose') }}</h2>
     </Hero>

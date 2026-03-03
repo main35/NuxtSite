@@ -37,6 +37,7 @@
     "hideQr": "QRコードを隠す"
   },
   "navbar": {
+    "hide": "隠す",
     "launchers": {
       "apps": "アプリ",
       "creators": "作成..."

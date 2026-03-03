@@ -4,13 +4,14 @@
   }>()
 
   const localePath = useLocalePath()
+
+  function isExternal(url: string): boolean {
+    return url.includes('https') || url.includes('mailto')
+  }
 </script>
 
 <template>
-  <RouterLink
-    v-if="!to.includes('https') && !to.includes('mailto')"
-    :to="localePath(to)"
-  >
+  <RouterLink v-if="!isExternal(to)" :to="localePath(to)">
     <slot />
   </RouterLink>
 

@@ -13,7 +13,6 @@
   setHeadMeta({
     page: 'pages.apps',
     subtitle: 'meta.subtitles.apps',
-    image: '/images/Apps.jpg',
   })
 
   const appsData = ref<AppCategory[]>([])
@@ -32,7 +31,7 @@
 
 <template>
   <div class="contentView">
-    <Hero image="/images/Apps.jpg" image-alt="Apps Header Image">
+    <Hero icon="solar:widget-3-bold-duotone" tint="#378be7">
       <h1>{{ t('pages.apps') }}</h1>
       <h2>{{ t('meta.subtitles.apps') }}</h2>
       <Spacer />

@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "Services"
+  },
   "home": {
     "intro": "Hai, I'm ash~",
     "desc1": "I'm a teenager from France, and officially the chillest person you'll meet.",
@@ -74,6 +77,12 @@
     "tokens": "Tokens",
     "best": "Best",
     "aria": "Starhop mini game"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Hosted and cloud services.",
+    "source": "Source",
+    "use": "Use"
   },
   "error": {
     "label": "Error",

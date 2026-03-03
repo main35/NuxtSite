@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "Services"
+  },
   "home": {
     "intro": "Ahoy, I be ash~",
     "desc1": "I be a scallywag from France, and officially the most chill buccaneer ye'll ever meet, arr!",
@@ -74,6 +77,12 @@
     "tokens": "Doubloons",
     "best": "Best Haul",
     "aria": "Starhop mini game"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Hosted and cloud services, arr!",
+    "source": "Source",
+    "use": "Use"
   },
   "error": {
     "label": "Shiver me timbers!",

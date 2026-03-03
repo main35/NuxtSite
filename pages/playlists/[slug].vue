@@ -44,7 +44,6 @@
         setHeadMeta({
           page: playlist.value.title,
           subtitle: playlist.value.description,
-          image: '/images/Playlists.jpg',
           icon: playlist.value.image,
           group: 'Playlist',
         })
@@ -70,7 +69,7 @@
 
 <template>
   <div v-if="playlist" class="contentView">
-    <Hero image="/images/Playlists.jpg">
+    <Hero icon="solar:music-notes-bold-duotone" tint="#c95d68">
       <h1>{{ playlist.title }}</h1>
     </Hero>
 
@@ -109,15 +108,6 @@
         </a>
       </grid>
     </Card>
-
-    <Navbar>
-      <SafeLink to="/links">
-        <button>
-          <Icon icon="solar:arrow-left-line-duotone" />
-          {{ t('pages.links') }}
-        </button>
-      </SafeLink>
-    </Navbar>
   </div>
 </template>
 

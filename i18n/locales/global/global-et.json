@@ -37,6 +37,7 @@
     "hideQr": "Peida QR kood"
   },
   "navbar": {
+    "hide": "Peida",
     "launchers": {
       "apps": "Rakendused",
       "creators": "Loo..."

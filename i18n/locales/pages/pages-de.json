@@ -1,4 +1,7 @@
 {
+  "pages": {
+    "services": "Dienste"
+  },
   "home": {
     "intro": "Hai, ich bin ash~",
     "desc1": "Ich bin ein Teenager aus Frankreich und offiziell die entspannteste Person, die du treffen wirst.",
@@ -74,6 +77,12 @@
     "tokens": "Token",
     "best": "Bestwert",
     "aria": "Starhop-Minispiel"
+  },
+  "services": {
+    "title": "Dienste",
+    "subtitle": "Gehostete und Cloud-Dienste.",
+    "source": "Quelle",
+    "use": "Verwenden"
   },
   "error": {
     "label": "Fehler",
