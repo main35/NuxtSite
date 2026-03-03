@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
   import { computed, onMounted, ref } from 'vue'
   import { useRoute } from 'vue-router'
 
@@ -15,10 +14,8 @@
   import Deezer from '+/playlists/Deezer.vue'
   import Spotify from '+/playlists/Spotify.vue'
   import YoutubeMusic from '+/playlists/YoutubeMusic.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import Hero from '+/utils/Hero.vue'
-  import SafeLink from '+/utils/SafeLink.vue'
   import Spacer from '+/utils/Spacer.vue'
   const { t } = useI18n()
 

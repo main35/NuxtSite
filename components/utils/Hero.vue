@@ -1,9 +1,7 @@
 <script setup lang="ts">
   import Card from '+/layout/Card.vue'
-  import InteriorItem from '+/layout/InteriorItem.vue'
   import VStack from '+/layout/VStack.vue'
   import LargeIcon from '+/premade/LargeIcon.vue'
-  import DynamicImage from '+/utils/DynamicImage.vue'
 
   defineProps<{
     image?: string
@@ -15,15 +13,7 @@
 
 <template>
   <Card class="hero">
-    <!--    <DynamicImage-->
-    <!--      v-if="image"-->
-    <!--      class="heroResizableImage"-->
-    <!--      :src="image"-->
-    <!--      :alt="imageAlt ?? 'Image'"-->
-    <!--    />-->
-
     <LargeIcon class="heroIcon" v-if="icon && tint" :icon="icon" :tint="tint" />
-
     <p v-else>invalid props</p>
 
     <VStack class="heroContent">

@@ -14,7 +14,7 @@
     expanded?: boolean
   }>()
 
-  function isSelected(path: string): boolean {
+  function isSelected(): boolean {
     return localePath(router.currentRoute.value.path).includes(props.link.link)
   }
 </script>
@@ -29,12 +29,12 @@
       <HStack class="navigationRow">
         <button
           class="navigationButton"
-          :class="{ prominent: isSelected(link.link) }"
+          :class="{ prominent: isSelected() }"
         >
           <Icon
             v-if="link.icon"
             :icon="
-              isSelected(link.link)
+              isSelected()
                 ? link.icon.replace('line-duotone', 'bold-duotone')
                 : link.icon
             "
