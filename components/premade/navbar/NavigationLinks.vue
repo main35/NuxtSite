@@ -20,6 +20,13 @@
     />
 
     <NavigationButton
+      link="/services"
+      text="pages.services"
+      icon="solar:cloud-line-duotone"
+      aria-label="ash's Services"
+    />
+
+    <NavigationButton
       link="/goodies"
       text="pages.goodies"
       icon="solar:inbox-line-line-duotone"

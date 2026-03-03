@@ -38,7 +38,7 @@
           </div>
 
           <div class="appDownloads">
-            <app-link :to="app.link" :disabled="app.disabled ?? false" />
+            <AppLink :to="app.link" :disabled="app.disabled ?? false" />
             <a v-if="app.github" :href="app.github">
               <button class="transparent">
                 <Icon icon="mingcute:github-fill" width="24" height="24" />

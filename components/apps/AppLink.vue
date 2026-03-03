@@ -23,17 +23,21 @@
     :rel="isExternal ? 'noopener noreferrer' : undefined"
     class="app-link"
   >
-    <button :disabled="disabled ?? false">
+    <button :disabled="disabled ?? false" class="appLinkButton">
       <icon
         :icon="
           disabled
             ? 'solar:clock-circle-line-duotone'
             : 'solar:arrow-right-up-line-duotone'
         "
-        width="24"
-        height="24"
       />
+
       {{ disabled ? 'Soon' : (label ?? 'Go') }}
     </button>
   </component>
 </template>
+
+<style scoped lang="sass">
+  .appLinkButton
+    text-wrap: nowrap
+</style>
