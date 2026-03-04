@@ -3,7 +3,6 @@
   import { ref } from 'vue'
 
   import HStack from '+/layout/HStack.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
   import CardTitle from '+/utils/CardTitle.vue'
 
   interface CSVRow extends Record<string, unknown> {}
@@ -102,16 +101,14 @@
       <pre>{{ JSON.stringify(jsonOutput, null, 2) }}</pre>
     </div>
 
-    <Navbar>
-      <button
-        :class="{ hidden: !outputContainerVisible }"
-        @click="downloadJson"
-        :disabled="!jsonOutput"
-      >
-        <Icon icon="solar:download-minimalistic-bold-duotone" />
-        Download
-      </button>
-    </Navbar>
+    <button
+      :class="{ hidden: !outputContainerVisible }"
+      @click="downloadJson"
+      :disabled="!jsonOutput"
+    >
+      <Icon icon="solar:download-minimalistic-bold-duotone" />
+      Download
+    </button>
   </div>
 </template>
 

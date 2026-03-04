@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  <Card class="langsCard spaced">
+  <Card :index="4" class="langsCard spaced">
     <CardTitle title="home.languages.title" icon="solar:earth-line-duotone" />
 
     <p>{{ t('home.languages.desc') }}</p>

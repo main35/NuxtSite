@@ -11,6 +11,10 @@
   import Spacer from '+/utils/Spacer.vue'
   const { t } = useI18n()
 
+  defineProps<{
+    index?: number
+  }>()
+
   const isOldMain = ref(false)
   const showingShareModal = ref(false)
 
@@ -26,14 +30,14 @@
 
 <template>
   <VStack class="sitePicker">
-    <Card v-if="!showingShareModal">
+    <Card :index="index" v-if="!showingShareModal">
       <VStack class="fullWidth">
         <HStack class="autoSpace fullWidth">
           <CardTitle
             title="sites.title"
             icon="solar:three-squares-line-duotone"
           />
-          <!--        Insert close button here -->
+          <!-- Insert close button here -->
           <slot />
         </HStack>
 
@@ -69,7 +73,7 @@
       </VStack>
     </Card>
 
-    <Card>
+    <Card :index="index ? index + 1 : undefined">
       <CardTitle
         title="sharing.title"
         icon="solar:square-share-line-line-duotone"

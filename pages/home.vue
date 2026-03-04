@@ -32,13 +32,13 @@
         <AboutHeader />
 
         <!--More About-->
-        <grid class="spaced">
+        <Grid class="spaced">
           <AboutCard />
           <LocationCard />
-        </grid>
+        </Grid>
 
         <LangsCard />
-        <BottomFooter />
+        <BottomFooter :index="5" />
       </div>
     </div>
   </div>

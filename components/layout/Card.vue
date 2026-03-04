@@ -1,5 +1,11 @@
+<script setup lang="ts">
+  defineProps<{
+    index?: number
+  }>()
+</script>
+
 <template>
-  <div class="card">
+  <div class="card" :style="'--card-index: ' + (index ?? 0)">
     <slot />
   </div>
 </template>
@@ -9,6 +15,7 @@
 
   .card
     --card-radius: 3rem
+    --card-index: 0
 
     width: calc(100% - 3rem)
     position: relative
@@ -20,6 +27,19 @@
     background: colors.$foregroundColor
     backdrop-filter: blur(0.5rem) saturate(125%)
     z-index: 2
+
+    transform: translateY(-1rem)
+    opacity: 0.7
+    animation: cardFadeIn 0.2s ease forwards
+    animation-delay: calc(0.05s * var(--card-index))
+
+    @keyframes cardFadeIn
+      from
+        transform: translateY(-1rem)
+        opacity: 0.7
+      to
+        transform: none
+        opacity: 1
 
     &::after // Specular Highlighting
       content: ""

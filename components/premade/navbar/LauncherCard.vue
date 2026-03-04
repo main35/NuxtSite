@@ -13,11 +13,12 @@
     icon: string
     baseUrl: string
     launcherItems: LauncherItem[]
+    index?: number
   }>()
 </script>
 
 <template>
-  <Card class="quickContainer">
+  <Card :index="index" class="quickContainer">
     <SafeLink :to="baseUrl">
       <CardTitle :title="t(title)" :icon="icon" />
     </SafeLink>

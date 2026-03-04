@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
-      siteRelease: 'Calm before the storm',
+      siteRelease: 'Here come the animations!',
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://us.i.posthog.com',
       posthogDefaults: '2025-05-24',
@@ -197,7 +197,7 @@ export default defineNuxtConfig({
       {
         code: 'uwu',
         name: 'Catspeak :3',
-        language: 'ca-ES',
+        language: 'en-Uwu',
         files: [
           'global/global-ca-uw.json',
           'meta/meta-ca-uw.json',

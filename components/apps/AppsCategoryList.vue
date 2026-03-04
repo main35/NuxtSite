@@ -11,12 +11,17 @@
 
   defineProps<{
     appsData: AppCategory[]
+    index?: number
   }>()
 </script>
 
 <template>
   <VStack id="appsContainer">
-    <Card v-for="category in appsData" :key="category.name">
+    <Card
+      v-for="(category, i) in appsData"
+      :key="category.name"
+      :index="index ? index + i : undefined"
+    >
       <h2>{{ category.name }}</h2>
       <grid class="appGrid">
         <InteriorItem

@@ -12,7 +12,6 @@
   import Card from '+/layout/Card.vue'
   import HStack from '+/layout/HStack.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
   import Hero from '+/utils/Hero.vue'
   import SafeLink from '+/utils/SafeLink.vue'
   import type { AppPageMeta } from '$/apps'
@@ -60,11 +59,18 @@
 <template>
   <div v-if="app" class="contentView">
     <Hero :image="app.headerImagePath" :image-alt="`${app.title} screenshot`">
-      <updated-badge v-if="app.updatedBadge">{{
+      <UpdatedBadge v-if="app.updatedBadge">{{
         app.updatedBadge
-      }}</updated-badge>
+      }}</UpdatedBadge>
       <h1>{{ app.title }}</h1>
       <h2>{{ app.shortDescription }}</h2>
+
+      <SafeLink to="/apps">
+        <button>
+          <Icon icon="solar:arrow-left-line-duotone" />
+          {{ t('pages.apps') }}
+        </button>
+      </SafeLink>
     </Hero>
 
     <Card v-if="app.appLinks?.length" class="hStack autoSpace centered">
@@ -90,15 +96,6 @@
     <Card v-html="longDescription" />
 
     <BottomFooter />
-
-    <Navbar>
-      <SafeLink to="/apps">
-        <button>
-          <Icon icon="solar:arrow-left-line-duotone" />
-          {{ t('pages.apps') }}
-        </button>
-      </SafeLink>
-    </Navbar>
   </div>
 </template>
 

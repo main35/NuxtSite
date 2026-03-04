@@ -198,7 +198,10 @@
           @click="expandedNavbar = false"
         />
 
-        <button class="transparent toggleButton" @click="expandedNavbar = !expandedNavbar">
+        <button
+          class="transparent toggleButton"
+          @click="expandedNavbar = !expandedNavbar"
+        >
           <Icon
             :icon="
               expandedNavbar
@@ -256,6 +259,7 @@
     flex-direction: row
     z-index: 20
     backdrop-filter: blur(0.5rem)
+    gap: 0.75rem
 
     *
       flex-wrap: nowrap !important
@@ -270,9 +274,6 @@
 
       .toggleButtonText
         display: block
-
-    .navBarInnerName
-      margin-right: 0.75rem
 
     .profile h1
       overflow-wrap: normal

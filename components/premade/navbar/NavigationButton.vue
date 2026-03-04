@@ -27,10 +27,7 @@
 
     <SafeLink :to="link.link">
       <HStack class="navigationRow">
-        <button
-          class="navigationButton"
-          :class="{ prominent: isSelected() }"
-        >
+        <button class="navigationButton" :class="{ prominent: isSelected() }">
           <Icon
             v-if="link.icon"
             :icon="

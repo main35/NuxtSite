@@ -27,7 +27,7 @@
     </SitePicker>
   </FullscreenCover>
 
-  <Card class="stackModeOnly">
+  <Card :index="0" class="stackModeOnly">
     <HStack>
       <HStack>
         <DynamicImage

@@ -21,7 +21,7 @@
     <Grid class="spaced">
       <LangPickerCard />
 
-      <Card>
+      <Card :index="1">
         <CardTitle
           title="languages.betaNotice"
           icon="solar:danger-triangle-line-duotone"
@@ -38,7 +38,7 @@
       </Card>
     </Grid>
 
-    <BottomFooter />
+    <BottomFooter :index="2" />
   </div>
 </template>
 

@@ -69,7 +69,7 @@
         </button>
       </NavigationTitle>
 
-      <Card>
+      <Card :index="0">
         <CardTitle title="toolbox.quickLinks" icon="solar:bolt-line-duotone" />
 
         <HStack>
@@ -94,15 +94,16 @@
         icon="solar:sledgehammer-line-duotone"
         base-url="/toolbox"
         :launcher-items="LauncherCreators"
+        :index="1"
       />
 
       <divider />
 
       <CardTitle title="pages.apps" icon="solar:widget-2-line-duotone" />
-      <AppsCategoryList :apps-data="appsData" />
+      <AppsCategoryList :index="2" :apps-data="appsData" />
     </VStack>
 
-    <BottomFooter hide-read-more />
+    <BottomFooter :index="3" hide-read-more />
 
     <Modal v-if="showingAboutModal">
       <img

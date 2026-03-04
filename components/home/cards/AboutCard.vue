@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <Card class="autoSpace">
+  <Card :index="2" class="autoSpace">
     <VStack>
       <Description />
       <Spacer />

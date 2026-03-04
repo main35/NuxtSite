@@ -33,7 +33,7 @@
 
 <template>
   <div class="sidebarView sidebarModeOnly spaced">
-    <Card>
+    <Card :index="2">
       <VStack class="fullWidth">
         <DynamicImage
           src="/images/avatar-26.webp"
@@ -52,7 +52,7 @@
       </VStack>
     </Card>
 
-    <Card>
+    <Card :index="3">
       <h3 v-tooltip="t('app.myTime')">{{ currentTime }}</h3>
       <HStack class="spaced">
         <a
@@ -72,7 +72,7 @@
       </HStack>
     </Card>
 
-    <SitePicker class="fullWidth" />
+    <SitePicker :index="4" class="fullWidth" />
   </div>
 </template>
 

@@ -7,6 +7,7 @@
   const { t } = useI18n()
 
   defineProps<{
+    index?: number
     hideReadMore?: boolean
   }>()
 
@@ -16,7 +17,7 @@
 <template>
   <divider class="footerDivider" />
   <footer class="fullWidth">
-    <Card class="spaced">
+    <Card :index="index" class="spaced">
       <CardTitle title="footer.thanks" icon="solar:heart-line-duotone" />
 
       <VStack class="light">

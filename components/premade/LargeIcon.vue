@@ -28,7 +28,7 @@
     .largeIcon
       justify-content: center
       align-items: center
-      transform: rotate(-25deg)
+      animation: largeIconSpinIn 0.4s ease forwards
 
       width: 70%
       aspect-ratio: 1/1
@@ -39,6 +39,7 @@
         height: 60%
         filter: drop-shadow(0 0 2rem rgb(73 73 73 / 0.6))
         opacity: 0.8
+        animation: largeIconContentScale 0.4s ease forwards
 
       .largeIconBackground
         position: absolute
@@ -49,4 +50,16 @@
         border-radius: 35%
         filter: blur(2rem)
         opacity: 0.7
+
+  @keyframes largeIconSpinIn
+    from
+      transform: rotate(25deg) scale(0)
+    to
+      transform: rotate(-25deg) scale(1)
+
+  @keyframes largeIconContentScale
+    from
+      transform: scale(0.4) rotate(25deg)
+    to
+      transform: scale(1) rotate(25deg)
 </style>
