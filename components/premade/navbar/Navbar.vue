@@ -198,7 +198,7 @@
           @click="expandedNavbar = false"
         />
 
-        <button class="transparent" @click="expandedNavbar = !expandedNavbar">
+        <button class="transparent toggleButton" @click="expandedNavbar = !expandedNavbar">
           <Icon
             :icon="
               expandedNavbar
@@ -346,10 +346,13 @@
       height: 1.25rem
 
   // Mobile Behaviors
-  @media (max-width: 35rem)
+  @media (max-width: 40rem)
     .navBarRow
       width: 100%
       justify-content: space-between
+
+      .toggleButton
+        display: none !important
 
       .minimalProfile
         display: block !important
