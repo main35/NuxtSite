@@ -28,15 +28,15 @@
     backdrop-filter: blur(0.5rem) saturate(125%)
     z-index: 2
 
-    transform: translateY(-1rem)
-    opacity: 0.7
-    animation: cardFadeIn 0.2s ease forwards
-    animation-delay: calc(0.05s * var(--card-index))
+    transform: translateY(1.5rem)
+    opacity: 0.4
+    animation: cardFadeIn 0.4s ease forwards
+    animation-delay: calc(0.1s * var(--card-index))
 
     @keyframes cardFadeIn
       from
-        transform: translateY(-1rem)
-        opacity: 0.7
+        transform: translateY(1.5rem)
+        opacity: 0.4
       to
         transform: none
         opacity: 1

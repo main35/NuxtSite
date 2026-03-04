@@ -12,20 +12,20 @@
 
 <template>
   <HStack class="cardTitle">
-    <icon :icon="icon" />
+    <Icon :icon="icon" />
     <h2>{{ t(title) }}</h2>
   </HStack>
 </template>
 
 <style scoped lang="sass">
-  ::v-deep(svg)
-    width: 1.5rem
-    height: 1.5rem
-
   .cardTitle
     gap: 0.5rem
     margin-bottom: 0.5rem
     padding: 0.25rem 0.3rem
+
+    svg
+      width: 1.5rem
+      height: 1.5rem
 
     h2
       margin: 0.25rem 0 0

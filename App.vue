@@ -169,6 +169,7 @@
 
   <div class="progBlurContainer">
     <ProgressiveBlur class="progBlur" :blur="18" :border-radius="0" />
+    <div class="progMask" />
   </div>
 
   <img
@@ -217,6 +218,8 @@
 </template>
 
 <style scoped lang="sass">
+  @use "@/styles/colors"
+
   $blurHeight: 9rem
   $blurTop: calc(100vh - $blurHeight)
   $blurTop: calc(100dvh - $blurHeight)
@@ -234,20 +237,28 @@
 
   .progBlurContainer
     position: fixed
-    top: 0
+    height: $blurHeight
     bottom: 0 !important
     left: 0
     right: 0
     z-index: 9
     pointer-events: none
+    border-radius: 0
 
-  .progBlur
-    left: 0
-    right: 0
-    bottom: 0
-    height: $blurHeight
-    z-index: 10
-    margin-top: $blurTop
+    .progBlur, .progMask
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      height: 100%
+
+    .progBlur
+      z-index: 10
+
+    .progMask
+      background: linear-gradient(to top, colors.$backgroundColor, transparent)
+      opacity: 0.6
 
   .interfaceOptions
     margin-top: 1rem

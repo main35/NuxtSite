@@ -1,6 +1,7 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
   import { ref } from 'vue'
+
+  import Loader from "+/premade/Loader.vue";
   const { t } = useI18n()
 
   const isActive: Ref<boolean> = ref(false)
@@ -26,11 +27,12 @@
 </script>
 
 <template>
-  <div class="progressBar" :class="{ active: isActive }" />
+  <Transition name="loader">
+    <div v-if="isActive" class="progressBar" />
+  </Transition>
 
   <div class="transitionElement" :class="{ active: isActive }">
-    <Icon icon="svg-spinners:90-ring-with-bg" class="spinner" />
-
+    <Loader class="loadingIcon" />
     <p :class="{ hidden: !showingConnecting }">{{ t('app.connecting') }}</p>
   </div>
 </template>
@@ -50,6 +52,7 @@
     z-index: 2
     pointer-events: none
     background: colors.$backgroundColor
+    border-radius: 0
 
     // Animation
     filter: blur(1rem)
@@ -68,37 +71,24 @@
     height: 0.1rem
     z-index: 7
 
+    background: linear-gradient(to right, colors.$accentColor, colors.$swirly02)
+
+  .loader-enter-from
     transform: translateX(-100%)
-    background: colors.$accentColor
 
-    &::before
-      content: ''
-      position: absolute
-      top: 0
-      left: 0
-      right: 0
-      bottom: 0
-      padding: 0.1rem
-      z-index: 6
+  .loader-enter-to
+    transform: translateX(0)
 
-      background: colors.$swirly02
-      filter: blur(0.25rem)
-      opacity: 0.6
+  .loader-enter-active
+    transition: transform 2s ease
 
-    &.active
-      animation: progressActive 1s ease
+  .loader-leave-active
+    transition: none
 
-  @keyframes progressActive
-    0%
-      transform: translateX(-100%)
+  .loader-leave-to
+    transform: translateX(-100%)
 
-    50%
-      transform: none
-
-    100%
-      transform: translateY(-100%)
-
-  .spinner
-    width: 4rem
-    height: 4rem
+  .loadingIcon
+    width: 5rem
+    height: 5rem
 </style>
