@@ -23,6 +23,7 @@ export default defineNuxtConfig({
         { rel: 'dns-prefetch', href: 'https://fonts.asboy2035.com' },
         { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' },
       ],
+      script: [ { src: 'https://cdn.ko-fi.tools/v2/js/shop.js', defer: true } ],
     },
   },
   compatibilityDate: '2026-02-26',

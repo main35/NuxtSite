@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="fix home card tuning, update loader design, fix bottom mask">
-      <change afterPath="$PROJECT_DIR$/components/premade/CursorParticles.vue" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add more loading in animations, improve navbar, add cursor particles">
+      <change afterPath="$PROJECT_DIR$/styles/kofiTools.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuxtSite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NuxtSite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/Loader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/Loader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/TransitionElement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/TransitionElement.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="211" />
+    <option name="cachedIndexableFilesCount" value="218" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -46,8 +42,8 @@
         <option value="JSON File" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
-        <option value="Sass File" />
         <option value="Vue Composition API Component" />
+        <option value="Sass File" />
       </list>
     </option>
   </component>
@@ -89,57 +85,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/cursors/site",
-    "list.type.of.created.stylesheet": "Sass",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/opt/homebrew/bin/node",
-    "nodejs_package_manager_path": "bun",
-    "npm.build.executor": "Run",
-    "npm.cleanup.executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.fastFormat.executor": "Run",
-    "npm.format.executor": "Run",
-    "npm.lint.executor": "Run",
-    "npm.prettier.executor": "Run",
-    "npm.preview.executor": "Run",
-    "npm.reInit.executor": "Run",
-    "npm.verifyTranslations.executor": "Run",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/NuxtSite/public/cursors/site&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/opt/homebrew/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;bun&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.cleanup.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.fastFormat.executor&quot;: &quot;Run&quot;,
+    &quot;npm.format.executor&quot;: &quot;Run&quot;,
+    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
+    &quot;npm.prettier.executor&quot;: &quot;Run&quot;,
+    &quot;npm.preview.executor&quot;: &quot;Run&quot;,
+    &quot;npm.reInit.executor&quot;: &quot;Run&quot;,
+    &quot;npm.verifyTranslations.executor&quot;: &quot;Run&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/cursors/site" />
@@ -784,15 +780,8 @@
       <workItem from="1772646019865" duration="892000" />
       <workItem from="1772657859131" duration="3728000" />
       <workItem from="1772722847262" duration="1801000" />
-      <workItem from="1772724860756" duration="3704000" />
-    </task>
-    <task id="LOCAL-00070" summary="add no JS warning, update deps, add moon wallpaper, update site preview">
-      <option name="closed" value="true" />
-      <created>1767784995656</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1767784995657</updated>
+      <workItem from="1772724860756" duration="9785000" />
+      <workItem from="1772741398313" duration="258000" />
     </task>
     <task id="LOCAL-00071" summary="localize homepage and some components to french, add langs page, UI updates">
       <option name="closed" value="true" />
@@ -1178,7 +1167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772661604498</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="add more loading in animations, improve navbar, add cursor particles">
+      <option name="closed" value="true" />
+      <created>1772730427960</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1772730427960</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1199,7 +1196,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[EXPERIMENTAL] update ads id" />
     <MESSAGE value="[EXPERIMENTAL] switch to native ads" />
     <MESSAGE value="move ads to footer" />
     <MESSAGE value="apply text wrap everywhere" />
@@ -1224,7 +1220,8 @@
     <MESSAGE value="update packages, fix mobile navbar" />
     <MESSAGE value="improve navbar, add card enter transition, remove some legacy code, fix header" />
     <MESSAGE value="fix home card tuning, update loader design, fix bottom mask" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix home card tuning, update loader design, fix bottom mask" />
+    <MESSAGE value="add more loading in animations, improve navbar, add cursor particles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more loading in animations, improve navbar, add cursor particles" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

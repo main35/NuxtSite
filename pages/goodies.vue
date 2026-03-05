@@ -5,7 +5,6 @@
   import type { Cursor } from ':/cursors'
   import setHeadMeta from '&/setHeadMeta'
   import Card from '+/layout/Card.vue'
-  import Grid from '+/layout/Grid.vue'
   import HStack from '+/layout/HStack.vue'
   import VStack from '+/layout/VStack.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
@@ -31,6 +30,10 @@
       console.error('Error fetching cursors:', error)
     }
   })
+
+  function reloadPage() {
+    window.location.reload()
+  }
 </script>
 
 <template>
@@ -49,51 +52,58 @@
       </HStack>
     </Hero>
 
-    <grid class="spaced">
-      <!-- Cursors Card -->
-      <Card>
-        <CardTitle
-          title="goodies.cursors.title"
-          icon="solar:cursor-line-duotone"
-        />
+    <Card class="spaced">
+      <CardTitle
+        title="goodies.wallpapers.title"
+        icon="solar:wallpaper-line-duotone"
+      />
+      <p class="light">{{ t('goodies.wallpapers.desc') }}</p>
 
-        <p class="light">{{ t('goodies.cursors.desc') }}</p>
-        <Spacer />
+      <div
+        id="kofi-shop-embed"
+        data-shop-id="K3K21AMRZR"
+        data-shop-currency="$"
+        data-shop-theme="default"
+        data-shop-soldout="show"
+      />
 
-        <VStack class="fullWidth">
-          <VStack v-for="cursor in cursors" :key="cursor.name" class="spaced">
-            <h3>{{ cursor.name }}</h3>
-            <HStack class="scrollable">
-              <div
-                v-for="asset in cursor.assets"
-                :key="asset.type"
-                class="cursorAsset"
-              >
-                <img :src="asset.path" :alt="asset.type" />
-                <p>{{ asset.type }}</p>
-              </div>
-            </HStack>
-            <a download :href="`/cursors${cursor.downloadURL}`">
-              <button>
-                <Icon icon="iconoir:finder" width="24" height="24" />
-                {{ t('goodies.cursors.download') }}
-              </button>
-            </a>
-          </VStack>
+      <button class="fullWidth" @click="reloadPage()">
+        <Icon icon="solar:refresh-line-duotone" />
+      </button>
+    </Card>
+
+    <!-- Cursors Card -->
+    <Card>
+      <CardTitle
+        title="goodies.cursors.title"
+        icon="solar:cursor-line-duotone"
+      />
+
+      <p class="light">{{ t('goodies.cursors.desc') }}</p>
+      <Spacer />
+
+      <VStack class="fullWidth">
+        <VStack v-for="cursor in cursors" :key="cursor.name" class="spaced">
+          <h3>{{ cursor.name }}</h3>
+          <HStack class="scrollable">
+            <div
+              v-for="asset in cursor.assets"
+              :key="asset.type"
+              class="cursorAsset"
+            >
+              <img :src="asset.path" :alt="asset.type" />
+              <p>{{ asset.type }}</p>
+            </div>
+          </HStack>
+          <a download :href="`/cursors${cursor.downloadURL}`">
+            <button>
+              <Icon icon="iconoir:finder" width="24" height="24" />
+              {{ t('goodies.cursors.download') }}
+            </button>
+          </a>
         </VStack>
-      </Card>
-
-      <!-- Wallpapers Card -->
-      <Card>
-        <CardTitle
-          title="goodies.wallpapers.title"
-          icon="solar:wallpaper-line-duotone"
-        />
-
-        <p class="light">{{ t('goodies.wallpapers.desc') }}</p>
-        <p class="light">{{ t('goodies.wallpapers.comingSoon') }}</p>
-      </Card>
-    </grid>
+      </VStack>
+    </Card>
 
     <BottomFooter />
   </div>
