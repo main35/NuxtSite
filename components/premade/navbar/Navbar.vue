@@ -28,6 +28,10 @@
 
   function toggleNavigation() {
     showMobileNav.value = !showMobileNav.value
+
+    if (!showMobileNav.value) {
+      expandedNavbar.value = false
+    }
   }
 
   function toggleSiteSwitcher() {
@@ -93,6 +97,7 @@
           icon="solar:widget-2-line-duotone"
           base-url="/apps"
           :launcher-items="LauncherApps"
+          :index="0"
         />
 
         <LauncherCard
@@ -100,6 +105,7 @@
           icon="solar:pen-new-square-line-duotone"
           base-url="/creator"
           :launcher-items="LauncherCreators"
+          :index="1"
         />
       </VStack>
     </FullscreenCover>
@@ -140,6 +146,7 @@
     <!-- Main Nav Sections -->
     <HStack class="navBarRow">
       <button
+        v-if="!expandedNavbar"
         @click="showLaunchers = !showLaunchers"
         class="createBtn"
         id="openLauncher"

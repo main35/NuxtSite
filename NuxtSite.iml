@@ -4,7 +4,6 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.output" />
-      <excludeFolder url="file://$MODULE_DIR$/public/cursors" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

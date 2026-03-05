@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { ref } from 'vue'
 
-  import Loader from "+/premade/Loader.vue";
+  import Loader from '+/premade/Loader.vue'
   const { t } = useI18n()
 
   const isActive: Ref<boolean> = ref(false)

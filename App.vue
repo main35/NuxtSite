@@ -12,6 +12,7 @@
   import type { Router } from '#vue-router'
   import LangPickerCard from '+/langs/LangPickerCard.vue'
   import HStack from '+/layout/HStack.vue'
+  import CursorParticles from '+/premade/CursorParticles.vue'
   import Navbar from '+/premade/navbar/Navbar.vue'
   import TransitionElement from '+/premade/TransitionElement.vue'
   import Modal from '+/utils/Modal.vue'
@@ -188,6 +189,8 @@
   <Navbar v-if="showingUi" />
 
   <TransitionElement ref="cover" />
+
+  <CursorParticles />
 
   <Modal v-if="showDomainTip">
     <h1>{{ t('app.oldDomain.title') }}</h1>

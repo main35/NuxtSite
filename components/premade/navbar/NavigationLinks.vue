@@ -11,9 +11,10 @@
 <template>
   <HStack class="navigationLinks noWrap" :class="{ expanded }">
     <NavigationButton
-      v-for="link in NavLinks"
+      v-for="(link, i) in NavLinks"
       :link="link"
       :expanded="expanded"
+      :index="i"
     />
   </HStack>
 </template>

@@ -12,6 +12,7 @@
   const props = defineProps<{
     link: NavLink
     expanded?: boolean
+    index?: number
   }>()
 
   function isSelected(): boolean {
@@ -26,7 +27,11 @@
     </div>
 
     <SafeLink :to="link.link">
-      <HStack class="navigationRow">
+      <HStack
+        class="navigationRow"
+        :class="{ expanded }"
+        :style="{ '--row-index': index }"
+      >
         <button class="navigationButton" :class="{ prominent: isSelected() }">
           <Icon
             v-if="link.icon"
@@ -48,15 +53,32 @@
 <style scoped lang="sass">
   @use "@/styles/colors"
 
-  .navigationButton
-    width: 2.75rem
-    height: 2.75rem
-    transition: 0.2s ease-in-out
-    padding: 0
+  .navigationRow
+    --row-index: 0
 
-    ::v-deep(svg)
-      height: 1.25rem
-      width: 1.25rem
+    &.expanded
+      opacity: 0.4
+      transform: translateY(2rem)
+      animation: fadeInNavRow 0.2s ease forwards
+      animation-delay: calc(0.05s * var(--row-index))
+
+      @keyframes fadeInNavRow
+        from
+          opacity: 0.4
+          transform: translateY(2rem)
+        to
+          opacity: 1
+          transform: none
+
+    .navigationButton
+      width: 2.75rem
+      height: 2.75rem
+      transition: 0.2s ease-in-out
+      padding: 0
+
+      ::v-deep(svg)
+        height: 1.25rem
+        width: 1.25rem
 
   // Tooltip Styling
   .toolTip

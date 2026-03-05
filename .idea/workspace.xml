@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="improve navbar, add card enter transition, remove some legacy code, fix header">
-      <change afterPath="$PROJECT_DIR$/components/premade/Loader.vue" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="fix home card tuning, update loader design, fix bottom mask">
+      <change afterPath="$PROJECT_DIR$/components/premade/CursorParticles.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuxtSite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NuxtSite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/Loader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/Loader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/premade/TransitionElement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/TransitionElement.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/CardTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/CardTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +37,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="210" />
+    <option name="cachedIndexableFilesCount" value="211" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -42,8 +45,8 @@
       <list>
         <option value="JSON File" />
         <option value="JavaScript File" />
-        <option value="Sass File" />
         <option value="TypeScript File" />
+        <option value="Sass File" />
         <option value="Vue Composition API Component" />
       </list>
     </option>
@@ -102,7 +105,7 @@
     "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public",
+    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/cursors/site",
     "list.type.of.created.stylesheet": "Sass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -139,11 +142,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/cursors/site" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$/public/backgrounds" />
       <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/images/icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.output" />
@@ -779,15 +782,9 @@
       <workItem from="1772637385235" duration="990000" />
       <workItem from="1772641428610" duration="3790000" />
       <workItem from="1772646019865" duration="892000" />
-      <workItem from="1772657859131" duration="3679000" />
-    </task>
-    <task id="LOCAL-00069" summary="update username, update site preview image, add new wallpaper (Blue-Close), update footer, improve presentation mode">
-      <option name="closed" value="true" />
-      <created>1767717937849</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1767717937849</updated>
+      <workItem from="1772657859131" duration="3728000" />
+      <workItem from="1772722847262" duration="1801000" />
+      <workItem from="1772724860756" duration="3704000" />
     </task>
     <task id="LOCAL-00070" summary="add no JS warning, update deps, add moon wallpaper, update site preview">
       <option name="closed" value="true" />
@@ -1173,7 +1170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772645203828</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="fix home card tuning, update loader design, fix bottom mask">
+      <option name="closed" value="true" />
+      <created>1772661604498</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1772661604498</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1194,7 +1199,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[EXPERIMENTAL] add ads" />
     <MESSAGE value="[EXPERIMENTAL] update ads id" />
     <MESSAGE value="[EXPERIMENTAL] switch to native ads" />
     <MESSAGE value="move ads to footer" />
@@ -1219,7 +1223,8 @@
     <MESSAGE value="code cleanup, add state labels to services" />
     <MESSAGE value="update packages, fix mobile navbar" />
     <MESSAGE value="improve navbar, add card enter transition, remove some legacy code, fix header" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve navbar, add card enter transition, remove some legacy code, fix header" />
+    <MESSAGE value="fix home card tuning, update loader design, fix bottom mask" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix home card tuning, update loader design, fix bottom mask" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
