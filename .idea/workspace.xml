@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add more loading in animations, improve navbar, add cursor particles">
-      <change afterPath="$PROJECT_DIR$/styles/kofiTools.sass" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add wallpapers to goodies (finally)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -781,15 +778,8 @@
       <workItem from="1772657859131" duration="3728000" />
       <workItem from="1772722847262" duration="1801000" />
       <workItem from="1772724860756" duration="9785000" />
-      <workItem from="1772741398313" duration="258000" />
-    </task>
-    <task id="LOCAL-00071" summary="localize homepage and some components to french, add langs page, UI updates">
-      <option name="closed" value="true" />
-      <created>1767808245299</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1767808245299</updated>
+      <workItem from="1772741398313" duration="299000" />
+      <workItem from="1772797934007" duration="255000" />
     </task>
     <task id="LOCAL-00072" summary="localize links page and apps page, split localization files better">
       <option name="closed" value="true" />
@@ -1175,7 +1165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772730427960</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="add wallpapers to goodies (finally)">
+      <option name="closed" value="true" />
+      <created>1772741690232</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1772741690232</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1196,7 +1194,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[EXPERIMENTAL] switch to native ads" />
     <MESSAGE value="move ads to footer" />
     <MESSAGE value="apply text wrap everywhere" />
     <MESSAGE value="add project icon" />
@@ -1221,7 +1218,8 @@
     <MESSAGE value="improve navbar, add card enter transition, remove some legacy code, fix header" />
     <MESSAGE value="fix home card tuning, update loader design, fix bottom mask" />
     <MESSAGE value="add more loading in animations, improve navbar, add cursor particles" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more loading in animations, improve navbar, add cursor particles" />
+    <MESSAGE value="add wallpapers to goodies (finally)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add wallpapers to goodies (finally)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
