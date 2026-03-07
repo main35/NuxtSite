@@ -22,6 +22,7 @@
         :name="link.name"
         :link="link.url"
         :icon="link.icon"
+        :tag="link.lang"
       />
     </Grid>
   </Card>

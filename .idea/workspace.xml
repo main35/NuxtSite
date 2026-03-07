@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add wallpapers to goodies (finally)">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="fix catgirl theme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/IconItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/SocialLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/SocialLinks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/SocialLink.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/SocialLink.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -779,15 +783,8 @@
       <workItem from="1772722847262" duration="1801000" />
       <workItem from="1772724860756" duration="9785000" />
       <workItem from="1772741398313" duration="299000" />
-      <workItem from="1772797934007" duration="255000" />
-    </task>
-    <task id="LOCAL-00072" summary="localize links page and apps page, split localization files better">
-      <option name="closed" value="true" />
-      <created>1767886594858</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1767886594859</updated>
+      <workItem from="1772797934007" duration="410000" />
+      <workItem from="1772877042989" duration="1167000" />
     </task>
     <task id="LOCAL-00073" summary="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits">
       <option name="closed" value="true" />
@@ -1173,7 +1170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772741690232</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="fix catgirl theme">
+      <option name="closed" value="true" />
+      <created>1772798207906</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1772798207906</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1194,7 +1199,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="move ads to footer" />
     <MESSAGE value="apply text wrap everywhere" />
     <MESSAGE value="add project icon" />
     <MESSAGE value="add project icon, reformat" />
@@ -1219,7 +1223,8 @@
     <MESSAGE value="fix home card tuning, update loader design, fix bottom mask" />
     <MESSAGE value="add more loading in animations, improve navbar, add cursor particles" />
     <MESSAGE value="add wallpapers to goodies (finally)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add wallpapers to goodies (finally)" />
+    <MESSAGE value="fix catgirl theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix catgirl theme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

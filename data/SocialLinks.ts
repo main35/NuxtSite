@@ -1,26 +1,27 @@
 import type SocialLink from ':/SocialLink'
 
+export const IntlSocialLinks: SocialLink[] = [
+  {
+    name: 'ВКонтакте',
+    url: 'https://vk.com/a35hie',
+    icon: 'ri:vk-fill',
+    lang: 'RU'
+  },
+  {
+    name: 'Одноклассники',
+    url: 'https://ok.ru/profile/910193223122',
+    icon: 'simple-icons:odnoklassniki',
+    lang: 'RU'
+  },
+  {
+    name: '微博',
+    url: 'https://weibo.com/a35hie',
+    icon: 'simple-icons:sinaweibo',
+    lang: 'CN'
+  },
+]
+
 export const SocialMediaLinks: SocialLink[] = [
-  {
-    name: 'Discord',
-    url: 'https://discord.com/users/1118629361675939860',
-    icon: 'ic:baseline-discord',
-  },
-  {
-    name: 'Snapchat',
-    url: 'https://snapchat.com/t/BzWqgpTE',
-    icon: 'mingcute:snapchat-fill',
-  },
-  {
-    name: 'Reddit',
-    url: 'https://www.reddit.com/user/asboy2035/',
-    icon: 'fa6-brands:reddit-alien',
-  },
-  {
-    name: 'BlueSky',
-    url: 'https://bsky.app/profile/asboy2035.com',
-    icon: 'ri:bluesky-fill',
-  },
   {
     name: 'Email',
     url: 'mailto:ash@a35.dev',
@@ -40,6 +41,32 @@ export const SocialMediaLinks: SocialLink[] = [
     name: 'Ko-Fi',
     url: 'https://ko-fi.com/a35hie',
     icon: 'cib:ko-fi',
+  },
+  ...IntlSocialLinks,
+  {
+    name: 'Discord',
+    url: 'https://discord.com/users/1118629361675939860',
+    icon: 'ic:baseline-discord',
+  },
+  {
+    name: 'Threads',
+    url: 'https://www.threads.com/@a35hie',
+    icon: 'ri:threads-fill',
+  },
+  {
+    name: 'Snapchat',
+    url: 'https://snapchat.com/t/BzWqgpTE',
+    icon: 'mingcute:snapchat-fill',
+  },
+  {
+    name: 'Reddit',
+    url: 'https://www.reddit.com/user/asboy2035/',
+    icon: 'fa6-brands:reddit-alien',
+  },
+  {
+    name: 'BlueSky',
+    url: 'https://bsky.app/profile/asboy2035.com',
+    icon: 'ri:bluesky-fill',
   },
 ]
 
