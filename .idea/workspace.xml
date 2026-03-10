@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="fix catgirl theme">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add intl/localized social media platforms">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/IconItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SocialLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/SocialLinks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/SocialLink.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/SocialLink.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/kofiTools.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/kofiTools.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +29,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="218" />
+    <option name="cachedIndexableFilesCount" value="225" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -784,15 +779,9 @@
       <workItem from="1772724860756" duration="9785000" />
       <workItem from="1772741398313" duration="299000" />
       <workItem from="1772797934007" duration="410000" />
-      <workItem from="1772877042989" duration="1167000" />
-    </task>
-    <task id="LOCAL-00073" summary="add icons to more cards, localize goodies page, fix cursor downloads, update readme credits">
-      <option name="closed" value="true" />
-      <created>1767889279734</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1767889279734</updated>
+      <workItem from="1772877042989" duration="1336000" />
+      <workItem from="1772909811317" duration="62000" />
+      <workItem from="1773145274237" duration="679000" />
     </task>
     <task id="LOCAL-00074" summary="localize toolbox, creators page, fix goodies page meta, fix broken links">
       <option name="closed" value="true" />
@@ -1178,7 +1167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772798207906</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="add intl/localized social media platforms">
+      <option name="closed" value="true" />
+      <created>1772878353321</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1772878353321</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1199,7 +1196,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="apply text wrap everywhere" />
     <MESSAGE value="add project icon" />
     <MESSAGE value="add project icon, reformat" />
     <MESSAGE value="screw ads" />
@@ -1224,7 +1220,8 @@
     <MESSAGE value="add more loading in animations, improve navbar, add cursor particles" />
     <MESSAGE value="add wallpapers to goodies (finally)" />
     <MESSAGE value="fix catgirl theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix catgirl theme" />
+    <MESSAGE value="add intl/localized social media platforms" />
+    <option name="LAST_COMMIT_MESSAGE" value="add intl/localized social media platforms" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

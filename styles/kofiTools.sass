@@ -51,7 +51,11 @@
 
 
 // Customizations
+#kofi-shop-embed
+  align-items: flex-start
+
 .kofi-shop-filter-container
+  order: 2 !important
   flex-direction: row !important
   margin: var(--kofi-shop-spacing-medium) 0 !important
   padding: 0 !important
@@ -62,6 +66,7 @@
     text-transform: capitalize !important
 
 .kofi-shop-container
+  order: 3 !important
   padding: 0 !important
 
   .kofi-shop-item
@@ -79,4 +84,9 @@
       width: calc(100% - var(--kofi-shop-spacing-large))
 
 div.powered-by-kofi-tools
-  display: none !important
+  position: relative !important
+  order: 1
+  font-size: smaller
+
+  a
+    text-decoration: underline
