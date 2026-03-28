@@ -7,48 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="re-show powered by kofi tools">
-      <change afterPath="$PROJECT_DIR$/components/projects/ProjectStackItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/projects/ProjectView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/projects/ProjectsCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Projects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/TechStack.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/projects.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/project.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/technology.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Grid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Grid.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/BannerNotification.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/BannerNotification.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NavLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/NavLinks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-ca-uw.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-ca-uw.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-cn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-emoji.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-emoji.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-et.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-et.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-fi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-hgy.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-hgy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-jp.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-jp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-kr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-kr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-nl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pirate.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-pirate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-pl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-pt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-sv.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-sv.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/navigation.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navigation.sass" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add projects, switch to border-box">
+      <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -835,15 +795,7 @@
       <workItem from="1773575871935" duration="642000" />
       <workItem from="1773583188148" duration="39000" />
       <workItem from="1774711156262" duration="213000" />
-      <workItem from="1774711589982" duration="6733000" />
-    </task>
-    <task id="LOCAL-00075" summary="update languages page design, reformat, rearrange localization files">
-      <option name="closed" value="true" />
-      <created>1767892028034</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1767892028034</updated>
+      <workItem from="1774711589982" duration="6849000" />
     </task>
     <task id="LOCAL-00076" summary="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, clean up code">
       <option name="closed" value="true" />
@@ -1229,7 +1181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773146047697</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="add projects, switch to border-box">
+      <option name="closed" value="true" />
+      <created>1774718637066</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1774718637066</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1250,7 +1210,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add project icon, reformat" />
     <MESSAGE value="screw ads" />
     <MESSAGE value="update to new domain, improve UI toggle" />
     <MESSAGE value="update links page, update navbar design, simplify code, improve mobile behaviors, update icons" />
@@ -1275,7 +1234,8 @@
     <MESSAGE value="fix catgirl theme" />
     <MESSAGE value="add intl/localized social media platforms" />
     <MESSAGE value="re-show powered by kofi tools" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-show powered by kofi tools" />
+    <MESSAGE value="add projects, switch to border-box" />
+    <option name="LAST_COMMIT_MESSAGE" value="add projects, switch to border-box" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
