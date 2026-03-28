@@ -13,7 +13,7 @@ export default definePackage({
     email: 'ash@a35.dev',
     url: 'https://a35.dev/',
   },
-  version: '6.6.0',
+  version: '6.6.1',
   license: 'Apache-2.0',
   private: false,
   type: 'module',
@@ -31,8 +31,7 @@ export default definePackage({
     ci: 'bun install && bun run build',
 
     // code style
-    prettier:
-      'prettier --write --experimental-cli --ignore-path .prettierignore .',
+    prettier: 'oxfmt --write .',
     fixPaths: [
       fixPathScript('@/data/', '$/'),
       fixPathScript('@/types/', ':/'),
@@ -72,8 +71,8 @@ export default definePackage({
     'eslint-plugin-import': '^2.32.0',
     'eslint-plugin-simple-import-sort': '^12.1.1',
     nuxt: '^4.3.1',
+    oxfmt: '^0.42.0',
     'postcss-import': '^16.1.1',
-    prettier: '^3.8.1',
     'replace-in-files-cli': '^4.0.0',
     sass: '^1.97.3',
     'vue-eslint-parser': '^10.4.0',

@@ -7,7 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add projects, switch to border-box">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update version">
+      <change afterPath="$PROJECT_DIR$/oxfmt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +46,8 @@
         <option value="JSON File" />
         <option value="JavaScript File" />
         <option value="Sass File" />
-        <option value="TypeScript File" />
         <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -795,15 +801,7 @@
       <workItem from="1773575871935" duration="642000" />
       <workItem from="1773583188148" duration="39000" />
       <workItem from="1774711156262" duration="213000" />
-      <workItem from="1774711589982" duration="6849000" />
-    </task>
-    <task id="LOCAL-00076" summary="localize more elements, add language picker at start, add localstorage helpers, add never option for domain, clean up code">
-      <option name="closed" value="true" />
-      <created>1767983832100</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1767983832101</updated>
+      <workItem from="1774711589982" duration="7609000" />
     </task>
     <task id="LOCAL-00077" summary="add korean, fix text wrapping">
       <option name="closed" value="true" />
@@ -1189,7 +1187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774718637066</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="update version">
+      <option name="closed" value="true" />
+      <created>1774718676004</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1774718676004</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1210,7 +1216,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="screw ads" />
     <MESSAGE value="update to new domain, improve UI toggle" />
     <MESSAGE value="update links page, update navbar design, simplify code, improve mobile behaviors, update icons" />
     <MESSAGE value="update to package.config.ts" />
@@ -1235,7 +1240,8 @@
     <MESSAGE value="add intl/localized social media platforms" />
     <MESSAGE value="re-show powered by kofi tools" />
     <MESSAGE value="add projects, switch to border-box" />
-    <option name="LAST_COMMIT_MESSAGE" value="add projects, switch to border-box" />
+    <MESSAGE value="update version" />
+    <option name="LAST_COMMIT_MESSAGE" value="update version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
