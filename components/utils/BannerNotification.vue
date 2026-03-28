@@ -40,7 +40,7 @@
   .bannerNotification
     padding: 1.25rem
     width: fit-content
-    max-width: calc(100vw - 2rem)
+    max-width: 100vw
     transform: translateY(calc(-100% - 1rem))
     animation: notification 3s ease forwards
     animation-delay: 1s

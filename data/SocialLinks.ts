@@ -5,19 +5,19 @@ export const IntlSocialLinks: SocialLink[] = [
     name: 'ВКонтакте',
     url: 'https://vk.com/a35hie',
     icon: 'ri:vk-fill',
-    lang: 'RU'
+    lang: 'RU',
   },
   {
     name: 'Одноклассники',
     url: 'https://ok.ru/profile/910193223122',
     icon: 'simple-icons:odnoklassniki',
-    lang: 'RU'
+    lang: 'RU',
   },
   {
     name: '微博',
     url: 'https://weibo.com/a35hie',
     icon: 'simple-icons:sinaweibo',
-    lang: 'CN'
+    lang: 'CN',
   },
 ]
 

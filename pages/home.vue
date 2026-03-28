@@ -37,8 +37,10 @@
           <LocationCard />
         </Grid>
 
+        <ProjectsCard :index="4" />
         <LangsCard />
-        <BottomFooter :index="5" />
+
+        <BottomFooter :index="6" />
       </div>
     </div>
   </div>

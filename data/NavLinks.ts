@@ -16,6 +16,11 @@ export const NavLinks: NavLink[] = [
     icon: 'solar:widget-3-line-duotone',
   },
   {
+    link: '/projects',
+    text: 'pages.projects',
+    icon: 'solar:folder-open-line-duotone',
+  },
+  {
     link: '/services',
     text: 'pages.services',
     icon: 'solar:cloud-line-duotone',

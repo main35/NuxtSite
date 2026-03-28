@@ -28,7 +28,11 @@
     </InteriorItem>
   </a>
 
-  <InteriorItem v-if="!link" class="centered iconItem" :class="{ light: light }">
+  <InteriorItem
+    v-if="!link"
+    class="centered iconItem"
+    :class="{ light: light }"
+  >
     <div class="tag" v-if="tag">{{ tag }}</div>
 
     <Icon :icon="icon" />

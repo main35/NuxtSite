@@ -21,7 +21,7 @@
 
 <style scoped lang="sass">
   .navigationLinks
-    gap: 0.5rem
+    gap: 0.25rem
     transition: 0.2s ease
 
     &.expanded

@@ -5,11 +5,13 @@
   import IconItem from '+/layout/IconItem.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import Spacer from '+/utils/Spacer.vue'
+  import { Langs } from '$/TechStack'
+
   const { t } = useI18n()
 </script>
 
 <template>
-  <Card :index="4" class="langsCard spaced">
+  <Card :index="5" class="langsCard spaced">
     <CardTitle title="home.languages.title" icon="solar:earth-line-duotone" />
 
     <p>{{ t('home.languages.desc') }}</p>
@@ -22,46 +24,15 @@
       <p class="light">{{ t('home.languages.learning') }}</p>
       <p>:</p>
     </HStack>
+
     <Grid class="langsGrid spaced">
       <IconItem
-        name="Vue/Nuxt"
-        icon="proicons:vuejs"
-        link="https://vuejs.org/"
+        v-for="lang in Langs"
+        :name="lang.name"
+        :icon="lang.icon"
+        :link="lang.link"
+        :light="lang.isLearning"
       />
-
-      <IconItem
-        name="TypeScript"
-        icon="proicons:typescript"
-        link="https://www.typescriptlang.org/"
-      />
-
-      <IconItem
-        name="Swift"
-        icon="iconoir:apple-swift"
-        link="https://www.swift.org/"
-      />
-
-      <IconItem
-        name="C++"
-        icon="bxl:c-plus-plus"
-        link="https://cplusplus.com/"
-      />
-
-      <IconItem
-        name="Python"
-        icon="proicons:python"
-        link="https://www.python.org/"
-      />
-
-      <IconItem
-        name="SQL"
-        icon="tabler:file-type-sql"
-        link="https://www.sqlite.org/index.html"
-      />
-
-      <!-- Learning -->
-      <IconItem name="Go" icon="nonicons:go-16" light />
-      <IconItem name="Rust" icon="fluent-mdl2:rust-language-logo" light />
     </Grid>
   </Card>
 </template>

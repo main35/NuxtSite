@@ -16,8 +16,4 @@
 
   .grid.tight
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr))
-    width: 100%
-
-  .grid.tight > .card
-    width: calc(100% - 1.5rem)
 </style>

@@ -76,9 +76,13 @@
       transition: 0.2s ease-in-out
       padding: 0
 
-      ::v-deep(svg)
+      &:hover svg
+        transform: rotate(10deg)
+
+      svg
         height: 1.25rem
         width: 1.25rem
+        transition: 0.1s ease
 
   // Tooltip Styling
   .toolTip

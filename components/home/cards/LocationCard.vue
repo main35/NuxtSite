@@ -121,7 +121,7 @@
     position: relative
     justify-content: flex-end
     align-items: flex-end
-    width: calc(100% - 1.5rem)
+    width: 100%
     height: 16rem
     overflow: hidden
 
@@ -133,8 +133,4 @@
       scale: 2
       transform: translateX(-50)
       top: 50%
-
-  @media (max-width: 35rem)
-    .locationGlobe
-      width: calc(100% - 1rem)
 </style>

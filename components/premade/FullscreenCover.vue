@@ -29,7 +29,7 @@
 
   .fullScreenCoverContent
     flex-direction: column
-    width: calc(100% - 1rem)
+    width: 100%
     overflow: scroll
 
   @keyframes opacity

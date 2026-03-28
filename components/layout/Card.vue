@@ -17,7 +17,7 @@
     --card-radius: 3rem
     --card-index: 0
 
-    width: calc(100% - 3rem)
+    width: 100%
     position: relative
     align-items: flex-start
     padding: 1.5rem
@@ -70,7 +70,5 @@
   @media (max-width: 35rem)
     .card
       --card-radius: 2.25rem
-
-      width: calc(100% - 1.5rem)
       padding: 0.75rem
 </style>
