@@ -65,7 +65,7 @@ export const SocialMediaLinks: SocialLink[] = [
   },
   {
     name: 'BlueSky',
-    url: 'https://bsky.app/profile/asboy2035.com',
+    url: 'https://bsky.app/profile/a35hie.me',
     icon: 'ri:bluesky-fill',
   },
 ]

@@ -61,7 +61,7 @@
           <NotificationDot />
         </HStack>
         <SitePick
-          to="https://fonts.asboy2035.com/"
+          to="https://fonts.a35hie.me/"
           title="sites.fonts"
           icon="solar:text-line-duotone"
         />

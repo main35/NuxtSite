@@ -24,7 +24,7 @@
 
   async function fetchPlaylists() {
     try {
-      const res = await fetch('https://api.asboy2035.com/playlists')
+      const res = await fetch('https://api.a35hie.me/playlists')
       playlists.value = await res.json()
     } catch (error) {
       console.error('Failed to load playlists:', error)

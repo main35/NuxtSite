@@ -16,11 +16,11 @@ export default defineNuxtConfig({
         },
         {
           rel: 'preconnect',
-          href: 'https://fonts.asboy2035.com',
+          href: 'https://fonts.a35hie.me',
           crossorigin: '',
         },
         { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
-        { rel: 'dns-prefetch', href: 'https://fonts.asboy2035.com' },
+        { rel: 'dns-prefetch', href: 'https://fonts.a35hie.me' },
         { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' },
       ],
       script: [ { src: 'https://cdn.ko-fi.tools/v2/js/shop.js', defer: true } ],

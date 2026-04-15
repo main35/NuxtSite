@@ -7,11 +7,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="switch from Prettier to Oxfmt">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add release state">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/SocialLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/SocialLinks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/launchers/LauncherApps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/launchers/LauncherApps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-kr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-kr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bimi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/bimi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/fonts.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +74,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/main35/NuxtSite.git&quot;,
-    &quot;accountId&quot;: &quot;3a099e4d-a960-4419-accc-5f28f60b6a13&quot;
+    &quot;accountId&quot;: &quot;e944b087-0720-442f-99d8-88ed0c18f885&quot;
   }
 }</component>
   <component name="MacroExpansionManager">
@@ -803,15 +812,17 @@
       <workItem from="1775122525677" duration="824000" />
       <workItem from="1775157023589" duration="6000" />
       <workItem from="1775196559037" duration="1217000" />
-      <workItem from="1775378293510" duration="229000" />
-    </task>
-    <task id="LOCAL-00078" summary="add korean, fix text wrapping">
-      <option name="closed" value="true" />
-      <created>1768920962620</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1768920962620</updated>
+      <workItem from="1775378293510" duration="2977000" />
+      <workItem from="1775396995183" duration="3000" />
+      <workItem from="1775538315931" duration="142000" />
+      <workItem from="1775812745981" duration="104000" />
+      <workItem from="1775813980847" duration="371000" />
+      <workItem from="1775814365039" duration="90000" />
+      <workItem from="1776157922246" duration="639000" />
+      <workItem from="1776218130098" duration="90000" />
+      <workItem from="1776218253178" duration="41000" />
+      <workItem from="1776218298881" duration="343000" />
+      <workItem from="1776222321412" duration="1276000" />
     </task>
     <task id="LOCAL-00079" summary="add prompt">
       <option name="closed" value="true" />
@@ -1197,7 +1208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774719431348</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="add release state">
+      <option name="closed" value="true" />
+      <created>1775378551802</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1775378551802</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1218,7 +1237,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update links page, update navbar design, simplify code, improve mobile behaviors, update icons" />
     <MESSAGE value="update to package.config.ts" />
     <MESSAGE value="update to new ts-pkg version" />
     <MESSAGE value="update coloring, improve package.ts" />
@@ -1243,7 +1261,8 @@
     <MESSAGE value="add projects, switch to border-box" />
     <MESSAGE value="update version" />
     <MESSAGE value="switch from Prettier to Oxfmt" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch from Prettier to Oxfmt" />
+    <MESSAGE value="add release state" />
+    <option name="LAST_COMMIT_MESSAGE" value="add release state" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -21,7 +21,7 @@
 
   onMounted(async () => {
     try {
-      const response = await fetch('https://api.asboy2035.com/apps')
+      const response = await fetch('https://api.a35hie.me/apps')
       if (!response.ok)
         throw new Error(`Failed to fetch: ${response.statusText}`)
       appsData.value = await response.json()

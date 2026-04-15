@@ -22,7 +22,7 @@
 
   onMounted(async () => {
     try {
-      const response = await fetch('https://api.asboy2035.com/cursors')
+      const response = await fetch('https://api.a35hie.me/cursors')
       if (!response.ok)
         throw new Error(`Failed to fetch: ${response.statusText}`)
       cursors.value = await response.json()
