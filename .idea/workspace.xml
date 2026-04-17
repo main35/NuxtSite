@@ -7,20 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add release state">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update to a35hie.me for more places">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SocialLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/SocialLinks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/launchers/LauncherApps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/launchers/LauncherApps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-kr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-kr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bimi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/bimi.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/fonts.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -822,15 +811,22 @@
       <workItem from="1776218130098" duration="90000" />
       <workItem from="1776218253178" duration="41000" />
       <workItem from="1776218298881" duration="343000" />
-      <workItem from="1776222321412" duration="1276000" />
-    </task>
-    <task id="LOCAL-00079" summary="add prompt">
-      <option name="closed" value="true" />
-      <created>1769012949784</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1769012949785</updated>
+      <workItem from="1776222321412" duration="1681000" />
+      <workItem from="1776227147939" duration="30000" />
+      <workItem from="1776231135818" duration="1361000" />
+      <workItem from="1776244352407" duration="24000" />
+      <workItem from="1776244511727" duration="13000" />
+      <workItem from="1776245564400" duration="11000" />
+      <workItem from="1776248728984" duration="73000" />
+      <workItem from="1776316179947" duration="612000" />
+      <workItem from="1776316918373" duration="657000" />
+      <workItem from="1776318558756" duration="5000" />
+      <workItem from="1776318604518" duration="1073000" />
+      <workItem from="1776320675292" duration="245000" />
+      <workItem from="1776324400473" duration="10000" />
+      <workItem from="1776327107197" duration="7000" />
+      <workItem from="1776363915888" duration="758000" />
+      <workItem from="1776392805979" duration="154000" />
     </task>
     <task id="LOCAL-00080" summary="update prompt">
       <option name="closed" value="true" />
@@ -1216,7 +1212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775378551802</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="update to a35hie.me for more places">
+      <option name="closed" value="true" />
+      <created>1776223932324</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1776223932325</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1237,7 +1241,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update to package.config.ts" />
     <MESSAGE value="update to new ts-pkg version" />
     <MESSAGE value="update coloring, improve package.ts" />
     <MESSAGE value="add 404 game" />
@@ -1262,7 +1265,8 @@
     <MESSAGE value="update version" />
     <MESSAGE value="switch from Prettier to Oxfmt" />
     <MESSAGE value="add release state" />
-    <option name="LAST_COMMIT_MESSAGE" value="add release state" />
+    <MESSAGE value="update to a35hie.me for more places" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to a35hie.me for more places" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
