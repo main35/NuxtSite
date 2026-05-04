@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update to a35hie.me for more places">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="fix display being too narrow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -826,15 +826,14 @@
       <workItem from="1776324400473" duration="10000" />
       <workItem from="1776327107197" duration="7000" />
       <workItem from="1776363915888" duration="758000" />
-      <workItem from="1776392805979" duration="154000" />
-    </task>
-    <task id="LOCAL-00080" summary="update prompt">
-      <option name="closed" value="true" />
-      <created>1769013565573</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1769013565573</updated>
+      <workItem from="1776392805979" duration="380000" />
+      <workItem from="1776418806418" duration="183000" />
+      <workItem from="1776439667659" duration="675000" />
+      <workItem from="1776440389898" duration="28000" />
+      <workItem from="1776440479121" duration="7657000" />
+      <workItem from="1776609191369" duration="71000" />
+      <workItem from="1777356414610" duration="19000" />
+      <workItem from="1777357363046" duration="31000" />
     </task>
     <task id="LOCAL-00081" summary="improve lang picker handling with URL overrides">
       <option name="closed" value="true" />
@@ -1220,7 +1219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776223932325</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="fix display being too narrow">
+      <option name="closed" value="true" />
+      <created>1776393095886</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1776393095887</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1241,7 +1248,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update to new ts-pkg version" />
     <MESSAGE value="update coloring, improve package.ts" />
     <MESSAGE value="add 404 game" />
     <MESSAGE value="update packages" />
@@ -1266,7 +1272,8 @@
     <MESSAGE value="switch from Prettier to Oxfmt" />
     <MESSAGE value="add release state" />
     <MESSAGE value="update to a35hie.me for more places" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to a35hie.me for more places" />
+    <MESSAGE value="fix display being too narrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix display being too narrow" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

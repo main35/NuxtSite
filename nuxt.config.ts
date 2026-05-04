@@ -26,13 +26,13 @@ export default defineNuxtConfig({
       script: [ { src: 'https://cdn.ko-fi.tools/v2/js/shop.js', defer: true } ],
     },
   },
-  compatibilityDate: '2026-02-26',
+  compatibilityDate: '2026-04-17',
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
       siteRelease: 'Here come the animations!',
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
-      posthogHost: 'https://us.i.posthog.com',
+      posthogHost: 'https://s.a35.dev',
       posthogDefaults: '2025-05-24',
     },
   },
