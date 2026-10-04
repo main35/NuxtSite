@@ -1,22 +1,17 @@
 <script setup lang="ts">
-  import { computed, onMounted } from 'vue'
+  import { Icon } from '@iconify/vue'
+  import { computed } from 'vue'
 
+  import type { PlaylistLinkType } from ':/playlists'
   import setHeadMeta from '&/setHeadMeta'
-  import LinkIcon from '+/apps/LinkIcon.vue'
   import Card from '+/layout/Card.vue'
   import Grid from '+/layout/Grid.vue'
   import HStack from '+/layout/HStack.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
   import VStack from '+/layout/VStack.vue'
-  import AppleMusic from '+/playlists/AppleMusic.vue'
-  import Deezer from '+/playlists/Deezer.vue'
-  import Spotify from '+/playlists/Spotify.vue'
-  import YoutubeMusic from '+/playlists/YoutubeMusic.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
   import CardTitle from '+/utils/CardTitle.vue'
-  import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
-  import { PlaylistsNavLink } from '$/NavLinks'
   import { playlists } from '$/playlists'
 
   const { t } = useI18n()
@@ -26,47 +21,64 @@
     playlists.find((p) => p.slug === route.params.slug)
   )
 
-  onMounted(async () => {
-    if (playlist.value) {
-      setHeadMeta({
-        page: playlist.value.title,
-        subtitle: playlist.value.description,
-        icon: playlist.value.image,
-        group: 'Playlist',
-      })
-    }
-  })
+  if (playlist.value) {
+    setHeadMeta({
+      page: playlist.value.title,
+      subtitle: playlist.value.description,
+      icon: playlist.value.image,
+      group: 'Playlist',
+    })
+  }
 
-  function getIconComponent(type: string): Component {
+  function getLinkIcon(type: PlaylistLinkType): string {
     switch (type) {
       case 'apple':
-        return AppleMusic
-      case 'spotify':
-        return Spotify
+        return 'thesvg-color:apple-music'
       case 'deezer':
-        return Deezer
+        return 'thesvg-color:deezer'
+      case 'soundcloud':
+        return 'selfhst:soundcloud'
+      case 'spotify':
+        return 'thesvg-color:spotify'
+      case 'yandex':
+        return 'thesvg-color:yandex'
       case 'youtube':
-        return YoutubeMusic
+        return 'thesvg-color:youtube'
       default:
-        return LinkIcon
+        return 'solar:link-minimalistic-2-line-duotone'
+    }
+  }
+
+  function getLinkTitle(type: PlaylistLinkType): string {
+    switch (type) {
+      case 'apple':
+        return 'Apple Music'
+      case 'deezer':
+        return 'Deezer'
+      case 'soundcloud':
+        return 'SoundCloud'
+      case 'spotify':
+        return 'Spotify'
+      case 'yandex':
+        return 'Yandex'
+      case 'youtube':
+        return 'YouTube'
     }
   }
 </script>
 
 <template>
   <div v-if="playlist" class="contentView">
-    <Hero :link="PlaylistsNavLink">
-      <h1>{{ playlist.title }}</h1>
-    </Hero>
-
-    <Card class="spaced">
+    <Card class="spaced playlistCard">
       <HStack class="spaced">
         <img
           class="playlistArt"
           :src="playlist.image"
           :alt="`${playlist.title} playlist cover`"
         />
+
         <VStack>
+          <h1>{{ playlist.title }}</h1>
           <h3 class="light">{{ t('playlists.by') }} {{ playlist.author }}</h3>
           <p class="light">{{ playlist.description }}</p>
         </VStack>
@@ -89,8 +101,8 @@
           rel="noopener noreferrer"
         >
           <InteriorItem class="centered">
-            <component :is="getIconComponent(link.type)" class="icon" />
-            <p>{{ link.title }}</p>
+            <Icon :icon="getLinkIcon(link.type)" class="icon" />
+            <p>{{ getLinkTitle(link.type) }}</p>
           </InteriorItem>
         </a>
       </grid>
@@ -101,9 +113,11 @@
 </template>
 
 <style scoped lang="sass">
-  .playlistArt
-    border-radius: 1rem
-    width: 14rem
+  .playlistCard
+    height: fit-content
+
+    .playlistArt
+      width: 14rem
 
   @media (max-width: 35rem)
     .playlistArt

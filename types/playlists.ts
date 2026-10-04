@@ -1,7 +1,14 @@
+export type PlaylistLinkType =
+  | 'apple'
+  | 'spotify'
+  | 'deezer'
+  | 'youtube'
+  | 'yandex'
+  | 'soundcloud'
+
 export interface PlaylistLink {
-  title: string
   url: string
-  type: 'apple' | 'spotify' | 'deezer' | 'youtube'
+  type: PlaylistLinkType
 }
 
 export interface Playlist {

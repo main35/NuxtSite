@@ -7,22 +7,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="meta updates">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add colored sidebar icons, uwu toggle GUI, centralize and simplify hero/page data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/LargeIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/LargeIcon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NavLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/NavLinks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/MoreLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/MoreLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/playlists/AppleMusic.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/playlists/Deezer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/playlists/Spotify.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/playlists/YoutubeMusic.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/playlists.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/playlists.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/extras.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/extras.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/links.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/work/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/work/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/navLink.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/navLink.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/uwuify.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/uwuify.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/navigation.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navigation.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/playlists.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/playlists.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,6 @@
   </component>
   <component name="EmbeddingIndexingInfo">
     <option name="cachedIndexableFilesCount" value="217" />
-    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,61 +103,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0032625789406555" />
-      <entry key="MS500" value="1.4442860169593015" />
-      <entry key="S2" value="3.613576804357055" />
-      <entry key="S5" value="5.258475351642351" />
-      <entry key="S10" value="6.278319393971477" />
-      <entry key="S30" value="8.657162814415322" />
-      <entry key="S60" value="11.57712092773742" />
-      <entry key="M2" value="15.058028797294092" />
-      <entry key="M5" value="18.90260664325311" />
-      <entry key="M10" value="23.153129018609498" />
-      <entry key="M15" value="28.48684142387206" />
-      <entry key="M30" value="53.420655890734984" />
-      <entry key="H1" value="125.69305275407812" />
-      <entry key="H2" value="282.2421256284733" />
-      <entry key="H4" value="560.1953589410875" />
-      <entry key="D1" value="2257.5462137649865" />
-      <entry key="W1" value="3846.7243924738077" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000012026" />
+      <entry key="S30" value="1.0002366472459052" />
+      <entry key="S60" value="1.04047813303094" />
+      <entry key="M2" value="1.8033776853703989" />
+      <entry key="M5" value="9.423963143176497" />
+      <entry key="M10" value="26.482044572942858" />
+      <entry key="M15" value="41.149219163477106" />
+      <entry key="M30" value="77.28906515097552" />
+      <entry key="H1" value="151.75830826619975" />
+      <entry key="H2" value="307.8657864873838" />
+      <entry key="H4" value="588.1367355969523" />
+      <entry key="D1" value="2301.268485646985" />
+      <entry key="W1" value="3912.62346710098" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.2480522078218887E-267" />
-      <entry key="S5" value="3.480238692030745E-107" />
-      <entry key="S10" value="8.175308139868418E-54" />
-      <entry key="S30" value="3.2503138169736123E-18" />
-      <entry key="S60" value="2.9475965426986246E-9" />
-      <entry key="M2" value="1.075498741992197E-4" />
-      <entry key="M5" value="0.06967628428662108" />
-      <entry key="M10" value="0.6717640874642163" />
-      <entry key="M15" value="1.7088183193905382" />
-      <entry key="M30" value="7.293087223198418" />
-      <entry key="H1" value="24.488376421816213" />
-      <entry key="H2" value="63.27716806685797" />
-      <entry key="H4" value="134.65935854473506" />
-      <entry key="D1" value="623.7647230379398" />
-      <entry key="W1" value="1123.9507033205516" />
+      <entry key="MS500" value="7.581868123557231E-247" />
+      <entry key="S2" value="3.448321868207457E-62" />
+      <entry key="S5" value="4.576872627104588E-25" />
+      <entry key="S10" value="1.2839495882849964E-12" />
+      <entry key="S30" value="3.019099903241357E-4" />
+      <entry key="S60" value="0.04816408119178224" />
+      <entry key="M2" value="0.7357668428248719" />
+      <entry key="M5" value="5.4526325211304645" />
+      <entry key="M10" value="13.938218735572413" />
+      <entry key="M15" value="20.327148639669502" />
+      <entry key="M30" value="33.11821566754504" />
+      <entry key="H1" value="53.74065317570858" />
+      <entry key="H2" value="93.90147537410772" />
+      <entry key="H4" value="166.4707101169149" />
+      <entry key="D1" value="659.4663137128031" />
+      <entry key="W1" value="1165.8474151120354" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9758502017718" />
-      <entry key="MS500" value="1.4229697546024422" />
-      <entry key="S2" value="3.5692196991893907" />
-      <entry key="S5" value="5.229271516331508" />
-      <entry key="S10" value="6.257512105986833" />
-      <entry key="S30" value="8.624365341837231" />
-      <entry key="S60" value="11.532183622606778" />
-      <entry key="M2" value="15.01681906021237" />
-      <entry key="M5" value="18.94694235888853" />
-      <entry key="M10" value="23.80655998437876" />
-      <entry key="M15" value="30.179016175296436" />
-      <entry key="M30" value="60.69694433389709" />
-      <entry key="H1" value="150.16135115234854" />
-      <entry key="H2" value="345.49636439016587" />
-      <entry key="H4" value="694.8322364436668" />
-      <entry key="D1" value="2881.296521939403" />
-      <entry key="W1" value="4970.671551191914" />
+      <entry key="MS100" value="0.6830201283771977" />
+      <entry key="MS500" value="0.9265880618903709" />
+      <entry key="S2" value="0.9811189749983187" />
+      <entry key="S5" value="0.9924043746858185" />
+      <entry key="S10" value="0.9961949481353636" />
+      <entry key="S30" value="0.9992540841858839" />
+      <entry key="S60" value="1.0868601146722854" />
+      <entry key="M2" value="2.5296353295386105" />
+      <entry key="M5" value="14.847168291587568" />
+      <entry key="M10" value="40.38108303099321" />
+      <entry key="M15" value="61.43705291608175" />
+      <entry key="M30" value="110.37305925926938" />
+      <entry key="H1" value="205.46887205428013" />
+      <entry key="H2" value="401.7391189271147" />
+      <entry key="H4" value="754.5821648295772" />
+      <entry key="D1" value="2960.7197918577467" />
+      <entry key="W1" value="5078.467232464048" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -221,6 +217,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "editor.preferences.tabs",
     "ts.external.directory.path": "/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
@@ -603,8 +600,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
       </set>
     </attachedChunks>
   </component>
@@ -1609,7 +1606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="optimize CSS vars, update nuxt config" />
     <MESSAGE value="fix cobe version back to 0.6.5" />
     <MESSAGE value="add translations, remove old unused content, animate sidebar, add home to sidebar" />
     <MESSAGE value="add og image generation" />
@@ -1634,7 +1630,8 @@
     <MESSAGE value="add uwu mode" />
     <MESSAGE value="redesign nav menu, redesign qr code" />
     <MESSAGE value="meta updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="meta updates" />
+    <MESSAGE value="add colored sidebar icons, uwu toggle GUI, centralize and simplify hero/page data" />
+    <option name="LAST_COMMIT_MESSAGE" value="add colored sidebar icons, uwu toggle GUI, centralize and simplify hero/page data" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

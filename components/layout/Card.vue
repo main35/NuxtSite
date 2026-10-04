@@ -43,7 +43,7 @@
 
     ::v-deep(img)
       max-width: 100%
-      border-radius: 0.75rem
+      border-radius: 1.5rem
 
 
   @media (max-width: 35rem)

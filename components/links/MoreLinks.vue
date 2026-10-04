@@ -24,6 +24,13 @@
 
     <h3>{{ t('links.playlists') }}</h3>
     <HStack>
+      <SafeLink to="/playlists/ash26">
+        <button>
+          <Icon icon="solar:music-note-outline" />
+          ash '26 ૮꒰ ˶> ༝ < ྀི˶꒱ა
+        </button>
+      </SafeLink>
+
       <SafeLink to="/playlists/topsongs">
         <button>
           <Icon icon="solar:music-note-outline" />
