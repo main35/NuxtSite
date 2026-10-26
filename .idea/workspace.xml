@@ -7,19 +7,80 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add colored sidebar icons, uwu toggle GUI, centralize and simplify hero/page data">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update playlist support, add new 2026 playlist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/OgImage/PagePreview.takumi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/OgImage/PagePreview.takumi.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/apps/AppLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppLink.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/apps/ComButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/ComButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/apps/UpdatedBadge.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/UpdatedBadge.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/games/RingGame.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/games/RingGame.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/IntroHero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/IntroHero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/NavButtons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/NavButtons.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/cards/AboutCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/AboutCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/langs/LangPickerCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/langs/LangPickerCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/langs/ModernLangPicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/langs/ModernLangPicker.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Grid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Grid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/HStack.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/HStack.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/IconItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/VStack.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/VStack.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/LinkTicker.client.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/LinkTicker.client.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/links/MoreLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/MoreLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/playlists/AppleMusic.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/playlists/Deezer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/playlists/Spotify.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/playlists/YoutubeMusic.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/playlists.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/playlists.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/AnimatedText.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/AnimatedText.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/Clock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/Clock.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/CodeBlock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/CodeBlock.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/CutiesCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/CutiesCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/Description.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/Description.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/LargeIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/LargeIcon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/Loader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/Loader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/NotificationDot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/NotificationDot.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/TransitionElement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/TransitionElement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/LauncherCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/LauncherCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/ShareQr.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/ShareQr.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/projects/ProjectStackItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects/ProjectStackItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/projects/ProjectView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects/ProjectView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/projects/ProjectsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects/ProjectsCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/BannerNotification.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/BannerNotification.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/CardTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/CardTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Divider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Divider.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/DynamicImage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/DynamicImage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Modal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/SafeLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/SafeLink.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Spacer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Spacer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.vue" beforeDir="false" afterPath="$PROJECT_DIR$/error.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oxfmt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/oxfmt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/creator/csv-to-json/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/csv-to-json/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/extras.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/extras.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/links.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/navigation.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navigation.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/playlists.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/playlists.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/ring.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ring.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/services.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/work/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/work/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/work/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/work/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,60 +165,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000012026" />
-      <entry key="S30" value="1.0002366472459052" />
-      <entry key="S60" value="1.04047813303094" />
-      <entry key="M2" value="1.8033776853703989" />
-      <entry key="M5" value="9.423963143176497" />
-      <entry key="M10" value="26.482044572942858" />
-      <entry key="M15" value="41.149219163477106" />
-      <entry key="M30" value="77.28906515097552" />
-      <entry key="H1" value="151.75830826619975" />
-      <entry key="H2" value="307.8657864873838" />
-      <entry key="H4" value="588.1367355969523" />
-      <entry key="D1" value="2301.268485646985" />
-      <entry key="W1" value="3912.62346710098" />
+      <entry key="MS500" value="1.0000000017169377" />
+      <entry key="S2" value="1.0239222705055715" />
+      <entry key="S5" value="1.9201216513331785" />
+      <entry key="S10" value="4.403305333852836" />
+      <entry key="S30" value="10.055332217276876" />
+      <entry key="S60" value="12.946704588370602" />
+      <entry key="M2" value="15.37118235780669" />
+      <entry key="M5" value="23.526048046472187" />
+      <entry key="M10" value="40.509487921666256" />
+      <entry key="M15" value="55.24302956592945" />
+      <entry key="M30" value="91.60627388057927" />
+      <entry key="H1" value="166.1665520159207" />
+      <entry key="H2" value="322.28377599993183" />
+      <entry key="H4" value="602.6399225868629" />
+      <entry key="D1" value="2316.2999761823603" />
+      <entry key="W1" value="3928.388483868683" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="7.581868123557231E-247" />
-      <entry key="S2" value="3.448321868207457E-62" />
-      <entry key="S5" value="4.576872627104588E-25" />
-      <entry key="S10" value="1.2839495882849964E-12" />
-      <entry key="S30" value="3.019099903241357E-4" />
-      <entry key="S60" value="0.04816408119178224" />
-      <entry key="M2" value="0.7357668428248719" />
-      <entry key="M5" value="5.4526325211304645" />
-      <entry key="M10" value="13.938218735572413" />
-      <entry key="M15" value="20.327148639669502" />
-      <entry key="M30" value="33.11821566754504" />
-      <entry key="H1" value="53.74065317570858" />
-      <entry key="H2" value="93.90147537410772" />
-      <entry key="H4" value="166.4707101169149" />
-      <entry key="D1" value="659.4663137128031" />
-      <entry key="W1" value="1165.8474151120354" />
+      <entry key="MS500" value="2.432305264619445E-278" />
+      <entry key="S2" value="4.614963385404233E-70" />
+      <entry key="S5" value="3.2448379428662106E-28" />
+      <entry key="S10" value="3.4186927033501126E-14" />
+      <entry key="S30" value="9.015327648741626E-5" />
+      <entry key="S60" value="0.026319358231186033" />
+      <entry key="M2" value="0.5438964450879152" />
+      <entry key="M5" value="4.8318854802365605" />
+      <entry key="M10" value="13.12086530768116" />
+      <entry key="M15" value="19.524500435610477" />
+      <entry key="M30" value="32.457768905356986" />
+      <entry key="H1" value="53.20210396956408" />
+      <entry key="H2" value="93.42978498629287" />
+      <entry key="H4" value="166.0520719026806" />
+      <entry key="D1" value="659.1896208669511" />
+      <entry key="W1" value="1165.7775231721778" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.6830201283771977" />
-      <entry key="MS500" value="0.9265880618903709" />
-      <entry key="S2" value="0.9811189749983187" />
-      <entry key="S5" value="0.9924043746858185" />
-      <entry key="S10" value="0.9961949481353636" />
-      <entry key="S30" value="0.9992540841858839" />
-      <entry key="S60" value="1.0868601146722854" />
-      <entry key="M2" value="2.5296353295386105" />
-      <entry key="M5" value="14.847168291587568" />
-      <entry key="M10" value="40.38108303099321" />
-      <entry key="M15" value="61.43705291608175" />
-      <entry key="M30" value="110.37305925926938" />
-      <entry key="H1" value="205.46887205428013" />
-      <entry key="H2" value="401.7391189271147" />
-      <entry key="H4" value="754.5821648295772" />
-      <entry key="D1" value="2960.7197918577467" />
-      <entry key="W1" value="5078.467232464048" />
+      <entry key="MS100" value="1.7014489687925113E-43" />
+      <entry key="MS500" value="4.4890673960541786E-9" />
+      <entry key="S2" value="0.030818840909447098" />
+      <entry key="S5" value="1.0518051742770562" />
+      <entry key="S10" value="3.760507193945731" />
+      <entry key="S30" value="9.758416506276433" />
+      <entry key="S60" value="12.80899276565352" />
+      <entry key="M2" value="15.82230459775608" />
+      <entry key="M5" value="28.296464541144786" />
+      <entry key="M10" value="53.57558480461598" />
+      <entry key="M15" value="74.71780092629422" />
+      <entry key="M30" value="124.02449883855776" />
+      <entry key="H1" value="219.33586029918257" />
+      <entry key="H2" value="415.6840541476908" />
+      <entry key="H4" value="768.6660242050417" />
+      <entry key="D1" value="2975.4744703007264" />
+      <entry key="W1" value="5094.162339574787" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -171,64 +232,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "CidrDebugProfileConversion": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "KEY_CHAT_IN_TOOLWINDOW": "false",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/images",
-    "list.type.of.created.stylesheet": "Sass",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "bun",
-    "npm.build.executor": "Run",
-    "npm.cleanup.executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.fastFormat.executor": "Run",
-    "npm.format.executor": "Run",
-    "npm.lint.executor": "Run",
-    "npm.prettier.executor": "Run",
-    "npm.preview.executor": "Run",
-    "npm.reInit.executor": "Run",
-    "npm.verifyTranslations.executor": "Run",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "ts.external.directory.path": "/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;KEY_CHAT_IN_TOOLWINDOW&quot;: &quot;false&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/NuxtSite/public/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;bun&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.cleanup.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.fastFormat.executor&quot;: &quot;Run&quot;,
+    &quot;npm.format.executor&quot;: &quot;Run&quot;,
+    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
+    &quot;npm.prettier.executor&quot;: &quot;Run&quot;,
+    &quot;npm.preview.executor&quot;: &quot;Run&quot;,
+    &quot;npm.reInit.executor&quot;: &quot;Run&quot;,
+    &quot;npm.verifyTranslations.executor&quot;: &quot;Run&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />
@@ -245,7 +306,7 @@
       <recent name="$PROJECT_DIR$/i18n/locales/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.fastFormat">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -1606,7 +1667,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix cobe version back to 0.6.5" />
     <MESSAGE value="add translations, remove old unused content, animate sidebar, add home to sidebar" />
     <MESSAGE value="add og image generation" />
     <MESSAGE value="make baseurl dynamic" />
@@ -1631,7 +1691,8 @@
     <MESSAGE value="redesign nav menu, redesign qr code" />
     <MESSAGE value="meta updates" />
     <MESSAGE value="add colored sidebar icons, uwu toggle GUI, centralize and simplify hero/page data" />
-    <option name="LAST_COMMIT_MESSAGE" value="add colored sidebar icons, uwu toggle GUI, centralize and simplify hero/page data" />
+    <MESSAGE value="update playlist support, add new 2026 playlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="update playlist support, add new 2026 playlist" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

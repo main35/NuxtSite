@@ -1,41 +1,41 @@
 <script setup lang="ts">
-  import { onBeforeUnmount, onMounted, ref } from 'vue'
-  import { ProgressiveBlur } from 'vue-progressive-blur'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { ProgressiveBlur } from 'vue-progressive-blur'
 
-  import HStack from '+/layout/HStack.vue'
-  import InteriorItem from '+/layout/InteriorItem.vue'
-  const { t } = useI18n()
+import HStack from '+/layout/HStack.vue'
+import InteriorItem from '+/layout/InteriorItem.vue'
+const { t } = useI18n()
 
-  defineProps<{
-    title: string
-    subtitle?: string
-  }>()
+defineProps<{
+  title: string
+  subtitle?: string
+}>()
 
-  const sentinel = ref<HTMLElement | null>(null)
-  const isStuck = ref(false)
+const sentinel = ref<HTMLElement | null>(null)
+const isStuck = ref(false)
 
-  onMounted(() => {
-    const observer = new IntersectionObserver(
-      ([ entry ]) => {
-        isStuck.value = !entry?.isIntersecting
-      },
-      {
-        threshold: 0,
-        rootMargin: '0px 0px -1px 0px', // Prevents flickering at the exact intersection point
-      }
-    )
-
-    if (sentinel.value) {
-      observer.observe(sentinel.value)
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    ([ entry ]) => {
+      isStuck.value = !entry?.isIntersecting
+    },
+    {
+      threshold: 0,
+      rootMargin: '0px 0px -1px 0px', // Prevents flickering at the exact intersection point
     }
+  )
 
-    onBeforeUnmount(() => {
-      if (sentinel.value) {
-        observer.unobserve(sentinel.value)
-      }
-      observer.disconnect()
-    })
+  if (sentinel.value) {
+    observer.observe(sentinel.value)
+  }
+
+  onBeforeUnmount(() => {
+    if (sentinel.value) {
+      observer.unobserve(sentinel.value)
+    }
+    observer.disconnect()
   })
+})
 </script>
 
 <template>
@@ -75,48 +75,48 @@
 </template>
 
 <style scoped lang="sass">
-  .sentinel
-    position: absolute
+.sentinel
+  position: absolute
+  top: 0
+  height: 1px
+  width: 100%
+  pointer-events: none
+
+.navTitleWrapper
+  display: flex
+  justify-content: flex-start
+  position: relative
+  z-index: 100
+  border-radius: 0
+
+  &.stuck
+    position: fixed
+    justify-content: center
     top: 0
-    height: 1px
+    left: 0
+    right: 0
     width: 100%
-    pointer-events: none
-
-  .navTitleWrapper
-    display: flex
-    justify-content: flex-start
-    position: relative
-    z-index: 100
-    border-radius: 0
-
-    &.stuck
-      position: fixed
-      justify-content: center
-      top: 0
-      left: 0
-      right: 0
-      width: 100%
-      padding: 0
-
-      .titleContent
-        justify-content: center
-        background: linear-gradient(to top, transparent, var(--backgroundColor))
+    padding: 0
 
     .titleContent
-      display: flex
-      z-index: 101
-      padding: 0.75rem
-      width: 100%
-      border-radius: 0
+      justify-content: center
+      background: linear-gradient(to top, transparent, var(--backgroundColor))
 
-      .stuckTitleContent
-        padding: 0.25rem 0.75rem
+  .titleContent
+    display: flex
+    z-index: 101
+    padding: 0.75rem
+    width: 100%
+    border-radius: 0
 
-      .stuckToolbar
-        ::v-deep(button)
-          padding: 0.35rem !important
+    .stuckTitleContent
+      padding: 0.25rem 0.75rem
 
-    .stuckBlur
-      transform: rotate(-180deg)
-      z-index: 99
+    .stuckToolbar
+      ::v-deep(button)
+        padding: 0.35rem !important
+
+  .stuckBlur
+    transform: rotate(-180deg)
+    z-index: 99
 </style>

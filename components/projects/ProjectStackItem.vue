@@ -1,14 +1,14 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
+import { Icon } from '@iconify/vue'
 
-  import type { Technology } from ':/technology'
-  import HStack from '+/layout/HStack.vue'
+import type { Technology } from ':/technology'
+import HStack from '+/layout/HStack.vue'
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  defineProps<{
-    technology: Technology
-  }>()
+defineProps<{
+  technology: Technology
+}>()
 </script>
 
 <template>
@@ -27,8 +27,8 @@
 </template>
 
 <style scoped lang="sass">
-  .projectStackItem
-    svg
-      width: 1.5rem
-      height: 1.5rem
+.projectStackItem
+  svg
+    width: 1.5rem
+    height: 1.5rem
 </style>

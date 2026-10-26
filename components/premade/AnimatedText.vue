@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import { AnimatePresence, Motion } from 'motion-v'
+import { AnimatePresence, Motion } from 'motion-v'
 
-  const props = defineProps<{
-    text: string
-    characterClass?: any
-  }>()
+const props = defineProps<{
+  text: string
+  characterClass?: any
+}>()
 </script>
 
 <template>

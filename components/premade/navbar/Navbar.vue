@@ -1,61 +1,61 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
+import { Icon } from '@iconify/vue'
 
-  import type { NavLink } from ':/navLink'
-  import LangPickerCard from '+/langs/LangPickerCard.vue'
-  import Card from '+/layout/Card.vue'
-  import Grid from '+/layout/Grid.vue'
-  import HStack from '+/layout/HStack.vue'
-  import InteriorItem from '+/layout/InteriorItem.vue'
-  import VStack from '+/layout/VStack.vue'
-  import SitePicker from '+/premade/navbar/SitePicker.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
-  import DynamicImage from '+/utils/DynamicImage.vue'
-  import SafeLink from '+/utils/SafeLink.vue'
-  import Spacer from '+/utils/Spacer.vue'
-  import { NavLinks } from '$/NavLinks'
+import type { NavLink } from ':/navLink'
+import LangPickerCard from '+/langs/LangPickerCard.vue'
+import Card from '+/layout/Card.vue'
+import Grid from '+/layout/Grid.vue'
+import HStack from '+/layout/HStack.vue'
+import InteriorItem from '+/layout/InteriorItem.vue'
+import VStack from '+/layout/VStack.vue'
+import SitePicker from '+/premade/navbar/SitePicker.vue'
+import CardTitle from '+/utils/CardTitle.vue'
+import DynamicImage from '+/utils/DynamicImage.vue'
+import SafeLink from '+/utils/SafeLink.vue'
+import Spacer from '+/utils/Spacer.vue'
+import { NavLinks } from '$/NavLinks'
 
-  const { t } = useI18n()
-  const localePath = useLocalePath()
-  const route = useRoute()
-  const { uwu } = useUwu()
+const { t } = useI18n()
+const localePath = useLocalePath()
+const route = useRoute()
+const { uwu } = useUwu()
 
-  defineProps<{
-    startButtonOnly?: boolean
-  }>()
+defineProps<{
+  startButtonOnly?: boolean
+}>()
 
-  const showingNavProfile = computed(() => route.meta.showingNavProfile ?? true)
-  const open: Ref<boolean> = ref(false)
-  const animating: Ref<boolean> = ref(false)
-  const hoveredLink = ref<string | null>(null)
+const showingNavProfile = computed(() => route.meta.showingNavProfile ?? true)
+const open: Ref<boolean> = ref(false)
+const animating: Ref<boolean> = ref(false)
+const hoveredLink = ref<string | null>(null)
 
-  const visibleLabel = (link: NavLink) => {
-    const path = localePath(link.link)
+const visibleLabel = (link: NavLink) => {
+  const path = localePath(link.link)
 
-    if (hoveredLink.value) {
-      return hoveredLink.value === path
-    }
-
-    return route.path === path
+  if (hoveredLink.value) {
+    return hoveredLink.value === path
   }
 
-  function isActive(link: NavLink): boolean {
-    return route.path === localePath(link.link)
+  return route.path === path
+}
+
+function isActive(link: NavLink): boolean {
+  return route.path === localePath(link.link)
+}
+
+function getUwuPath(): string {
+  const query = new URLSearchParams(route.query as Record<string, string>)
+
+  if (uwu.value) {
+    query.delete('uwu')
+  } else {
+    query.set('uwu', 'true')
   }
 
-  function getUwuPath(): string {
-    const query = new URLSearchParams(route.query as Record<string, string>)
+  const params = query.toString()
 
-    if (uwu.value) {
-      query.delete('uwu')
-    } else {
-      query.set('uwu', 'true')
-    }
-
-    const params = query.toString()
-
-    return params ? `${route.path}?${params}` : route.path
-  }
+  return params ? `${route.path}?${params}` : route.path
+}
 </script>
 
 <template>
@@ -221,163 +221,163 @@
 </template>
 
 <style scoped lang="sass">
-  .navbar2Container
-    position: sticky
-    bottom: 0
-    z-index: 18
-    width: 100%
-    height: fit-content
-    padding: 0 0.5rem
-    transform-origin: bottom center
+.navbar2Container
+  position: sticky
+  bottom: 0
+  z-index: 18
+  width: 100%
+  height: fit-content
+  padding: 0 0.5rem
+  transform-origin: bottom center
 
-    &.open
-      padding: 0
-
-      &.startButtonOnly
-        position: fixed
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
+  &.open
+    padding: 0
 
     &.startButtonOnly
-      padding: 0
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
 
-      .navbar2Wrapper
-        width: 100% !important
+  &.startButtonOnly
+    padding: 0
 
     .navbar2Wrapper
+      width: 100% !important
+
+  .navbar2Wrapper
+    width: 100%
+
+    &.open
+      height: 100dvh
+
+    .navbar2
+      padding: var(--contentPadding)
       width: 100%
+      height: 100%
+      transition: 0.3s ease
+      align-items: center
+
+      &:not(.open)
+        padding: 0
 
       &.open
-        height: 100dvh
+        background: var(--backgroundColor)
+        border-radius: 0
 
-      .navbar2
-        padding: var(--contentPadding)
+        &::before, &::after
+          display: none
+
+      .contents
         width: 100%
         height: 100%
-        transition: 0.3s ease
-        align-items: center
+        overflow-y: scroll
+        transition: filter .15s ease
+        max-width: 60rem
 
-        &:not(.open)
-          padding: 0
+        &.animating
+          filter: blur(8px)
 
-        &.open
-          background: var(--backgroundColor)
-          border-radius: 0
+        .opener
+          cursor: pointer
 
-          &::before, &::after
-            display: none
+          svg
+            width: 1.5rem
+            height: 1.5rem
 
-        .contents
-          width: 100%
-          height: 100%
-          overflow-y: scroll
-          transition: filter .15s ease
-          max-width: 60rem
+          .name
+            margin: 0
 
-          &.animating
-            filter: blur(8px)
+        .startButtonContainer
+          padding: 1rem
+          cursor: pointer
 
-          .opener
-            cursor: pointer
+          .startButton
+            width: 100%
 
             svg
               width: 1.5rem
               height: 1.5rem
 
-            .name
+            *
               margin: 0
 
-          .startButtonContainer
-            padding: 1rem
-            cursor: pointer
+        .opened
+          align-items: center
 
-            .startButton
-              width: 100%
+        .langsGrid
+          .langsGraphic
+            margin-top: -3rem
+            opacity: 0.9
 
-              svg
-                width: 1.5rem
-                height: 1.5rem
+        .smallNav
+          width: 100%
+          align-items: stretch
+          gap: 0.25rem
 
-              *
-                margin: 0
-
-          .opened
-            align-items: center
-
-          .langsGrid
-            .langsGraphic
-              margin-top: -3rem
-              opacity: 0.9
-
-          .smallNav
-            width: 100%
-            align-items: stretch
+          .opener.small
             gap: 0.25rem
 
-            .opener.small
-              gap: 0.25rem
+          .navigationLinks
+            flex-grow: 1
+            justify-content: flex-end
+            gap: 1rem
+            padding: 0.5rem 0
 
-            .navigationLinks
-              flex-grow: 1
-              justify-content: flex-end
+            .navigationLinksBox
+              flex-direction: row
               gap: 1rem
-              padding: 0.5rem 0
+              padding: 0 1rem
+              height: 100%
 
-              .navigationLinksBox
-                flex-direction: row
-                gap: 1rem
-                padding: 0 1rem
-                height: 100%
+              &::before
+                display: none
 
-                &::before
-                  display: none
+            .navigationLinkLink
+              margin: 0.5rem 0
 
-              .navigationLinkLink
-                margin: 0.5rem 0
+            .navigationLinkLink, .navigationLink
+              height: 100%
 
-              .navigationLinkLink, .navigationLink
-                height: 100%
+            .navigationLink
+              gap: 0
 
-              .navigationLink
-                gap: 0
-
-                .navigationLinkText
-                  font-size: 1.25rem
-                  display: inline-block
-                  overflow: hidden
-                  white-space: nowrap
-
-                svg
-                  width: 1.75rem !important
-                  height: 1.75rem !important
-
-            #homeButtonContainer
-              width: 2.75rem
-              height: 2.75rem
-              transition: 0.2s ease-in-out
-              padding: 0
-              margin: 0.75rem 0
+              .navigationLinkText
+                font-size: 1.25rem
+                display: inline-block
+                overflow: hidden
+                white-space: nowrap
 
               svg
-                height: 1.25rem
-                width: 1.25rem
+                width: 1.75rem !important
+                height: 1.75rem !important
 
-              #avatarButton
-                width: 2.5rem
-                height: 2.5rem
-                border-radius: 2rem
+          #homeButtonContainer
+            width: 2.75rem
+            height: 2.75rem
+            transition: 0.2s ease-in-out
+            padding: 0
+            margin: 0.75rem 0
 
-              &:not(:hover) #homeButton
-                display: none
-              &:hover #avatarButton
-                display: none
+            svg
+              height: 1.25rem
+              width: 1.25rem
 
-              #homeButton, #avatarButton
-                animation: blurIn 0.3s ease forwards
+            #avatarButton
+              width: 2.5rem
+              height: 2.5rem
+              border-radius: 2rem
 
-  @media (max-width: 25rem)
-    .navigationLinkText
-      display: none !important
+            &:not(:hover) #homeButton
+              display: none
+            &:hover #avatarButton
+              display: none
+
+            #homeButton, #avatarButton
+              animation: blurIn 0.3s ease forwards
+
+@media (max-width: 25rem)
+  .navigationLinkText
+    display: none !important
 </style>

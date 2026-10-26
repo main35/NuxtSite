@@ -194,13 +194,13 @@
 </template>
 
 <style scoped lang="sass">
-  #shareQr
-    .st0
-      fill: none
-    .st1
-      fill: #9275e8
-    .st2
-      fill: #da5abd
-    .st3
-      fill: currentColor
+#shareQr
+  .st0
+    fill: none
+  .st1
+    fill: #9275e8
+  .st2
+    fill: #da5abd
+  .st3
+    fill: currentColor
 </style>

@@ -1,20 +1,20 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
+import { Icon } from '@iconify/vue'
 
-  import setHeadMeta from '&/setHeadMeta'
-  import AppsCategoryList from '+/apps/AppsCategoryList.vue'
-  import BottomFooter from '+/premade/BottomFooter.vue'
-  import Hero from '+/utils/Hero.vue'
-  import Spacer from '+/utils/Spacer.vue'
-  import { apps } from '$/apps'
-  import { WorkNavLink } from '$/NavLinks'
+import setHeadMeta from '&/setHeadMeta'
+import AppsCategoryList from '+/apps/AppsCategoryList.vue'
+import BottomFooter from '+/premade/BottomFooter.vue'
+import Hero from '+/utils/Hero.vue'
+import Spacer from '+/utils/Spacer.vue'
+import { apps } from '$/apps'
+import { WorkNavLink } from '$/NavLinks'
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  setHeadMeta({
-    page: 'pages.work',
-    subtitle: 'meta.subtitles.work',
-  })
+setHeadMeta({
+  page: 'pages.work',
+  subtitle: 'meta.subtitles.work',
+})
 </script>
 
 <template>
@@ -52,6 +52,6 @@
 </template>
 
 <style scoped lang="sass">
-  .servicesGrid
-    gap: 0.5rem
+.servicesGrid
+  gap: 0.5rem
 </style>

@@ -1,34 +1,34 @@
 <script setup lang="ts">
-  import '@/styles/kofiTools.sass'
+import '@/styles/kofiTools.sass'
 
-  import { Icon } from '@iconify/vue'
+import { Icon } from '@iconify/vue'
 
-  import setHeadMeta from '&/setHeadMeta'
-  import Card from '+/layout/Card.vue'
-  import HStack from '+/layout/HStack.vue'
-  import VStack from '+/layout/VStack.vue'
-  import BottomFooter from '+/premade/BottomFooter.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
-  import Hero from '+/utils/Hero.vue'
-  import Spacer from '+/utils/Spacer.vue'
-  import { cursors } from '$/cursors'
-  import { ExtrasNavLink } from '$/NavLinks'
+import setHeadMeta from '&/setHeadMeta'
+import Card from '+/layout/Card.vue'
+import HStack from '+/layout/HStack.vue'
+import VStack from '+/layout/VStack.vue'
+import BottomFooter from '+/premade/BottomFooter.vue'
+import CardTitle from '+/utils/CardTitle.vue'
+import Hero from '+/utils/Hero.vue'
+import Spacer from '+/utils/Spacer.vue'
+import { cursors } from '$/cursors'
+import { ExtrasNavLink } from '$/NavLinks'
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  setHeadMeta({
-    page: 'pages.extras',
-    subtitle: 'meta.subtitles.extras',
-  })
+setHeadMeta({
+  page: 'pages.extras',
+  subtitle: 'meta.subtitles.extras',
+})
 
-  useHead({
-    script: [
-      {
-        src: 'https://cdn.ko-fi.tools/v2/js/shop.js',
-        defer: true,
-      },
-    ],
-  })
+useHead({
+  script: [
+    {
+      src: 'https://cdn.ko-fi.tools/v2/js/shop.js',
+      defer: true,
+    },
+  ],
+})
 </script>
 
 <template>
@@ -100,12 +100,12 @@
 </template>
 
 <style scoped lang="sass">
-  .cursorAsset
-    background: var(--foregroundColor)
-    border-radius: 1rem
-    padding: 0.5rem
+.cursorAsset
+  background: var(--foregroundColor)
+  border-radius: 1rem
+  padding: 0.5rem
 
-  .cursorAsset > img
-    height: 3rem
-    width: 3rem
+.cursorAsset > img
+  height: 3rem
+  width: 3rem
 </style>

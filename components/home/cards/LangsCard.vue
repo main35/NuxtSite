@@ -1,13 +1,13 @@
 <script setup lang="ts">
-  import Card from '+/layout/Card.vue'
-  import Grid from '+/layout/Grid.vue'
-  import HStack from '+/layout/HStack.vue'
-  import IconItem from '+/layout/IconItem.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
-  import Spacer from '+/utils/Spacer.vue'
-  import { Langs } from '$/TechStack'
+import Card from '+/layout/Card.vue'
+import Grid from '+/layout/Grid.vue'
+import HStack from '+/layout/HStack.vue'
+import IconItem from '+/layout/IconItem.vue'
+import CardTitle from '+/utils/CardTitle.vue'
+import Spacer from '+/utils/Spacer.vue'
+import { Langs } from '$/TechStack'
 
-  const { t } = useI18n()
+const { t } = useI18n()
 </script>
 
 <template>
@@ -39,10 +39,10 @@
 </template>
 
 <style scoped lang="sass">
-  .langsGrid
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)) !important
+.langsGrid
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)) !important
 
-  @media (max-width: 35rem)
-    .langsGrid
-      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)) !important
+@media (max-width: 35rem)
+  .langsGrid
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)) !important
 </style>

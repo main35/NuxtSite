@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  const localePath = useLocalePath()
+const localePath = useLocalePath()
 
-  await navigateTo(
-    localePath({
-      path: '/work',
-      hash: '#projects',
-    })
-  )
+await navigateTo(
+  localePath({
+    path: '/work',
+    hash: '#projects',
+  })
+)
 </script>

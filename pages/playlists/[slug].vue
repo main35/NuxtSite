@@ -1,70 +1,70 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
-  import { computed } from 'vue'
+import { Icon } from '@iconify/vue'
+import { computed } from 'vue'
 
-  import type { PlaylistLinkType } from ':/playlists'
-  import setHeadMeta from '&/setHeadMeta'
-  import Card from '+/layout/Card.vue'
-  import Grid from '+/layout/Grid.vue'
-  import HStack from '+/layout/HStack.vue'
-  import InteriorItem from '+/layout/InteriorItem.vue'
-  import VStack from '+/layout/VStack.vue'
-  import BottomFooter from '+/premade/BottomFooter.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
-  import Spacer from '+/utils/Spacer.vue'
-  import { playlists } from '$/playlists'
+import type { PlaylistLinkType } from ':/playlists'
+import setHeadMeta from '&/setHeadMeta'
+import Card from '+/layout/Card.vue'
+import Grid from '+/layout/Grid.vue'
+import HStack from '+/layout/HStack.vue'
+import InteriorItem from '+/layout/InteriorItem.vue'
+import VStack from '+/layout/VStack.vue'
+import BottomFooter from '+/premade/BottomFooter.vue'
+import CardTitle from '+/utils/CardTitle.vue'
+import Spacer from '+/utils/Spacer.vue'
+import { playlists } from '$/playlists'
 
-  const { t } = useI18n()
-  const route = useRoute()
+const { t } = useI18n()
+const route = useRoute()
 
-  const playlist = computed(() =>
-    playlists.find((p) => p.slug === route.params.slug)
-  )
+const playlist = computed(() =>
+  playlists.find((p) => p.slug === route.params.slug)
+)
 
-  if (playlist.value) {
-    setHeadMeta({
-      page: playlist.value.title,
-      subtitle: playlist.value.description,
-      icon: playlist.value.image,
-      group: 'Playlist',
-    })
+if (playlist.value) {
+  setHeadMeta({
+    page: playlist.value.title,
+    subtitle: playlist.value.description,
+    icon: playlist.value.image,
+    group: 'Playlist',
+  })
+}
+
+function getLinkIcon(type: PlaylistLinkType): string {
+  switch (type) {
+    case 'apple':
+      return 'thesvg-color:apple-music'
+    case 'deezer':
+      return 'thesvg-color:deezer'
+    case 'soundcloud':
+      return 'selfhst:soundcloud'
+    case 'spotify':
+      return 'thesvg-color:spotify'
+    case 'yandex':
+      return 'thesvg-color:yandex'
+    case 'youtube':
+      return 'thesvg-color:youtube'
+    default:
+      return 'solar:link-minimalistic-2-line-duotone'
   }
+}
 
-  function getLinkIcon(type: PlaylistLinkType): string {
-    switch (type) {
-      case 'apple':
-        return 'thesvg-color:apple-music'
-      case 'deezer':
-        return 'thesvg-color:deezer'
-      case 'soundcloud':
-        return 'selfhst:soundcloud'
-      case 'spotify':
-        return 'thesvg-color:spotify'
-      case 'yandex':
-        return 'thesvg-color:yandex'
-      case 'youtube':
-        return 'thesvg-color:youtube'
-      default:
-        return 'solar:link-minimalistic-2-line-duotone'
-    }
+function getLinkTitle(type: PlaylistLinkType): string {
+  switch (type) {
+    case 'apple':
+      return 'Apple Music'
+    case 'deezer':
+      return 'Deezer'
+    case 'soundcloud':
+      return 'SoundCloud'
+    case 'spotify':
+      return 'Spotify'
+    case 'yandex':
+      return 'Yandex'
+    case 'youtube':
+      return 'YouTube'
   }
-
-  function getLinkTitle(type: PlaylistLinkType): string {
-    switch (type) {
-      case 'apple':
-        return 'Apple Music'
-      case 'deezer':
-        return 'Deezer'
-      case 'soundcloud':
-        return 'SoundCloud'
-      case 'spotify':
-        return 'Spotify'
-      case 'yandex':
-        return 'Yandex'
-      case 'youtube':
-        return 'YouTube'
-    }
-  }
+}
 </script>
 
 <template>
@@ -113,13 +113,13 @@
 </template>
 
 <style scoped lang="sass">
-  .playlistCard
-    height: fit-content
+.playlistCard
+  height: fit-content
 
-    .playlistArt
-      width: 14rem
+  .playlistArt
+    width: 14rem
 
-  @media (max-width: 35rem)
-    .playlistArt
-      width: 100%
+@media (max-width: 35rem)
+  .playlistArt
+    width: 100%
 </style>

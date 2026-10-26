@@ -1,15 +1,15 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
+import { Icon } from '@iconify/vue'
 
-  import NavButtons from '+/home/NavButtons.vue'
-  import HStack from '+/layout/HStack.vue'
-  import VStack from '+/layout/VStack.vue'
-  import CutiesCard from '+/premade/CutiesCard.vue'
-  import Divider from '+/utils/Divider.vue'
-  import Spacer from '+/utils/Spacer.vue'
+import NavButtons from '+/home/NavButtons.vue'
+import HStack from '+/layout/HStack.vue'
+import VStack from '+/layout/VStack.vue'
+import CutiesCard from '+/premade/CutiesCard.vue'
+import Divider from '+/utils/Divider.vue'
+import Spacer from '+/utils/Spacer.vue'
 
-  const { t } = useI18n()
-  const meta = useRuntimeConfig()
+const { t } = useI18n()
+const meta = useRuntimeConfig()
 </script>
 
 <template>
@@ -80,41 +80,41 @@
 </template>
 
 <style scoped lang="sass">
-  svg#logoLarge
-    width: 94%
-    height: auto
-    margin: 1rem 3%
-    mask: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5))
-    z-index: 10
+svg#logoLarge
+  width: 94%
+  height: auto
+  margin: 1rem 3%
+  mask: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5))
+  z-index: 10
 
-  .footerContainer
-    padding: var(--contentPadding)
-    padding-top: 0
-    z-index: 10
+.footerContainer
+  padding: var(--contentPadding)
+  padding-top: 0
+  z-index: 10
 
-  .footerContent
-    width: 100%
-    gap: 1rem
-    align-items: stretch
+.footerContent
+  width: 100%
+  gap: 1rem
+  align-items: stretch
 
-    #credits
-      justify-content: space-between
+  #credits
+    justify-content: space-between
 
-    #readMore, #credits
-      align-items: flex-start
-      flex-grow: 1
+  #readMore, #credits
+    align-items: flex-start
+    flex-grow: 1
 
-      .readMoreTitle
-        margin: 0 0 1rem
+    .readMoreTitle
+      margin: 0 0 1rem
 
-      .versionBadges
-        p
-          padding: 0.25rem 0.5rem
-          border-radius: 1rem
+    .versionBadges
+      p
+        padding: 0.25rem 0.5rem
+        border-radius: 1rem
 
-        .version
-          background: var(--accentColor)
+      .version
+        background: var(--accentColor)
 
-        .release
-          background: var(--accentColor2)
+      .release
+        background: var(--accentColor2)
 </style>

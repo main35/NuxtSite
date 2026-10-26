@@ -1,75 +1,75 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
-  import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
-  import { ProgressiveBlur } from 'vue-progressive-blur'
+import { Icon } from '@iconify/vue'
+import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { ProgressiveBlur } from 'vue-progressive-blur'
 
-  import HStack from '+/layout/HStack.vue'
-  import VStack from '+/layout/VStack.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
-  import SideNav from '+/premade/navbar/SideNav.vue'
+import HStack from '+/layout/HStack.vue'
+import VStack from '+/layout/VStack.vue'
+import Navbar from '+/premade/navbar/Navbar.vue'
+import SideNav from '+/premade/navbar/SideNav.vue'
 
-  const { t } = useI18n()
-  const showingUi = ref(true)
+const { t } = useI18n()
+const showingUi = ref(true)
 
-  const scrollingDown = ref(false)
+const scrollingDown = ref(false)
 
-  let lastScrollY = 0
-  let accumulatedDownScroll = 0
+let lastScrollY = 0
+let accumulatedDownScroll = 0
 
-  const handleScroll = () => {
-    const scrollY = document.documentElement.scrollTop
-    const delta = scrollY - lastScrollY
+const handleScroll = () => {
+  const scrollY = document.documentElement.scrollTop
+  const delta = scrollY - lastScrollY
 
-    if (delta > 0) {
-      accumulatedDownScroll += delta
+  if (delta > 0) {
+    accumulatedDownScroll += delta
 
-      if (accumulatedDownScroll >= 24) {
-        scrollingDown.value = true
-      }
-    } else if (delta < 0) {
-      accumulatedDownScroll = 0
-      scrollingDown.value = false
+    if (accumulatedDownScroll >= 24) {
+      scrollingDown.value = true
     }
-
-    lastScrollY = scrollY
+  } else if (delta < 0) {
+    accumulatedDownScroll = 0
+    scrollingDown.value = false
   }
 
-  onMounted(() => {
-    lastScrollY = document.documentElement.scrollTop
+  lastScrollY = scrollY
+}
 
-    window.addEventListener('scroll', handleScroll, {
-      passive: true,
-    })
+onMounted(() => {
+  lastScrollY = document.documentElement.scrollTop
+
+  window.addEventListener('scroll', handleScroll, {
+    passive: true,
   })
+})
 
-  onBeforeUnmount(() => {
-    window.removeEventListener('scroll', handleScroll)
-  })
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 
-  watch(
-    showingUi,
-    (visible) => {
-      if (!import.meta.client) return
-
-      document.documentElement.style.setProperty(
-        '--backgroundOpacity',
-        visible ? '0.25' : '1'
-      )
-
-      document.documentElement.style.setProperty(
-        '--backgroundFilter',
-        visible ? 'blur(0.5rem)' : 'none'
-      )
-    },
-    { immediate: true }
-  )
-
-  onBeforeUnmount(() => {
+watch(
+  showingUi,
+  (visible) => {
     if (!import.meta.client) return
 
-    document.documentElement.style.removeProperty('--backgroundOpacity')
-    document.documentElement.style.removeProperty('--backgroundFilter')
-  })
+    document.documentElement.style.setProperty(
+      '--backgroundOpacity',
+      visible ? '0.25' : '1'
+    )
+
+    document.documentElement.style.setProperty(
+      '--backgroundFilter',
+      visible ? 'blur(0.5rem)' : 'none'
+    )
+  },
+  { immediate: true }
+)
+
+onBeforeUnmount(() => {
+  if (!import.meta.client) return
+
+  document.documentElement.style.removeProperty('--backgroundOpacity')
+  document.documentElement.style.removeProperty('--backgroundFilter')
+})
 </script>
 
 <template>
@@ -112,51 +112,51 @@
 </template>
 
 <style scoped lang="sass">
-  $blurHeight: 10rem
+$blurHeight: 10rem
 
-  .contentStack
-    align-items: center !important
+.contentStack
+  align-items: center !important
+  width: 100%
+
+.progBlurContainer
+  position: fixed
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 9
+  height: $blurHeight
+  pointer-events: none
+
+  .progBlur, .progMask
+    position: absolute
+    inset: 0
     width: 100%
+    height: 100%
 
-  .progBlurContainer
-    position: fixed
-    right: 0
-    bottom: 0
-    left: 0
-    z-index: 9
-    height: $blurHeight
+  .progBlur
+    z-index: 10
+
+  .progMask
+    background: linear-gradient(to top, var(--backgroundColor), transparent)
+    opacity: 0.6
+
+.interfaceOptions
+  position: sticky
+  top: var(--contentPadding)
+  z-index: 11
+  width: calc(100vw - 2rem)
+  max-width: 30rem
+  margin-top: 1rem
+  transition: 0.3s ease
+
+  button
+    backdrop-filter: blur(0.5rem) saturate(125%)
+    background: var(--foregroundDark)
+
+  button, a
+    flex-grow: 1
+
+  &.isHidden
+    transform: translateY(calc(-100% - 2rem))
     pointer-events: none
-
-    .progBlur, .progMask
-      position: absolute
-      inset: 0
-      width: 100%
-      height: 100%
-
-    .progBlur
-      z-index: 10
-
-    .progMask
-      background: linear-gradient(to top, var(--backgroundColor), transparent)
-      opacity: 0.6
-
-  .interfaceOptions
-    position: sticky
-    top: var(--contentPadding)
-    z-index: 11
-    width: calc(100vw - 2rem)
-    max-width: 30rem
-    margin-top: 1rem
-    transition: 0.3s ease
-
-    button
-      backdrop-filter: blur(0.5rem) saturate(125%)
-      background: var(--foregroundDark)
-
-    button, a
-      flex-grow: 1
-
-    &.isHidden
-      transform: translateY(calc(-100% - 2rem))
-      pointer-events: none
 </style>

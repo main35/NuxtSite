@@ -1,15 +1,15 @@
 <script setup>
-  import setHeadMeta from '&/setHeadMeta.ts'
-  import LangsCard from '+/home/cards/LangsCard.vue'
-  import IntroHero from '+/home/IntroHero.vue'
-  import BottomFooter from '+/premade/BottomFooter.vue'
+import setHeadMeta from '&/setHeadMeta.ts'
+import LangsCard from '+/home/cards/LangsCard.vue'
+import IntroHero from '+/home/IntroHero.vue'
+import BottomFooter from '+/premade/BottomFooter.vue'
 
-  setHeadMeta({
-    page: 'pages.home',
-    subtitle: 'meta.subtitles.global',
-  })
+setHeadMeta({
+  page: 'pages.home',
+  subtitle: 'meta.subtitles.global',
+})
 
-  definePageMeta({ showingNavProfile: false })
+definePageMeta({ showingNavProfile: false })
 </script>
 
 <template>

@@ -19,21 +19,21 @@
 </template>
 
 <style scoped lang="sass">
-  #loaderPath
-    stroke-dasharray: 1
+#loaderPath
+  stroke-dasharray: 1
+  stroke-dashoffset: 1
+  animation: draw 2.2s ease-in-out infinite
+
+@keyframes draw
+  0%
     stroke-dashoffset: 1
-    animation: draw 2.2s ease-in-out infinite
 
-  @keyframes draw
-    0%
-      stroke-dashoffset: 1
+  40%
+    stroke-dashoffset: 0
 
-    40%
-      stroke-dashoffset: 0
+  60%
+    stroke-dashoffset: 0
 
-    60%
-      stroke-dashoffset: 0
-
-    100%
-      stroke-dashoffset: 1
+  100%
+    stroke-dashoffset: 1
 </style>

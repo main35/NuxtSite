@@ -1,36 +1,36 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
-  import type { BundledLanguage } from 'shiki'
+import { Icon } from '@iconify/vue'
+import type { BundledLanguage } from 'shiki'
 
-  import HStack from '+/layout/HStack.vue'
+import HStack from '+/layout/HStack.vue'
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  interface Props {
-    code: string
-    lang?: 'text' | BundledLanguage | 'txt' | 'plain'
-    filename?: string
-    showHeader?: boolean
-  }
+interface Props {
+  code: string
+  lang?: 'text' | BundledLanguage | 'txt' | 'plain'
+  filename?: string
+  showHeader?: boolean
+}
 
-  const props = withDefaults(defineProps<Props>(), {
-    lang: 'text',
-    showHeader: true,
-  })
+const props = withDefaults(defineProps<Props>(), {
+  lang: 'text',
+  showHeader: true,
+})
 
-  const copied = ref(false)
+const copied = ref(false)
 
-  async function copyCode() {
-    if (!navigator.clipboard) return
+async function copyCode() {
+  if (!navigator.clipboard) return
 
-    await navigator.clipboard.writeText(props.code)
+  await navigator.clipboard.writeText(props.code)
 
-    copied.value = true
+  copied.value = true
 
-    setTimeout(() => {
-      copied.value = false
-    }, 1500)
-  }
+  setTimeout(() => {
+    copied.value = false
+  }, 1500)
+}
 </script>
 
 <template>
@@ -53,36 +53,36 @@
 </template>
 
 <style scoped lang="sass">
-  .codeBlock
-    width: 100%
-    overflow: hidden
-    border-radius: 1.5rem
-    background: var(--backgroundColor)
-    color: var(--textColor)
-    border: 0.1rem solid var(--foregroundDark)
+.codeBlock
+  width: 100%
+  overflow: hidden
+  border-radius: 1.5rem
+  background: var(--backgroundColor)
+  color: var(--textColor)
+  border: 0.1rem solid var(--foregroundDark)
 
-    *
-      font-family: var(--monoFont) !important
+  *
+    font-family: var(--monoFont) !important
 
-  .codeHeader
-    justify-content: space-between
-    width: 100%
-    padding: 0.75rem
-    opacity: 0.6
+.codeHeader
+  justify-content: space-between
+  width: 100%
+  padding: 0.75rem
+  opacity: 0.6
 
-  .copyButton
-    padding: 0.25rem 0.5rem
-    cursor: pointer
-    transition: 0.2s ease
+.copyButton
+  padding: 0.25rem 0.5rem
+  cursor: pointer
+  transition: 0.2s ease
 
-  .code
-    width: 100%
-    margin: 0
-    overflow-x: scroll
-    padding: 0 0.75rem 0.75rem
-    user-select: text
-    -webkit-user-select: text
+.code
+  width: 100%
+  margin: 0
+  overflow-x: scroll
+  padding: 0 0.75rem 0.75rem
+  user-select: text
+  -webkit-user-select: text
 
-    :deep(code)
-      background-color: transparent !important
+  :deep(code)
+    background-color: transparent !important
 </style>

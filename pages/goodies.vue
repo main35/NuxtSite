@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  const localePath = useLocalePath()
+const localePath = useLocalePath()
 
-  await navigateTo(
-    localePath({
-      path: '/extras',
-    })
-  )
+await navigateTo(
+  localePath({
+    path: '/extras',
+  })
+)
 </script>

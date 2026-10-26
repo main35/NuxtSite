@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  const localePath = useLocalePath()
+const localePath = useLocalePath()
 
-  await navigateTo(localePath('/work'), {
-    redirectCode: 301,
-  })
+await navigateTo(localePath('/work'), {
+  redirectCode: 301,
+})
 </script>

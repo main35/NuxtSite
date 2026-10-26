@@ -1,14 +1,14 @@
 <script setup lang="ts">
-  import ComButton from '+/apps/ComButton.vue'
-  import Card from '+/layout/Card.vue'
-  import Grid from '+/layout/Grid.vue'
-  import ProjectView from '+/projects/ProjectView.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
-  import { Projects } from '$/Projects'
+import ComButton from '+/apps/ComButton.vue'
+import Card from '+/layout/Card.vue'
+import Grid from '+/layout/Grid.vue'
+import ProjectView from '+/projects/ProjectView.vue'
+import CardTitle from '+/utils/CardTitle.vue'
+import { Projects } from '$/Projects'
 
-  defineProps<{
-    index?: number
-  }>()
+defineProps<{
+  index?: number
+}>()
 </script>
 
 <template>

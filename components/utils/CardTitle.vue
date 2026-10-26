@@ -1,13 +1,13 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
+import { Icon } from '@iconify/vue'
 
-  import HStack from '+/layout/HStack.vue'
-  const { t } = useI18n()
+import HStack from '+/layout/HStack.vue'
+const { t } = useI18n()
 
-  defineProps<{
-    title: string
-    icon: string
-  }>()
+defineProps<{
+  title: string
+  icon: string
+}>()
 </script>
 
 <template>
@@ -23,15 +23,15 @@
 </template>
 
 <style scoped lang="sass">
-  .cardTitle
-    gap: 0.5rem
-    margin-bottom: 0.5rem
-    padding: 0.25rem 0.3rem
+.cardTitle
+  gap: 0.5rem
+  margin-bottom: 0.5rem
+  padding: 0.25rem 0.3rem
 
-    svg
-      width: 1.5rem
-      height: 1.5rem
+  svg
+    width: 1.5rem
+    height: 1.5rem
 
-    h2
-      margin: 0
+  h2
+    margin: 0
 </style>

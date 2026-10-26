@@ -1,21 +1,21 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
+import { Icon } from '@iconify/vue'
 
-  import type { AppCategory } from ':/appsViews'
-  import AppLink from '+/apps/AppLink.vue'
-  import Card from '+/layout/Card.vue'
-  import Grid from '+/layout/Grid.vue'
-  import InteriorItem from '+/layout/InteriorItem.vue'
-  import VStack from '+/layout/VStack.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
-  import DynamicImage from '+/utils/DynamicImage.vue'
+import type { AppCategory } from ':/appsViews'
+import AppLink from '+/apps/AppLink.vue'
+import Card from '+/layout/Card.vue'
+import Grid from '+/layout/Grid.vue'
+import InteriorItem from '+/layout/InteriorItem.vue'
+import VStack from '+/layout/VStack.vue'
+import CardTitle from '+/utils/CardTitle.vue'
+import DynamicImage from '+/utils/DynamicImage.vue'
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  defineProps<{
-    appsData: AppCategory[]
-    index?: number
-  }>()
+defineProps<{
+  appsData: AppCategory[]
+  index?: number
+}>()
 </script>
 
 <template>
@@ -62,49 +62,49 @@
 </template>
 
 <style scoped lang="sass">
+.appGrid
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
+  gap: 0.5rem
+
+.appCard
+  flex-direction: row
+  gap: 0.25rem
+  padding: 0.75rem
+  align-items: center
+  background: var(--foregroundColor)
+
+  ::v-deep(svg)
+    width: 1.25rem
+    height: 1.25rem
+
+.appIcon
+  position: relative
+  border-radius: 0.9rem
+  width: 3.5rem
+  height: 3.5rem
+
+.appDetails
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  flex-grow: 1
+  overflow: scroll
+  scrollbar-width: none
+  text-wrap: nowrap
+  border-radius: 0.5rem
+
+  p, h3
+    margin: 0.1rem 0.25rem
+
+.appDownloads
+  display: flex
+  flex-direction: row
+  gap: 0.5rem
+  align-items: center
+  justify-content: center
+
+@media (max-width: 25rem)
   .appGrid
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
-    gap: 0.5rem
-
-  .appCard
-    flex-direction: row
-    gap: 0.25rem
-    padding: 0.75rem
-    align-items: center
-    background: var(--foregroundColor)
-
-    ::v-deep(svg)
-      width: 1.25rem
-      height: 1.25rem
-
-  .appIcon
-    position: relative
-    border-radius: 0.9rem
-    width: 3.5rem
-    height: 3.5rem
-
-  .appDetails
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: flex-start
-    flex-grow: 1
-    overflow: scroll
-    scrollbar-width: none
-    text-wrap: nowrap
-    border-radius: 0.5rem
-
-    p, h3
-      margin: 0.1rem 0.25rem
-
-  .appDownloads
-    display: flex
-    flex-direction: row
-    gap: 0.5rem
-    align-items: center
-    justify-content: center
-
-  @media (max-width: 25rem)
-    .appGrid
-      grid-template-columns: 100%
+    grid-template-columns: 100%
 </style>

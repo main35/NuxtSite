@@ -1,25 +1,25 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
+import { Icon } from '@iconify/vue'
 
-  import type { NavLink } from ':/navLink'
-  import HStack from '+/layout/HStack.vue'
-  import VStack from '+/layout/VStack.vue'
-  import Clock from '+/premade/Clock.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
-  import SafeLink from '+/utils/SafeLink.vue'
-  import { HomeNavLink, NavLinks, RingNavLink } from '$/NavLinks'
+import type { NavLink } from ':/navLink'
+import HStack from '+/layout/HStack.vue'
+import VStack from '+/layout/VStack.vue'
+import Clock from '+/premade/Clock.vue'
+import Navbar from '+/premade/navbar/Navbar.vue'
+import SafeLink from '+/utils/SafeLink.vue'
+import { HomeNavLink, NavLinks, RingNavLink } from '$/NavLinks'
 
-  const { t } = useI18n()
-  const localePath = useLocalePath()
-  const route = useRoute()
+const { t } = useI18n()
+const localePath = useLocalePath()
+const route = useRoute()
 
-  const isHome = computed(() => {
-    return route.path === '/' || route.path === localePath('/')
-  })
+const isHome = computed(() => {
+  return route.path === '/' || route.path === localePath('/')
+})
 
-  function isActive(link: NavLink): boolean {
-    return link === HomeNavLink ? isHome.value : route.path.includes(link.link)
-  }
+function isActive(link: NavLink): boolean {
+  return link === HomeNavLink ? isHome.value : route.path.includes(link.link)
+}
 </script>
 
 <template>
@@ -69,88 +69,88 @@
 </template>
 
 <style scoped lang="sass">
-  .sideNav
-    position: sticky
-    top: 1rem
-    gap: 0.75rem
-    width: 20rem
-    min-height: fit-content
-    flex-wrap: nowrap
-    height: calc(100dvh - var(--contentPadding) * 2)
-    padding: var(--contentPadding)
-    z-index: 12
+.sideNav
+  position: sticky
+  top: 1rem
+  gap: 0.75rem
+  width: 20rem
+  min-height: fit-content
+  flex-wrap: nowrap
+  height: calc(100dvh - var(--contentPadding) * 2)
+  padding: var(--contentPadding)
+  z-index: 12
 
-    .profileNavItem
-      .avatar
-        width: 2rem
-        height: 2rem
-        border-radius: 0.75rem
+  .profileNavItem
+    .avatar
+      width: 2rem
+      height: 2rem
+      border-radius: 0.75rem
 
-      .nameAndClock
-        flex-grow: 1
-        justify-content: space-between
+    .nameAndClock
+      flex-grow: 1
+      justify-content: space-between
 
-    .sideNavItem
-      padding: 0.45rem
-      padding-inline-end: 0.75rem
-      gap: 0.45rem
-      width: 100%
-      justify-content: flex-start
-      border-radius: 3rem
-      transition: 0.2s ease
+  .sideNavItem
+    padding: 0.45rem
+    padding-inline-end: 0.75rem
+    gap: 0.45rem
+    width: 100%
+    justify-content: flex-start
+    border-radius: 3rem
+    transition: 0.2s ease
 
-      border: 0.1rem solid transparent
-      opacity: 0.4
-      transform: translateX(-1rem)
-      animation: sidebarItemIn 0.3s ease forwards
-      animation-delay: calc(var(--index) * 0.1s)
+    border: 0.1rem solid transparent
+    opacity: 0.4
+    transform: translateX(-1rem)
+    animation: sidebarItemIn 0.3s ease forwards
+    animation-delay: calc(var(--index) * 0.1s)
 
-      &:hover, &.selected
-        background: var(--foregroundColor)
-        backdrop-filter: blur(0.5rem)
-        box-shadow: inset 0 0.15rem 0.12rem 0 var(--foregroundDark)
-        border-color: var(--foregroundColor)
+    &:hover, &.selected
+      background: var(--foregroundColor)
+      backdrop-filter: blur(0.5rem)
+      box-shadow: inset 0 0.15rem 0.12rem 0 var(--foregroundDark)
+      border-color: var(--foregroundColor)
 
-        .sideNavImageBackground
-          background: linear-gradient(-45deg, var(--tint), hsl(from var(--tint) calc(h + 40) s l))
+      .sideNavImageBackground
+        background: linear-gradient(-45deg, var(--tint), hsl(from var(--tint) calc(h + 40) s l))
 
-      &:active
-        scale: 0.95
+    &:active
+      scale: 0.95
 
-      .avatar
-        width: 2rem
-        height: 2rem
-        margin: 0.35rem
+    .avatar
+      width: 2rem
+      height: 2rem
+      margin: 0.35rem
 
-      .sideNavImageContainer
-        position: relative
-        padding: 0.5rem
-        border-radius: 50%
-        background: var(--foregroundColor)
-        overflow: hidden
+    .sideNavImageContainer
+      position: relative
+      padding: 0.5rem
+      border-radius: 50%
+      background: var(--foregroundColor)
+      overflow: hidden
 
-        .sideNavImageBackground
-          position: absolute
-          inset: 0
-          opacity: 0.8
+      .sideNavImageBackground
+        position: absolute
+        inset: 0
+        opacity: 0.8
 
-        svg
-          width: 1.75rem
-          height: 1.75rem
-          z-index: 2
+      svg
+        width: 1.75rem
+        height: 1.75rem
+        z-index: 2
 
-      *
-        margin: 0
+    *
+      margin: 0
 
-    .sideStart
-      margin-top: auto
+  .sideStart
+    margin-top: auto
 
-  @keyframes sidebarItemIn
-    from
-      opacity: 0.4
-      transform: translateX(-1rem)
+@keyframes sidebarItemIn
+  from
+    opacity: 0.4
+    transform: translateX(-1rem)
 
-    to
-      opacity: 1
-      transform: none
+  to
+    opacity: 1
+    transform: none
 </style>

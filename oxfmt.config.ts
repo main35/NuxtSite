@@ -18,7 +18,7 @@ export default defineConfig({
   ],
 
   trailingComma: 'es5',
-  vueIndentScriptAndStyle: true,
+  vueIndentScriptAndStyle: false,
   printWidth: 80,
   tabWidth: 2,
   semi: false,

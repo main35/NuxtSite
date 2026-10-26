@@ -1,13 +1,13 @@
 <script setup lang="ts">
-  defineProps<{
-    to: string
-  }>()
+defineProps<{
+  to: string
+}>()
 
-  const localePath = useLocalePath()
+const localePath = useLocalePath()
 
-  function isExternal(url: string): boolean {
-    return url.includes('https') || url.includes('mailto')
-  }
+function isExternal(url: string): boolean {
+  return url.includes('https') || url.includes('mailto')
+}
 </script>
 
 <template>

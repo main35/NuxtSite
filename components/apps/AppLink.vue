@@ -1,19 +1,19 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
-  import { computed } from 'vue'
+import { Icon } from '@iconify/vue'
+import { computed } from 'vue'
 
-  const localePath = useLocalePath()
-  const { t } = useI18n()
+const localePath = useLocalePath()
+const { t } = useI18n()
 
-  const props = defineProps<{
-    to: string
-    disabled?: boolean
-    label?: string
-  }>()
+const props = defineProps<{
+  to: string
+  disabled?: boolean
+  label?: string
+}>()
 
-  const isExternal = computed(() => {
-    return /^https?:\/\//.test(props.to)
-  })
+const isExternal = computed(() => {
+  return /^https?:\/\//.test(props.to)
+})
 </script>
 
 <template>
@@ -40,6 +40,6 @@
 </template>
 
 <style scoped lang="sass">
-  .appLinkButton
-    text-wrap: nowrap
+.appLinkButton
+  text-wrap: nowrap
 </style>

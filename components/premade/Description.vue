@@ -1,8 +1,8 @@
 <script setup lang="ts">
-  import VStack from '+/layout/VStack.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
+import VStack from '+/layout/VStack.vue'
+import CardTitle from '+/utils/CardTitle.vue'
 
-  const { t } = useI18n()
+const { t } = useI18n()
 </script>
 
 <template>

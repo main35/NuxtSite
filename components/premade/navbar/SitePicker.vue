@@ -1,33 +1,33 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
-  import { Motion } from 'motion-v'
-  import { onMounted, ref } from 'vue'
+import { Icon } from '@iconify/vue'
+import { Motion } from 'motion-v'
+import { onMounted, ref } from 'vue'
 
-  import Card from '+/layout/Card.vue'
-  import Grid from '+/layout/Grid.vue'
-  import VStack from '+/layout/VStack.vue'
-  import ShareQr from '+/premade/navbar/ShareQr.vue'
-  import SitePick from '+/premade/navbar/SitePick.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
-  import Spacer from '+/utils/Spacer.vue'
+import Card from '+/layout/Card.vue'
+import Grid from '+/layout/Grid.vue'
+import VStack from '+/layout/VStack.vue'
+import ShareQr from '+/premade/navbar/ShareQr.vue'
+import SitePick from '+/premade/navbar/SitePick.vue'
+import CardTitle from '+/utils/CardTitle.vue'
+import Spacer from '+/utils/Spacer.vue'
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  defineProps<{
-    index?: number
-  }>()
+defineProps<{
+  index?: number
+}>()
 
-  const isOldMain = ref(false)
-  const showingShareModal = ref(false)
+const isOldMain = ref(false)
+const showingShareModal = ref(false)
 
-  function isOldMainHost(): boolean {
-    const host = window.location.href
-    return host.includes('pages.dev')
-  }
+function isOldMainHost(): boolean {
+  const host = window.location.href
+  return host.includes('pages.dev')
+}
 
-  onMounted(() => {
-    isOldMain.value = isOldMainHost()
-  })
+onMounted(() => {
+  isOldMain.value = isOldMainHost()
+})
 </script>
 
 <template>
@@ -128,24 +128,24 @@
 </template>
 
 <style scoped lang="sass">
-  .sitePicker
-    .heartContainer
-      height: 100%
-      justify-content: space-between
-      align-items: center
+.sitePicker
+  .heartContainer
+    height: 100%
+    justify-content: space-between
+    align-items: center
 
-      .shareHeart
-        width: 5rem
-        height: 5rem
+    .shareHeart
+      width: 5rem
+      height: 5rem
 
-    .sharingCard
-      height: fit-content
+  .sharingCard
+    height: fit-content
 
-      .qrWrapper
-        width: 100%
-        overflow: hidden
+    .qrWrapper
+      width: 100%
+      overflow: hidden
 
-      .qrCode
-        width: 100%
-        cursor: none
+    .qrCode
+      width: 100%
+      cursor: none
 </style>

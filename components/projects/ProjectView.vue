@@ -1,16 +1,16 @@
 <script setup lang="ts">
-  import type { Project } from ':/project'
-  import HStack from '+/layout/HStack.vue'
-  import InteriorItem from '+/layout/InteriorItem.vue'
-  import VStack from '+/layout/VStack.vue'
-  import ProjectStackItem from '+/projects/ProjectStackItem.vue'
-  import SafeLink from '+/utils/SafeLink.vue'
+import type { Project } from ':/project'
+import HStack from '+/layout/HStack.vue'
+import InteriorItem from '+/layout/InteriorItem.vue'
+import VStack from '+/layout/VStack.vue'
+import ProjectStackItem from '+/projects/ProjectStackItem.vue'
+import SafeLink from '+/utils/SafeLink.vue'
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  defineProps<{
-    project: Project
-  }>()
+defineProps<{
+  project: Project
+}>()
 </script>
 
 <template>
@@ -45,26 +45,26 @@
 </template>
 
 <style scoped lang="sass">
-  .projectView
+.projectView
+  height: 100%
+
+  .projectInfo
     height: 100%
+    justify-content: space-between
 
+    img
+      border-radius: 1rem
+
+    .projectStack
+      background: var(--foregroundColor)
+      padding: 0.5rem
+
+    .goButton
+      min-width: 5rem
+
+@media (max-width: 35rem)
+  .projectView
     .projectInfo
-      height: 100%
-      justify-content: space-between
-
-      img
-        border-radius: 1rem
-
-      .projectStack
-        background: var(--foregroundColor)
-        padding: 0.5rem
-
-      .goButton
-        min-width: 5rem
-
-  @media (max-width: 35rem)
-    .projectView
-      .projectInfo
-        img, .projectStack
-          border-radius: 1.25rem
+      img, .projectStack
+        border-radius: 1.25rem
 </style>

@@ -1,12 +1,12 @@
 <script setup lang="ts">
-  import Card from '+/layout/Card.vue'
-  import Grid from '+/layout/Grid.vue'
-  import IconItem from '+/layout/IconItem.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
-  import Spacer from '+/utils/Spacer.vue'
-  import { SocialMediaLinks } from '$/SocialLinks'
+import Card from '+/layout/Card.vue'
+import Grid from '+/layout/Grid.vue'
+import IconItem from '+/layout/IconItem.vue'
+import CardTitle from '+/utils/CardTitle.vue'
+import Spacer from '+/utils/Spacer.vue'
+import { SocialMediaLinks } from '$/SocialLinks'
 
-  const { t } = useI18n()
+const { t } = useI18n()
 </script>
 
 <template>
@@ -30,10 +30,10 @@
 </template>
 
 <style scoped lang="sass">
-  .linksGrid
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr))
+.linksGrid
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr))
 
-  @media (max-width: 35rem)
-    .linksGrid
-      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr))
+@media (max-width: 35rem)
+  .linksGrid
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr))
 </style>

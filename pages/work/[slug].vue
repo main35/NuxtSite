@@ -1,61 +1,61 @@
 <script setup lang="ts">
-  import { Icon } from '@iconify/vue'
-  import { marked } from 'marked'
-  import { computed, onMounted, ref } from 'vue'
-  import { useRoute } from 'vue-router'
+import { Icon } from '@iconify/vue'
+import { marked } from 'marked'
+import { computed, onMounted, ref } from 'vue'
+import { useRoute } from 'vue-router'
 
-  import setHeadMeta from '&/setHeadMeta'
-  import AppStoreIcon from '+/apps/AppStoreIcon.vue'
-  import GithubIcon from '+/apps/GithubIcon.vue'
-  import LinkIcon from '+/apps/LinkIcon.vue'
-  import UpdatedBadge from '+/apps/UpdatedBadge.vue'
-  import Card from '+/layout/Card.vue'
-  import HStack from '+/layout/HStack.vue'
-  import BottomFooter from '+/premade/BottomFooter.vue'
-  import Hero from '+/utils/Hero.vue'
-  import SafeLink from '+/utils/SafeLink.vue'
-  import Spacer from '+/utils/Spacer.vue'
-  import type { AppPageMeta } from '$/appsPages'
-  import { appsPages } from '$/appsPages'
+import setHeadMeta from '&/setHeadMeta'
+import AppStoreIcon from '+/apps/AppStoreIcon.vue'
+import GithubIcon from '+/apps/GithubIcon.vue'
+import LinkIcon from '+/apps/LinkIcon.vue'
+import UpdatedBadge from '+/apps/UpdatedBadge.vue'
+import Card from '+/layout/Card.vue'
+import HStack from '+/layout/HStack.vue'
+import BottomFooter from '+/premade/BottomFooter.vue'
+import Hero from '+/utils/Hero.vue'
+import SafeLink from '+/utils/SafeLink.vue'
+import Spacer from '+/utils/Spacer.vue'
+import type { AppPageMeta } from '$/appsPages'
+import { appsPages } from '$/appsPages'
 
-  const { t } = useI18n()
-  const route = useRoute()
+const { t } = useI18n()
+const route = useRoute()
 
-  const slug: string = route.params.slug as string
-  const app: AppPageMeta | undefined = appsPages.find(
-    (app) => app.slug === slug
-  ) as AppPageMeta | undefined
-  const longDescriptionRaw: Ref<string> = ref('')
+const slug: string = route.params.slug as string
+const app: AppPageMeta | undefined = appsPages.find(
+  (app) => app.slug === slug
+) as AppPageMeta | undefined
+const longDescriptionRaw: Ref<string> = ref('')
 
-  // Add computed property to render Markdown
-  const longDescription = computed(() => {
-    return marked(longDescriptionRaw.value)
-  })
+// Add computed property to render Markdown
+const longDescription = computed(() => {
+  return marked(longDescriptionRaw.value)
+})
 
-  onMounted(async () => {
-    if (app) {
-      const response = await fetch(app.longDescriptionMarkdown)
-      longDescriptionRaw.value = await response.text()
+onMounted(async () => {
+  if (app) {
+    const response = await fetch(app.longDescriptionMarkdown)
+    longDescriptionRaw.value = await response.text()
 
-      setHeadMeta({
-        page: app.title,
-        subtitle: app.ogDescription,
-        image: app.socialPreview,
-        icon: app.iconPath,
-      })
-    }
-  })
-
-  function getIcon(type: string): Component {
-    switch (type) {
-      case 'github':
-        return GithubIcon
-      case 'appstore':
-        return AppStoreIcon
-      default:
-        return LinkIcon
-    }
+    setHeadMeta({
+      page: app.title,
+      subtitle: app.ogDescription,
+      image: app.socialPreview,
+      icon: app.iconPath,
+    })
   }
+})
+
+function getIcon(type: string): Component {
+  switch (type) {
+    case 'github':
+      return GithubIcon
+    case 'appstore':
+      return AppStoreIcon
+    default:
+      return LinkIcon
+  }
+}
 </script>
 
 <template>
@@ -111,23 +111,23 @@
 </template>
 
 <style scoped lang="sass">
-  .brewCmd
-    font-family: var(--monoFont)
-    opacity: 0.7
-    user-select: all
-    -webkit-user-select: all
-    scale: 0.9
-    z-index: 10
+.brewCmd
+  font-family: var(--monoFont)
+  opacity: 0.7
+  user-select: all
+  -webkit-user-select: all
+  scale: 0.9
+  z-index: 10
 
-  .content
-    width: 100%
-    padding: var(--contentPadding)
+.content
+  width: 100%
+  padding: var(--contentPadding)
 
-  .appLinks
-    padding: 0.75rem
-    margin: var(--contentPadding) var(--contentPadding) 0
+.appLinks
+  padding: 0.75rem
+  margin: var(--contentPadding) var(--contentPadding) 0
 
-    &.small
-      width: fit-content
-      margin-inline-end: auto
+  &.small
+    width: fit-content
+    margin-inline-end: auto
 </style>

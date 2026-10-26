@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import RingGame from '+/games/RingGame.vue'
+import RingGame from '+/games/RingGame.vue'
 
-  setHeadMeta({
-    page: 'ring.title',
-    subtitle: 'ring.description',
-  })
+setHeadMeta({
+  page: 'ring.title',
+  subtitle: 'ring.description',
+})
 </script>
 
 <template>
@@ -14,7 +14,7 @@
 </template>
 
 <style scoped lang="sass">
-  .ringPage
-    justify-content: center
-    z-index: 1
+.ringPage
+  justify-content: center
+  z-index: 1
 </style>
