@@ -7,7 +7,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "7.6.0",
+  "version": "7.6.1",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -21,7 +21,7 @@
     "build": "bun run fonts && nuxt build",
     "ci": "bun install && bun run build",
     "prettier": "oxfmt --write .",
-    "fixPaths": "replace-in-files --string='@/data/' --replacement='$/' './**/*.{js,ts,vue}' '!./package.*' && replace-in-files --string='@/types/' --replacement=':/' './**/*.{js,ts,vue}' '!./package.*' && replace-in-files --string='@/components/' --replacement='+/' './**/*.{js,ts,vue}' '!./package.*' && replace-in-files --string='@/utils/' --replacement='&/' './**/*.{js,ts,vue}' '!./package.*'",
+    "fixPaths": "replace-in-files --string='@/data/' --replacement='$/' './**/*.{js,ts,vue}' '!./package.*' '!./node_modules' '!./nuxt' '!./output' && replace-in-files --string='@/types/' --replacement=':/' './**/*.{js,ts,vue}' '!./package.*' '!./node_modules' '!./nuxt' '!./output' && replace-in-files --string='@/components/' --replacement='+/' './**/*.{js,ts,vue}' '!./package.*' '!./node_modules' '!./nuxt' '!./output' && replace-in-files --string='@/utils/' --replacement='&/' './**/*.{js,ts,vue}' '!./package.*' '!./node_modules' '!./nuxt' '!./output'",
     "lint": "eslint . --fix",
     "format": "bun run prettier && bun run fixPaths && bun run lint",
     "fastFormat": "bun run prettier && bun run lint",

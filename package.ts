@@ -1,7 +1,7 @@
 import { BunPm, definePackage } from '@opk/ts-pkg'
 
 function fixPathScript(search: string, replace: string): string {
-  return `replace-in-files --string='${search}' --replacement='${replace}' './**/*.{js,ts,vue}' '!./package.*'`
+  return `replace-in-files --string='${search}' --replacement='${replace}' './**/*.{js,ts,vue}' '!./package.*' '!./node_modules' '!./nuxt' '!./output'`
 }
 
 export default definePackage({
@@ -13,7 +13,7 @@ export default definePackage({
     email: 'ash@a35.dev',
     url: 'https://a35.dev/',
   },
-  version: '7.6.0',
+  version: '7.6.1',
   license: 'Apache-2.0',
   private: false,
   type: 'module',
