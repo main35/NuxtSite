@@ -8,6 +8,7 @@ import type { LocationQuery } from 'vue-router'
 import { getFlag, setFlag } from '&/setUserFlag'
 import { useRouter } from '#app'
 import LangPickerCard from '+/langs/LangPickerCard.vue'
+import Snow from '+/premade/Snow.vue'
 import TransitionElement from '+/premade/TransitionElement.vue'
 import Modal from '+/utils/Modal.vue'
 
@@ -107,6 +108,9 @@ onMounted(() => {
   <noscript><h1>Your JS is disabled!</h1></noscript>
 
   <NuxtRouteAnnouncer />
+
+  <Snow />
+
   <NuxtLayout><NuxtPage /></NuxtLayout>
 
   <img

@@ -25,6 +25,12 @@ const UwuArt: HeroArt = {
   path: '/images/MikuUwu.webp',
 }
 
+const ChristmasArt: HeroArt = {
+  origUrl: 'https://draw.market/R_ikaillust/work',
+  artist: 'r_ikaillust',
+  path: '/images/MikuChristmas.webp',
+}
+
 const { t } = useI18n()
 const { uwu } = useUwu()
 
@@ -33,7 +39,7 @@ const currentArt: Ref<HeroArt | undefined> = ref()
 if (uwu.value) {
   currentArt.value = UwuArt
 } else {
-  currentArt.value = DefaultArt
+  currentArt.value = ChristmasArt
 }
 </script>
 

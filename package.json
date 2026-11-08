@@ -7,7 +7,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "7.6.1",
+  "version": "7.7.0",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -36,6 +36,9 @@
     "@opk/ts-pkg": "^0.7.1",
     "@takumi-rs/core": "^2.18.1",
     "@takumi-rs/wasm": "^2.18.1",
+    "@tsparticles/engine": "^4.5.3",
+    "@tsparticles/preset-snow": "^4.5.3",
+    "@tsparticles/vue3": "^4.5.3",
     "cobe": "^0.6.5",
     "floating-vue": "^5.2.2",
     "marked": "^17.0.3",

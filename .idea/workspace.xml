@@ -7,11 +7,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update dependencies, disable script/style indents">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="rewrite localization verification script">
+      <change afterPath="$PROJECT_DIR$/components/premade/Snow.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/snow.client.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/IntroHero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/IntroHero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/verifyTranslations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/verifyTranslations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/utilities.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/utilities.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +71,9 @@
         <option value="JavaScript File" />
         <option value="Sass File" />
         <option value="HTML File" />
+        <option value="JSON File" />
         <option value="TypeScript File" />
         <option value="Vue Composition API Component" />
-        <option value="JSON File" />
       </list>
     </option>
   </component>
@@ -95,61 +106,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000000000828" />
-      <entry key="S5" value="1.0000220379204685" />
-      <entry key="S10" value="1.0175619946226024" />
-      <entry key="S30" value="2.7695618337863683" />
-      <entry key="S60" value="6.898787443646649" />
-      <entry key="M2" value="12.781606824948621" />
-      <entry key="M5" value="23.862424182836154" />
-      <entry key="M10" value="40.36212106797673" />
-      <entry key="M15" value="56.17861564934987" />
-      <entry key="M30" value="97.02794929807513" />
-      <entry key="H1" value="174.28676812643855" />
-      <entry key="H2" value="331.264770865808" />
-      <entry key="H4" value="613.780648536439" />
-      <entry key="D1" value="2339.193668988535" />
-      <entry key="W1" value="3967.269636261645" />
+      <entry key="MS100" value="1.0000051037886062" />
+      <entry key="MS500" value="1.0892561580049338" />
+      <entry key="S2" value="1.7509304215681099" />
+      <entry key="S5" value="2.3167349801680817" />
+      <entry key="S10" value="2.676510908913553" />
+      <entry key="S30" value="6.1501930641575635" />
+      <entry key="S60" value="13.660696685175076" />
+      <entry key="M2" value="23.328769062091304" />
+      <entry key="M5" value="33.42713903337206" />
+      <entry key="M10" value="38.9414599588638" />
+      <entry key="M15" value="44.220085651336305" />
+      <entry key="M30" value="70.58313727942378" />
+      <entry key="H1" value="142.80864340682825" />
+      <entry key="H2" value="299.3375282283642" />
+      <entry key="H4" value="590.6037836634426" />
+      <entry key="D1" value="2374.5337837268153" />
+      <entry key="W1" value="4083.2947878269215" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="9.501822297054738E-171" />
-      <entry key="S5" value="9.797668960190174E-69" />
-      <entry key="S10" value="9.898317513694287E-35" />
-      <entry key="S30" value="4.626188562004376E-12" />
-      <entry key="S60" value="2.2052020425688903E-6" />
-      <entry key="M2" value="0.002248742681758733" />
-      <entry key="M5" value="0.42610134023862833" />
-      <entry key="M10" value="3.8154120427455442" />
-      <entry key="M15" value="8.577635157223318" />
-      <entry key="M30" value="21.628866974423058" />
-      <entry key="H1" value="43.579405034450126" />
-      <entry key="H2" value="84.67212568305006" />
-      <entry key="H4" value="158.18571843804614" />
-      <entry key="D1" value="654.2160687636846" />
-      <entry key="W1" value="1165.2634559885487" />
+      <entry key="MS100" value="2.473746308122265E-185" />
+      <entry key="MS500" value="1.1985910537554465E-37" />
+      <entry key="S2" value="5.884678661095525E-10" />
+      <entry key="S5" value="2.0878261636083918E-4" />
+      <entry key="S10" value="0.016622248134606922" />
+      <entry key="S30" value="0.3757579673068849" />
+      <entry key="S60" value="0.8575021634288089" />
+      <entry key="M2" value="1.3072281069721934" />
+      <entry key="M5" value="1.8137886369107696" />
+      <entry key="M10" value="2.9374703423769164" />
+      <entry key="M15" value="5.111346573690039" />
+      <entry key="M30" value="15.90703019270754" />
+      <entry key="H1" value="41.00310743406854" />
+      <entry key="H2" value="87.27401271399789" />
+      <entry key="H4" value="166.72796294041132" />
+      <entry key="D1" value="679.5791941218054" />
+      <entry key="W1" value="1213.5246051445909" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.26425451014034507" />
-      <entry key="MS500" value="0.7663099801038916" />
-      <entry key="S2" value="0.93562349783148" />
-      <entry key="S5" value="0.9737559922072793" />
-      <entry key="S10" value="1.004221398246049" />
-      <entry key="S30" value="2.7610553352514606" />
-      <entry key="S60" value="6.889751636238845" />
-      <entry key="M2" value="12.77585309892656" />
-      <entry key="M5" value="24.278461418545977" />
-      <entry key="M10" value="44.15871034811469" />
-      <entry key="M15" value="64.73230618392853" />
-      <entry key="M30" value="118.62934126672877" />
-      <entry key="H1" value="217.8387428063725" />
-      <entry key="H2" value="415.90987746392045" />
-      <entry key="H4" value="771.9414863713997" />
-      <entry key="D1" value="2993.394698589571" />
-      <entry key="W1" value="5132.529422473354" />
+      <entry key="MS100" value="0.2832211623138916" />
+      <entry key="MS500" value="0.8224282758573463" />
+      <entry key="S2" value="1.5026935699722042" />
+      <entry key="S5" value="2.1113491189270848" />
+      <entry key="S10" value="2.553921446251868" />
+      <entry key="S30" value="6.445550912284399" />
+      <entry key="S60" value="14.45158462774899" />
+      <entry key="M2" value="24.586151015828957" />
+      <entry key="M5" value="35.21326142296391" />
+      <entry key="M10" value="41.86051150409753" />
+      <entry key="M15" value="49.314734727469784" />
+      <entry key="M30" value="86.47170401621459" />
+      <entry key="H1" value="183.7898255907268" />
+      <entry key="H2" value="386.58729301197985" />
+      <entry key="H4" value="757.3077597622889" />
+      <entry key="D1" value="3054.097643264821" />
+      <entry key="W1" value="5296.815606520291" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -164,66 +175,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "CidrDebugProfileConversion": "true",
-    "CidrDebugProfileConversion262": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "KEY_CHAT_IN_TOOLWINDOW": "false",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/images",
-    "list.type.of.created.stylesheet": "Sass",
-    "markdown.settings.migrated.v1": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "bun",
-    "npm.build.executor": "Run",
-    "npm.cleanup.executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.fastFormat.executor": "Run",
-    "npm.format.executor": "Run",
-    "npm.lint.executor": "Run",
-    "npm.prettier.executor": "Run",
-    "npm.preview.executor": "Run",
-    "npm.reInit.executor": "Run",
-    "npm.verifyTranslations.executor": "Run",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "ts.external.directory.path": "/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
+    &quot;CidrDebugProfileConversion262&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;KEY_CHAT_IN_TOOLWINDOW&quot;: &quot;false&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/NuxtSite/public/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
+    &quot;markdown.settings.migrated.v1&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;bun&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.cleanup.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.fastFormat.executor&quot;: &quot;Run&quot;,
+    &quot;npm.format.executor&quot;: &quot;Run&quot;,
+    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
+    &quot;npm.prettier.executor&quot;: &quot;Run&quot;,
+    &quot;npm.preview.executor&quot;: &quot;Run&quot;,
+    &quot;npm.reInit.executor&quot;: &quot;Run&quot;,
+    &quot;npm.verifyTranslations.executor&quot;: &quot;Run&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />
@@ -302,6 +313,34 @@
       <command value="run" />
       <scripts>
         <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <package-manager value="bun" />
@@ -1705,7 +1744,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add og image generation" />
     <MESSAGE value="make baseurl dynamic" />
     <MESSAGE value="fix up og image" />
     <MESSAGE value="switch to webp rendering for og image" />
@@ -1730,7 +1768,8 @@
     <MESSAGE value="add colored sidebar icons, uwu toggle GUI, centralize and simplify hero/page data" />
     <MESSAGE value="update playlist support, add new 2026 playlist" />
     <MESSAGE value="update dependencies, disable script/style indents" />
-    <option name="LAST_COMMIT_MESSAGE" value="update dependencies, disable script/style indents" />
+    <MESSAGE value="rewrite localization verification script" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrite localization verification script" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -135,7 +135,7 @@ function getUwuPath(): string {
             <SafeLink to="/">
               <button id="homeButtonContainer">
                 <DynamicImage
-                  src="/images/avatar-27.webp"
+                  src="/images/avatar-christmas.webp"
                   alt="ash's Avatar (Go Home)"
                   id="avatarButton"
                 />

@@ -51,6 +51,19 @@
   text-decoration: underline
   text-decoration-color: var(--accentColor)
 
+:root
+  --glassShadow: inset 1px 1.5px 1px -1px rgba(255, 255, 255, 0.2), inset -1px -1.5px 1px -1px rgba(255, 255, 255, 0.15), inset 0 4px 16px rgba(255, 255, 255, 0.025)
+
+@media (prefers-color-scheme: dark)
+  :root
+    --glassShadow: inset 1px 1.5px 1px -1px rgba(255, 255, 255, 0.3), inset -1px -1.5px 1px -1px rgba(255, 255, 255, 0.15), inset 0 4px 16px rgba(255, 255, 255, 0.035)
+
+@mixin glassEffect
+  box-shadow: var(--glassShadow)
+
+.glassEffect
+  @include glassEffect
+
 // Extras
 .bigAvatar
   width: 4rem !important

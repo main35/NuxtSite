@@ -11,7 +11,11 @@ defineProps<{
 </template>
 
 <style scoped lang="sass">
+@use "@/styles/utilities"
+
 .card
+  @include utilities.glassEffect
+
   --card-radius: 3rem
   --card-index: 0
 
@@ -25,7 +29,7 @@ defineProps<{
   border: 0.1rem solid var(--foregroundColor)
   background: var(--foregroundColor)
   transition: 0.2s ease
-  box-shadow: inset 0 0.3rem 0.5rem 0 var(--foregroundDark)
+  //box-shadow: inset 0 0.3rem 0.5rem 0 var(--foregroundDark)
   z-index: 2
 
   transform: translateY(1.5rem)

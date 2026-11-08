@@ -26,7 +26,7 @@ function isActive(link: NavLink): boolean {
   <VStack class="sideNav sidebarModeOnly">
     <SafeLink to="/" class="fullWidth">
       <HStack class="sideNavItem profileNavItem">
-        <img class="avatar" src="/images/avatar-27.webp" alt="Avatar" />
+        <img class="avatar" src="/images/avatar-christmas.webp" alt="Avatar" />
 
         <HStack class="nameAndClock">
           <h2>{{ t('name') }}</h2>
@@ -69,6 +69,8 @@ function isActive(link: NavLink): boolean {
 </template>
 
 <style scoped lang="sass">
+@use "@/styles/utilities"
+
 .sideNav
   position: sticky
   top: 1rem
@@ -106,13 +108,15 @@ function isActive(link: NavLink): boolean {
     animation-delay: calc(var(--index) * 0.1s)
 
     &:hover, &.selected
+      @include utilities.glassEffect
+
       background: var(--foregroundColor)
       backdrop-filter: blur(0.5rem)
-      box-shadow: inset 0 0.15rem 0.12rem 0 var(--foregroundDark)
       border-color: var(--foregroundColor)
 
       .sideNavImageBackground
         background: linear-gradient(-45deg, var(--tint), hsl(from var(--tint) calc(h + 40) s l))
+        opacity: 0.4 !important
 
     &:active
       scale: 0.95
@@ -130,9 +134,11 @@ function isActive(link: NavLink): boolean {
       overflow: hidden
 
       .sideNavImageBackground
+        transition: 0.2s
+        filter: saturate(150%)
         position: absolute
         inset: 0
-        opacity: 0.8
+        opacity: 0
 
       svg
         width: 1.75rem
